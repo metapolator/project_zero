@@ -1,0 +1,69 @@
+StartChar: dieresis.cap
+Encoding: 178 -1 178
+GlifName: dieresis.cap
+Width: 696
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+496 682 m 256
+ 496 717 470 745 434 745 c 256
+ 401 745 373 717 373 682 c 256
+ 373 648 401 621 434 621 c 256
+ 470 621 496 648 496 682 c 256
+325 682 m 256
+ 325 717 297 745 264 745 c 256
+ 229 745 200 717 200 682 c 256
+ 200 648 229 621 264 621 c 256
+ 297 621 325 648 325 682 c 256
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+(dp4
+S'y'
+I682
+sS'x'
+I280
+sS'magnetic'
+p5
+I5
+sS'angle'
+p6
+I0
+sS'isGlobal'
+p7
+I0
+sasS'com.typemytype.robofont.layerData'
+p8
+(dp9
+S'Back'
+p10
+(dp11
+S'name'
+p12
+S'dieresis.cap'
+p13
+sS'lib'
+p14
+(dp15
+sS'unicodes'
+p16
+(lp17
+sS'width'
+p18
+I696
+sS'contours'
+p19
+(lp20
+sS'components'
+p21
+(lp22
+sS'anchors'
+p23
+(lp24
+sss."
+EndChar

@@ -1,0 +1,86 @@
+StartChar: M
+Encoding: 62 77 62
+GlifName: M_
+Width: 784
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+754 20 m 257
+ 504 20 l 256
+ 504 0 l 257
+ 754 0 l 257
+ 754 20 l 257
+754 560 m 257
+ 704 560 l 257
+ 704 540 l 257
+ 754 540 l 257
+ 754 560 l 257
+704 560 m 257
+ 554 560 l 257
+ 554 1 l 257
+ 704 1 l 257
+ 704 560 l 257
+356 -10 m 257
+ 576 560 l 257
+ 554 560 l 257
+ 333 -10 l 257
+ 356 -10 l 257
+111 12 m 257
+ 111 560 l 257
+ 91 560 l 257
+ 91 12 l 257
+ 111 12 l 257
+191 20 m 257
+ 31 20 l 256
+ 31 0 l 257
+ 191 0 l 257
+ 191 20 l 257
+253 560 m 257
+ 93 560 l 257
+ 333 -10 l 257
+ 333 -10 413 175 413 175 c 257
+ 253 560 l 257
+91 560 m 257
+ 30 560 l 257
+ 30 540 l 257
+ 91 540 l 257
+ 91 560 l 257
+224 560 m 257
+ 82 560 l 257
+ 82 540 l 257
+ 224 540 l 257
+ 224 560 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'M'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I784
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

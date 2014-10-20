@@ -1,0 +1,22 @@
+StartChar: dvRashtraSign
+Encoding: 712 -1 712
+GlifName: dvR_ashtraS_ign
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+-196 4 m 257
+ -196 0 l 257
+ -353 -111 l 257
+ -341 -129 l 257
+ -180 -17 l 257
+ -12 -133 l 257
+ 0 -115 l 257
+ -165 0 l 257
+ -165 4 l 257
+ -196 4 l 257
+EndSplineSet
+EndChar

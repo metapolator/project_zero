@@ -1,0 +1,37 @@
+StartChar: dvTTHA
+Encoding: 798 2336 798
+GlifName: dvT_T_H_A_
+Width: 532
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 336 -39 basechar 0
+AnchorPoint: "blwm_Virama" 346 35 basechar 0
+AnchorPoint: "abvm_Ekaar" 337 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 337 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+265 59 m 257
+ 328 59 339 119 339 240 c 257
+ 339 362 328 422 265 422 c 257
+ 202 422 191 362 191 240 c 256
+ 191 119 202 59 265 59 c 257
+206 559 m 257
+ 337 559 l 257
+ 337 421 l 257
+ 272 434 l 257
+ 206 419 l 257
+ 206 559 l 257
+-20 560 m 257
+ 552 560 l 257
+ 552 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+265 39 m 257
+ 160 39 44 108 44 240 c 256
+ 44 375 160 442 265 442 c 256
+ 370 442 488 375 488 240 c 256
+ 488 108 370 39 265 39 c 257
+EndSplineSet
+EndChar

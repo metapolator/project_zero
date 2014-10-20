@@ -1,0 +1,32 @@
+StartChar: uni2113
+Encoding: 1070 -1 1070
+GlifName: uni2113
+Width: 460
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+420 401 m 257
+ 420 511 362 563 287 563 c 257
+ 175 563 79 491 79 321 c 258
+ 79 321 79 173 79 173 c 257
+ 79 27 149 -10 251 -10 c 256
+ 298 -10 339 5 366 24 c 257
+ 366 44 l 257
+ 354 36 324 34 303 34 c 256
+ 229 34 229 118 229 196 c 257
+ 229 196 229 321 229 321 c 257
+ 229 478 244 543 287 543 c 257
+ 310 543 317 508 317 431 c 257
+ 316 215 223 133 30 133 c 256
+ 30 133 30 113 30 113 c 257
+ 219 113 420 218 420 401 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+s."
+EndChar

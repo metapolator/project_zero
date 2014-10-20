@@ -1,0 +1,36 @@
+StartChar: dvSS_K_RA
+Encoding: 739 -1 739
+GlifName: dvS_S__K__R_A_
+Width: 1135
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 799 0 basechar 0
+AnchorPoint: "blwm_Virama" 799 0 basechar 0
+AnchorPoint: "abvm_Ekaar" 799 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 799 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-23 560 m 257
+ 379 560 l 257
+ 379 540 l 257
+ -23 540 l 257
+ -23 560 l 257
+182 481 m 257
+ 400 276 l 257
+ 385 263 l 257
+ 170 465 l 257
+ 182 481 l 257
+211 132 m 257
+ 74 132 50 241 50 345 c 257
+ 50 546 l 257
+ 196 546 l 257
+ 196 338 l 258
+ 196 270 196 184 270 184 c 257
+ 314 184 348 233 355 261 c 257
+ 371 256 l 257
+ 357 201 300 133 211 132 c 257
+EndSplineSet
+Refer: 436 -1 N 1 0 0 1 320 0 2
+EndChar

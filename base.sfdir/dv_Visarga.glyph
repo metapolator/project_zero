@@ -1,0 +1,22 @@
+StartChar: dvVisarga
+Encoding: 859 2307 859
+GlifName: dvV_isarga
+Width: 217
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+177 446 m 256
+ 177 408 146 378 108 378 c 256
+ 70 378 40 408 40 446 c 256
+ 40 484 70 515 108 515 c 256
+ 146 515 177 484 177 446 c 256
+177 146 m 256
+ 177 108 146 78 108 78 c 256
+ 70 78 40 108 40 146 c 256
+ 40 184 70 215 108 215 c 256
+ 146 215 177 184 177 146 c 256
+EndSplineSet
+EndChar

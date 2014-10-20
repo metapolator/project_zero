@@ -1,0 +1,18 @@
+StartChar: dvNY_R
+Encoding: 614 -1 614
+GlifName: dvN_Y__R_
+Width: 386
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+249 -56 m 257
+ 483 262 l 257
+ 467 275 l 257
+ 233 -43 l 257
+ 249 -56 l 257
+EndSplineSet
+Refer: 609 -1 N 1 0 0 1 -2 0 2
+EndChar

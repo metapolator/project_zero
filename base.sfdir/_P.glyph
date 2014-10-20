@@ -1,0 +1,58 @@
+StartChar: P
+Encoding: 80 80 80
+GlifName: P_
+Width: 563
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+290 20 m 257
+ 240 20 l 257
+ 240 194 l 257
+ 438 184 533 254 533 371 c 257
+ 533 499 447 570 239 560 c 257
+ 40 560 l 257
+ 40 540 l 257
+ 90 540 l 257
+ 90 20 l 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+ 290 20 l 257
+240 540 m 257
+ 352 540 382 490 382 372 c 257
+ 382 260 352 214 240 214 c 257
+ 240 540 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'P'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I563
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

@@ -1,0 +1,54 @@
+StartChar: e
+Encoding: 876 101 876
+GlifName: e
+Width: 515
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+317 24 m 257
+ 244 24 179 69 179 231 c 256
+ 179 323 196 450 260 450 c 257
+ 323 450 342 322 342 220 c 257
+ 342 220 135 220 135 220 c 257
+ 135 200 l 257
+ 482 200 l 257
+ 482 405 371 470 261 470 c 257
+ 146 470 30 406 30 232 c 256
+ 30 33 168 -10 290 -10 c 257
+ 361 -10 442 25 472 75 c 257
+ 458 85 l 257
+ 429 42 353 24 317 24 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'e'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I515
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

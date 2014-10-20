@@ -1,0 +1,97 @@
+StartChar: f_k
+Encoding: 906 -1 906
+GlifName: f_k
+Width: 935
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+543 188 m 257
+ 557 202 l 257
+ 815 459 l 257
+ 785 459 l 257
+ 557 232 l 257
+ 513 188 l 257
+ 543 188 l 257
+875 460 m 257
+ 685 460 l 257
+ 685 440 l 257
+ 875 440 l 257
+ 875 460 l 257
+925 0 m 257
+ 925 20 l 257
+ 897 20 853 56 796 141 c 258
+ 674 324 l 257
+ 562 226 l 257
+ 633 117 l 258
+ 703 9 751 0 925 0 c 257
+607 20 m 257
+ 357 20 l 257
+ 357 0 l 257
+ 607 0 l 257
+ 607 20 l 257
+219 670 m 256
+ 133 627 90 563 90 460 c 257
+ 30 460 l 257
+ 30 440 l 257
+ 90 440 l 257
+ 90 20 l 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+ 290 20 l 257
+ 240 20 l 257
+ 240 440 l 257
+ 370 440 l 257
+ 370 460 l 257
+ 240 460 l 257
+ 240 591 252 657 324 671 c 256
+ 376 681 407 639 407 598 c 257
+ 557 670 l 257
+ 416 712 306 714 219 670 c 256
+557 670 m 257
+ 557 670 407 670 407 670 c 257
+ 407 1 l 257
+ 557 1 l 257
+ 557 670 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.schriftgestaltung.Glyphs.ColorIndex'
+p2
+I0
+sS'public.markColor'
+p3
+S'0.85,0.26,0.06,1'
+p4
+sS'com.typemytype.robofont.layerData'
+p5
+(dp6
+S'Back'
+p7
+(dp8
+S'name'
+p9
+S'f_k'
+p10
+sS'lib'
+p11
+(dp12
+sS'unicodes'
+p13
+(lp14
+sS'width'
+p15
+I935
+sS'contours'
+p16
+(lp17
+sS'components'
+p18
+(lp19
+sS'anchors'
+p20
+(lp21
+sss."
+EndChar

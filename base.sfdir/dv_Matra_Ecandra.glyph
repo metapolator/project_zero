@@ -1,0 +1,25 @@
+StartChar: dvMatraEcandra
+Encoding: 534 2373 534
+GlifName: dvM_atraE_candra
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Anusvara" -80 560 mark 0
+AnchorPoint: "abvm_Anusvara" -80 721 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+19 800 m 257
+ 21 798 l 257
+ 24 691 -48 631 -150 631 c 256
+ -252 631 -323 692 -320 798 c 257
+ -318 800 l 257
+ -308 802 l 257
+ -306 801 l 257
+ -295 755 -238 724 -150 724 c 256
+ -61 724 -4 755 7 801 c 257
+ 9 802 l 257
+ 19 800 l 257
+EndSplineSet
+EndChar

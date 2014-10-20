@@ -1,0 +1,29 @@
+StartChar: dvT_P_RA
+Encoding: 828 -1 828
+GlifName: dvT__P__R_A_
+Width: 870
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+376 415 m 257
+ 303 415 l 257
+ 164 415 38 375 38 198 c 256
+ 38 50 125 1 233 1 c 256
+ 251 1 270 3 285 9 c 257
+ 281 27 l 257
+ 276 26 264 25 257 25 c 256
+ 203 25 183 66 183 198 c 256
+ 183 297 190 396 316 396 c 257
+ 376 396 l 257
+ 376 415 l 257
+-20 540 m 257
+ 409 540 l 257
+ 409 560 l 257
+ -20 560 l 257
+ -20 540 l 257
+EndSplineSet
+Refer: 698 -1 N 1 0 0 1 308 0 2
+EndChar

@@ -1,0 +1,53 @@
+StartChar: exclamdown
+Encoding: 895 161 895
+GlifName: exclamdown
+Width: 252
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+125 569 m 256
+ 85 569 50 534 50 494 c 256
+ 50 452 85 418 125 418 c 256
+ 167 418 201 452 201 494 c 256
+ 201 534 167 569 125 569 c 256
+134 384 m 257
+ 118 384 l 257
+ 100 255 35 172 35 93 c 256
+ 35 37 64 -8 127 -8 c 256
+ 187 -8 217 37 217 92 c 256
+ 217 169 155 255 134 384 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'exclamdown'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I252
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

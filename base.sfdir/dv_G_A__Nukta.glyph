@@ -1,0 +1,12 @@
+StartChar: dvGA_Nukta
+Encoding: 306 2394 306
+GlifName: dvG_A__N_ukta
+Width: 664
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 305 2327 N 1 0 0 1 0 0 2
+Refer: 663 2364 N 1 0 0 1 477 56 2
+EndChar

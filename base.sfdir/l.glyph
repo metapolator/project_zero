@@ -1,0 +1,56 @@
+StartChar: l
+Encoding: 951 108 951
+GlifName: l
+Width: 320
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+230 670 m 257
+ 40 670 l 257
+ 40 650 l 257
+ 230 650 l 257
+ 230 670 l 257
+290 20 m 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+ 290 20 l 257
+240 670 m 257
+ 90 670 l 257
+ 90 1 l 257
+ 240 1 l 257
+ 240 670 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'l'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I320
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

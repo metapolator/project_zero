@@ -1,0 +1,21 @@
+StartChar: dvEcandra
+Encoding: 296 2317 296
+GlifName: dvE_candra
+Width: 564
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Anusvara" 369 721 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+469 800 m 257
+ 473 692 402 631 299 631 c 256
+ 196 631 125 693 129 800 c 257
+ 142 803 l 257
+ 152 754 210 720 299 720 c 256
+ 395 720 446 758 456 803 c 257
+ 469 800 l 257
+EndSplineSet
+Refer: 295 2319 N 1 0 0 1 0 0 2
+EndChar

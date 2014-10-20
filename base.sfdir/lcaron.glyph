@@ -1,0 +1,58 @@
+StartChar: lcaron
+Encoding: 953 318 953
+GlifName: lcaron
+Width: 408
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+240 670 m 257
+ 90 670 l 257
+ 90 1 l 257
+ 240 1 l 257
+ 240 670 l 257
+290 20 m 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+ 290 20 l 257
+230 670 m 257
+ 40 670 l 257
+ 40 650 l 257
+ 230 650 l 257
+ 230 670 l 257
+EndSplineSet
+Refer: 1010 8217 N 0.74 0 0 0.74 273 173 2
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'lcaron'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I408
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

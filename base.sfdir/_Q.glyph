@@ -1,0 +1,60 @@
+StartChar: Q
+Encoding: 81 81 81
+GlifName: Q_
+Width: 684
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+250 -69 m 257
+ 465 -32 642 71 642 275 c 257
+ 642 443 515 570 331 570 c 257
+ 147 570 30 440 30 276 c 257
+ 30 92 147 8 321 8 c 257
+ 321 28 l 257
+ 232 28 192 132 192 276 c 257
+ 192 458 250 550 331 550 c 257
+ 411 550 480 464 480 276 c 257
+ 480 86 409 -3 309 -33 c 256
+ 258 -48 196 -57 135 -109 c 257
+ 146 -127 l 257
+ 173 -106 202 -92 233 -92 c 256
+ 365 -92 421 -262 558 -262 c 256
+ 673 -262 702 -174 702 -32 c 257
+ 682 -32 l 257
+ 682 -77 645 -113 586 -113 c 256
+ 443 -113 403 -63 250 -73 c 257
+ 250 -69 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'Q'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I684
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

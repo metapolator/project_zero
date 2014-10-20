@@ -1,0 +1,81 @@
+StartChar: q
+Encoding: 1002 113 1002
+GlifName: q
+Width: 578
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+358 241 m 257
+ 358 76 l 257
+ 339 38 314 22 291 22 c 256
+ 234 22 182 76 182 231 c 257
+ 182 386 216 432 281 432 c 257
+ 345 432 358 385 358 241 c 257
+358 414 m 257
+ 329 464 279 472 229 472 c 256
+ 128 472 30 390 30 230 c 257
+ 30 62 126 -22 229 -22 c 256
+ 279 -22 335 -2 358 46 c 257
+ 358 -190 l 257
+ 308 -190 l 257
+ 308 -210 l 257
+ 558 -210 l 257
+ 558 -190 l 257
+ 508 -190 l 257
+ 508 440 l 257
+ 558 440 l 257
+ 558 460 l 257
+ 358 460 l 257
+ 358 414 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+(dp4
+S'y'
+S'-190'
+p5
+sS'x'
+I432
+sS'magnetic'
+p6
+I5
+sS'angle'
+p7
+I0
+sS'isGlobal'
+p8
+I0
+sasS'com.typemytype.robofont.layerData'
+p9
+(dp10
+S'Back'
+p11
+(dp12
+S'name'
+p13
+S'q'
+sS'lib'
+p14
+(dp15
+sS'unicodes'
+p16
+(lp17
+sS'width'
+p18
+I578
+sS'contours'
+p19
+(lp20
+sS'components'
+p21
+(lp22
+sS'anchors'
+p23
+(lp24
+sss."
+EndChar

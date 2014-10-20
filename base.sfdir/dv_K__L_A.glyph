@@ -1,0 +1,16 @@
+StartChar: dvK_LA
+Encoding: 419 -1 419
+GlifName: dvK__L_A_
+Width: 1328
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 1155 -37 basechar 0
+AnchorPoint: "blwm_Virama" 1165 14 basechar 0
+AnchorPoint: "abvm_Ekaar" 1163 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 1163 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 390 -1 N 1 0 0 1 2 0 2
+Refer: 462 2354 N 1 0 0 1 600 0 2
+EndChar

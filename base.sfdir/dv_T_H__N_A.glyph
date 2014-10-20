@@ -1,0 +1,22 @@
+StartChar: dvTH_NA
+Encoding: 790 -1 790
+GlifName: dvT_H__N_A_
+Width: 652
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+180 -85 m 256
+ 180 -24 215 28 314 96 c 257
+ 370 135 l 257
+ 389 123 l 257
+ 328 81 l 257
+ 267 39 254 20 254 -1 c 256
+ 254 -41 341 -28 341 -106 c 256
+ 341 -145 311 -177 264 -177 c 256
+ 210 -177 180 -140 180 -85 c 256
+EndSplineSet
+Refer: 789 2341 N 1 0 0 1 0 0 2
+EndChar

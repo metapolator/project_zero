@@ -1,0 +1,91 @@
+StartChar: p
+Encoding: 990 112 990
+GlifName: p
+Width: 578
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+220 414 m 257
+ 220 460 l 257
+ 20 460 l 257
+ 20 440 l 257
+ 70 440 l 257
+ 70 -210 l 257
+ 270 -210 l 257
+ 270 -190 l 257
+ 220 -190 l 257
+ 220 46 l 257
+ 243 -2 299 -22 349 -22 c 256
+ 452 -22 548 62 548 230 c 257
+ 548 390 450 472 349 472 c 256
+ 299 472 249 464 220 414 c 257
+220 241 m 257
+ 220 385 233 432 297 432 c 257
+ 362 432 396 386 396 231 c 257
+ 396 76 344 22 287 22 c 256
+ 264 22 239 38 220 76 c 257
+ 220 241 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+(dp4
+S'y'
+S'-240'
+p5
+sS'x'
+I370
+sS'magnetic'
+p6
+I5
+sS'angle'
+p7
+I0
+sS'isGlobal'
+p8
+I0
+sa(dp9
+S'y'
+S'-210'
+p10
+sS'x'
+I232
+sg6
+I5
+sg7
+I0
+sg8
+I0
+sasS'com.typemytype.robofont.layerData'
+p11
+(dp12
+S'Back'
+p13
+(dp14
+S'name'
+p15
+S'p'
+sS'lib'
+p16
+(dp17
+sS'unicodes'
+p18
+(lp19
+sS'width'
+p20
+I578
+sS'contours'
+p21
+(lp22
+sS'components'
+p23
+(lp24
+sS'anchors'
+p25
+(lp26
+sss."
+EndChar

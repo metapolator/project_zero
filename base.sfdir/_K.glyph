@@ -1,0 +1,76 @@
+StartChar: K
+Encoding: 56 75 56
+GlifName: K_
+Width: 640
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+630 20 m 257
+ 370 20 l 257
+ 370 0 l 257
+ 630 0 l 257
+ 630 20 l 257
+584 560 m 257
+ 380 560 l 257
+ 380 540 l 257
+ 584 540 l 257
+ 584 560 l 257
+290 560 m 257
+ 40 560 l 257
+ 40 540 l 257
+ 290 540 l 257
+ 290 560 l 257
+426 0 m 257
+ 598 0 l 257
+ 376 400 l 256
+ 277 272 l 257
+ 426 0 l 257
+240 560 m 257
+ 90 560 l 257
+ 90 0 l 257
+ 240 0 l 257
+ 240 560 l 257
+232 200 m 257
+ 514 559 l 257
+ 487 559 l 257
+ 205 200 l 257
+ 232 200 l 257
+290 20 m 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+ 290 20 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'K'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I640
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

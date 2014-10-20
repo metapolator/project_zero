@@ -1,0 +1,18 @@
+StartChar: dvAnusvara
+Encoding: 193 2306 193
+GlifName: dvA_nusvara
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Anusvara" -80 560 mark 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-82 691 m 256
+ -82 653 -112 623 -150 623 c 256
+ -188 623 -218 653 -218 691 c 256
+ -218 729 -188 760 -150 760 c 256
+ -112 760 -82 729 -82 691 c 256
+EndSplineSet
+EndChar

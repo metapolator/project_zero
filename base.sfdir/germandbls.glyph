@@ -1,0 +1,87 @@
+StartChar: germandbls
+Encoding: 917 223 917
+GlifName: germandbls
+Width: 694
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+359 659 m 256
+ 430 659 471 626 481 574 c 256
+ 491 521 470 479 432 458 c 256
+ 340 407 280 370 300 287 c 256
+ 329 168 558 216 558 76 c 256
+ 558 27 517 9 479 9 c 256
+ 443 9 391 20 391 50 c 256
+ 391 75 434 74 434 118 c 256
+ 434 150 408 175 369 175 c 256
+ 324 175 301 142 301 105 c 256
+ 301 33 386 -11 478 -11 c 256
+ 586 -11 684 56 684 150 c 256
+ 684 315 456 291 410 369 c 256
+ 396 393 411 423 447 442 c 256
+ 542 493 614 527 594 591 c 256
+ 573 658 455 680 358 680 c 257
+ 229 680 90 622 90 460 c 257
+ 40 460 l 257
+ 40 440 l 257
+ 90 440 l 257
+ 90 20 l 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+ 290 20 l 257
+ 240 20 l 257
+ 240 460 l 257
+ 240 595 282 659 359 659 c 256
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+(dp4
+S'y'
+I369
+sS'x'
+I40
+sS'magnetic'
+p5
+I5
+sS'angle'
+p6
+I90
+sS'isGlobal'
+p7
+I0
+sasS'com.typemytype.robofont.layerData'
+p8
+(dp9
+S'Back'
+p10
+(dp11
+S'name'
+p12
+S'germandbls'
+p13
+sS'lib'
+p14
+(dp15
+sS'unicodes'
+p16
+(lp17
+sS'width'
+p18
+I694
+sS'contours'
+p19
+(lp20
+sS'components'
+p21
+(lp22
+sS'anchors'
+p23
+(lp24
+sss."
+EndChar

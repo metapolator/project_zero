@@ -1,0 +1,57 @@
+StartChar: I
+Encoding: 43 73 43
+GlifName: I_
+Width: 330
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+290 0 m 257
+ 290 20 l 257
+ 240 20 l 257
+ 240 540 l 257
+ 290 540 l 257
+ 290 560 l 257
+ 40 560 l 257
+ 40 540 l 257
+ 90 540 l 257
+ 90 20 l 257
+ 40 20 l 256
+ 40 0 l 257
+ 290 0 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'I'
+sS'lib'
+p9
+(dp10
+sS'unicodes'
+p11
+(lp12
+sS'width'
+p13
+I330
+sS'contours'
+p14
+(lp15
+sS'components'
+p16
+(lp17
+sS'anchors'
+p18
+(lp19
+sss."
+EndChar

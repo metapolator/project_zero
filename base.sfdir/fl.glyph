@@ -1,0 +1,78 @@
+StartChar: fl
+Encoding: 909 64258 909
+GlifName: fl
+Width: 637
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+407 598 m 257
+ 557 670 l 257
+ 416 712 306 714 219 670 c 256
+ 133 627 90 563 90 460 c 257
+ 30 460 l 257
+ 30 440 l 257
+ 90 440 l 257
+ 90 20 l 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+ 290 20 l 257
+ 240 20 l 257
+ 240 440 l 257
+ 370 440 l 257
+ 370 460 l 257
+ 240 460 l 257
+ 240 591 252 657 324 671 c 256
+ 376 681 407 639 407 598 c 257
+357 20 m 257
+ 357 0 l 257
+ 607 0 l 257
+ 607 20 l 257
+ 357 20 l 257
+407 670 m 257
+ 407 1 l 257
+ 557 1 l 257
+ 557 670 l 257
+ 557 670 407 670 407 670 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.schriftgestaltung.Glyphs.ColorIndex'
+p2
+I0
+sS'public.markColor'
+p3
+S'0.85,0.26,0.06,1'
+p4
+sS'com.typemytype.robofont.layerData'
+p5
+(dp6
+S'Back'
+p7
+(dp8
+S'name'
+p9
+S'f_l'
+p10
+sS'lib'
+p11
+(dp12
+sS'unicodes'
+p13
+(lp14
+sS'width'
+p15
+F637
+sS'contours'
+p16
+(lp17
+sS'components'
+p18
+(lp19
+sS'anchors'
+p20
+(lp21
+sss."
+EndChar

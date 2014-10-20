@@ -1,0 +1,38 @@
+StartChar: dvM_DA
+Encoding: 505 -1 505
+GlifName: dvM__D_A_
+Width: 851
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 745 -87 basechar 0
+AnchorPoint: "blwm_Virama" 737 -8 basechar 0
+AnchorPoint: "abvm_Ekaar" 751 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 751 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+220 312 m 257
+ 511 312 l 257
+ 511 331 l 257
+ 220 331 l 257
+ 220 312 l 257
+-20 540 m 257
+ 462 540 l 257
+ 462 560 l 257
+ -20 560 l 257
+ -20 540 l 257
+295 548 m 257
+ 156 548 l 257
+ 156 319 l 258
+ 156 228 146 160 99 160 c 256
+ 69 160 54 181 54 210 c 256
+ 54 267 99 310 174 310 c 257
+ 174 331 l 257
+ 95 331 28 288 28 210 c 256
+ 28 139 85 105 149 105 c 256
+ 241 105 295 161 295 318 c 257
+ 295 548 l 257
+EndSplineSet
+Refer: 246 2342 N 1 0 0 1 362 0 2
+EndChar

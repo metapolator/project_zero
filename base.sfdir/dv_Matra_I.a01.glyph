@@ -1,0 +1,37 @@
+StartChar: dvMatraI.a01
+Encoding: 537 -1 537
+GlifName: dvM_atraI_.a01
+Width: 300
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Reph_alt" 445 627 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+484 830 m 257
+ 477 811 l 257
+ 500 803 517 787 517 763 c 256
+ 517 742 504 727 465 727 c 256
+ 366 727 291 787 194 787 c 256
+ 101 787 54 731 54 663 c 256
+ 54 612 80 577 112 560 c 257
+ 80 560 l 257
+ -20 560 l 257
+ -20 540 l 257
+ 80 540 l 257
+ 80 0 l 257
+ 220 0 l 257
+ 220 540 l 257
+ 320 540 l 257
+ 320 560 l 257
+ 220 560 l 257
+ 192 560 l 258
+ 150 560 96 582 96 638 c 256
+ 96 670 115 690 163 690 c 256
+ 236 690 336 627 445 627 c 256
+ 516 627 554 670 554 732 c 256
+ 554 786 519 818 484 830 c 257
+EndSplineSet
+Kerns2: 0 0 "'kern' Horizontal Kerning lookup 0 subtable"
+EndChar

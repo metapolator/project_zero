@@ -1,0 +1,62 @@
+StartChar: twosuperior
+Encoding: 1043 -1 1043
+GlifName: twosuperior
+Width: 259
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+212 412 m 257
+ 209 390 192 388 171 388 c 256
+ 150 388 134 398 110 398 c 256
+ 102 398 92 396 84 390 c 257
+ 112 432 215 418 215 503 c 256
+ 215 542 175 565 121 565 c 256
+ 74 565 45 540 45 508 c 256
+ 45 487 58 472 77 472 c 256
+ 95 472 105 484 105 498 c 256
+ 105 530 71 520 71 532 c 257
+ 71 542 90 550 107 550 c 256
+ 136 550 150 529 150 508 c 256
+ 150 462 98 434 62 387 c 256
+ 52 373 42 351 40 330 c 257
+ 53 330 l 257
+ 53 350 62 356 77 356 c 256
+ 106 356 132 326 171 326 c 256
+ 206 326 219 357 219 387 c 256
+ 219 396 218 404 216 412 c 257
+ 212 412 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'twosuperior'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I259
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

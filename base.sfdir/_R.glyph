@@ -1,0 +1,65 @@
+StartChar: R
+Encoding: 82 82 82
+GlifName: R_
+Width: 633
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+623 -10 m 257
+ 623 10 l 257
+ 585 10 561 46 534 139 c 256
+ 517 197 483 271 395 271 c 257
+ 395 278 l 257
+ 483 278 548 331 548 411 c 257
+ 548 490 496 560 293 560 c 257
+ 30 560 l 257
+ 30 540 l 257
+ 80 540 l 257
+ 80 20 l 257
+ 30 20 l 257
+ 30 0 l 257
+ 280 0 l 257
+ 280 20 l 257
+ 230 20 l 257
+ 230 262 l 257
+ 274 262 l 257
+ 409 262 266 -10 579 -10 c 258
+ 623 -10 l 257
+230 540 m 257
+ 369 540 398 490 398 412 c 257
+ 398 320 369 282 230 282 c 257
+ 230 540 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'R'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I633
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

@@ -1,0 +1,22 @@
+StartChar: dvBH_NA
+Encoding: 201 -1 201
+GlifName: dvB_H__N_A_
+Width: 623
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+179 -73 m 256
+ 179 -12 214 40 313 108 c 256
+ 351 134 455 205 455 205 c 257
+ 466 189 l 257
+ 466 189 357 114 327 93 c 256
+ 267 50 253 32 253 11 c 256
+ 253 -29 340 -16 340 -94 c 256
+ 340 -133 310 -165 263 -165 c 256
+ 209 -165 179 -128 179 -73 c 256
+EndSplineSet
+Refer: 199 2349 N 1 0 0 1 0 0 2
+EndChar

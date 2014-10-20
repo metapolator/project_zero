@@ -1,0 +1,22 @@
+StartChar: dvG_NA
+Encoding: 326 -1 326
+GlifName: dvG__N_A_
+Width: 664
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+187 -78 m 256
+ 187 -133 217 -170 271 -170 c 256
+ 318 -170 348 -138 348 -99 c 256
+ 348 -21 261 -34 261 6 c 256
+ 261 27 275 45 335 88 c 256
+ 365 109 474 184 474 184 c 257
+ 463 200 l 257
+ 463 200 359 129 321 103 c 256
+ 222 35 187 -17 187 -78 c 256
+EndSplineSet
+Refer: 305 2327 N 1 0 0 1 0 0 2
+EndChar

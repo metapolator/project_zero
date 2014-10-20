@@ -1,0 +1,36 @@
+StartChar: dvDDA
+Encoding: 249 2337 249
+GlifName: dvD_D_A_
+Width: 457
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 314 -61 basechar 0
+AnchorPoint: "blwm_Virama" 316 -3 basechar 0
+AnchorPoint: "abvm_Ekaar" 368 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 368 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-20 560 m 257
+ 477 560 l 257
+ 477 540 l 257
+ 368 540 l 257
+ 368 403 l 257
+ 341 416 278 433 220 433 c 256
+ 158 433 135 408 135 388 c 256
+ 135 306 422 333 422 158 c 256
+ 422 64 336 -3 208 -3 c 256
+ 116 -3 31 41 31 113 c 256
+ 31 150 54 183 99 183 c 256
+ 138 183 164 158 164 126 c 256
+ 164 82 121 83 121 58 c 256
+ 121 28 173 18 209 18 c 256
+ 277 18 316 55 316 104 c 256
+ 316 241 42 183 42 335 c 256
+ 42 404 108 453 228 453 c 257
+ 228 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+EndSplineSet
+EndChar

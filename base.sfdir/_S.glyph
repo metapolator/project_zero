@@ -1,0 +1,65 @@
+StartChar: S
+Encoding: 85 83 85
+GlifName: S_
+Width: 558
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+80 0 m 257
+ 80 28 95 40 117 40 c 256
+ 153 40 205 -15 316 -15 c 256
+ 434 -15 507 42 518 151 c 257
+ 528 283 418 318 328 360 c 256
+ 255 394 182 410 182 473 c 256
+ 182 517 211 550 261 550 c 256
+ 371 550 450 483 450 387 c 257
+ 450 387 470 387 470 387 c 257
+ 470 570 l 257
+ 470 570 450 570 450 570 c 257
+ 450 556 446 535 430 535 c 256
+ 400 535 358 570 260 570 c 256
+ 166 570 86 511 76 407 c 256
+ 65 291 152 257 261 208 c 256
+ 341 172 401 146 401 93 c 256
+ 401 40 364 7 312 7 c 256
+ 183 7 80 108 80 233 c 257
+ 60 233 l 257
+ 60 0 l 257
+ 60 0 80 0 80 0 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'S'
+sS'lib'
+p9
+(dp10
+sS'unicodes'
+p11
+(lp12
+sS'width'
+p13
+I558
+sS'contours'
+p14
+(lp15
+sS'components'
+p16
+(lp17
+sS'anchors'
+p18
+(lp19
+sss."
+EndChar

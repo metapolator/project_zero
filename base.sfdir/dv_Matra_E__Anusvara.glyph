@@ -1,0 +1,13 @@
+StartChar: dvMatraE_Anusvara
+Encoding: 530 -1 530
+GlifName: dvM_atraE__A_nusvara
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Ekaar" -80 560 mark 0
+LayerCount: 2
+Back
+Fore
+Refer: 529 2375 N 1 0 0 1 -19 0 2
+Refer: 193 2306 N 0.85 0 0 0.85 58 114 2
+EndChar

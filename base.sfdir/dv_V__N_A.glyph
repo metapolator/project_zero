@@ -1,0 +1,21 @@
+StartChar: dvV_NA
+Encoding: 853 -1 853
+GlifName: dvV__N_A_
+Width: 564
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+280 86 m 257
+ 228 64 158 27 158 2 c 256
+ 158 -30 233 -10 233 -86 c 256
+ 233 -125 203 -157 156 -157 c 256
+ 102 -157 72 -122 72 -72 c 256
+ 72 10 159 57 268 102 c 258
+ 285 109 l 257
+ 280 86 l 257
+EndSplineSet
+Refer: 850 2357 N 1 0 0 1 0 0 2
+EndChar

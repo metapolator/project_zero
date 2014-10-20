@@ -1,0 +1,58 @@
+StartChar: D
+Encoding: 20 68 20
+GlifName: D_
+Width: 615
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+240 20 m 257
+ 240 540 l 257
+ 377 540 444 439 444 281 c 256
+ 444 85 381 20 240 20 c 257
+290 0 m 257
+ 497 0 595 94 595 283 c 256
+ 595 416 495 560 290 560 c 258
+ 40 560 l 257
+ 40 540 l 257
+ 90 540 l 257
+ 90 20 l 257
+ 40 20 l 257
+ 40 0 l 257
+ 290 0 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'D'
+sS'lib'
+p9
+(dp10
+sS'unicodes'
+p11
+(lp12
+sS'width'
+p13
+I615
+sS'contours'
+p14
+(lp15
+sS'components'
+p16
+(lp17
+sS'anchors'
+p18
+(lp19
+sss."
+EndChar

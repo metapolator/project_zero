@@ -1,0 +1,58 @@
+StartChar: eth
+Encoding: 893 240 893
+GlifName: eth
+Width: 572
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+519 670 m 257
+ 125 526 l 257
+ 134 506 l 257
+ 527 651 l 256
+ 519 670 l 257
+389 278 m 257
+ 389 84 349 10 280 10 c 257
+ 204 10 181 116 181 220 c 257
+ 181 308 196 430 331 430 c 257
+ 331 430 331 450 331 450 c 257
+ 112 450 21 368 21 220 c 256
+ 21 30 183 -10 280 -10 c 257
+ 444 -10 551 54 551 278 c 257
+ 551 502 374 672 120 672 c 257
+ 120 652 l 257
+ 271 652 389 520 389 278 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'eth'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I572
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

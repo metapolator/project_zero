@@ -1,0 +1,26 @@
+StartChar: dvP
+Encoding: 669 -1 669
+GlifName: dvP_
+Width: 287
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+271 184 m 256
+ 197 184 197 270 197 338 c 258
+ 197 546 l 257
+ 51 546 l 257
+ 51 345 l 258
+ 51 244 73 132 210 132 c 256
+ 303 132 362 192 385 252 c 257
+ 368 261 l 257
+ 351 223 310 184 271 184 c 256
+-20 540 m 257
+ 375 540 l 257
+ 375 560 l 257
+ -20 560 l 257
+ -20 540 l 257
+EndSplineSet
+EndChar

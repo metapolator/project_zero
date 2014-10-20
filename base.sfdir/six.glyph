@@ -1,0 +1,59 @@
+StartChar: six
+Encoding: 1027 54 1027
+GlifName: six
+Width: 551
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+166 240 m 257
+ 194 273 226 301 274 301 c 256
+ 340 301 371 244 371 164 c 256
+ 371 73 350 8 289 8 c 256
+ 220 8 189 91 189 284 c 256
+ 189 442 180 564 315 564 c 256
+ 345 564 394 553 401 528 c 256
+ 411 491 323 473 357 401 c 256
+ 372 369 410 356 449 372 c 256
+ 493 390 500 438 484 487 c 256
+ 460 561 370 588 314 588 c 256
+ 126 588 30 471 30 284 c 256
+ 30 93 111 -12 288 -12 c 256
+ 431 -12 511 60 511 175 c 256
+ 511 277 427 333 311 333 c 256
+ 237 333 189 302 164 265 c 257
+ 166 240 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'six'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I551
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

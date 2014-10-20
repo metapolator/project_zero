@@ -1,0 +1,62 @@
+StartChar: Z
+Encoding: 116 90 116
+GlifName: Z_
+Width: 529
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+324 560 m 257
+ 30 20 l 257
+ 30 20 35 0 35 0 c 257
+ 184 0 l 257
+ 482 540 l 257
+ 482 540 478 560 478 560 c 257
+ 324 560 l 257
+30 0 m 257
+ 489 0 l 257
+ 489 210 l 257
+ 469 210 l 257
+ 469 44 416 20 300 20 c 257
+ 300 20 30 20 30 20 c 257
+ 30 0 l 257
+482 560 m 257
+ 60 560 l 257
+ 60 370 l 257
+ 80 370 l 257
+ 80 516 133 540 249 540 c 257
+ 249 540 482 540 482 540 c 257
+ 482 560 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'Z'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I529
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

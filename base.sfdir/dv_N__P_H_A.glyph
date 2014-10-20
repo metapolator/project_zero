@@ -1,0 +1,16 @@
+StartChar: dvN_PHA
+Encoding: 642 -1 642
+GlifName: dvN__P_H_A_
+Width: 1092
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 756 0 basechar 0
+AnchorPoint: "blwm_Virama" 756 0 basechar 0
+AnchorPoint: "abvm_Ekaar" 756 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 756 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 588 -1 N 1 0 0 1 0 0 2
+Refer: 672 2347 N 1 0 0 1 275 0 2
+EndChar

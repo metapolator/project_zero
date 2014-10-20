@@ -1,0 +1,17 @@
+StartChar: dvAnudatta
+Encoding: 192 2386 192
+GlifName: dvA_nudatta
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+-517 -148 m 257
+ -55 -148 l 257
+ -55 -128 l 257
+ -517 -128 l 257
+ -517 -148 l 257
+EndSplineSet
+EndChar

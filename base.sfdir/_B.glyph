@@ -1,0 +1,67 @@
+StartChar: B
+Encoding: 13 66 13
+GlifName: B_
+Width: 596
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+392 421 m 256
+ 392 333 338 306 271 306 c 257
+ 240 306 l 257
+ 240 540 l 257
+ 271 540 l 257
+ 339 540 392 509 392 421 c 256
+240 20 m 257
+ 240 286 l 257
+ 272 286 l 257
+ 355 286 426 261 426 141 c 257
+ 426 61 374 20 296 20 c 257
+ 240 20 l 257
+40 0 m 257
+ 239 0 l 257
+ 356 0 l 257
+ 497 0 576 51 576 141 c 257
+ 576 246 494 292 406 292 c 257
+ 406 298 l 257
+ 484 298 533 349 533 418 c 256
+ 533 502 464 560 292 560 c 258
+ 40 560 l 257
+ 40 540 l 257
+ 90 540 l 257
+ 90 20 l 257
+ 40 20 l 257
+ 40 0 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'B'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I596
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

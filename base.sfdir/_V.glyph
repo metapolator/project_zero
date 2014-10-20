@@ -1,0 +1,64 @@
+StartChar: V
+Encoding: 104 86 104
+GlifName: V_
+Width: 626
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+293 560 m 257
+ 10 560 l 257
+ 10 540 l 257
+ 293 540 l 257
+ 293 560 l 257
+616 560 m 257
+ 442 560 l 257
+ 442 540 l 257
+ 616 540 l 257
+ 616 560 l 257
+235 560 m 257
+ 49 560 l 257
+ 309 0 l 257
+ 309 0 401 180 401 180 c 257
+ 235 560 l 257
+335 0 m 257
+ 556 560 l 257
+ 530 560 l 257
+ 309 0 l 257
+ 335 0 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'V'
+sS'lib'
+p9
+(dp10
+sS'unicodes'
+p11
+(lp12
+sS'width'
+p13
+I626
+sS'contours'
+p14
+(lp15
+sS'components'
+p16
+(lp17
+sS'anchors'
+p18
+(lp19
+sss."
+EndChar

@@ -1,0 +1,58 @@
+StartChar: C
+Encoding: 14 67 14
+GlifName: C_
+Width: 560
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+186 286 m 257
+ 186 493 246 553 308 553 c 256
+ 447 553 505 428 505 337 c 257
+ 505 337 525 337 525 337 c 257
+ 525 560 l 257
+ 525 560 506 560 506 560 c 257
+ 506 548 497 523 475 523 c 256
+ 443 523 406 573 308 573 c 256
+ 150 573 25 493 25 286 c 257
+ 25 67 143 -15 333 -15 c 257
+ 429 -15 516 42 535 181 c 257
+ 515 181 l 257
+ 499 64 420 5 333 5 c 257
+ 232 5 186 71 186 286 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'C'
+sS'lib'
+p9
+(dp10
+sS'unicodes'
+p11
+(lp12
+sS'width'
+p13
+I560
+sS'contours'
+p14
+(lp15
+sS'components'
+p16
+(lp17
+sS'anchors'
+p18
+(lp19
+sss."
+EndChar

@@ -1,0 +1,29 @@
+StartChar: dvCandrabindu
+Encoding: 244 2305 244
+GlifName: dvC_andrabindu
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Anusvara" -80 560 mark 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-82 853 m 256
+ -82 815 -112 784 -150 784 c 256
+ -188 784 -219 815 -219 853 c 256
+ -219 891 -188 921 -150 921 c 256
+ -112 921 -82 891 -82 853 c 256
+19 800 m 257
+ 21 798 l 257
+ 24 691 -48 631 -150 631 c 256
+ -252 631 -323 692 -320 798 c 257
+ -318 800 l 257
+ -308 802 l 257
+ -306 801 l 257
+ -295 755 -238 724 -150 724 c 256
+ -61 724 -4 755 7 801 c 257
+ 9 802 l 257
+ 19 800 l 257
+EndSplineSet
+EndChar

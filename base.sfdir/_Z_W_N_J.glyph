@@ -1,0 +1,17 @@
+StartChar: ZWNJ
+Encoding: 118 -1 118
+GlifName: Z_W_N_J_
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+24 -230 m 257
+ 24 811 l 257
+ -23 811 l 257
+ -23 -230 l 257
+ 24 -230 l 257
+EndSplineSet
+EndChar

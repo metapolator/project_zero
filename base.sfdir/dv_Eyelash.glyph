@@ -1,0 +1,24 @@
+StartChar: dvEyelash
+Encoding: 299 -1 299
+GlifName: dvE_yelash
+Width: 168
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+0 351 m 257
+ 26 341 58 336 89 336 c 256
+ 120 336 150 341 174 350 c 257
+ 181 333 l 257
+ 154 322 122 317 89 317 c 256
+ 50 317 11 324 -7 334 c 257
+ 0 351 l 257
+-20 560 m 257
+ 188 560 l 257
+ 188 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+EndSplineSet
+EndChar

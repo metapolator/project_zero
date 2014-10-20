@@ -1,0 +1,60 @@
+StartChar: quotedblright
+Encoding: 1008 8221 1008
+GlifName: quotedblright
+Width: 433
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+53 428 m 257
+ 143 469 194 534 194 609 c 256
+ 194 656 162 708 99 708 c 256
+ 52 708 20 672 20 628 c 256
+ 20 581 56 560 87 560 c 256
+ 105 560 109 566 124 566 c 256
+ 132 566 140 560 140 550 c 256
+ 140 511 100 475 46 445 c 257
+ 53 428 l 257
+273 428 m 257
+ 363 469 414 534 414 609 c 256
+ 414 656 382 708 319 708 c 256
+ 272 708 240 672 240 628 c 256
+ 240 581 276 560 307 560 c 256
+ 325 560 329 566 344 566 c 256
+ 352 566 360 560 360 550 c 256
+ 360 511 320 475 266 445 c 257
+ 273 428 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'quotedblright'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I433
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

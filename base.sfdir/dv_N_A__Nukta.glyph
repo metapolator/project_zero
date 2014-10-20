@@ -1,0 +1,12 @@
+StartChar: dvNA_Nukta
+Encoding: 590 2345 590
+GlifName: dvN_A__N_ukta
+Width: 559
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 589 2344 N 1 0 0 1 0 0 2
+Refer: 663 2364 N 1 0 0 1 419 106 2
+EndChar

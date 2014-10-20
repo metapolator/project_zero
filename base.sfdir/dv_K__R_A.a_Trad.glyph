@@ -1,0 +1,33 @@
+StartChar: dvK_RA.aTrad
+Encoding: 437 -1 437
+GlifName: dvK__R_A_.aT_rad
+Width: 835
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 499 0 basechar 0
+AnchorPoint: "blwm_Virama" 499 0 basechar 0
+AnchorPoint: "abvm_Ekaar" 499 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 499 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+570 405 m 257
+ 625 405 655 343 655 265 c 256
+ 655 191 633 116 564 115 c 256
+ 556 115 546 116 540 119 c 257
+ 535 104 l 257
+ 556 85 591 75 633 75 c 256
+ 742 75 800 155 800 263 c 256
+ 800 371 738 460 629 460 c 256
+ 533 460 486 398 486 325 c 257
+ 499 326 l 257
+ 505 372 531 404 570 405 c 257
+473 540 m 257
+ 855 540 l 257
+ 855 560 l 257
+ 473 560 l 257
+ 473 540 l 257
+EndSplineSet
+Refer: 830 -1 N 1 0 0 1 0 0 2
+EndChar

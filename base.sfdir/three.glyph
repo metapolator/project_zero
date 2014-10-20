@@ -1,0 +1,64 @@
+StartChar: three
+Encoding: 1036 51 1036
+GlifName: three
+Width: 526
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+222 587 m 256
+ 116 587 54 527 54 456 c 256
+ 54 405 83 374 127 374 c 256
+ 167 374 190 402 190 432 c 256
+ 190 503 109 481 109 516 c 256
+ 109 541 140 564 189 564 c 256
+ 257 564 295 513 295 447 c 256
+ 295 399 271 323 175 323 c 258
+ 159 323 l 257
+ 159 303 l 257
+ 175 303 l 258
+ 290 303 321 254 321 163 c 256
+ 321 68 268 8 191 8 c 256
+ 145 8 97 25 97 55 c 256
+ 97 94 192 67 192 150 c 256
+ 192 184 166 215 121 215 c 256
+ 70 215 40 177 40 125 c 256
+ 40 42 105 -16 224 -16 c 256
+ 391 -16 486 51 486 164 c 256
+ 486 257 401 313 282 314 c 257
+ 394 320 450 380 450 449 c 256
+ 450 539 379 587 222 587 c 256
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'three'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I526
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

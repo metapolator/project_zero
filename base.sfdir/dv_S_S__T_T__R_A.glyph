@@ -1,0 +1,23 @@
+StartChar: dvSS_TT_RA
+Encoding: 752 -1 752
+GlifName: dvS_S__T_T__R_A_
+Width: 549
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 386 -142 basechar 0
+AnchorPoint: "blwm_Virama" 422 -92 basechar 0
+AnchorPoint: "abvm_Ekaar" 493 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 493 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+171 505 m 257
+ 386 303 l 257
+ 401 316 l 257
+ 183 521 l 257
+ 171 505 l 257
+EndSplineSet
+Refer: 701 -1 N 1 0 0 1 0 0 2
+Refer: 712 -1 N 1 0 0 1 489 0 2
+EndChar

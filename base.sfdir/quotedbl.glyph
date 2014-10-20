@@ -1,0 +1,54 @@
+StartChar: quotedbl
+Encoding: 1005 34 1005
+GlifName: quotedbl
+Width: 262
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+71 451 m 257
+ 90 531 117 614 117 650 c 256
+ 117 684 98 712 67 712 c 256
+ 34 712 15 684 15 649 c 256
+ 15 612 44 531 61 451 c 257
+ 71 451 l 257
+205 451 m 257
+ 224 531 251 614 251 650 c 256
+ 251 684 232 712 201 712 c 256
+ 168 712 149 684 149 649 c 256
+ 149 612 178 531 195 451 c 257
+ 205 451 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'quotedbl'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I262
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

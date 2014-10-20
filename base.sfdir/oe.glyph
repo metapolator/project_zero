@@ -1,0 +1,65 @@
+StartChar: oe
+Encoding: 977 339 977
+GlifName: oe
+Width: 874
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+673 24 m 257
+ 600 24 535 69 535 231 c 256
+ 535 323 552 450 616 450 c 257
+ 679 450 698 322 698 220 c 257
+ 698 220 491 220 491 220 c 257
+ 491 200 l 257
+ 841 200 l 257
+ 841 405 729 470 624 470 c 257
+ 509 470 386 406 386 232 c 256
+ 386 33 524 -10 646 -10 c 257
+ 717 -10 798 25 828 75 c 257
+ 814 85 l 257
+ 785 42 709 24 673 24 c 257
+281 -10 m 257
+ 396 -10 534 64 534 228 c 256
+ 534 398 396 470 281 470 c 257
+ 166 470 30 398 30 228 c 256
+ 30 64 166 -10 281 -10 c 257
+281 10 m 257
+ 208 10 183 75 183 228 c 256
+ 183 385 208 450 281 450 c 257
+ 354 450 381 385 381 228 c 257
+ 381 75 354 10 281 10 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'oe'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I874
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

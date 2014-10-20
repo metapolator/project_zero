@@ -1,0 +1,65 @@
+StartChar: copyright
+Encoding: 169 169 169
+GlifName: copyright
+Width: 602
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+572 282 m 256
+ 572 431 451 553 301 553 c 256
+ 151 553 30 431 30 282 c 256
+ 30 131 151 10 301 10 c 256
+ 451 10 572 131 572 282 c 256
+301 533 m 256
+ 439 533 552 419 552 282 c 256
+ 552 143 439 30 301 30 c 256
+ 163 30 50 143 50 282 c 256
+ 50 419 163 533 301 533 c 256
+438 240 m 257
+ 433 204 409 167 364 167 c 256
+ 303 167 264 216 264 286 c 256
+ 264 363 293 423 345 423 c 256
+ 379 423 399 407 399 389 c 256
+ 399 364 342 379 342 330 c 256
+ 342 309 359 289 387 289 c 256
+ 417 289 438 311 438 347 c 256
+ 438 397 395 439 320 439 c 256
+ 204 439 146 359 146 283 c 256
+ 146 175 212 119 313 119 c 256
+ 398 119 449 171 449 240 c 257
+ 438 240 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'copyright'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I602
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

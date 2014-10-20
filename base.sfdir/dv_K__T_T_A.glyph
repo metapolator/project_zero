@@ -1,0 +1,34 @@
+StartChar: dvK_TTA
+Encoding: 454 -1 454
+GlifName: dvK__T_T_A_
+Width: 1055
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 925 -41 basechar 0
+AnchorPoint: "blwm_Virama" 953 20 basechar 0
+AnchorPoint: "abvm_Ekaar" 975 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 975 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+865 24 m 257
+ 725 24 630 90 630 232 c 256
+ 630 347 717 422 835 422 c 257
+ 835 551 l 257
+ 975 551 l 257
+ 975 397 l 257
+ 961 404 931 409 909 409 c 256
+ 812 409 775 325 775 233 c 256
+ 775 95 844 57 903 57 c 257
+ 951 57 991 82 1013 117 c 257
+ 1028 108 l 257
+ 998 58 943 24 865 24 c 257
+566 560 m 257
+ 1075 560 l 257
+ 1075 540 l 257
+ 566 540 l 257
+ 566 560 l 257
+EndSplineSet
+Refer: 390 -1 N 1 0 0 1 0 0 2
+EndChar

@@ -1,0 +1,55 @@
+StartChar: cedilla.cap
+Encoding: 162 -1 162
+GlifName: cedilla.cap
+Width: 588
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+294 4 m 257
+ 242 -92 l 257
+ 269 -92 l 257
+ 322 4 l 257
+ 294 4 l 257
+242 -92 m 257
+ 282 -92 329 -119 320 -171 c 256
+ 310 -226 247 -230 216 -177 c 256
+ 216 -177 200 -192 200 -192 c 257
+ 200 -192 221 -235 287 -238 c 256
+ 354 -241 383 -209 388 -160 c 256
+ 393 -108 339 -77 274 -77 c 256
+ 274 -77 242 -92 242 -92 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'cedilla.cap'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I588
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

@@ -1,0 +1,86 @@
+StartChar: Thorn
+Encoding: 92 222 92
+GlifName: T_horn
+Width: 543
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+240 463.047 m 257
+ 240 540 l 257
+ 290 540 l 257
+ 290 560 l 257
+ 40 560 l 257
+ 40 540 l 257
+ 90 540 l 257
+ 90 20 l 257
+ 40 20 l 257
+ 40 4.28925e-06 l 257
+ 290 4.28925e-06 l 257
+ 290 20 l 257
+ 240 20 l 257
+ 240 97 l 257
+ 438 87 533 157 533 274 c 256
+ 533 401.795 447.275 472.772 240 463.047 c 257
+240 117 m 257
+ 240 443 l 257
+ 352 443 382 393 382 275 c 256
+ 382 163 352 117 240 117 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.schriftgestaltung.Glyphs.ColorIndex'
+p2
+I0
+sS'com.typemytype.robofont.guides'
+p3
+(lp4
+(dp5
+S'y'
+I280
+sS'x'
+I112
+sS'magnetic'
+p6
+I5
+sS'angle'
+p7
+I0
+sS'isGlobal'
+p8
+I0
+sasS'com.typemytype.robofont.layerData'
+p9
+(dp10
+S'Back'
+p11
+(dp12
+S'name'
+p13
+S'Thorn'
+p14
+sS'lib'
+p15
+(dp16
+sS'unicodes'
+p17
+(lp18
+sS'width'
+p19
+I543
+sS'contours'
+p20
+(lp21
+sS'components'
+p22
+(lp23
+sS'anchors'
+p24
+(lp25
+sssS'public.markColor'
+p26
+S'0.85,0.26,0.06,1'
+p27
+s."
+EndChar

@@ -1,0 +1,22 @@
+StartChar: dvZero
+Encoding: 875 -1 875
+GlifName: dvZ_ero
+Width: 574
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+289 567 m 256
+ 366 567 386 448 386 298 c 256
+ 386 122 370 8 289 8 c 256
+ 211 8 192 122 192 298 c 256
+ 192 448 214 567 289 567 c 256
+289 -12 m 256
+ 436 -12 535 99 535 298 c 256
+ 535 453 454 587 289 587 c 256
+ 130 587 43 453 43 298 c 256
+ 43 99 137 -12 289 -12 c 256
+EndSplineSet
+EndChar

@@ -1,0 +1,29 @@
+StartChar: dvT_K_SSA
+Encoding: 817 -1 817
+GlifName: dvT__K__S_S_A_
+Width: 1054
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+435 396 m 257
+ 318 396 l 257
+ 192 396 185 297 185 198 c 256
+ 185 66 205 25 259 25 c 256
+ 266 25 278 26 283 27 c 257
+ 287 9 l 257
+ 272 3 253 1 235 1 c 256
+ 127 1 40 50 40 198 c 256
+ 40 375 166 415 305 415 c 257
+ 435 415 l 257
+ 435 396 l 257
+-20 560 m 257
+ 389 560 l 257
+ 389 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+EndSplineSet
+Refer: 441 -1 N 1 0 0 1 330 0 2
+EndChar

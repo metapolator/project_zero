@@ -1,0 +1,52 @@
+StartChar: ring
+Encoding: 1018 730 1018
+GlifName: ring
+Width: 568
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+283 535 m 257
+ 259 535 240 558 240 582 c 257
+ 240 607 257 627 283 627 c 257
+ 309 627 327 607 327 582 c 257
+ 327 558 307 535 283 535 c 257
+283 498 m 257
+ 329 498 368 536 368 582 c 257
+ 368 628 329 667 283 667 c 257
+ 237 667 200 628 200 582 c 257
+ 200 536 237 498 283 498 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'ring'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I568
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

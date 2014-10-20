@@ -1,0 +1,25 @@
+StartChar: dvAvagraha
+Encoding: 195 2365 195
+GlifName: dvA_vagraha
+Width: 483
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+37 108 m 257
+ 85 62 144 27 217 27 c 256
+ 277 27 315 61 315 112 c 256
+ 315 247 44 267 44 437 c 256
+ 44 513 108 560 222 560 c 257
+ 442 560 l 257
+ 442 540 l 257
+ 242 540 l 257
+ 192 540 161 527 161 492 c 256
+ 161 386 425 355 425 162 c 256
+ 425 61 331 7 221 7 c 256
+ 142 7 76 45 25 92 c 257
+ 37 108 l 257
+EndSplineSet
+EndChar

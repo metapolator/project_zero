@@ -1,0 +1,22 @@
+StartChar: dvC_NA
+Encoding: 240 -1 240
+GlifName: dvC__N_A_
+Width: 588
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+133 -101 m 256
+ 133 -40 168 12 267 80 c 256
+ 280 89 302 105 325 120 c 257
+ 326 96 l 257
+ 281 65 l 257
+ 221 22 207 4 207 -17 c 256
+ 207 -57 294 -44 294 -122 c 256
+ 294 -161 264 -193 217 -193 c 256
+ 163 -193 133 -156 133 -101 c 256
+EndSplineSet
+Refer: 228 2330 N 1 0 0 1 0 0 2
+EndChar

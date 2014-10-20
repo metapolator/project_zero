@@ -1,0 +1,58 @@
+StartChar: T
+Encoding: 89 84 89
+GlifName: T_
+Width: 569
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+529 390 m 257
+ 549 390 l 257
+ 549 560 l 257
+ 20 560 l 257
+ 20 390 l 257
+ 40 390 l 257
+ 40 510 74 540 179 540 c 257
+ 209 540 l 257
+ 209 20 l 257
+ 139 20 l 256
+ 139 0 l 257
+ 429 0 l 257
+ 429 20 l 257
+ 359 20 l 257
+ 359 540 l 257
+ 389 540 l 258
+ 495 540 529 510 529 390 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'T'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I569
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

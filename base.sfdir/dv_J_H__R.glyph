@@ -1,0 +1,23 @@
+StartChar: dvJH_R
+Encoding: 362 -1 362
+GlifName: dvJ_H__R_
+Width: 436
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+574 179 m 257
+ 372 179 l 257
+ 372 199 l 257
+ 574 199 l 257
+ 574 179 l 257
+304 -103 m 257
+ 544 197 l 257
+ 560 184 l 257
+ 320 -116 l 257
+ 304 -103 l 257
+EndSplineSet
+Refer: 352 2311 N 1 0 0 1 0 0 2
+EndChar

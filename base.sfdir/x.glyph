@@ -1,0 +1,70 @@
+StartChar: x
+Encoding: 1082 120 1082
+GlifName: x
+Width: 576
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+182 0 m 257
+ 182 20 l 257
+ 101 20 l 257
+ 228 188 l 257
+ 354 20 l 257
+ 304 20 l 257
+ 304 0 l 257
+ 566 0 l 257
+ 566 20 l 257
+ 526 20 l 257
+ 339 270 l 257
+ 477 440 l 257
+ 537 440 l 257
+ 537 460 l 257
+ 369 460 l 257
+ 369 440 l 257
+ 449 440 l 257
+ 327 287 l 257
+ 213 440 l 257
+ 263 440 l 257
+ 263 460 l 257
+ 0 460 l 257
+ 0 440 l 257
+ 40 440 l 257
+ 214 207 l 257
+ 73 20 l 257
+ 13 20 l 257
+ 13 0 l 257
+ 182 0 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'x'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I576
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

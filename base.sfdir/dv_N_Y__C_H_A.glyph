@@ -1,0 +1,38 @@
+StartChar: dvNY_CHA
+Encoding: 612 -1 612
+GlifName: dvN_Y__C_H_A_
+Width: 1050
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 789 -24 basechar 0
+AnchorPoint: "blwm_Virama" 816 33 basechar 0
+AnchorPoint: "abvm_Ekaar" 906 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 906 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+485 262 m 257
+ 264 262 l 257
+ 264 282 l 257
+ 485 282 l 257
+ 485 262 l 257
+28 385 m 257
+ 55 432 104 457 163 457 c 256
+ 272 457 340 379 340 265 c 256
+ 340 152 274 70 155 70 c 256
+ 76 70 26 114 15 156 c 257
+ 32 163 l 257
+ 43 140 67 112 104 112 c 256
+ 169 112 195 176 195 264 c 256
+ 195 316 185 417 113 417 c 256
+ 85 417 61 401 44 375 c 257
+ 28 385 l 257
+-18 560 m 257
+ 484 560 l 257
+ 484 540 l 257
+ -18 540 l 257
+ -18 560 l 257
+EndSplineSet
+Refer: 230 2331 N 1 0 0 1 380 0 2
+EndChar

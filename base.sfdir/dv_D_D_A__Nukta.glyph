@@ -1,0 +1,16 @@
+StartChar: dvDDA_Nukta
+Encoding: 250 2396 250
+GlifName: dvD_D_A__N_ukta
+Width: 457
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 314 -235 basechar 0
+AnchorPoint: "blwm_Virama" 316 -191 basechar 0
+AnchorPoint: "abvm_Ekaar" 368 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 368 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 249 2337 N 1 0 0 1 0 0 2
+Refer: 663 2364 N 1 0 0 1 480 -20 2
+EndChar

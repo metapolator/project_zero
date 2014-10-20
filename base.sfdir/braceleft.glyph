@@ -1,0 +1,60 @@
+StartChar: braceleft
+Encoding: 146 123 146
+GlifName: braceleft
+Width: 288
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+241 183 m 256
+ 241 231 208 269 145 272 c 257
+ 208 272 241 319 241 362 c 256
+ 241 412 214 480 214 529 c 256
+ 214 582 228 609 278 609 c 257
+ 278 629 l 257
+ 212 629 l 257
+ 153 629 90 590 90 501 c 256
+ 90 451 118 390 118 354 c 256
+ 118 307 93 280 30 280 c 257
+ 30 265 l 257
+ 93 265 118 238 118 191 c 256
+ 118 155 90 94 90 44 c 256
+ 90 -45 153 -78 212 -78 c 257
+ 278 -78 l 257
+ 278 -58 l 257
+ 228 -58 214 -37 214 16 c 256
+ 214 65 241 133 241 183 c 256
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'braceleft'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I288
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

@@ -1,0 +1,12 @@
+StartChar: dvPH_Nukta
+Encoding: 677 -1 677
+GlifName: dvP_H__N_ukta
+Width: 585
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 671 -1 N 1 0 0 1 0 0 2
+Refer: 663 2364 N 1 0 0 1 426 93 2
+EndChar

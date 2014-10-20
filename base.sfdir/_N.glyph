@@ -1,0 +1,62 @@
+StartChar: N
+Encoding: 63 78 63
+GlifName: N_
+Width: 598
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+488 -10 m 257
+ 508 -10 l 257
+ 508 540 l 257
+ 578 540 l 257
+ 578 560 l 257
+ 408 560 l 257
+ 408 540 l 257
+ 488 540 l 257
+ 488 227 l 257
+ 207 560 l 257
+ 20 560 l 257
+ 20 540 l 257
+ 36 540 57 528 80 496 c 257
+ 80 20 l 257
+ 20 20 l 256
+ 20 0 l 257
+ 180 0 l 257
+ 180 20 l 257
+ 100 20 l 257
+ 100 471 l 257
+ 488 -10 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'N'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I598
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

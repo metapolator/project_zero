@@ -1,0 +1,50 @@
+StartChar: guilsinglright
+Encoding: 925 8250 925
+GlifName: guilsinglright
+Width: 264
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+52 76 m 257
+ 52 76 205 199 216 209 c 256
+ 226 218 227 232 216 243 c 256
+ 205 254 52 376 52 376 c 257
+ 40 364 l 257
+ 40 364 87 266 117 226 c 257
+ 90 186 40 88 40 88 c 257
+ 52 76 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'guilsinglright'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I264
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

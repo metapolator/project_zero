@@ -1,0 +1,48 @@
+StartChar: grave
+Encoding: 918 96 918
+GlifName: grave
+Width: 539
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+339 511 m 257
+ 305 560 330 587 297 632 c 256
+ 281 654 248 663 227 650 c 256
+ 200 638 190 600 213 568 c 256
+ 241 529 290 552 325 501 c 257
+ 339 511 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'grave'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I539
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

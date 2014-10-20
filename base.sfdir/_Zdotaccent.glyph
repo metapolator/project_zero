@@ -1,0 +1,45 @@
+StartChar: Zdotaccent
+Encoding: 122 379 122
+GlifName: Z_dotaccent
+Width: 529
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 116 90 N 1 0 0 1 0 0 2
+Refer: 182 -1 N 1 0 0 1 8 0 2
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'Zdotaccent'
+p9
+sS'lib'
+p10
+(dp11
+sS'unicodes'
+p12
+(lp13
+sS'width'
+p14
+I529
+sS'contours'
+p15
+(lp16
+sS'components'
+p17
+(lp18
+sS'anchors'
+p19
+(lp20
+sss."
+EndChar

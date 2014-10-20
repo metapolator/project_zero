@@ -1,0 +1,12 @@
+StartChar: dvMatraII_Anusvara.aLong
+Encoding: 572 -1 572
+GlifName: dvM_atraI_I__A_nusvara.aL_ong
+Width: 300
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 570 -1 N 1 0 0 1 0 0 2
+Refer: 193 2306 N 1 0 0 1 448 0 2
+EndChar

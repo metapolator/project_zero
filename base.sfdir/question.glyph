@@ -1,0 +1,59 @@
+StartChar: question
+Encoding: 1003 63 1003
+GlifName: question
+Width: 451
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+110 71 m 256
+ 110 20 152 -21 202 -21 c 256
+ 254 -21 295 20 295 71 c 256
+ 295 123 254 164 202 164 c 256
+ 152 164 110 123 110 71 c 256
+203 570 m 256
+ 85 570 10 507 10 434 c 256
+ 10 389 41 354 88 354 c 256
+ 115 354 147 381 147 413 c 256
+ 147 477 83 466 83 502 c 256
+ 83 520 140 543 183 543 c 256
+ 229 543 285 519 267 442 c 256
+ 252 377 144 363 134 288 c 256
+ 129 247 151 217 190 195 c 257
+ 207 195 l 257
+ 177 321 408 267 421 425 c 256
+ 430 532 310 570 203 570 c 256
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'question'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I451
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

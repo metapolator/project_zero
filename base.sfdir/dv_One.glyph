@@ -1,0 +1,26 @@
+StartChar: dvOne
+Encoding: 667 -1 667
+GlifName: dvO_ne
+Width: 312
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+232 0 m 257
+ 232 582 l 257
+ 216 582 l 257
+ 216 582 177 557 113 529 c 256
+ 45 499 15 489 15 489 c 257
+ 21 470 l 257
+ 102 501 l 257
+ 102 0 l 257
+ 232 0 l 257
+302 20 m 257
+ 22 20 l 257
+ 22 0 l 257
+ 302 0 l 257
+ 302 20 l 257
+EndSplineSet
+EndChar

@@ -1,0 +1,46 @@
+StartChar: dvCHA
+Encoding: 230 2331 230
+GlifName: dvC_H_A_
+Width: 670
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 409 -24 basechar 0
+AnchorPoint: "blwm_Virama" 436 33 basechar 0
+AnchorPoint: "abvm_Ekaar" 526 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 526 560 basechar 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+627 282 m 257
+ 627 126 523 38 339 38 c 256
+ 182 38 48 78 48 206 c 256
+ 48 267 81 313 154 325 c 257
+ 154 329 l 257
+ 93 339 56 376 56 435 c 256
+ 56 499 107 548 194 548 c 256
+ 231 548 267 548 307 544 c 257
+ 319 540 l 257
+ 242 540 201 498 201 432 c 256
+ 201 382 222 344 274 335 c 257
+ 274 315 l 257
+ 217 310 193 262 193 206 c 256
+ 193 106 260 60 339 60 c 256
+ 463 60 487 168 487 282 c 257
+ 487 365 458 433 394 433 c 256
+ 358 433 334 411 321 375 c 257
+ 302 383 l 257
+ 316 429 356 469 413 469 c 256
+ 542 469 627 411 627 282 c 257
+386 550 m 257
+ 526 550 l 257
+ 526 449 l 257
+ 386 449 l 257
+ 386 550 l 257
+-20 560 m 257
+ 690 560 l 257
+ 690 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+EndSplineSet
+EndChar

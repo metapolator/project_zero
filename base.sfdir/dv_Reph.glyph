@@ -1,0 +1,23 @@
+StartChar: dvReph
+Encoding: 713 -1 713
+GlifName: dvR_eph
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Ekaar" -80 560 mark 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-40 687 m 257
+ -43 726 -66 752 -106 752 c 256
+ -148 752 -172 722 -172 676 c 256
+ -172 603 -121 564 -42 560 c 257
+ -42 556 l 257
+ -100 556 l 258
+ -209 556 -286 603 -286 691 c 256
+ -286 759 -233 812 -153 812 c 256
+ -72 812 -20 758 -18 687 c 257
+ -40 687 l 257
+EndSplineSet
+EndChar

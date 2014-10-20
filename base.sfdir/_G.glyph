@@ -1,0 +1,80 @@
+StartChar: G
+Encoding: 37 71 37
+GlifName: G_
+Width: 608
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+477 54 m 257
+ 503 54 522 31 522 0 c 257
+ 541 0 l 257
+ 541 250 l 257
+ 588 250 l 257
+ 588 270 l 257
+ 348 270 l 256
+ 348 250 l 257
+ 411 250 l 257
+ 411 176 l 257
+ 411 61 380 5 315 5 c 257
+ 239 5 191 70 191 270 c 257
+ 191 484 237 553 313 553 c 256
+ 418 553 510 458 510 357 c 257
+ 530 357 l 257
+ 530 560 l 257
+ 511 560 l 257
+ 511 548 502 523 480 523 c 256
+ 448 523 401 573 313 573 c 256
+ 138 573 30 484 30 270 c 257
+ 30 72 139 -15 315 -15 c 257
+ 409 -15 421 54 477 54 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+(dp4
+S'y'
+I290
+sS'x'
+I304
+sS'magnetic'
+p5
+I5
+sS'angle'
+p6
+I0
+sS'isGlobal'
+p7
+I0
+sasS'com.typemytype.robofont.layerData'
+p8
+(dp9
+S'Back'
+p10
+(dp11
+S'name'
+p12
+S'G'
+sS'lib'
+p13
+(dp14
+sS'unicodes'
+p15
+(lp16
+sS'width'
+p17
+I608
+sS'contours'
+p18
+(lp19
+sS'components'
+p20
+(lp21
+sS'anchors'
+p22
+(lp23
+sss."
+EndChar

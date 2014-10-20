@@ -1,0 +1,57 @@
+StartChar: J
+Encoding: 54 74 54
+GlifName: J_
+Width: 500
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+184 0 m 256
+ 346 0 420 80 420 206 c 257
+ 420 540 l 257
+ 470 540 l 257
+ 470 560 l 257
+ 220 560 l 257
+ 220 540 l 257
+ 270 540 l 257
+ 270 197 l 257
+ 270 102 246 23 151 23 c 256
+ 107 23 65 45 65 70 c 256
+ 65 89 86 87 110 95 c 256
+ 146 106 162 131 162 160 c 256
+ 162 201 133 232 93 232 c 256
+ 43 232 10 188 10 140 c 256
+ 10 46 83 0 184 0 c 256
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'J'
+sS'lib'
+p7
+(dp8
+sS'unicodes'
+p9
+(lp10
+sS'width'
+p11
+I500
+sS'contours'
+p12
+(lp13
+sS'components'
+p14
+(lp15
+sS'anchors'
+p16
+(lp17
+sss."
+EndChar

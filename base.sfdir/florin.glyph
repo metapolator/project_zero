@@ -1,0 +1,65 @@
+StartChar: florin
+Encoding: 910 402 910
+GlifName: florin
+Width: 580
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+88 290 m 257
+ 498 290 l 257
+ 498 310 l 257
+ 88 310 l 257
+ 88 290 l 257
+310 0 m 258
+ 391 460 l 258
+ 414 588 440 649 480 660 c 257
+ 509 667 503 622 503 577 c 257
+ 503 519 544 500 580 500 c 256
+ 618 500 653 525 643 580 c 256
+ 632 638 573 680 488 680 c 256
+ 349 680 266 602 241 460 c 258
+ 160 0 l 258
+ 137 -128 111 -189 71 -200 c 257
+ 42 -207 48 -162 48 -117 c 257
+ 48 -63 22 -40 -17 -40 c 256
+ -55 -40 -97 -69 -88 -120 c 256
+ -78 -179 -22 -220 63 -220 c 256
+ 202 -220 285 -142 310 0 c 258
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'florin'
+p9
+sS'lib'
+p10
+(dp11
+sS'unicodes'
+p12
+(lp13
+sS'width'
+p14
+I580
+sS'contours'
+p15
+(lp16
+sS'components'
+p17
+(lp18
+sS'anchors'
+p19
+(lp20
+sss."
+EndChar

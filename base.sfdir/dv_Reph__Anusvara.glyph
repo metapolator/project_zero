@@ -1,0 +1,28 @@
+StartChar: dvReph_Anusvara
+Encoding: 715 -1 715
+GlifName: dvR_eph_A_nusvara
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Ekaar" -80 560 mark 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-55 670 m 256
+ -55 647 -73 629 -96 629 c 256
+ -119 629 -137 647 -137 670 c 256
+ -137 693 -119 711 -96 711 c 256
+ -73 711 -55 693 -55 670 c 256
+-40 687 m 257
+ -43 726 -66 752 -106 752 c 256
+ -148 752 -172 722 -172 676 c 256
+ -172 603 -121 564 -42 560 c 257
+ -42 556 l 257
+ -100 556 l 258
+ -209 556 -286 603 -286 691 c 256
+ -286 759 -233 812 -153 812 c 256
+ -72 812 -20 758 -18 687 c 257
+ -40 687 l 257
+EndSplineSet
+EndChar

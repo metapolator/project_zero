@@ -1,0 +1,23 @@
+StartChar: itfStar
+Encoding: 945 -1 945
+GlifName: itfS_tar
+Width: 672
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+663 452 m 257
+ 635 452 435 446 401 444 c 257
+ 335 690 l 257
+ 327 663 274 475 266 444 c 257
+ 5 452 l 257
+ 30 437 198 329 226 312 c 257
+ 130 65 l 257
+ 154 85 306 213 335 233 c 257
+ 539 65 l 257
+ 528 93 457 282 445 312 c 257
+ 663 452 l 257
+EndSplineSet
+EndChar

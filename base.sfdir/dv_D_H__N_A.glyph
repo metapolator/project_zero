@@ -1,0 +1,22 @@
+StartChar: dvDH_NA
+Encoding: 271 -1 271
+GlifName: dvD_H__N_A_
+Width: 624
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+167 -111 m 256
+ 167 -41 225 5 324 72 c 258
+ 355 93 l 257
+ 364 75 l 257
+ 355 68 344 61 338 57 c 256
+ 277 15 248 -9 248 -30 c 256
+ 248 -70 328 -54 328 -132 c 256
+ 328 -171 298 -203 251 -203 c 256
+ 197 -203 167 -166 167 -111 c 256
+EndSplineSet
+Refer: 269 2343 N 1 0 0 1 0 0 2
+EndChar

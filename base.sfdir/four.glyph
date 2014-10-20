@@ -1,0 +1,65 @@
+StartChar: four
+Encoding: 911 52 911
+GlifName: four
+Width: 531
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+244 8 m 257
+ 394 8 l 257
+ 394 582 l 257
+ 294 582 l 257
+ 10 163 l 257
+ 36 163 l 257
+ 244 472 l 257
+ 244 8 l 257
+459 20 m 257
+ 179 20 l 257
+ 179 0 l 257
+ 459 0 l 257
+ 459 20 l 257
+488 163 m 257
+ 10 163 l 257
+ 10 143 l 257
+ 488 143 l 257
+ 488 163 l 257
+468 229 m 257
+ 468 75 l 257
+ 491 75 l 257
+ 491 229 l 257
+ 468 229 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'four'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I531
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

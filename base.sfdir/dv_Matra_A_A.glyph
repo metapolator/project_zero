@@ -1,0 +1,22 @@
+StartChar: dvMatraAA
+Encoding: 519 2366 519
+GlifName: dvM_atraA_A_
+Width: 300
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+80 560 m 257
+ 220 560 l 257
+ 220 0 l 257
+ 80 0 l 257
+ 80 560 l 257
+-20 560 m 257
+ 320 560 l 257
+ 320 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+EndSplineSet
+EndChar

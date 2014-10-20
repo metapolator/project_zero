@@ -1,0 +1,17 @@
+StartChar: dvNukta
+Encoding: 663 2364 663
+GlifName: dvN_ukta
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+-200 -79 m 256
+ -200 -117 -231 -148 -269 -148 c 256
+ -307 -148 -338 -117 -338 -79 c 256
+ -338 -41 -307 -10 -269 -10 c 256
+ -231 -10 -200 -41 -200 -79 c 256
+EndSplineSet
+EndChar

@@ -1,0 +1,35 @@
+StartChar: dvFour
+Encoding: 303 -1 303
+GlifName: dvF_our
+Width: 446
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+221 8 m 257
+ 351 8 l 257
+ 351 582 l 257
+ 271 582 l 257
+ 7 163 l 257
+ 33 163 l 257
+ 221 459 l 257
+ 221 8 l 257
+416 20 m 257
+ 156 20 l 257
+ 156 0 l 257
+ 416 0 l 257
+ 416 20 l 257
+445 163 m 257
+ 7 163 l 257
+ 7 143 l 257
+ 445 143 l 257
+ 445 163 l 257
+425 229 m 257
+ 425 75 l 257
+ 448 75 l 257
+ 448 229 l 257
+ 425 229 l 257
+EndSplineSet
+EndChar

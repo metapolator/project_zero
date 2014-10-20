@@ -1,0 +1,16 @@
+StartChar: dvV_HA
+Encoding: 851 -1 851
+GlifName: dvV__H_A_
+Width: 811
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" 654 -77 basechar 0
+AnchorPoint: "blwm_Virama" 683 -9 basechar 0
+AnchorPoint: "abvm_Ekaar" 724 560 basechar 0
+AnchorPoint: "abvm_Anusvara" 724 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 341 2361 N 1 0 0 1 305 0 2
+Refer: 849 -1 N 1 0 0 1 0 0 2
+EndChar

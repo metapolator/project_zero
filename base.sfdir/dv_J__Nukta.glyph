@@ -1,0 +1,12 @@
+StartChar: dvJ_Nukta
+Encoding: 379 -1 379
+GlifName: dvJ__N_ukta
+Width: 443
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 355 -1 N 1 0 0 1 0 0 2
+Refer: 663 2364 N 1 0 0 1 400 -2 2
+EndChar

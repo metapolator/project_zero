@@ -1,0 +1,63 @@
+StartChar: U
+Encoding: 93 85 93
+GlifName: U_
+Width: 605
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+545 244 m 258
+ 545 540 l 257
+ 595 540 l 257
+ 595 560 l 257
+ 441 560 l 257
+ 441 540 l 257
+ 520 540 l 257
+ 520 224 l 258
+ 520 85 439 14 370 14 c 256
+ 277 14 230 87 230 223 c 258
+ 230 540 l 257
+ 280 540 l 257
+ 280 560 l 257
+ 20 560 l 257
+ 20 540 l 257
+ 70 540 l 257
+ 70 234 l 258
+ 70 63 171 -15 327 -15 c 256
+ 471 -15 545 71 545 244 c 258
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'U'
+sS'lib'
+p9
+(dp10
+sS'unicodes'
+p11
+(lp12
+sS'width'
+p13
+I605
+sS'contours'
+p14
+(lp15
+sS'components'
+p16
+(lp17
+sS'anchors'
+p18
+(lp19
+sss."
+EndChar

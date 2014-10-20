@@ -1,0 +1,18 @@
+StartChar: dvKH_RA
+Encoding: 409 -1 409
+GlifName: dvK_H__R_A_
+Width: 771
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+187 -92 m 257
+ 488 88 l 257
+ 499 70 l 257
+ 198 -110 l 257
+ 187 -92 l 257
+EndSplineSet
+Refer: 394 2326 N 1 0 0 1 0 0 2
+EndChar

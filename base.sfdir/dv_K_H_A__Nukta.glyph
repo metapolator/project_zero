@@ -1,0 +1,12 @@
+StartChar: dvKHA_Nukta
+Encoding: 395 2393 395
+GlifName: dvK_H_A__N_ukta
+Width: 776
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 394 2326 N 1 0 0 1 5 0 2
+Refer: 663 2364 N 1 0 0 1 401 12 2
+EndChar

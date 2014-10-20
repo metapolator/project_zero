@@ -1,0 +1,66 @@
+StartChar: breve.cap
+Encoding: 151 -1 151
+GlifName: breve.cap
+Width: 584
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+293 696 m 257
+ 236 696 220 718 220 745 c 257
+ 200 745 l 257
+ 200 671 224 620 293 620 c 257
+ 364 620 384 671 384 745 c 257
+ 364 745 l 257
+ 364 718 350 696 293 696 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+(dp4
+S'y'
+I745
+sS'x'
+I313
+sS'magnetic'
+p5
+I5
+sS'angle'
+p6
+I0
+sS'isGlobal'
+p7
+I0
+sasS'com.typemytype.robofont.layerData'
+p8
+(dp9
+S'Back'
+p10
+(dp11
+S'name'
+p12
+S'breve.cap'
+p13
+sS'lib'
+p14
+(dp15
+sS'unicodes'
+p16
+(lp17
+sS'width'
+p18
+I584
+sS'contours'
+p19
+(lp20
+sS'components'
+p21
+(lp22
+sS'anchors'
+p23
+(lp24
+sss."
+EndChar

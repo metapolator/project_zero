@@ -1,0 +1,27 @@
+StartChar: dvN_DH_RA
+Encoding: 626 -1 626
+GlifName: dvN__D_H__R_A_
+Width: 887
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+-20 560 m 257
+ 368 560 l 257
+ 368 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+34 248 m 256
+ 34 360 132 391 228 391 c 258
+ 365 391 l 257
+ 365 371 l 257
+ 365 371 248 371 231 371 c 256
+ 202 371 107 367 107 324 c 256
+ 107 288 219 319 219 221 c 256
+ 219 172 182 141 134 141 c 256
+ 76 141 34 181 34 248 c 256
+EndSplineSet
+Refer: 274 -1 N 1 0 0 1 264 0 2
+EndChar

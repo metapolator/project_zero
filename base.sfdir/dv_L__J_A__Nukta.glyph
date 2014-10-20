@@ -1,0 +1,12 @@
+StartChar: dvL_JA_Nukta
+Encoding: 477 -1 477
+GlifName: dvL__J_A__N_ukta
+Width: 1223
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 476 -1 N 1 0 0 1 2 0 2
+Refer: 663 2364 N 1 0 0 1 970 3 2
+EndChar

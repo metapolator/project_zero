@@ -1,0 +1,18 @@
+StartChar: dvMatraOshort_Anusvara
+Encoding: 583 -1 583
+GlifName: dvM_atraO_short_A_nusvara
+Width: 300
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+356 703 m 256
+ 356 665 326 635 288 635 c 256
+ 250 635 220 665 220 703 c 256
+ 220 741 250 772 288 772 c 256
+ 326 772 356 741 356 703 c 256
+EndSplineSet
+Refer: 582 2378 N 1 0 0 1 0 0 2
+EndChar

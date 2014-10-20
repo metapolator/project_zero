@@ -1,0 +1,20 @@
+StartChar: dvMatraE
+Encoding: 529 2375 529
+GlifName: dvM_atraE_
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Ekaar" -80 560 mark 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-144 589 m 257
+ -263 645 -328 662 -370 691 c 256
+ -389 704 -399 723 -399 741 c 256
+ -399 769 -376 790 -348 790 c 256
+ -336 790 -323 786 -312 778 c 256
+ -268 749 -230 695 -135 603 c 257
+ -144 589 l 257
+EndSplineSet
+EndChar

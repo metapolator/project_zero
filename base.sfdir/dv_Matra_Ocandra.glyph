@@ -1,0 +1,13 @@
+StartChar: dvMatraOcandra
+Encoding: 581 2377 581
+GlifName: dvM_atraO_candra
+Width: 300
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm_Anusvara" 220 721 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 534 2373 N 1 0 0 1 300 0 2
+Refer: 519 2366 N 1 0 0 1 0 0 2
+EndChar

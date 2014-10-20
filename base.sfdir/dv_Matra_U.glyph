@@ -1,0 +1,24 @@
+StartChar: dvMatraU
+Encoding: 584 2369 584
+GlifName: dvM_atraU_
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm_Ukaar" -83 0 mark 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+-374 -15 m 257
+ -372 -94 -320 -184 -218 -184 c 256
+ -170 -184 -137 -151 -137 -100 c 256
+ -137 -54 -164 -22 -205 -22 c 256
+ -233 -22 -255 -39 -262 -59 c 257
+ -281 -51 l 256
+ -260 0 -203 19 -154 19 c 256
+ -64 19 -15 -25 -15 -98 c 256
+ -15 -175 -77 -229 -183 -229 c 256
+ -311 -229 -394 -133 -395 -15 c 257
+ -374 -15 l 257
+EndSplineSet
+EndChar

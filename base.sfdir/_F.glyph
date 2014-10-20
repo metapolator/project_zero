@@ -1,0 +1,76 @@
+StartChar: F
+Encoding: 36 70 36
+GlifName: F_
+Width: 530
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+500 390 m 257
+ 500 540 l 257
+ 330 540 l 257
+ 427 540 480 516 480 390 c 257
+ 500 390 l 257
+240 560 m 257
+ 90 560 l 257
+ 90 1 l 257
+ 240 1 l 257
+ 240 560 l 257
+390 278 m 257
+ 150 278 l 257
+ 150 258 l 257
+ 390 258 l 257
+ 390 278 l 257
+500 560 m 257
+ 40 560 l 257
+ 40 540 l 257
+ 500 540 l 257
+ 500 560 l 257
+410 168 m 257
+ 410 368 l 257
+ 390 368 l 257
+ 390 300 380 278 280 278 c 257
+ 280 258 l 257
+ 380 258 390 240 390 168 c 257
+ 410 168 l 257
+300 20 m 257
+ 40 20 l 256
+ 40 0 l 257
+ 300 0 l 257
+ 300 20 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.guides'
+p2
+(lp3
+sS'com.typemytype.robofont.layerData'
+p4
+(dp5
+S'Back'
+p6
+(dp7
+S'name'
+p8
+S'F'
+sS'lib'
+p9
+(dp10
+sS'unicodes'
+p11
+(lp12
+sS'width'
+p13
+I530
+sS'contours'
+p14
+(lp15
+sS'components'
+p16
+(lp17
+sS'anchors'
+p18
+(lp19
+sss."
+EndChar
