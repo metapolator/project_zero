@@ -3,7 +3,7 @@ Encoding: 317 -1 317
 GlifName: dvG__D_A_
 Width: 884
 VWidth: 0
-Flags: W
+Flags: HW
 AnchorPoint: "blwm_Ukaar" 778 -87 basechar 0
 AnchorPoint: "blwm_Virama" 770 -8 basechar 0
 AnchorPoint: "abvm_Ekaar" 784 560 basechar 0

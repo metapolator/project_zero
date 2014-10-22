@@ -3,7 +3,7 @@ Encoding: 505 -1 505
 GlifName: dvM__D_A_
 Width: 851
 VWidth: 0
-Flags: W
+Flags: HW
 AnchorPoint: "blwm_Ukaar" 745 -87 basechar 0
 AnchorPoint: "blwm_Virama" 737 -8 basechar 0
 AnchorPoint: "abvm_Ekaar" 751 560 basechar 0

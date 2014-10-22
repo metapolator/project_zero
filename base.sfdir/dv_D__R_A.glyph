@@ -3,7 +3,7 @@ Encoding: 288 -1 288
 GlifName: dvD__R_A_
 Width: 489
 VWidth: 0
-Flags: W
+Flags: HW
 AnchorPoint: "blwm_Ukaar" 383 -104 basechar 0
 AnchorPoint: "blwm_Virama" 411 -43 basechar 0
 AnchorPoint: "abvm_Ekaar" 389 560 basechar 0

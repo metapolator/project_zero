@@ -51,6 +51,7 @@ SplineSet
  73 544 113 505 162 505 c 256
  210 505 249 544 249 592 c 256
 EndSplineSet
+Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

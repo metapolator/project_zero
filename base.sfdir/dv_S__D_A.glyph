@@ -3,7 +3,7 @@ Encoding: 758 -1 758
 GlifName: dvS__D_A_
 Width: 832
 VWidth: 0
-Flags: W
+Flags: HW
 AnchorPoint: "blwm_Ukaar" 726 -87 basechar 0
 AnchorPoint: "blwm_Virama" 718 -8 basechar 0
 AnchorPoint: "abvm_Ekaar" 732 560 basechar 0
