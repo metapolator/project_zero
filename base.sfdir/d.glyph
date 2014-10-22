@@ -3,7 +3,7 @@ Encoding: 171 100 171
 GlifName: d
 Width: 588
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 Fore
@@ -35,6 +35,7 @@ SplineSet
  508 650 l 1
  508 670 l 257
 EndSplineSet
+Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

@@ -3,7 +3,7 @@ Encoding: 269 2343 269
 GlifName: dvD_H_A_
 Width: 624
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 Fore
@@ -45,4 +45,5 @@ SplineSet
  404 0 l 257
  544 0 l 257
 EndSplineSet
+Validated: 5
 EndChar

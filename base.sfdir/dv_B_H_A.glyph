@@ -3,7 +3,7 @@ Encoding: 199 2349 199
 GlifName: dvB_H_A_
 Width: 617
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 Fore
@@ -37,4 +37,5 @@ SplineSet
  637 540 l 257
  637 560 l 257
 EndSplineSet
+Validated: 5
 EndChar
