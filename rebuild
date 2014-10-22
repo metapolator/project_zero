@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+rm -rf project_zero.mp;
+BASEUFO=".base_import.ufo";
+rm -rf $BASEUFO;
+fontforge -c "fontforge.open('base.sfdir').generate('$BASEUFO')";
+mp init project_zero.mp;
+
+SUBSET="$(cat ./current_subset.txt)"
+
+cd project_zero.mp;
+mp import -g "$SUBSET" ../$BASEUFO base;
