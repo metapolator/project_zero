@@ -1,7 +1,23 @@
 masters:
   base:
     cpsChain:
+      - import2general.cps
       - centreline-skeleton-to-symmetric-outline.cps
-      - global.cps
       - base.cps
+    skeleton: skeleton.base
+# this is rather an enhancement of base
+  enhanced:
+    cpsChain:
+      - import2general.cps
+      - centreline-skeleton-to-symmetric-outline.cps
+      - base.cps
+      - enhanced.cps
+    skeleton: skeleton.base
+# based on by inheriting all via @dictionary
+# this would be good to have it working for 
+# the interpolation patterns
+  inherited:
+    cpsChain:
+      - centreline-skeleton-to-symmetric-outline.cps
+      - inherited.cps
     skeleton: skeleton.base
