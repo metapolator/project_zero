@@ -1,0 +1,3 @@
+#! /usr/bin/env sh
+
+mp red-pill -p 8080 project_zero.mp
