@@ -1,6 +1,22 @@
 * {
 }
 
+/* This rule will have to be overidden by inheriting masters */
+point > center {
+    on: parent:skeleton:on;
+    in: parent:skeleton:in;
+    out: parent:skeleton:out;
+}
+
+/* This rule, is very specificly needed for imported data
+ * and it must be overidded with at least point>left, point>* is not
+ * strong enough.
+ */
+point > left {
+    onDir: deg 180 + parent:right:onDir;
+    onLength: parent:right:onLength;
+}
+
 @dictionary {
 point > * {
     pointBefore: parent:parent:children[parent:index - 1][this:type];

@@ -1,34 +1,29 @@
-/* change the weight */
+/* set up this masters parameters */
 @dictionary {
-    point > *{
-        /* Todo, make an weightFactor that can be used
-         * by masters based on this master
-         */
-        length: onLength*weightFactor;
+    point > * {
+        baseMaster: S"master#base";
+    }
+
+    point > left, point > right {
+        weightFactor: 1.5;
+    }
+
+    point > center {
+        widthFactor: 1.5;
+        skeleton: parent:skeleton;
     }
 }
 
-point > left,
-point > right {
-    on: Polar length onDir + parent:center:on;
+/* This is a shortcoming of the enhancement approach, the 
+ * inheritance approach manages this with ease. changeing the 
+ * onLength with lib/weight.cps has no effect here, because the
+ * selector used in lib/weight is not as specific as the selector
+ * used in base.cps to set point>right 'onLength'
+ * 
+ * Thus I think the inheritance approach is the winner, because
+ * it does not set these specific selectors and thus leaves more freedom
+ * to us.
+ */
+#enhanced#enhanced#enhanced point > right{
+    onLength: length;
 }
-
-/* scale the skeleton */
-@dictionary {
-    point>center {
-        transform: (Scaling widthFactor 1);
-    }
-}
-
-point > center {
-    on: transform * parent:skeleton:on;
-    in: transform * parent:skeleton:in;
-    out: transform * parent:skeleton:out;
-}
-
-/* define  higher level parameters*/
-@dictionary{*{
-    baseMaster: S"master#base";
-    weightFactor: .7;
-    widthFactor: .8;
-}}
