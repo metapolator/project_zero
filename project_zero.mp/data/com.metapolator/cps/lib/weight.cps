@@ -3,7 +3,7 @@
 @dictionary {
     point > left,
     point > right {
-        length: base:onLength*weightFactor;
+        length: base:onLength*weightFactor + weightSummand;
     }
 }
 
@@ -17,5 +17,6 @@ point > right {
     point > left,
         point > right {
         weightFactor: 1;
+        weightSummand: 0;
     }
 }
