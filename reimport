@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+cp project_zero.mp/data/com.metapolator/project.yaml project_zero.mp/data/com.metapolator/.project.yaml;
+
+mp delete project_zero.mp/base;
+
+
+BASEUFO=".base_import.ufo";
+rm -rf $BASEUFO;
+fontforge -c "fontforge.open('base.sfdir').generate('$BASEUFO')";
+
+SUBSET="$(cat ./current_subset.txt)"
+
+cd project_zero.mp;
+mp import -g "$SUBSET" ../$BASEUFO base;
+cd ..;
+mv project_zero.mp/data/com.metapolator/.project.yaml project_zero.mp/data/com.metapolator/project.yaml;
