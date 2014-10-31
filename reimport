@@ -15,3 +15,5 @@ cd project_zero.mp;
 mp import -g "$SUBSET" ../$BASEUFO base;
 cd ..;
 mv project_zero.mp/data/com.metapolator/.project.yaml project_zero.mp/data/com.metapolator/project.yaml;
+
+./bin/setIdentifiers base.sfdir project_zero.mp skeleton.base "$SUBSET";

@@ -10,3 +10,6 @@ SUBSET="$(cat ./current_subset.txt)"
 
 cd project_zero.mp;
 mp import -g "$SUBSET" ../$BASEUFO base;
+cd ..;
+
+./bin/setIdentifiers base.sfdir project_zero.mp skeleton.base "$SUBSET";
