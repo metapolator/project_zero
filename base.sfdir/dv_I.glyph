@@ -3,7 +3,7 @@ Encoding: 352 2311 352
 GlifName: dvI_
 Width: 462
 VWidth: 0
-Flags: HWO
+Flags: HW
 AnchorPoint: "abvm_Anusvara" 362 560 basechar 0
 LayerCount: 2
 Back
@@ -16,11 +16,13 @@ SplineSet
  180.837890625 41.275390625 190 71.603515625 190 99 c 259
  190 151 161 182 111 182 c 256
  111 182 l 1
+  Named: "bubble"
 91 -93 m 0
  117 -68 149 -26 166.513671875 11.7802734375 c 0
  148 18 l 257
  134 -13 100 -60 75 -80 c 257
  91 -93 l 0
+  Named: "appendix"
 362 424 m 1
  320 442 287.448242188 453 225 453 c 259
 NamedP: "horizontal"
@@ -40,15 +42,18 @@ NamedP: "horizontal"
 NamedP: "horizontal"
  271 433 319 423 362 404 c 257
  362 424 l 1
+  Named: "sShape"
 362 415 m 1
  362 546 l 257
  222 546 l 257
  222 443 l 256
  268 443 319 434 362 415 c 1
+  Named: "verticalConnection"
 482 560 m 257
  -20 560 l 257
  -20 540 l 257
  482 540 l 257
  482 560 l 257
+  Named: "bar"
 EndSplineSet
 EndChar

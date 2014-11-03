@@ -12,15 +12,41 @@
  * compensate for each skeleton/weight setup *
  *                           *****************/
 
-@namespace("glyph#dvI") {
-    /* the bubble */
-    @dictionary {
-        penstroke:i(0) point > * {
-            bubbleScale: 1;
+@namespace("glyph#dvA") {
+    @namespace(penstroke#lowerBow) {
+        @namespace("point:i(0), point:i(1)") {/* " ;*/
+            @dictionary{
+                * {
+                    dropScale: 1.2;
+                }
+                center {
+                    yTranslate: -25;
+                }
+            }
+        }
+        point:i(1) > left {
+            outTension: 2;
+            inTension: 2;
         }
     }
-    /* the s shape */
-    @namespace(penstroke:i(2)) {
+    @namespace(penstroke#bowConnection) {
+        @dictionary {
+            point:i(0) > center {
+                xTranslate: 55;
+            }
+        }
+    }
+}
+
+@namespace("glyph#dvI") {
+    @namespace(penstroke#bubble) {
+        @dictionary {
+            point > * {
+                bubbleScale: 1;
+            }
+        }
+    }
+    @namespace(penstroke#sShape) {
         @dictionary {
             point:i(0) center {
                 xTranslate: 30;
@@ -64,8 +90,7 @@
             in: on + Polar 20 deg 344;
         }
     }
-    /* the vertical connection */
-    @namespace(penstroke:i(3)) {
+    @namespace(penstroke#verticalConnection) {
         @dictionary {
             point:i(0) left {
                 offset: Vector 0 -10;

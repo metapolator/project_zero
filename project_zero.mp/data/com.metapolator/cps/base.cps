@@ -2,6 +2,128 @@
 @namespace(penstroke:i(0)) {
 point:i(0) > left {
     inDir: -1.5707963267948966;
+    outDirIntrinsic: 0.5459853055057384;
+    inTension: 1.0894577773310612;
+    inLength: 34;
+    outTension: 0.6682988933167382;
+    outLength: 79;
+}
+
+point:i(0) > right {
+    onLength: 48.130032204435516;
+    onDir: 2.400283547590417;
+    inDir: 3.141592653589793;
+    outDirIntrinsic: 5.258374285890428;
+    inTension: 0.8481698332537159;
+    inLength: 45;
+    outTension: 0.9565572767079457;
+    outLength: 48;
+}
+
+point:i(1) > left {
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 1.35373365569288;
+    inLength: 39;
+    outTension: 1.144931104289346;
+    outLength: 30;
+}
+
+point:i(1) > right {
+    onLength: 46.00271731104588;
+    onDir: 2.2251665727654513;
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 0.9333270716236359;
+    inLength: 51;
+    outTension: 0.7552252670083951;
+    outLength: 113.3578;
+}
+
+point:i(2) > left {
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 1.0752773627165793;
+    inLength: 37;
+    outTension: 0.8052132216817783;
+    outLength: 89;
+}
+
+point:i(2) > right {
+    onLength: 22.89650628371062;
+    onDir: -0.5516549825285468;
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 1.0437278358511004;
+    inLength: 88.1419;
+    outTension: 0.8959348497446059;
+    outLength: 130.00400000000002;
+}
+
+point:i(3) > left {
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 0.8952169252520793;
+    inLength: 84;
+    outTension: 0.9445450840833806;
+    outLength: 75.24000000000001;
+}
+
+point:i(3) > right {
+    onLength: 72.5;
+    onDir: 0;
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 0.9246614400739088;
+    inLength: 114;
+    outTension: 0.7541813206709;
+    outLength: 116;
+}
+
+point:i(4) > left {
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 0.6924047290423915;
+    inLength: 104;
+    outTension: 1.000010000100002;
+    outLength: 4.333290000000005;
+}
+
+point:i(4) > right {
+    onLength: 46.6074028454708;
+    onDir: 0.16162135518301302;
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0;
+    inTension: 1.1201671703438927;
+    inLength: 85;
+    outTension: 1.000010000100001;
+    outLength: 34.99965;
+}
+
+point:i(5) > left {
+    inDirIntrinsic: 0;
+    outDir: 1.5707963267948966;
+    inTension: 1.000010000100002;
+    inLength: 4.333290000000005;
+    outTension: 1.0000100000999985;
+    outLength: 4.9999500000000126;
+}
+
+point:i(5) > right {
+    onLength: 7.5;
+    onDir: 1.5707963267948966;
+    inDirIntrinsic: 0;
+    outDir: -1.5707963267948966;
+    inTension: 1.000010000100001;
+    inLength: 34.99965;
+    outTension: 1.0000100000999985;
+    outLength: 4.9999500000000126;
+}
+}
+
+@namespace(penstroke:i(1)) {
+point:i(0) > left {
+    inDir: -1.5707963267948966;
     outDirIntrinsic: 0;
     inTension: 1.0000100001000014;
     inLength: 6.666600000000017;
@@ -41,7 +163,7 @@ point:i(1) > right {
 }
 }
 
-@namespace(penstroke:i(1)) {
+@namespace(penstroke:i(2)) {
 point:i(0) > left {
     inDir: 1.5707963267948966;
     outDirIntrinsic: 0;
@@ -120,130 +242,6 @@ point:i(3) > right {
     inLength: 26.40075756488817;
     outTension: 1.000010000100002;
     outLength: 5.374784750480682;
-}
-}
-
-@namespace(penstroke:i(2)) {
-point:i(0) > left {
-    inDir: 3.141592653589793;
-    outDirIntrinsic: -3.141592653589793;
-    inTension: Infinity;
-    inLength: 0;
-    in: on;
-    outTension: 0.8481698332537155;
-    outLength: 45;
-}
-
-point:i(0) > right {
-    onLength: 0;
-    onDir: 0;
-    inDir: 0;
-    outDirIntrinsic: 0;
-    inTension: Infinity;
-    inLength: 0;
-    in: on;
-    outTension: 0.9565572767079457;
-    outLength: 48;
-}
-
-point:i(1) > left {
-    inDirIntrinsic: 0;
-    outDirIntrinsic: 0;
-    inTension: 1.0894577773310612;
-    inLength: 34;
-    outTension: 0.6682988933167382;
-    outLength: 79;
-}
-
-point:i(1) > right {
-    onLength: 76.4476945368531;
-    onDir: -2.983970715757905;
-    inDirIntrinsic: 0;
-    outDirIntrinsic: 0;
-    inTension: 0.9333270716236359;
-    inLength: 51;
-    outTension: 0.8891112144607322;
-    outLength: 39.18000000000001;
-}
-
-point:i(2) > left {
-    inDirIntrinsic: -0.34191114937039613;
-    outDirIntrinsic: -0.4407069281430578;
-    inTension: 1.35373365569288;
-    inLength: 39;
-    outTension: 1.144931104289346;
-    outLength: 30;
-}
-
-point:i(2) > right {
-    onLength: 15.968920696230535;
-    onDir: -2.3748131701547357;
-    inDirIntrinsic: 0.4123851450955712;
-    outDirIntrinsic: 0.31358705145031207;
-    inTension: 1.0662543791719585;
-    inLength: 32.625704849091;
-    outTension: 1.2686906230134145;
-    outLength: 41.486222587504884;
-}
-
-point:i(3) > left {
-    inDirIntrinsic: 0;
-    outDirIntrinsic: 0;
-    inTension: 1.0752773627165793;
-    inLength: 37;
-    outTension: 0.8052132216817783;
-    outLength: 89;
-}
-
-point:i(3) > right {
-    onLength: 22.89650628371062;
-    onDir: -0.5516549825285468;
-    inDirIntrinsic: 0;
-    outDirIntrinsic: 0;
-    inTension: 0.7740872351728405;
-    inLength: 68.293;
-    outTension: 0.8891230092076164;
-    outLength: 131;
-}
-
-point:i(4) > left {
-    inDirIntrinsic: 0;
-    outDirIntrinsic: 0;
-    inTension: 0.8952169252520793;
-    inLength: 84;
-    outTension: 0.9445450840833806;
-    outLength: 75.24000000000001;
-}
-
-point:i(4) > right {
-    onLength: 72.5;
-    onDir: 0;
-    inDirIntrinsic: 0;
-    outDirIntrinsic: 0;
-    inTension: 0.9246614400739088;
-    inLength: 114;
-    outTension: 0.7541813206709;
-    outLength: 116;
-}
-
-point:i(5) > left {
-    inDirIntrinsic: 0;
-    outDir: 0.16162135518301343;
-    inTension: 0.6924047290423915;
-    inLength: 104;
-    outTension: 1.0000100001000007;
-    outLength: 31.071291180961566;
-}
-
-point:i(5) > right {
-    onLength: 46.6074028454708;
-    onDir: 0.16162135518301302;
-    inDirIntrinsic: 0;
-    outDir: -2.9799712984067797;
-    inTension: 1.1201671703438927;
-    inLength: 85;
-    outTension: 1.0000100001000007;
-    outLength: 31.071291180961566;
 }
 }
 
