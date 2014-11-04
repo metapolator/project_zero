@@ -8,6 +8,8 @@
     }
 }
 
+/* reusable patterns */
+
 /** pin-to pattern **/
 @dictionary {
     glyph#dvA penstroke#lowerBow point > center
@@ -22,6 +24,7 @@
   , glyph#dvBHA penstroke#bow point:i(0) > center
   , glyph#dvBHA penstroke#horizontalConnection point > center
   , glyph#dvBHA penstroke#stem point:i(-1) > center
+  , glyph#dvDA penstroke#verticalConnection point > center
   {
         _on: transform * translate * skeleton:on;
         _in: transform * translate * skeleton:in;
@@ -44,8 +47,83 @@
     in: _in + pinTo;
     out: _out + pinTo;
 }
-/**/
 
+/** position the vertical connection as seen in dvI between bar and sShape
+ * 
+ * this requires:
+ *    - the stroke to move must be named "verticalConnection"
+ *    - verticalTargetStroke set to a penstroke element
+ *    - bar set to the bar penstroke element
+ *    - the glyph#{name} penstroke#verticalConnection point > center element
+ *      must be present in the pin-to pattern dictionary, but not in the
+ *      second rule of that.
+ * **/
+
+@namespace("
+  glyph#dvI penstroke#verticalConnection
+, glyph#dvDA penstroke#verticalConnection
+") {
+    @dictionary {
+        point > center {
+            target: verticalTargetStroke:children[0]:center:on;
+            rightIntrinsic: Polar parent:right:onLength parent:right:onDir;
+            top: bar:children[0]:center:on;
+        }
+
+        point:i(0) left {
+            offset: Vector 0 0;
+        }
+    }
+    point:i(1) > center {
+        on: Vector (target:x - rightIntrinsic:x)  top:y;
+    }
+    point:i(0) > center {
+        on: Vector (target:x - rightIntrinsic:x) (target:y - rightIntrinsic:y);
+    }
+    point > center {
+        on: Vector (target:x - rightIntrinsic:x)  _on:y;
+        in: Vector (target:x - rightIntrinsic:x) _in:y;
+        out: Vector (target:x - rightIntrinsic:x) _out:y;
+    }
+    
+    /* end inside of the verticalTargetStroke
+     * these values will probably need change in the masters
+     */
+    point:i(0) > left {
+        on: Polar onLength onDir + parent:center:on + offset;
+        inDir: deg 160;
+    }
+    point:i(0) > right {
+        in: on;
+    }
+}
+
+/* uniform scale
+ * this makes the penstroke independed from the rest of 
+ * the width/weigth setup by scaling it uniformly
+ * use 1 for the original size
+ */
+@namespace("
+  glyph#dvA penstroke#lowerBow point:i(0)
+, glyph#dvA penstroke#lowerBow point:i(1)
+
+, glyph#dvI penstroke#bubble point
+, glyph#dvDA penstroke#bubble point
+
+") {
+    @dictionary {
+        * {
+            uniformScale: 1;
+        }
+        center {
+            heightFactor: uniformScale;
+            widthFactor: uniformScale;
+        }
+        left, right {
+            weightFactor: uniformScale;
+        }
+    }
+}
 /*********************
  * general setup that pins point to positions etc. *
                              ***********************/
@@ -77,51 +155,25 @@
             on: Vector _on:x bar:children[0]:center:on:y;
         }
     }
-   
-    @namespace(penstroke#lowerBow) {
-        @namespace("point:i(0), point:i(1)") {/* " ;*/
-            @dictionary{
-                * {
-                    dropScale: 1;
-                }
-                center {
-                    heightFactor: dropScale;
-                    widthFactor: dropScale;
-                }
-                left, right {
-                    weightFactor: dropScale;
-                }
-            }
-        }
-    }
 }
 
 @namespace("glyph#dvI") {
     @dictionary{
         point>* {
-            sShape: parent:parent:parent[S"#sShape"];
+            sShape: glyph[S"#sShape"];
+            bar: glyph[S"#bar"];
+            glyph: parent:parent:parent;
+            verticalTargetStroke: sShape;
         }
     }
     @namespace(penstroke#bubble) {
         @dictionary {
-            /* this makes the bubble largely independed from the rest of 
-             * the width/weigth setup, use 1 for the original size
-             */
-            point > * {
-                bubbleScale: 1;
-            }
             point > center {
                 /* calculate the unpinned location, so we can calculate
                  * the offset to move
                  */
                 target: sShape[S"point:i(-1) left"]:on;/*:children[-1]:left:*/
                 pinTo: target - parent:parent[S"point:i(-1) center"]:_on;
-                
-                heightFactor: bubbleScale;
-                widthFactor: bubbleScale;
-            }
-            point > left, point > right {
-                weightFactor: bubbleScale;
             }
         }
         
@@ -140,37 +192,6 @@
         point:i(0)>center{
             on: parent:parent:children[1]:center:on + Polar 128 deg 235;
             out: parent:parent:children[1]:center:on + Polar 90 deg 242;
-        }
-    }
-    @namespace(penstroke#sShape) {}
-    @namespace(penstroke#verticalConnection) {
-        @dictionary {
-            point > center {
-                target: sShape[S"point:i(0) center"]:on;
-                rightIntrinsic: Polar parent:right:onLength parent:right:onDir;
-                top:  parent:parent:parent[S"#bar point:i(0) center"]:on;
-            }
-        }
-        point:i(1) > center {
-            on: Vector (target:x - rightIntrinsic:x)  top:y;
-        }
-        point:i(0) > center {
-            on: Vector (target:x - rightIntrinsic:x) (target:y - rightIntrinsic:y);
-        }
-        point > center {
-            on: Vector (target:x - rightIntrinsic:x)  _on:y;
-            in: Vector (target:x - rightIntrinsic:x) _in:y;
-            out: Vector (target:x - rightIntrinsic:x) _out:y;
-        }
-        
-        /* end inside of the s shape
-         * these values may need change in the masters */
-        point:i(0) > left {
-            on: Polar onLength onDir + parent:center:on + offset;
-            inDir: deg 160;
-        }
-        point:i(0) > right {
-            in: on;
         }
     }
 }
@@ -262,4 +283,18 @@
             }
         }
     }
+}
+@namespace("glyph#dvDA") {
+    @dictionary {
+        point > *{
+            glyph: parent:parent:parent;
+            penstroke: parent:parent;
+            bowConnection: glyph[S"#bowConnection"];
+            bow: glyph[S"#bow"];
+            stem: glyph[S"#stem"];
+            bar: glyph[S"#bar"];
+            verticalTargetStroke: bow;
+        }
+    }
+    
 }

@@ -65,7 +65,7 @@
         @namespace("point:i(0), point:i(1)") {/* " ; */
             @dictionary {
                 * {
-                    dropScale: 1.2;
+                    uniformScale: 1.2;
                 }
                 center {
                     xTranslate: -130 + extraX;
@@ -119,10 +119,9 @@
 }
 
 @namespace("glyph#dvI") {
-    /* the bubble */
     @dictionary{
         penstroke#bubble point > * {
-            bubbleScale: 1;
+            uniformScale: 1;
         }
     }
     

@@ -17,7 +17,7 @@
         @namespace("point:i(0), point:i(1)") {/* " ;*/
             @dictionary{
                 * {
-                    dropScale: 1.2;
+                    uniformScale: 1.2;
                 }
                 center {
                     yTranslate: -25;
@@ -42,7 +42,7 @@
     @namespace(penstroke#bubble) {
         @dictionary {
             point > * {
-                bubbleScale: 1;
+                uniformScale: 1;
             }
         }
     }
