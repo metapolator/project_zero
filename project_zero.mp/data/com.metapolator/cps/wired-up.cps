@@ -17,8 +17,11 @@
   , glyph#dvI penstroke#appendix point:i(1) > center
   , glyph#dvI penstroke#verticalConnection point > center
   , glyph#dvKHA penstroke#stem point > center
-  , glyph#dvKHA penstroke#upperBow point:i(-1) center
-  , glyph#dvKHA penstroke#bowConnection point:i(1) center
+  , glyph#dvKHA penstroke#upperBow point:i(-1) > center
+  , glyph#dvKHA penstroke#bowConnection point:i(1) > center
+  , glyph#dvBHA penstroke#bow point:i(0) > center
+  , glyph#dvBHA penstroke#horizontalConnection point > center
+  , glyph#dvBHA penstroke#stem point:i(-1) > center
   {
         _on: transform * translate * skeleton:on;
         _in: transform * translate * skeleton:in;
@@ -31,8 +34,11 @@
 , glyph#dvI penstroke#bubble point > center
 , glyph#dvI penstroke#appendix point:i(1) > center
 , glyph#dvKHA penstroke#stem point > center
-, glyph#dvKHA penstroke#upperBow point:i(-1) center
-, glyph#dvKHA penstroke#bowConnection point:i(1) center
+, glyph#dvKHA penstroke#upperBow point:i(-1) > center
+, glyph#dvKHA penstroke#bowConnection point:i(1) > center
+, glyph#dvBHA penstroke#bow point:i(0) > center
+, glyph#dvBHA penstroke#horizontalConnection point > center
+, glyph#dvBHA penstroke#stem point:i(-1) > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -214,6 +220,45 @@
                  * something that is roughly right.
                  */
                 stemFitComepensation: parent:right:onLength/3
+            }
+        }
+    }
+}
+@namespace("glyph#dvBHA") {
+    @dictionary {
+        point > *{
+            bowConnection: parent:parent:parent[S"#bowConnection"];
+            bow: parent:parent:parent[S"#bow"];
+            stem: parent:parent:parent[S"#stem"];
+            bar: parent:parent:parent[S"#bar"];
+            penstroke: parent:parent;
+        }
+    }
+    @namespace("penstroke#bow") {
+        @dictionary {
+            point:i(0) > center {
+                target: penstroke:children[-3]:left:on:x;
+                pinTo: Vector (target - _on:x) 0;
+            }
+        }
+    }
+    @namespace("penstroke#horizontalConnection") {
+        @dictionary {
+            point:i(-1) > center {
+                target: bow:children[-3]:center:on:x;
+                pinTo: Vector (target - _on:x) 0;
+            }
+            point:i(0) > center {
+                target: stem:children[0]:center:on:x;
+                pinTo: Vector (target - _on:x) 0;
+            }
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point:i(-1) > center {
+                target: bar:children[0]:center:on:y;
+                pinTo: Vector 0 (target - _on:y);
             }
         }
     }

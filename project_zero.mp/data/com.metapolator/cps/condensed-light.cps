@@ -143,3 +143,11 @@
         }
     }
 }
+
+@namespace("glyph#dvBHA") {
+    @namespace("penstroke#bow") {
+        point:i(2) > left {
+            inTension: 1.15;
+        }
+    }
+}

@@ -250,3 +250,56 @@
         }
     }
 }
+@namespace("glyph#dvBHA") {
+    @namespace("penstroke#bow") {
+        @dictionary {
+            point:i(1) > center{
+                xTranslate: -15;
+            }
+            point:i(2) > center {
+                xTranslate: 8;
+            }
+            point:i(-3) > center {
+                xTranslate: 50;
+            }
+            point:i(-2) > center {
+                xTranslate: 5;
+            }
+            point:i(-1) > center {
+                xTranslate: -15;
+            }
+            
+        }
+        
+        point:i(2) > left {
+            inTension: 1.3;
+            outTension: 1.8;
+        }
+        
+        point:i(-2) > left{
+            outTension: 2;
+            inTension: 3;
+        }
+        point:i(-1) > left{
+            inTension: .8;
+            inDirIntrinsic: deg -3;
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point > center {
+                xTranslate: 155;
+            }
+        }
+    }
+    @namespace("penstroke#bar") {
+        @dictionary {
+            point:i(0) > center {
+                xTranslate: 210;
+            }
+            point:i(-1) > center {
+                xTranslate: 90;
+            }
+        }
+    }
+}

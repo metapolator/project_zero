@@ -3,7 +3,7 @@ Encoding: 315 -1 315
 GlifName: dvG__B_H_A_
 Width: 1021
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
 Fore
@@ -27,5 +27,4 @@ SplineSet
  -20 560 l 257
 EndSplineSet
 Refer: 199 2349 N 1 0 0 1 398 0 2
-Validated: 5
 EndChar
