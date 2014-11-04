@@ -162,3 +162,91 @@
         }
     }
 }
+
+@namespace("glyph#dvKHA") {
+    /* moving it back into the viewport */
+    @dictionary{
+        point > center {
+            extraX: 50;
+            xTranslate: extraX;
+        }
+    }
+    
+    @namespace(penstroke#bowConnection) {
+        @dictionary {
+            point:i(0) center {
+                xTranslate: extraX + 95;
+            }
+        }
+    }
+    @namespace("penstroke#spiralBow") {
+        @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*";*/ {
+            @dictionary {
+                center {
+                    spiralOffset: 170;
+                    individualOffset: 0;
+                    xTranslate: extraX + spiralOffset + individualOffset;
+                }
+            }
+        }
+        
+        @dictionary {
+            point:i(1) center{
+                xTranslate: extraX + 60;
+            }
+            point:i(2) center {
+                xTranslate: extraX + 90;
+            }
+            point:i(-5) center {
+                individualOffset: 30
+            }
+            point:i(-4) center {
+                individualOffset: -15
+            }
+            point:i(-3) center {
+                individualOffset: -40
+            }
+            point:i(-2) center {
+                individualOffset: -10
+            }
+            point:i(-1) center {
+                individualOffset: 15;
+            }
+            point:i(-1) left,  point:i(-1) right{
+                weightSummand: 5;
+            }
+        }
+        
+        point:i(2) left,  point:i(2) right{
+            outTension: .9;
+        }
+        
+        point:i(-4) left {
+            inTension: 2;
+            
+        }
+        
+        point:i(-3) left {
+            inTension: 1;
+            outTension: 1;
+        }
+        point:i(-1) right {
+            inTension: 1.5;
+        }
+        
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point > center {
+                stemFitComepensation: parent:right:onLength * 0.45;
+            }
+        }
+    }
+    @namespace("penstroke#bar") {
+        @dictionary {
+            point:i(0) > center {
+                xTranslate: extraX + 320;
+            }
+        }
+    }
+}

@@ -100,3 +100,52 @@
         }
     }
 }
+
+@namespace("glyph#dvKHA") {
+    @namespace(penstroke#upperBow){
+        point:i(0) > left, point:i(0) > right{
+            outTension: 1;
+        }
+        point:i(1) > left, point:i(1) > right{
+            inTension: 1;
+        }
+    }
+
+    @namespace(penstroke#bowConnection) {
+        @dictionary {
+            point:i(0) > center {
+                xTranslate: -70;
+            }
+        }
+    }
+    @namespace(penstroke#spiralBow) {
+        point:i(-1) > left {
+            inDirIntrinsic: deg -8;
+        }
+        point:i(2) > right {
+            outTension: 0.9;
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point > center {
+                stemFitComepensation: -3;
+            }
+            point:i(1) > center {
+                yTranslate: 65;
+            }
+            point:i(2) > center {
+                yTranslate: -45;
+            }
+        }
+        
+        point:i(1) > left {
+            outTension: 2;
+            outDirIntrinsic: deg -5;
+        }
+        point:i(2) > left {
+            inTesnsion: 2;
+            inDirIntrinsic: deg 5;
+        }
+    }
+}

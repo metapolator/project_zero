@@ -101,3 +101,31 @@
         }
     }
 }
+@namespace("glyph#dvKHA") {
+    @namespace("penstroke#spiralBow") {
+        @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*";*/ {
+            @dictionary {
+                center {
+                    spiralOffset: 20;
+                    xTranslate: spiralOffset;
+                }
+            }
+        }
+        @dictionary {
+            point:i(1) > center,
+            point:i(2) > center {
+                xTranslate: 10;
+            }
+            point:i(-1) > left{
+                weightSummand: 5;
+            }
+        }
+    }
+    @namespace("penstroke#bowConnection") {
+        @dictionary {
+            point:i(0) > center{
+                xTranslate: 30;
+            }
+        }
+    }
+}

@@ -16,6 +16,9 @@
   , glyph#dvI penstroke#bubble point > center
   , glyph#dvI penstroke#appendix point:i(1) > center
   , glyph#dvI penstroke#verticalConnection point > center
+  , glyph#dvKHA penstroke#stem point > center
+  , glyph#dvKHA penstroke#upperBow point:i(-1) center
+  , glyph#dvKHA penstroke#bowConnection point:i(1) center
   {
         _on: transform * translate * skeleton:on;
         _in: transform * translate * skeleton:in;
@@ -27,6 +30,9 @@
   glyph#dvA penstroke#lowerBow point > center
 , glyph#dvI penstroke#bubble point > center
 , glyph#dvI penstroke#appendix point:i(1) > center
+, glyph#dvKHA penstroke#stem point > center
+, glyph#dvKHA penstroke#upperBow point:i(-1) center
+, glyph#dvKHA penstroke#bowConnection point:i(1) center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -159,6 +165,56 @@
         }
         point:i(0) > right {
             in: on;
+        }
+    }
+}
+@namespace("glyph#dvKHA") {
+    @dictionary {
+        point > *{
+            bowConnection: parent:parent:parent[S"#bowConnection"];
+            spiralBow: parent:parent:parent[S"#spiralBow"];
+            upperBow: parent:parent:parent[S"#upperBow"];
+            stem: parent:parent:parent[S"#stem"];
+            bar: parent:parent:parent[S"#bar"];
+            penstroke: parent:parent;
+        }
+    }
+    
+    @namespace("penstroke#bowConnection") {
+        @dictionary{
+            point:i(1) center {
+                target: spiralBow:children[0]:right:on:x;
+                pinTo: Vector (target-_on:x) 0;
+            }
+        }
+    }
+    
+    @namespace("penstroke#upperBow") {
+        @dictionary{
+            point:i(-1) center {
+                target: bar:children[-1]:left:on:y;
+                yOff: (Polar parent:left:onLength parent:left:onDir):y;
+                pinTo: Vector 0 (target - _on:y - yOff);
+            }
+        }
+    }
+    @namespace("penstroke#stem") {
+        @namespace("point:i(1), point:i(2)") /*";*/ {
+            right {
+                in: on;
+                out: on;
+            }
+        }
+        @dictionary {
+            point > center {
+                target: spiralBow:children[-5]:right:on:x;
+                reference: penstroke:children[0]:center:_on:x;
+                pinTo: Vector (target - reference + stemFitComepensation) 0;
+                /* There is no correct rule for this. I'm picking just 
+                 * something that is roughly right.
+                 */
+                stemFitComepensation: parent:right:onLength/3
+            }
         }
     }
 }
