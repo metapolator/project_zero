@@ -8,7 +8,9 @@
     }
 }
 
-/* reusable patterns */
+/***********
+ * reusable patterns *
+            **********/
 
 /** pin-to pattern **/
 @dictionary {
@@ -25,6 +27,8 @@
   , glyph#dvBHA penstroke#horizontalConnection point > center
   , glyph#dvBHA penstroke#stem point:i(-1) > center
   , glyph#dvDA penstroke#verticalConnection point > center
+  , glyph#dvDA penstroke#bubble point > center
+  , glyph#dvDA penstroke#appendix point:i(0) > center
   {
         _on: transform * translate * skeleton:on;
         _in: transform * translate * skeleton:in;
@@ -42,6 +46,8 @@
 , glyph#dvBHA penstroke#bow point:i(0) > center
 , glyph#dvBHA penstroke#horizontalConnection point > center
 , glyph#dvBHA penstroke#stem point:i(-1) > center
+, glyph#dvDA penstroke#bubble point > center
+, glyph#dvDA penstroke#appendix point:i(0) > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -57,7 +63,7 @@
  *    - the glyph#{name} penstroke#verticalConnection point > center element
  *      must be present in the pin-to pattern dictionary, but not in the
  *      second rule of that.
- * **/
+ */
 
 @namespace("
   glyph#dvI penstroke#verticalConnection
@@ -98,7 +104,7 @@
     }
 }
 
-/* uniform scale
+/** uniform scale **
  * this makes the penstroke independed from the rest of 
  * the width/weigth setup by scaling it uniformly
  * use 1 for the original size
@@ -163,6 +169,7 @@
             sShape: glyph[S"#sShape"];
             bar: glyph[S"#bar"];
             glyph: parent:parent:parent;
+            penstroke: parent:parent;
             verticalTargetStroke: sShape;
         }
     }
@@ -172,8 +179,8 @@
                 /* calculate the unpinned location, so we can calculate
                  * the offset to move
                  */
-                target: sShape[S"point:i(-1) left"]:on;/*:children[-1]:left:*/
-                pinTo: target - parent:parent[S"point:i(-1) center"]:_on;
+                target: sShape:children[-1]:left:on;
+                pinTo: target - penstroke:children[-1]:center:_on;
             }
         }
         
@@ -181,9 +188,13 @@
     @namespace(penstroke#appendix) {
         @dictionary {
             point:i(1) > center {
-                pinTo: sShape:children[-1]:center:on - parent:parent:children[1]:center:_on
+                target: sShape:children[-1]:left:on;
+                reference: penstroke:children[1];
+                rightIntrinsic: Polar reference:right:onLength reference:right:onDir;
+                pinTo: target - reference:center:_on - rightIntrinsic;
             }
         }
+        
         point:i(1) > center {
             /* point:i(0) is positioned relative from here */
             in: on + Polar 25 deg 250;
@@ -289,12 +300,41 @@
         point > *{
             glyph: parent:parent:parent;
             penstroke: parent:parent;
-            bowConnection: glyph[S"#bowConnection"];
+            verticalConnection: glyph[S"#verticalConnection"];
             bow: glyph[S"#bow"];
             stem: glyph[S"#stem"];
             bar: glyph[S"#bar"];
             verticalTargetStroke: bow;
         }
     }
-    
+    @namespace(penstroke#bubble){
+        @dictionary {
+            point > center {
+                /* calculate the unpinned location, so we can calculate
+                 * the offset to move
+                 */
+                target: bow:children[-1]:right:on;
+                pinTo: target - penstroke:children[-1]:center:_on;
+            }
+        }
+    }
+    @namespace(penstroke#appendix) {
+        @dictionary {
+            point:i(0) > center {
+                target: bow:children[-1]:right:on;
+                reference: penstroke:children[0];
+                rightIntrinsic: Polar reference:right:onLength reference:right:onDir;
+                pinTo: target - reference:center:_on - rightIntrinsic;
+            }
+        }
+        point:i(0) > center {
+            /* point:i(1) is positioned relative from here */
+            out: on + Polar 25 deg 300;
+        }
+        
+        point:i(1) > center{
+            on: penstroke:children[0]:center:on + Polar 128 deg 325;
+            in: penstroke:children[0]:center:on + Polar 90 deg 316;
+        }
+    }
 }

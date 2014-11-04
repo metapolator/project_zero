@@ -8,6 +8,17 @@
     }
 }
 
+@namespace("
+  glyph#dvI penstroke#bubble point
+, glyph#dvDA penstroke#bubble point
+") {
+    @dictionary {
+        * {
+            uniformScale: .5;
+        }
+    }
+}
+
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -60,14 +71,6 @@
 }
 
 @namespace("glyph#dvI") {
-    @namespace(penstroke#bubble) {
-        @dictionary{
-            point > * {
-                uniformScale: .5;
-            }
-        }
-    }
-    
     @namespace(penstroke#sShape) {
         @dictionary {
             point:i(-3) center {
@@ -146,8 +149,33 @@
 
 @namespace("glyph#dvBHA") {
     @namespace("penstroke#bow") {
+        @dictionary {
+            point:i(-3) > center{
+                xTranslate: 10;
+            }
+        }
+        
+        point:i(-2) > right {
+            inTension: 1.4;
+        }
+        point:i(-4) > right {
+            outTension: 1.4;
+        }
+        
         point:i(2) > left {
             inTension: 1.15;
+        }
+    }
+}
+@namespace("glyph#dvDA") {
+    @namespace(penstroke#verticalConnection) {
+        @dictionary {
+            point:i(0) left {
+                offset: Vector 0 10;
+            }
+        }
+        point:i(0) left {
+            in: on + Polar 25 deg -10;
         }
     }
 }
