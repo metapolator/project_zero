@@ -130,6 +130,10 @@
             point:i(0) > center{
                 xTranslate: 30;
             }
+            point:i(1) center {
+                target: spiralBow:children[0]:right:on:x;
+                pinTo: Vector (target-_on:x) 0;
+            }
         }
     }
 }

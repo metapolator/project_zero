@@ -218,15 +218,6 @@
         }
     }
     
-    @namespace("penstroke#bowConnection") {
-        @dictionary{
-            point:i(1) center {
-                target: spiralBow:children[0]:right:on:x;
-                pinTo: Vector (target-_on:x) 0;
-            }
-        }
-    }
-    
     @namespace("penstroke#upperBow") {
         @dictionary{
             point:i(-1) center {
