@@ -29,6 +29,9 @@
   , glyph#dvDA penstroke#verticalConnection point > center
   , glyph#dvDA penstroke#bubble point > center
   , glyph#dvDA penstroke#appendix point:i(0) > center
+  , glyph#dvDHA penstroke#upperBow point:i(-1) > center
+  , glyph#dvDHA penstroke#stem point > center
+  , glyph#dvDHA penstroke#leftBar point:i(0) > center /* used in the bold versions */
   {
         _on: transform * translate * skeleton:on;
         _in: transform * translate * skeleton:in;
@@ -48,6 +51,9 @@
 , glyph#dvBHA penstroke#stem point:i(-1) > center
 , glyph#dvDA penstroke#bubble point > center
 , glyph#dvDA penstroke#appendix point:i(0) > center
+, glyph#dvDHA penstroke#upperBow point:i(-1) > center
+, glyph#dvDHA penstroke#stem point > center
+, glyph#dvDHA penstroke#leftBar point:i(0) > center /* used in condensed extra bold */
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -298,7 +304,7 @@
             verticalTargetStroke: bow;
         }
     }
-    @namespace(penstroke#bubble){
+    @namespace(penstroke#bubble) {
         @dictionary {
             point > center {
                 /* calculate the unpinned location, so we can calculate
@@ -328,4 +334,48 @@
             in: penstroke:children[0]:center:on + Polar 90 deg 316;
         }
     }
+}
+@namespace(glyph#dvDHA) {
+    @dictionary {
+        point > *{
+            glyph: parent:parent:parent;
+            penstroke: parent:parent;
+            bowConnection: glyph[S"#bowConnection"];
+            lowerBow: glyph[S"#lowerBow"];
+            upperBow: glyph[S"#upperBow"];
+            stem: glyph[S"#stem"];
+            leftBar: glyph[S"#leftBar"];
+            rightBar: glyph[S"#rightBar"];
+        }
+    }
+    @namespace(penstroke#upperBow){
+        /* fix -1 right y to leftBar 0 left y */
+        @dictionary{
+            point:i(-1) > center {
+                target: leftBar:children[0]:left:on:y;
+                reference: penstroke:children[-1];
+                rightIntrinsic: (Polar reference:right:onLength reference:right:onDir):y;
+                pinTo: Vector 0 (target - reference:center:_on:y - rightIntrinsic);
+            }
+            /* this moves the vertical extreme half the way that the
+             * curve end was moved. FIXME: should I do this kind of compensation
+             * more often? In this case the effect is small but there.
+             */
+            point:i(-2) > center {
+                yTranslate: (penstroke:children[-1]:center:pinTo:y) / 2
+            }
+        }
+    }
+    @namespace(penstroke#stem) {
+        /* fix all xses to lowerBow 0 right x */
+        @dictionary{
+            point > center {
+                target: lowerBow:children[0]:right:on:x;
+                reference: penstroke:children[0];
+                leftIntrinsic: (Polar reference:left:onLength reference:left:onDir):x;
+                pinTo: Vector (target - reference:center:_on:x - leftIntrinsic) 0;
+            }
+        }
+    }
+
 }

@@ -346,3 +346,72 @@
         }
     }
 }
+@namespace(glyph#dvDHA) {
+    @dictionary {
+        point > center {
+            extraX: 110;
+            xTranslate: extraX;
+        }
+    }
+    @namespace(penstroke#upperBow) {
+        @dictionary {
+            point:i(-2) > center {
+                xTranslate: -36 + extraX;
+            }
+            point:i(-1) > center {
+                xTranslate: -30 + extraX ;
+            }
+        }
+        point:i(-1) > right {
+            inTension: .75;
+        }
+        point:i(0) > right {
+            outTension: .9;
+        }
+    }
+    @namespace(penstroke#lowerBow) {
+        @dictionary {
+            point:i(-2) > center {
+                xTranslate: -36 + extraX ;
+            }
+        }
+         @dictionary {
+            point:i(0) > center {
+                xTranslate: 20 + extraX;
+            }
+        }
+    }
+    @namespace(penstroke#bowConnection) {
+        @dictionary {
+            point:i(-1) > center {
+                xTranslate: -85 + extraX;
+            }
+        }
+    }
+    @namespace(penstroke#leftBar) {
+        @dictionary {
+            /* move this 0 center x to upperBow -1 right x */ 
+            point:i(0) > center {
+                targetPoint: upperBow:children[-1];
+                target: targetPoint:center:_on:x;
+                rightOffset: (Polar targetPoint:right:onLength targetPoint:right:onDir):x;
+                pinTo: Vector (target + rightOffset - this:_on:x) 0;
+            }
+            point:i(-1) > center {
+                xTranslate: -30;
+            }
+        }
+    }
+    @namespace(penstroke#rightBar) {
+        @dictionary {
+            point:i(0) > center {
+                xTranslate: 160 + extraX;
+            }
+            point:i(1) > center {
+                xTranslate: 25 + extraX;
+            }
+        }
+    
+    }
+}
+

@@ -179,3 +179,33 @@
         }
     }
 }
+@namespace(glyph#dvDHA) {
+    @namespace(penstroke#bowConnection) {
+        @dictionary {
+            point:i(-1) > center {
+                xTranslate: 71;
+            }
+        }
+    }
+    @namespace(penstroke#upperBow) {
+        point:i(0) > left {
+            outTension: 1.1;
+        }
+    }
+    @namespace(penstroke#upperBow) {
+        point:i(-2) > left {
+            outTension: 1.3;
+        }
+        @dictionary {
+            point:i(-2) > center {
+                xTranslate: -12;
+            }
+        }
+    }
+    
+    @namespace(penstroke#lowerBow) {
+        point:i(-2) > left {
+            outTension: 4;
+        }
+    }
+}

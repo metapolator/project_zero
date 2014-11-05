@@ -149,3 +149,16 @@
         }
     }
 }
+@namespace("glyph#dvDHA") {
+    @namespace(penstroke#leftBar) {
+        @dictionary {
+            /* move this 0 center x to upperBow -1 right x */ 
+            point:i(0) > center {
+                targetPoint: upperBow:children[-1];
+                target: targetPoint:center:_on:x;
+                rightOffset: (Polar targetPoint:right:onLength targetPoint:right:onDir):x;
+                pinTo: Vector (target + rightOffset - this:_on:x) 0;
+            }
+        }
+    }
+}
