@@ -63,7 +63,7 @@
     
     @namespace(penstroke#lowerBow) {
         point:i(-2) left {
-            on: parent:parent:children[-1]:left:on;
+            on: penstroke:children[-1]:left:on;
         }
         point:i(-1) left {
             in: on;

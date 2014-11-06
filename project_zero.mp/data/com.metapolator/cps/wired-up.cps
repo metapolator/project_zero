@@ -8,6 +8,15 @@
     }
 }
 
+/* standard names */
+@dictionary {
+    point > *{
+        master: parent:parent:parent:parent;
+        glyph: parent:parent:parent;
+        penstroke: parent:parent;
+    }
+}
+
 /***********
  * reusable patterns *
             **********/
@@ -146,11 +155,11 @@
 @namespace("glyph#dvA") {
     @dictionary{
         point > *{
-            bowConnection: parent:parent:parent[S"#bowConnection"];
-            lowerBow: parent:parent:parent[S"#lowerBow"];
-            upperBow: parent:parent:parent[S"#upperBow"];
-            stem: parent:parent:parent[S"#stem"];
-            bar: parent:parent:parent[S"#bar"];
+            bowConnection: glyph[S"#bowConnection"];
+            lowerBow: glyph[S"#lowerBow"];
+            upperBow: glyph[S"#upperBow"];
+            stem: glyph[S"#stem"];
+            bar: glyph[S"#bar"];
         }
     }
     @namespace(penstroke#bowConnection) {
@@ -178,8 +187,6 @@
         point>* {
             sShape: glyph[S"#sShape"];
             bar: glyph[S"#bar"];
-            glyph: parent:parent:parent;
-            penstroke: parent:parent;
             verticalTargetStroke: sShape;
         }
     }
@@ -211,20 +218,19 @@
         }
         
         point:i(0)>center{
-            on: parent:parent:children[1]:center:on + Polar 128 deg 235;
-            out: parent:parent:children[1]:center:on + Polar 90 deg 242;
+            on: penstroke:children[1]:center:on + Polar 128 deg 235;
+            out: penstroke:children[1]:center:on + Polar 90 deg 242;
         }
     }
 }
 @namespace("glyph#dvKHA") {
     @dictionary {
         point > *{
-            bowConnection: parent:parent:parent[S"#bowConnection"];
-            spiralBow: parent:parent:parent[S"#spiralBow"];
-            upperBow: parent:parent:parent[S"#upperBow"];
-            stem: parent:parent:parent[S"#stem"];
-            bar: parent:parent:parent[S"#bar"];
-            penstroke: parent:parent;
+            bowConnection: glyph[S"#bowConnection"];
+            spiralBow: glyph[S"#spiralBow"];
+            upperBow: glyph[S"#upperBow"];
+            stem: glyph[S"#stem"];
+            bar: glyph[S"#bar"];
         }
     }
     
@@ -260,11 +266,10 @@
 @namespace("glyph#dvBHA") {
     @dictionary {
         point > *{
-            bowConnection: parent:parent:parent[S"#bowConnection"];
-            bow: parent:parent:parent[S"#bow"];
-            stem: parent:parent:parent[S"#stem"];
-            bar: parent:parent:parent[S"#bar"];
-            penstroke: parent:parent;
+            bowConnection: glyph[S"#bowConnection"];
+            bow: glyph[S"#bow"];
+            stem: glyph[S"#stem"];
+            bar: glyph[S"#bar"];
         }
     }
     @namespace("penstroke#bow") {
@@ -299,8 +304,6 @@
 @namespace("glyph#dvDA") {
     @dictionary {
         point > *{
-            glyph: parent:parent:parent;
-            penstroke: parent:parent;
             verticalConnection: glyph[S"#verticalConnection"];
             bow: glyph[S"#bow"];
             stem: glyph[S"#stem"];
@@ -342,8 +345,6 @@
 @namespace(glyph#dvDHA) {
     @dictionary {
         point > *{
-            glyph: parent:parent:parent;
-            penstroke: parent:parent;
             bowConnection: glyph[S"#bowConnection"];
             lowerBow: glyph[S"#lowerBow"];
             upperBow: glyph[S"#upperBow"];
@@ -385,8 +386,6 @@
 @namespace(glyph#dvSSA) {
     @dictionary {
         point > *{
-            glyph: parent:parent:parent;
-            penstroke: parent:parent;
             bow: glyph[S"#bow"];
             crossBar: glyph[S"#crossBar"];
             stem: glyph[S"#stem"];
