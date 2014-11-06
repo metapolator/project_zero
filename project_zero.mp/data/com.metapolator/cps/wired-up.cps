@@ -32,6 +32,8 @@
   , glyph#dvDHA penstroke#upperBow point:i(-1) > center
   , glyph#dvDHA penstroke#stem point > center
   , glyph#dvDHA penstroke#leftBar point:i(0) > center /* used in the bold versions */
+  , glyph#dvSSA penstroke#stem point > center
+  , glyph#dvSSA penstroke#crossBar point:i(0) > center
   {
         _on: transform * translate * skeleton:on;
         _in: transform * translate * skeleton:in;
@@ -54,6 +56,8 @@
 , glyph#dvDHA penstroke#upperBow point:i(-1) > center
 , glyph#dvDHA penstroke#stem point > center
 , glyph#dvDHA penstroke#leftBar point:i(0) > center /* used in condensed extra bold */
+, glyph#dvSSA penstroke#stem point > center
+, glyph#dvSSA penstroke#crossBar point:i(0) > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -377,5 +381,43 @@
             }
         }
     }
+}
+@namespace(glyph#dvSSA) {
+    @dictionary {
+        point > *{
+            glyph: parent:parent:parent;
+            penstroke: parent:parent;
+            bow: glyph[S"#bow"];
+            crossBar: glyph[S"#crossBar"];
+            stem: glyph[S"#stem"];
+            bar: glyph[S"#bar"];
+        }
+    }
+    @namespace(penstroke#stem) {
+        /* fix all xses to bow 0 right x */
+        @dictionary {
+            point > center {
+                target: bow:children[0]:right:on:x;
+                reference: penstroke:children[0];
+                leftIntrinsic: (Polar reference:left:onLength reference:left:onDir):x;
+                pinTo: Vector (target - reference:center:_on:x - leftIntrinsic) 0;
+            }
+        }
+    }
+    @namespace(penstroke#crossBar) {
+        /* fix all crossBar 0 x and y to the stem
+         * crossBar is a simple straight line, so we find the
+         * ratio between x and y and apply the change of x to that function
+         * to get the change of y
+         */
+        @dictionary{
+            point:i(0) > center {
+                pinX: stem:children[0]:center:on:x - this:_on:x;
+                ratio: penstroke:children[1]:center:on - this:_on;
+                pinY: pinX * ratio:y/ratio:x;
+                pinTo: Vector pinX pinY;
+            }
 
+        }
+    }
 }

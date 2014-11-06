@@ -414,4 +414,38 @@
     
     }
 }
-
+@namespace(glyph#dvSSA) {
+    @dictionary {
+        point > center {
+            extraX: 110;
+            xTranslate: extraX;
+        }
+    }
+    @namespace(penstroke#bow) {
+        @dictionary {
+            point:i(0) > center {
+                xTranslate: 43 + extraX;
+            }
+            point:i(1) > center {
+                xTranslate: 35 + extraX;
+            }
+        }
+        point:i(0) > right{
+            outTension: 2;
+        }
+        point:i(1) > right{
+            outTension: 1;
+            inTension: .9;
+        }
+    }
+    @namespace(penstroke#bar) {
+        @dictionary {
+            point:i(0) > center {
+                xTranslate: 180 + extraX;
+            }
+            point:i(-1) > center {
+                xTranslate: -60  + extraX;
+            }
+        }
+    }
+}

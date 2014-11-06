@@ -200,3 +200,24 @@
         }
     }
 }
+@namespace(glyph#dvSSA) {
+    @namespace(penstroke#bow) {
+        @dictionary{
+            point:i(0) right, point:i(0) left {
+                weightSummand: 3;
+            }
+            point:i(0) center {
+                yTranslate: 10;
+            }
+        }
+        point:i(0) right {
+            outTension: 1.5;
+        }
+        point:i(1) left {
+            inTension: .85;
+        }
+        point:i(1) right {
+            outTension: .65;
+        }
+    }
+}

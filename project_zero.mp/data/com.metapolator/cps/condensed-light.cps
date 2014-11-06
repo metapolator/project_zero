@@ -202,10 +202,48 @@
             }
         }
     }
-    
     @namespace(penstroke#lowerBow) {
         point:i(-2) > left {
             outTension: 4;
         }
+    }
+}
+@namespace(glyph#dvSSA) {
+    @namespace(penstroke#bow) {
+        @dictionary{
+            point:i(0) > right, point:i(0) > left {
+                weightSummand: 3;
+            }
+            point:i(0) > center {
+                yTranslate: -18;
+            }
+            point:i(1) > center {
+                xTranslate: -5;
+            }
+            point:i(2) > center {
+                yTranslate: -23;
+            }
+        }
+        point:i(0) left {
+            outTension: 1.2
+        }
+        point:i(1) left {
+            inTension: .8;
+            outTension: 1.2;
+        }
+        
+        point:i(2) left {
+            inTension: .7;
+        }
+        
+        point:i(0) right {
+            outTension: 1.2;
+        }
+        
+        point:i(1) right {
+            inTension: 1;
+            outTension: 1.2;
+        }
+    
     }
 }
