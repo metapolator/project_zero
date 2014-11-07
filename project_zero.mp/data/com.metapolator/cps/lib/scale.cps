@@ -12,8 +12,15 @@ point > center {
     out: transform * translate * skeleton:out;
 }
 
-/* define  higher level parameters */
-@dictionary{
+point > center {
+    on: translate * transform * skeleton:on;
+    in: translate * transform * skeleton:in;
+    out: translate * transform * skeleton:out;
+}
+
+
+/* define higher level parameters */
+@dictionary {
     point > center {
         widthFactor: 1;
         xTranslate: 0;

@@ -18,20 +18,29 @@
         }
     }
 }
+@namespace("
+  glyph#dvA penstroke#lowerBow point:i(0)
+, glyph#dvA penstroke#lowerBow point:i(1)
+, glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem  point:i(-2)
+") {
+    @dictionary{
+        * {
+            uniformScale: 1.2;
+        }
+    }
+}
 
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
-
+ 
 @namespace("glyph#dvA") {
     @namespace(penstroke#lowerBow) {
         @namespace("point:i(0), point:i(1)") {/* " ;*/
             @dictionary{
-                * {
-                    uniformScale: 1.2;
-                }
                 center {
-                    yTranslate: -25;
+                    yTranslate: -30;
                 }
             }
         }
@@ -43,7 +52,7 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: 55;
+                xTranslate: 71.5;
             }
         }
     }
@@ -53,33 +62,33 @@
     @namespace(penstroke#sShape) {
         @dictionary {
             point:i(0) center {
-                xTranslate: 30;
-                yTranslate: 7;
+                xTranslate: 36;
+                yTranslate: 8.4;
             }
         
             point:i(1) center {
                 xTranslate: 0;
-                yTranslate: 7;
+                yTranslate: 8.4;
             }
             
             point:i(2) center {
-                xTranslate: 10;
+                xTranslate: 12;
                 yTranslate: 0;
             }
             
             point:i(-3) center {
-                xTranslate: 15;
-                yTranslate: -5;
+                xTranslate: 18;
+                yTranslate: -6;
             }
             
             point:i(-2) center {
-                xTranslate: 15;
+                xTranslate: 18;
                 yTranslate: 0;
             }
             
             point:i(-1) center {
-                xTranslate: -30;
-                yTranslate: 15;
+                xTranslate: -36;
+                yTranslate: 18;
             }
         }
         point:i(2) left {
@@ -91,7 +100,7 @@
         }
         
         point:i(-1) center {
-            in: on + Polar 20 deg 344;
+            in: on + Polar 15 deg 342;
         }
     }
     @namespace(penstroke#verticalConnection) {
@@ -110,7 +119,7 @@
         @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*";*/ {
             @dictionary {
                 center {
-                    spiralOffset: 20;
+                    spiralOffset: 26;
                     xTranslate: spiralOffset;
                 }
             }
@@ -118,7 +127,7 @@
         @dictionary {
             point:i(1) > center,
             point:i(2) > center {
-                xTranslate: 10;
+                xTranslate: 13;
             }
             point:i(-1) > left{
                 weightSummand: 5;
@@ -128,7 +137,7 @@
     @namespace("penstroke#bowConnection") {
         @dictionary {
             point:i(0) > center{
-                xTranslate: 30;
+                xTranslate: 39;
             }
             point:i(1) center {
                 target: spiralBow:children[0]:right:on:x;
@@ -150,6 +159,13 @@
     }
 }
 @namespace("glyph#dvDHA") {
+    @namespace(penstroke#bowConnection) {
+        @dictionary {
+            point:i(-1) > center {
+                xTranslate: -53;
+            }
+        }
+    }
     @namespace(penstroke#leftBar) {
         @dictionary {
             /* move this 0 center x to upperBow -1 right x */ 

@@ -11,6 +11,10 @@
 @namespace("
   glyph#dvI penstroke#bubble point
 , glyph#dvDA penstroke#bubble point
+, glyph#dvA penstroke#lowerBow point:i(0)
+, glyph#dvA penstroke#lowerBow point:i(1)
+, glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem  point:i(-2)
 ") {
     @dictionary {
         * {
@@ -34,18 +38,15 @@
         /* the drop */
         @namespace("point:i(0), point:i(1)") {/* " ; */
             @dictionary{
-                * {
-                    uniformScale: .5;
-                }
                 center {
-                    yTranslate: 145;
-                    xTranslate: 130;
+                    yTranslate: 72.5;
+                    xTranslate: 65;
                 }
             }
         }
-        @dictionary{
-            point:i(2) > center{
-                xTranslate: 20;
+        @dictionary {
+            point:i(2) > center {
+                xTranslate: 26;
             }
         }
         point:i(2) > left{
@@ -61,7 +62,7 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: -65;
+                xTranslate: -84.5;
             }
         }
     }
@@ -71,21 +72,21 @@
     @namespace(penstroke#sShape) {
         @dictionary {
             point:i(2) center {
-                xTranslate: 15;
+                xTranslate: 19.5;
                 yTranslate: 0;
             }
             point:i(-3) center {
-                xTranslate: 15;
+                xTranslate: 19.5;
                 yTranslate: 0;
             }
             
             point:i(-2) center {
-                xTranslate: 34;
+                xTranslate: 44.2;
                 yTranslate: 0;
             }
             
             point:i(-1) center {
-                xTranslate: -20;
+                xTranslate: -26;
                 yTranslate: 20;
             }
         }
@@ -93,7 +94,7 @@
             outTension: 1;
         }
         point:i(-1) center {
-            in: on + Polar 20 deg 344;
+            in: on + Polar 15 deg 342;
         }
     }
     @namespace(penstroke#verticalConnection) {
@@ -118,7 +119,7 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: -70;
+                xTranslate: -91;
             }
         }
     }
@@ -157,8 +158,8 @@
     @namespace(penstroke#bow) {
         @dictionary{
             point:i(-1) > center {
-                xTranslate: 50;
-                yTranslate: 25;
+                xTranslate: 60;
+                yTranslate: 30;
             }
         }
         point:i(-2) > left, point:i(-2) > right {
@@ -195,7 +196,7 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(-1) > center {
-                xTranslate: 65;
+                xTranslate: 84.5;
             }
         }
     }

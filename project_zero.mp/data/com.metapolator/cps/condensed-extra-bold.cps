@@ -18,7 +18,18 @@
         }
     }
 }
-
+@namespace("
+  glyph#dvA penstroke#lowerBow point:i(0)
+, glyph#dvA penstroke#lowerBow point:i(1)
+, glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem  point:i(-2)
+") {
+    @dictionary{
+        * {
+            uniformScale: 1.2;
+        }
+    }
+}
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -27,15 +38,15 @@
     /* moving it back into the viewport */
     @dictionary{
         point > center {
-            extraX: 150;
+            extraX: 105;
             xTranslate: extraX;
         }
     }
     
     @namespace(penstroke#lowerBow, penstroke#upperBow) {
-        @dictionary{
+        @dictionary {
             point:i(-3) > center {
-                xTranslate: 30 + extraX;
+                xTranslate: 21 + extraX;
             }
         }
     }
@@ -75,12 +86,9 @@
         /* the drop */
         @namespace("point:i(0), point:i(1)") {/* " ; */
             @dictionary {
-                * {
-                    uniformScale: 1.2;
-                }
                 center {
-                    xTranslate: -130 + extraX;
-                    yTranslate: -30;
+                    xTranslate: -91 + extraX;
+                    yTranslate: -25;
                 }
             }
         }
@@ -104,52 +112,58 @@
     @namespace(penstroke#stem) {
         @dictionary {
             point > center {
-                xTranslate: 160 + extraX;
+                xTranslate: 112 + extraX;
             }
         }
     }
     @namespace(penstroke#bar) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: 220 + extraX;
+                xTranslate: 154 + extraX;
             }
         }
         @dictionary {
             point:i(1) > center {
-                xTranslate: 65 + extraX;
+                xTranslate: 45.5 + extraX;
             }
         }
     }
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: 75 + extraX;
+                xTranslate: 52.5 + extraX;
             }
         }
     }
 }
 
 @namespace("glyph#dvI") {
+    @dictionary{
+        point > center {
+            extraX: 40;
+            xTranslate: extraX;
+        }
+    }
     @namespace(penstroke#sShape) {
         @dictionary {
             point:i(0) center {
-                xTranslate: 30;
+                xTranslate: 31 + extraX;
                 yTranslate: 0;
             }
             point:i(1) center {
-                xTranslate: 20;
+                xTranslate: 14 + extraX;
                 yTranslate: 0;
             }
             point:i(-3) center {
-                xTranslate: 15;
+                xTranslate: 10.5 + extraX;
                 yTranslate: 0;
             }
             point:i(-2) center {
-                xTranslate: -10;
+                xTranslate: -7 + extraX;
                 yTranslate: 0;
             }
             point:i(-1) center {
-                xTranslate: -10;
+                xTranslate: -7 + extraX;
                 yTranslate: 0;
             }
         }
@@ -171,7 +185,7 @@
     /* moving it back into the viewport */
     @dictionary{
         point > center {
-            extraX: 50;
+            extraX: 35;
             xTranslate: extraX;
         }
     }
@@ -179,7 +193,7 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(0) center {
-                xTranslate: extraX + 95;
+                xTranslate: 66.5 + extraX;
             }
             point:i(1) center {
                 target: spiralBow:children[0]:right:on:x;
@@ -191,7 +205,7 @@
         @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*";*/ {
             @dictionary {
                 center {
-                    spiralOffset: 170;
+                    spiralOffset: 119;
                     individualOffset: 0;
                     xTranslate: extraX + spiralOffset + individualOffset;
                 }
@@ -200,25 +214,25 @@
         
         @dictionary {
             point:i(1) center{
-                xTranslate: extraX + 60;
+                xTranslate: extraX + 42;
             }
             point:i(2) center {
-                xTranslate: extraX + 90;
+                xTranslate: extraX + 63;
             }
             point:i(-5) center {
-                individualOffset: 30
+                individualOffset: 21
             }
             point:i(-4) center {
-                individualOffset: -15
+                individualOffset: -10.5
             }
             point:i(-3) center {
-                individualOffset: -40
+                individualOffset: -28
             }
             point:i(-2) center {
-                individualOffset: -10
+                individualOffset: -7
             }
             point:i(-1) center {
-                individualOffset: 15;
+                individualOffset: 10.5;
             }
             point:i(-1) left,  point:i(-1) right{
                 weightSummand: 5;
@@ -253,28 +267,34 @@
     @namespace("penstroke#bar") {
         @dictionary {
             point:i(0) > center {
-                xTranslate: extraX + 320;
+                xTranslate: extraX + 224;
             }
         }
     }
 }
 @namespace("glyph#dvBHA") {
+    @dictionary {
+        point > center {
+            extraX: 20;
+            xTranslate: extraX;
+        }
+    }
     @namespace("penstroke#bow") {
         @dictionary {
             point:i(1) > center{
-                xTranslate: -15;
+                xTranslate: -10.5 + extraX;
             }
             point:i(2) > center {
-                xTranslate: 8;
+                xTranslate: 5.6 + extraX;
             }
             point:i(-3) > center {
-                xTranslate: 50;
+                xTranslate: 35 + extraX;
             }
             point:i(-2) > center {
-                xTranslate: 5;
+                xTranslate: 3.5 + extraX;
             }
             point:i(-1) > center {
-                xTranslate: -15;
+                xTranslate: -10.5 + extraX;
             }
             
         }
@@ -296,17 +316,17 @@
     @namespace("penstroke#stem") {
         @dictionary {
             point > center {
-                xTranslate: 155;
+                xTranslate: 108.5 + extraX;
             }
         }
     }
     @namespace("penstroke#bar") {
         @dictionary {
             point:i(0) > center {
-                xTranslate: 210;
+                xTranslate: 147 + extraX;
             }
             point:i(-1) > center {
-                xTranslate: 90;
+                xTranslate: 63 + extraX;
             }
         }
     }
@@ -314,24 +334,24 @@
 @namespace("glyph#dvDA") {
     @dictionary {
         point > center {
-            extraX: 110;
+            extraX: 77;
             xTranslate: extraX;
         }
     }
     @namespace(penstroke#bar) {
         @dictionary {
             point:i(0) center {
-                xTranslate: extraX - 70;
+                xTranslate: extraX - 49;
             }
             point:i(-1) center {
-                xTranslate: extraX + 50;
+                xTranslate: extraX + 35;
             }
         }
     }
     @namespace(penstroke#bow) {
         @dictionary {
             point:i(2) center {
-                xTranslate: extraX - 40;
+                xTranslate: extraX - 28;
             }
         }
     }
@@ -349,17 +369,17 @@
 @namespace(glyph#dvDHA) {
     @dictionary {
         point > center {
-            extraX: 110;
+            extraX: 77;
             xTranslate: extraX;
         }
     }
     @namespace(penstroke#upperBow) {
         @dictionary {
             point:i(-2) > center {
-                xTranslate: -36 + extraX;
+                xTranslate: -25.2 + extraX;
             }
             point:i(-1) > center {
-                xTranslate: -30 + extraX ;
+                xTranslate: -21 + extraX ;
             }
         }
         point:i(-1) > right {
@@ -372,19 +392,19 @@
     @namespace(penstroke#lowerBow) {
         @dictionary {
             point:i(-2) > center {
-                xTranslate: -36 + extraX ;
+                xTranslate: -25.2 + extraX ;
             }
         }
          @dictionary {
             point:i(0) > center {
-                xTranslate: 20 + extraX;
+                xTranslate: 14 + extraX;
             }
         }
     }
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(-1) > center {
-                xTranslate: -85 + extraX;
+                xTranslate: -59.5 + extraX;
             }
         }
     }
@@ -398,17 +418,17 @@
                 pinTo: Vector (target + rightOffset - this:_on:x) 0;
             }
             point:i(-1) > center {
-                xTranslate: -30;
+                xTranslate: -21;
             }
         }
     }
     @namespace(penstroke#rightBar) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: 160 + extraX;
+                xTranslate: 112 + extraX;
             }
             point:i(1) > center {
-                xTranslate: 25 + extraX;
+                xTranslate: 17.5 + extraX;
             }
         }
     
@@ -417,17 +437,17 @@
 @namespace(glyph#dvSSA) {
     @dictionary {
         point > center {
-            extraX: 110;
+            extraX: 77;
             xTranslate: extraX;
         }
     }
     @namespace(penstroke#bow) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: 43 + extraX;
+                xTranslate: 30.1 + extraX;
             }
             point:i(1) > center {
-                xTranslate: 35 + extraX;
+                xTranslate: 24.5 + extraX;
             }
         }
         point:i(0) > right{
@@ -441,10 +461,10 @@
     @namespace(penstroke#bar) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: 180 + extraX;
+                xTranslate: 126 + extraX;
             }
             point:i(-1) > center {
-                xTranslate: -60  + extraX;
+                xTranslate: -42  + extraX;
             }
         }
     }

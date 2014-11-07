@@ -11,6 +11,10 @@
 @namespace("
   glyph#dvI penstroke#bubble point
 , glyph#dvDA penstroke#bubble point
+, glyph#dvA penstroke#lowerBow point:i(0)
+, glyph#dvA penstroke#lowerBow point:i(1)
+, glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem  point:i(-2)
 ") {
     @dictionary {
         * {
@@ -25,30 +29,23 @@
 
 
 @namespace("glyph#dvA") {
-    
-    
-    
     @namespace(penstroke#upperBow) {
         point:i(0)>right {
             outTension: .9;
         }
     }
-    
     @namespace(penstroke#lowerBow) {
         /* the drop */
         @namespace("point:i(0), point:i(1)") {/* " ; */
             @dictionary{
-                * {
-                    uniformScale: .5;
-                }
                 center {
-                    yTranslate: 95;
+                    yTranslate: 47.5;
                 }
             }
         }
         @dictionary{
             point:i(2) > center{
-                xTranslate: 10;
+                xTranslate: 5;
             }
         }
         point:i(2) > left{
@@ -64,7 +61,7 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(0) > center {
-                xTranslate: -90;
+                xTranslate: -45;
             }
         }
     }
@@ -74,7 +71,7 @@
     @namespace(penstroke#sShape) {
         @dictionary {
             point:i(-3) center {
-                xTranslate: 40;
+                xTranslate: 20;
                 yTranslate: -10;
             }
         }
@@ -91,24 +88,24 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(0) center {
-                xTranslate: -54;
+                xTranslate: -27;
             }
         }
     }
     @namespace("penstroke#spiralBow") {
         @dictionary {
             point:i(2) > center {
-                xTranslate: 10;
+                xTranslate: 5;
             }
             
             point:i(-5) > center {
-                xTranslate: 5;
+                xTranslate: 2.5;
             }
             point:i(-2) > center {
-                xTranslate: 2;
+                xTranslate: 1;
             }
             point:i(-2) > left,  point:i(-2) > right,
-            point:i(-1) > left,  point:i(-1) > right{
+            point:i(-1) > left,  point:i(-1) > right {
                 weightSummand: 1;
             }
         }
@@ -151,7 +148,7 @@
     @namespace("penstroke#bow") {
         @dictionary {
             point:i(-3) > center{
-                xTranslate: 10;
+                xTranslate: 5;
             }
         }
         
@@ -183,7 +180,7 @@
     @namespace(penstroke#bowConnection) {
         @dictionary {
             point:i(-1) > center {
-                xTranslate: 71;
+                xTranslate: 35.5;
             }
         }
     }
@@ -198,7 +195,7 @@
         }
         @dictionary {
             point:i(-2) > center {
-                xTranslate: -12;
+                xTranslate: -6;
             }
         }
     }
@@ -218,7 +215,7 @@
                 yTranslate: -18;
             }
             point:i(1) > center {
-                xTranslate: -5;
+                xTranslate: -2.5;
             }
             point:i(2) > center {
                 yTranslate: -23;

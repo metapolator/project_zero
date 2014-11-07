@@ -43,10 +43,16 @@
   , glyph#dvDHA penstroke#leftBar point:i(0) > center /* used in the bold versions */
   , glyph#dvSSA penstroke#stem point > center
   , glyph#dvSSA penstroke#crossBar point:i(0) > center
+  , glyph#a penstroke#bowl point > center
   {
         _on: transform * translate * skeleton:on;
         _in: transform * translate * skeleton:in;
         _out: transform * translate * skeleton:out;
+        
+        _on: translate * transform * skeleton:on;
+        _in: translate * transform * skeleton:in;
+        _out: translate * transform * skeleton:out;
+        
         pinTo: Vector 0 0;
     }
 }
@@ -67,6 +73,7 @@
 , glyph#dvDHA penstroke#leftBar point:i(0) > center /* used in condensed extra bold */
 , glyph#dvSSA penstroke#stem point > center
 , glyph#dvSSA penstroke#crossBar point:i(0) > center
+, glyph#a penstroke#bowl point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -134,6 +141,9 @@
 
 , glyph#dvI penstroke#bubble point
 , glyph#dvDA penstroke#bubble point
+
+, glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem point:i(-2)
 
 ") {
     @dictionary {
