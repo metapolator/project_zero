@@ -21,8 +21,6 @@
 @namespace("
   glyph#dvA penstroke#lowerBow point:i(0)
 , glyph#dvA penstroke#lowerBow point:i(1)
-, glyph#a penstroke#stem point:i(-1)
-, glyph#a penstroke#stem  point:i(-2)
 ") {
     @dictionary{
         * {
@@ -30,7 +28,16 @@
         }
     }
 }
-
+@namespace("
+  glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem point:i(-2)
+") {
+    @dictionary {
+        * {
+            uniformScale: 1.15;
+        }
+    }
+}
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -175,6 +182,35 @@
                 rightOffset: (Polar targetPoint:right:onLength targetPoint:right:onDir):x;
                 pinTo: Vector (target + rightOffset - this:_on:x) 0;
             }
+        }
+    }
+}
+@namespace("glyph#a") {
+    @namespace(penstroke#stem) {
+        @dictionary {
+            point:i(0)>right{
+                weightSummand: 5;
+            }
+        }
+        point:i(-2)>left {
+            inTension: 2;
+        }
+    }
+    @namespace(penstroke#bowl) {
+        @dictionary {
+            point:i(0)>center{
+                xTranslate: 4;
+            }
+        }
+        point:i(1)>right{
+            outTension: .75;
+        }
+    }
+}
+@namespace(glyph#d) {
+    @dictionary {
+        point > * {
+            serifLength: stemWidth / 3;
         }
     }
 }

@@ -13,8 +13,6 @@
 , glyph#dvDA penstroke#bubble point
 , glyph#dvA penstroke#lowerBow point:i(0)
 , glyph#dvA penstroke#lowerBow point:i(1)
-, glyph#a penstroke#stem point:i(-1)
-, glyph#a penstroke#stem  point:i(-2)
 ") {
     @dictionary {
         * {
@@ -22,7 +20,16 @@
         }
     }
 }
-
+@namespace("
+  glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem point:i(-2)
+") {
+    @dictionary {
+        * {
+            uniformScale: .35;
+        }
+    }
+}
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -220,5 +227,107 @@
         point:i(1) right {
             outTension: .65;
         }
+    }
+}
+@namespace("glyph#a") {
+    @namespace("penstroke#stem") {
+        @dictionary{
+            point:i(0) > center{
+                xTranslate: -90;
+                yTranslate: 5;
+            }
+            point:i(1) > center{
+                xTranslate: -50;
+            }
+            
+            point:i(0) > left,
+            point:i(0) > right{
+                weightSummand: 1;
+            }
+        }
+        
+        point:i(0) > right{
+            outDirIntrinsic: parent:left:outDirIntrinsic;
+        }
+        
+        point:i(0) > left{
+            outDirIntrinsic: deg 15;
+            outTension: .8;
+        }
+        point:i(1) > left{
+            inTension: .9;
+        }
+        point:i(1) > right {
+            inTension: 1;
+        }
+    
+        point:i(-4)>right {
+            outTension: .70;
+        }
+        point:i(-3)>left {
+            outTension: 1;
+            inTension: 1;
+        }
+        point:i(-3)>right {
+            outTension: 1;
+            inTension: 1;
+        }
+        point:i(-2)>right {
+            inTension: 1.2;
+        }
+    }
+    @namespace("penstroke#bowl") {
+        @dictionary{
+            point:i(0) > center {
+                yTranslate: 30;
+            }
+            
+            point:i(0) > left,
+            point:i(0) > right{
+                weightSummand: 1
+            }
+        }
+        point:i(0) > left,
+        point:i(0) > right {
+            outTension: 1;
+        }
+        point:i(-2) > left,
+        point:i(-2) > right {
+            outTension: 1.2;
+        }
+        point:i(-1) > left,
+        point:i(-1) > right {
+            inTension: 1;
+        }
+        
+    }
+}
+@namespace(glyph#d) {
+    @dictionary {
+        point > * {
+            serifLength: stemWidth * 3;
+        }
+    }
+    @namespace("penstroke#bowl") {
+        @dictionary{
+            point:i(0) > center {
+                yTranslate: 30;
+            }
+            point:i(1) > center {
+                xTranslate: -30;
+            }
+        }
+    }
+    point:i(0) > left {
+        outTension: .7;
+    }
+    point:i(0) > right {
+        outTension: .6;
+    }
+    point:i(1) > left {
+        inTension: 1;
+    }
+    point:i(1) > right {
+        inTension: 1.5;
     }
 }

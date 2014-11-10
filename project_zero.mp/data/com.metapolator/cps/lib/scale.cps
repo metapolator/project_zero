@@ -1,21 +1,21 @@
 /* scale the skeleton */
 @dictionary {
     point>center {
-        transform: (Scaling widthFactor heightFactor);
-        translate: (Translation xTranslate yTranslate);
+        /* this way we can override scale and still have access to it's 
+         * original value
+         */
+        _scale: (Scaling widthFactor heightFactor);
+        scale: _scale;
+        _translate: (Translation xTranslate yTranslate);
+        translate: _translate;
+        transform:  translate * scale;
     }
 }
 
 point > center {
-    on: transform * translate * skeleton:on;
-    in: transform * translate * skeleton:in;
-    out: transform * translate * skeleton:out;
-}
-
-point > center {
-    on: translate * transform * skeleton:on;
-    in: translate * transform * skeleton:in;
-    out: translate * transform * skeleton:out;
+    on: transform * skeleton:on;
+    in: transform * skeleton:in;
+    out: transform * skeleton:out;
 }
 
 

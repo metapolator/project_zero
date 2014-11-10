@@ -44,16 +44,18 @@
   , glyph#dvSSA penstroke#stem point > center
   , glyph#dvSSA penstroke#crossBar point:i(0) > center
   , glyph#a penstroke#bowl point > center
+  , glyph#a penstroke#stem point:i(-1) > center
+  , glyph#a penstroke#stem point:i(-2) > center
+  , glyph#d penstroke#topSerif point:i(0)>center
+  , glyph#d penstroke#topSerif point:i(-1)>center
+  , glyph#d penstroke#bottomSerif point:i(0)>center
+  , glyph#d penstroke#bottomSerif point:i(-1)>center
+  , glyph#d penstroke#bowl point > center
   {
-        _on: transform * translate * skeleton:on;
-        _in: transform * translate * skeleton:in;
-        _out: transform * translate * skeleton:out;
-        
-        _on: translate * transform * skeleton:on;
-        _in: translate * transform * skeleton:in;
-        _out: translate * transform * skeleton:out;
-        
         pinTo: Vector 0 0;
+        _on: transform * skeleton:on;
+        _in: transform * skeleton:in;
+        _out: transform * skeleton:out;
     }
 }
 
@@ -74,6 +76,13 @@
 , glyph#dvSSA penstroke#stem point > center
 , glyph#dvSSA penstroke#crossBar point:i(0) > center
 , glyph#a penstroke#bowl point > center
+, glyph#a penstroke#stem point:i(-1) > center
+, glyph#a penstroke#stem point:i(-2) > center
+, glyph#d penstroke#topSerif point:i(0)>center
+, glyph#d penstroke#topSerif point:i(-1)>center
+, glyph#d penstroke#bottomSerif point:i(0)>center
+, glyph#d penstroke#bottomSerif point:i(-1)>center
+, glyph#d penstroke#bowl point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -142,9 +151,6 @@
 , glyph#dvI penstroke#bubble point
 , glyph#dvDA penstroke#bubble point
 
-, glyph#a penstroke#stem point:i(-1)
-, glyph#a penstroke#stem point:i(-2)
-
 ") {
     @dictionary {
         * {
@@ -159,6 +165,27 @@
         }
     }
 }
+
+@namespace("
+, glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem point:i(-2)
+") {
+    @dictionary {
+        * {
+            uniformScale: 1;
+        }
+        center {
+            scale: Scaling uniformScale uniformScale;
+        }
+        left, right {
+            weightFactor: uniformScale;
+        }
+    }
+}
+
+
+
+
 /*********************
  * general setup that pins point to positions etc. *
                              ***********************/
@@ -427,6 +454,105 @@
                 pinTo: Vector pinX pinY;
             }
 
+        }
+    }
+}
+
+@namespace(glyph#a) {
+    @dictionary {
+        point > * {
+            bowl: glyph[S"#bowl"];
+            stem: glyph[S"#stem"];
+        }
+    }
+    @namespace("penstroke#bowl") {
+        /* fix the bowl 0 and -1 to the stem, where -1 center touches it */
+        @dictionary {
+            point:i(0) > center,
+            point:i(-1) > center {
+                target: stem:children[2]:left:on:x;
+                origin: penstroke:children[-1]:center:_on:x;
+                pinX: target - origin;
+                pinTo: Vector pinX 0;
+            }
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point:i(-2) > center,
+            point:i(-1) > center {
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * stem:children[-2]:skeleton:on;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * stem:children[-2]:skeleton:on;
+                pinTo: target-origin;
+            }
+        }
+    }
+}
+@namespace(glyph#d) {
+    @dictionary {
+        point > * {
+            bowl: glyph[S"#bowl"];
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            bottomSerif: glyph[S"#bottomSerif"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+            serifLength: stemWidth;
+        }
+    }
+    @namespace(penstroke#bowl) {
+        /* fix the bowl 0 and -1 to the stem, where 0 right touches it */
+        @dictionary {
+            point:i(0) > center,
+            point:i(-1) > center {
+                target: stem:children[0]:left:on:x;
+                origin: penstroke:children[0]:center;
+                rightOffset: (Polar origin:parent:right:onLength origin:parent:right:onDir):x;
+                pinX: target - origin:_on:x - rightOffset;
+                pinTo: Vector pinX 0;
+            }
+            point:i(1) > center,
+            point:i(-2)>center {
+                pinTo: Vector (penstroke:children[0]:center:pinX / 2) 0;
+            }
+        }
+    
+    }
+    @namespace(penstroke#topSerif) {
+        @dictionary {
+            point:i(0)>center {
+                origin: this:_on:x;
+                target: stem:children[-1]:right:on:x;
+                pinTo: Vector (target-origin) 0;
+            }
+            point:i(-1)>center {
+                origin: this:_on:x;
+                target: stem:children[-1]:left:on:x;
+                pinTo: Vector (target-origin-serifLength) 0;
+            }
+        }
+    }
+    @namespace(penstroke#bottomSerif) {
+        @dictionary{
+            point:i(0)>center {
+                origin: this:_on:x;
+                target: stem:children[0]:right:on:x;
+                pinTo: Vector (target-origin+serifLength) 0;
+            }
+            point:i(-1)>center {
+                origin: this:_on:x;
+                target: stem:children[0]:left:on:x;
+                pinTo: Vector (target-origin) 0;
+            }
         }
     }
 }

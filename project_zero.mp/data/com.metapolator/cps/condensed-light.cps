@@ -13,12 +13,21 @@
 , glyph#dvDA penstroke#bubble point
 , glyph#dvA penstroke#lowerBow point:i(0)
 , glyph#dvA penstroke#lowerBow point:i(1)
+") {
+    @dictionary {
+        * {
+            uniformScale: .5;
+        }
+    }
+}
+
+@namespace("
 , glyph#a penstroke#stem point:i(-1)
 , glyph#a penstroke#stem  point:i(-2)
 ") {
     @dictionary {
         * {
-            uniformScale: .5;
+            uniformScale: .35;
         }
     }
 }
@@ -241,6 +250,71 @@
             inTension: 1;
             outTension: 1.2;
         }
-    
+    }
+}
+
+@namespace("glyph#a") {
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point:i(-3) > center {
+                xTranslate: 5;
+            }
+            point:i(-2) > center,
+            point:i(-1) > center {
+                yTranslate: 25;
+            }
+            point:i(0) > left,
+            point:i(0) > right {
+                weightSummand: 1.5;
+            }
+        }
+        point:i(0) > right{
+            outDirIntrinsic: parent:left:outDirIntrinsic;
+        }
+        
+        point:i(-4) > right {
+            outTension: .6;
+        }
+        point:i(-3) > left {
+            outTension: 1.3;
+            inTension: 1.15;
+        }
+        point:i(-3) > right {
+            outTension: 1;
+            inTension: .92;
+        }
+        point:i(-2)>left {
+            inTension: 1;
+        }
+        point:i(-2)>right {
+            inTension: 1.5;
+        }
+    }
+    @namespace("penstroke#bowl") {
+        @dictionary {
+            point:i(2) > center {
+                xTranslate: -15;
+            }
+        }
+        
+        point:i(0) > left,
+        point:i(0) > right {
+            outTension: 1;
+        }
+        
+        point:i(1) > left {
+            inTension: 1.1;
+            outTension: 1.5;
+        }
+        point:i(2) > right {
+            outTension: 1.1;
+        }
+    }
+}
+@namespace(glyph#d) {
+    @dictionary {
+        point > * {
+            serifLength: stemWidth * 1.4;
+        }
     }
 }
