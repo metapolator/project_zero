@@ -3,7 +3,7 @@ Encoding: 876 101 876
 GlifName: e
 Width: 515
 VWidth: 0
-Flags: HW
+Flags: HWO
 LayerCount: 2
 Back
 SplineSet
@@ -28,8 +28,8 @@ EndSplineSet
 Fore
 SplineSet
 482 200 m 1
- 482 405 371 470 261 470 c 259
- 146 470 30 406 30 232 c 259
+ 482 405 371 470 261 470 c 263
+ 146 470 30 406 30 232 c 263
  30 33 168 -10 290 -10 c 259
  361 -10 442 25 472 75 c 257
  458 85 l 257
@@ -38,13 +38,14 @@ SplineSet
  179 323 196 450 260 450 c 259
  323 450 342 328 342 200 c 1
  482 200 l 1
-445.829101562 220 m 5
+  Named: "stroke"
+445.829101562 220 m 1
  135 220 l 257
  135 200 l 257
  445.829101562 200 l 1
- 445.829101562 220 l 5
+ 445.829101562 220 l 1
+  Named: "bar"
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

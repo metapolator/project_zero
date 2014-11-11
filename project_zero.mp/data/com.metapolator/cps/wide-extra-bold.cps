@@ -38,6 +38,16 @@
         }
     }
 }
+@namespace("
+  glyph#d
+, glyph#h
+") {
+    @dictionary {
+        point > * {
+            serifLength: stemWidth / 4;
+        }
+    }
+}
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -207,10 +217,23 @@
         }
     }
 }
-@namespace(glyph#d) {
-    @dictionary {
-        point > * {
-            serifLength: stemWidth / 3;
+
+@namespace(glyph#h) {
+    @namespace("penstroke#arch") {
+        @dictionary {
+            /* move all points, we want to make it wider here*/
+            point > center {
+                origin: penstroke:children[-1]:center:_on:x;
+                target: stem:children[0]:right:on:x;
+                pinTo: Vector (target - origin) 0;
+            }
+        }
+        point:i(-1) > right,  point:i(-1) > left {
+            inTension: 1.6;
+            inDirIntrinsic: deg -13;
+        }
+        point:i(-2) > right, point:i(-2) > left {
+            outTension: 1;
         }
     }
 }

@@ -2675,8 +2675,8 @@ point:i(0) > left {
     outDirIntrinsic: 0;
     inTension: 1.0000100001000007;
     inLength: 49.99950000000001;
-    outTension: 1.0000100001000007;
-    outLength: 223.33110000000002;
+    outTension: 1.000010000100001;
+    outLength: 216.6645;
 }
 
 point:i(0) > right {
@@ -2686,15 +2686,15 @@ point:i(0) > right {
     outDirIntrinsic: 0;
     inTension: 1.0000100001000007;
     inLength: 49.99950000000001;
-    outTension: 1.0000100001000007;
-    outLength: 223.33110000000002;
+    outTension: 1.000010000100001;
+    outLength: 216.6645;
 }
 
 point:i(1) > left {
     inDirIntrinsic: 0;
     outDir: 0;
     inTension: 1.000010000100001;
-    inLength: 223.3311;
+    inLength: 216.66449999999998;
     outTension: 1.0000100001000007;
     outLength: 49.99950000000001;
 }
@@ -2705,7 +2705,7 @@ point:i(1) > right {
     inDirIntrinsic: 0;
     outDir: 3.141592653589793;
     inTension: 1.000010000100001;
-    inLength: 223.3311;
+    inLength: 216.66449999999998;
     outTension: 1.0000100001000007;
     outLength: 49.99950000000001;
 }
@@ -2760,7 +2760,7 @@ point:i(0) > left {
     inTension: 1.0000100001000007;
     inLength: 49.99950000000001;
     outTension: 1.000010000100001;
-    outLength: 99.99900000000001;
+    outLength: 96.6657;
 }
 
 point:i(0) > right {
@@ -2771,14 +2771,14 @@ point:i(0) > right {
     inTension: 1.0000100001000007;
     inLength: 49.99950000000001;
     outTension: 1.000010000100001;
-    outLength: 92.66574;
+    outLength: 89.33244;
 }
 
 point:i(1) > left {
     inDirIntrinsic: 0;
     outDirIntrinsic: 0;
     inTension: 1.0000100001000007;
-    inLength: 99.99900000000002;
+    inLength: 96.66570000000002;
     outTension: 0.6647354817826225;
     outLength: 98;
 }
@@ -2788,8 +2788,8 @@ point:i(1) > right {
     onDir: -0.14562838057082264;
     inDirIntrinsic: 0;
     outDirIntrinsic: 0;
-    inTension: 1.000010000100001;
-    inLength: 92.66574;
+    inTension: 1.0000100001000005;
+    inLength: 89.33244000000002;
     outTension: 0.8186650281642178;
     outLength: 127;
 }

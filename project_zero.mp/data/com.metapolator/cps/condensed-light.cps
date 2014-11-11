@@ -32,6 +32,17 @@
     }
 }
 
+@namespace("
+  glyph#d
+, glyph#h
+") {
+    @dictionary {
+        point > * {
+            serifLength: stemWidth * 1.4;
+        }
+    }
+}
+
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -311,10 +322,4 @@
         }
     }
 }
-@namespace(glyph#d) {
-    @dictionary {
-        point > * {
-            serifLength: stemWidth * 1.4;
-        }
-    }
-}
+

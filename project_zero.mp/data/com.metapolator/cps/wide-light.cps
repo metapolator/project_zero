@@ -30,6 +30,17 @@
         }
     }
 }
+
+@namespace("
+  glyph#d
+, glyph#h
+") {
+    @dictionary {
+        point > * {
+            serifLength: stemWidth * 3;
+        }
+    }
+}
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -303,11 +314,6 @@
     }
 }
 @namespace(glyph#d) {
-    @dictionary {
-        point > * {
-            serifLength: stemWidth * 3;
-        }
-    }
     @namespace("penstroke#bowl") {
         @dictionary{
             point:i(0) > center {
@@ -329,5 +335,27 @@
     }
     point:i(1) > right {
         inTension: 1.5;
+    }
+}
+@namespace(glyph#h) {
+    @namespace("penstroke#arch") {
+        point:i(-1) > right,  point:i(-1) > left {
+            inTension: 1.6;
+            inDirIntrinsic: deg -27;
+        }
+        point:i(-2) > right, point:i(-2) > left {
+            outTension: 1;
+        }
+    }
+}
+@namespace(glyph#e) {
+    @namespace("penstroke#stroke") {
+        point:i(1) > left {
+            inTension: 1;
+            outTension: 1;
+        }
+        point:i(2) > left {
+            inTension: 1
+        }
     }
 }

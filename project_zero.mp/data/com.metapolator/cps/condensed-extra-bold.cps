@@ -38,6 +38,16 @@
         }
     }
 }
+@namespace("
+  glyph#d
+, glyph#h
+") {
+    @dictionary {
+        point > * {
+            serifLength: stemWidth / 6;
+        }
+    }
+}
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -540,9 +550,6 @@
 }
 @namespace(glyph#d) {
     @dictionary {
-        point > * {
-            serifLength: stemWidth / 6;
-        }
         point > center {
             extraX: 100;
             xTranslate: extraX;
@@ -576,6 +583,59 @@
         point:i(-2) > right {
             outTension: 3;
             inTension: 2.5;
+        }
+    }
+}
+
+@namespace(glyph#h) {
+    @dictionary {
+        point > center {
+            extraX: 77;
+            xTranslate: extraX;
+        }
+    }
+    @namespace("penstroke#arch") {
+        @dictionary {
+            /* move all points, we want to make it wider here*/
+            point > center {
+                origin: penstroke:children[-1]:center:_on:x;
+                target: stem:children[0]:right:on:x;
+                pinTo: Vector (target - origin) 0;
+            }
+        }
+        point:i(-2) > left {
+            inTension: 2.3;
+            soutTension: 1;
+        }
+    }
+    @dictionary{
+        penstroke#bottomLeftSerif point.serif.bottom.right > center,
+        penstroke#bottomRightSerif point.serif.bottom.left > center {
+            serifLength: 0;
+        }
+    }
+}
+
+
+@namespace(glyph#e) {
+    @dictionary {
+        point > center {
+            extraX: 77;
+            xTranslate: extraX;
+        }
+    }
+    @namespace("penstroke#stroke") {
+        point:i(1) > left {
+            inTension: 2.7;
+            outTension: 2.7;
+        }
+        @dictionary{
+            point:i(0) > center{
+                xTranslate: 32 + extraX;
+            }
+            point:i(2) > center{
+                xTranslate: -32 + extraX;
+            }
         }
     }
 }

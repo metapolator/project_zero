@@ -51,7 +51,13 @@
   , glyph#d penstroke#bottomSerif point:i(0)>center
   , glyph#d penstroke#bottomSerif point:i(-1)>center
   , glyph#d penstroke#bowl point > center
-  {
+  , point.serif > center
+  , point.no-serif > center
+  , glyph#h penstroke#arch point > center
+  , glyph#e penstroke#bar point > center
+  , glyph#e penstroke#stroke point:i(-1) > center
+  , glyph#e penstroke#stroke point:i(-2) > center
+    {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
         _in: transform * skeleton:in;
@@ -83,6 +89,12 @@
 , glyph#d penstroke#bottomSerif point:i(0)>center
 , glyph#d penstroke#bottomSerif point:i(-1)>center
 , glyph#d penstroke#bowl point > center
+, point.serif > center
+, point.no-serif > center
+, glyph#h penstroke#arch point > center
+, glyph#e penstroke#bar point > center
+, glyph#e penstroke#stroke point:i(-1) > center
+, glyph#e penstroke#stroke point:i(-2) > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -184,6 +196,43 @@
 }
 
 
+/**
+ * Point class bases setup of the simple serifs of this font
+ */
+@dictionary {
+    point.serif > center,
+    point.no-serif > center {
+        origin: this:_on:x;
+        moveX: 0;
+        pinTo: Vector moveX 0;
+    }
+    
+    point.serif > center {
+        _serifLength: serifLength;
+    }
+    point.no-serif > center {
+        _serifLength: 0;
+    }
+
+    /* We'll need to set `referenceStroke` to the actual penstroke that
+     * is the reference stroke of the serif.
+     * 
+     */
+    point.serif.top > center, point.no-serif.top > center {
+        target: referenceStroke[S"point.top"];
+    }
+    
+    point.serif.bottom > center, point.no-serif.bottom > center {
+        target: referenceStroke[S"point.bottom"];
+    }
+    
+    point.serif.left > center, point.no-serif.left > center {
+        moveX: target:left:on:x - origin - _serifLength;
+    }
+    point.serif.right > center, point.no-serif.right > center {
+        moveX: target:right:on:x - origin + _serifLength;
+    }
+}
 
 
 /*********************
@@ -552,6 +601,74 @@
                 origin: this:_on:x;
                 target: stem:children[0]:left:on:x;
                 pinTo: Vector (target-origin) 0;
+            }
+        }
+    }
+}
+
+@namespace(glyph#h) {
+    @dictionary {
+        point > * {
+            arch: glyph[S"#arch"];
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            bottomLeftSerif: glyph[S"#bottomLeftSerif"];
+            bottomRightSerif: glyph[S"#bottomRightSerif"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+            serifLength: stemWidth;
+        }
+    }
+    @namespace("penstroke#topSerif, penstroke#bottomLeftSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+    @namespace("penstroke#bottomRightSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: arch;
+            }
+        }
+    }
+    @namespace("penstroke#arch") {
+        @dictionary {
+            point:i(-1) > center {
+                origin: penstroke:children[-1]:center:_on:x;
+                target: stem:children[0]:right:on:x;
+                pinTo: Vector (target - origin) 0;
+            }
+        }
+    }
+}
+@namespace(glyph#e) {
+    @dictionary {
+        point > * {
+            stroke: glyph[S"#stroke"];
+            bar: glyph[S"#bar"];
+        }
+    }
+    @namespace(penstroke#bar) {
+        @dictionary,  {
+            point > center {
+                origin: penstroke:children[0]:center:_on;
+                target: stroke:children[0]:center:on;
+                pinTo: target - origin
+                    - (Polar parent:left:onLength parent:left:onDir);
+            }
+        }
+    }
+    @namespace(penstroke#stroke) {
+        @dictionary,  {
+            point:i(-1) > center {
+                origin: this:_on:x
+                    + (Polar parent:right:onLength parent:right:onDir):x;
+                target: penstroke:children[0]:right:on:x;
+                pinTo: Vector (target - origin) 0;
+            }
+            point:i(-2) > center {
+                pinTo: Vector (penstroke:children[-1]:center:pinTo:x/2) 0;
             }
         }
     }
