@@ -3,27 +3,42 @@ Encoding: 972 111 972
 GlifName: o
 Width: 564
 VWidth: 0
-Flags: HW
+Flags: HWO
 LayerCount: 2
 Back
 Fore
 SplineSet
 282 -10 m 257
+NamedP: "horizontal bottom"
  397 -10 533 62 533 232 c 259
+NamedP: "vertical right"
  533 396 397 470 282 470 c 257
+NamedP: "horizontal top"
  282 450 l 257
+NamedP: "horizontal top"
  355 450 380 385 380 232 c 259
- 380 75 355 10 282 10 c 9
+NamedP: "vertical right"
+ 380 75 355 10 282 10 c 1
+NamedP: "horizontal bottom"
  282 -10 l 257
-282 470 m 257
- 167 470 31 398 31 228 c 259
- 31 64 167 -10 282 -10 c 257
- 282 10 l 257
- 209 10 184 75 184 228 c 259
- 184 385 209 450 282 450 c 9
- 282 470 l 257
+NamedP: "horizontal bottom"
+  Named: "right"
+282 470 m 261
+NamedP: "horizontal top"
+ 167 470 31 398 31 228 c 263
+NamedP: "vertical left"
+ 31 64 167 -10 282 -10 c 261
+NamedP: "horizontal bottom"
+ 282 10 l 261
+NamedP: "horizontal bottom"
+ 209 10 184 75 184 228 c 263
+NamedP: "vertical left"
+ 184 385 209 450 282 450 c 13
+NamedP: "horizontal top"
+ 282 470 l 261
+NamedP: "horizontal top"
+  Named: "left"
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

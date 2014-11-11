@@ -19,6 +19,17 @@
     }
 }
 @namespace("
+  glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem point:i(-2)
+, point.drop
+") {
+    @dictionary {
+        * {
+            uniformScale: 1.15;
+        }
+    }
+}
+@namespace("
   glyph#dvA penstroke#lowerBow point:i(0)
 , glyph#dvA penstroke#lowerBow point:i(1)
 ") {
@@ -29,18 +40,28 @@
     }
 }
 @namespace("
-  glyph#a penstroke#stem point:i(-1)
-, glyph#a penstroke#stem point:i(-2)
+  glyph#i penstroke#dot point
 ") {
     @dictionary {
         * {
-            uniformScale: 1.15;
+            uniformScale: 1.5;
+        }
+    }
+}
+@namespace("
+    glyph#s point.drop
+") {
+    @dictionary {
+        * {
+            uniformScale: 1;
         }
     }
 }
 @namespace("
   glyph#d
 , glyph#h
+, glyph#n
+, glyph#i
 ") {
     @dictionary {
         point > * {
@@ -587,7 +608,7 @@
     }
 }
 
-@namespace(glyph#h) {
+@namespace(glyph#h, glyph#n) {
     @dictionary {
         point > center {
             extraX: 77;
@@ -637,5 +658,114 @@
                 xTranslate: -32 + extraX;
             }
         }
+    }
+}
+@namespace(glyph#s) {
+    @dictionary {
+        point > * {
+            xTranslate: extraX;
+            extraX: 50;
+        }
+    }
+    @namespace(penstroke#sShape) {
+        @dictionary {
+            point.horizontal.top > center {
+                xTranslate: 25 + extraX;
+            }
+            point.drop.top > center {
+                xTranslate: 25 + extraX;
+                yTranslate: 20;
+            }
+            point.horizontal.bottom > center {
+                xTranslate: -15 + extraX;
+            }
+            point.drop.bottom > center {
+                xTranslate: -22 + extraX;
+                yTranslate: -23;
+            }
+        }
+
+        point.drop.bottom.fixation > left {
+            inTension: 1.5;
+            outTension: 2.5;
+        }
+        
+        point.horizontal.bottom > left {
+            outTension: 1;
+        }
+        
+        point.vertical.bottom > left {
+            inTension: 1;
+        }
+        
+        point.vertical.bottom > right {
+            outTension: 1.1;
+        }
+        
+        point.vertical.top > left {
+            inTension: 1.1;
+        }
+        
+        point.vertical.top > right {
+            outTension: 1.5;
+        }
+        
+        point.horizontal.top > right {
+            outTension: 1.5;
+            sinTension: 1.5;
+        }
+        
+        point.drop.top.fixation > right {
+            inTension: 3.5;
+            outTension: 1.5;
+        }
+    }
+}
+@namespace(glyph#i) {
+    @dictionary {
+        point > * {
+            xTranslate: extraX;
+            extraX: 50;
+        }
+    }
+    @namespace("penstroke#dot") {
+        @dictionary {
+            point > center {
+                dotFixation: penstroke:children[-1]:skeleton:on;
+            }
+        }
+    }
+}
+
+@namespace(glyph#o) {
+    @dictionary {
+        point > center {
+            xTranslate: extraX;
+            extraX: 77;
+        }
+        point.horizontal > left {
+            horizontalInnerTension: 2.7;
+        }
+        point.vertical > center {
+           verticalXTranslate: 30;
+        }
+        penstroke#left point.vertical > center {
+            xTranslate: -verticalXTranslate + extraX;
+        }
+        penstroke#right point.vertical > center {
+            xTranslate: verticalXTranslate + extraX;
+        }
+    }
+    penstroke#left point.horizontal.top > left {
+        outTension: horizontalInnerTension;
+    }
+    penstroke#left point.horizontal.bottom > left {
+        inTension: horizontalInnerTension;
+    }
+    penstroke#right point.horizontal.top > left {
+        inTension: horizontalInnerTension;
+    }
+    penstroke#right point.horizontal.bottom > left {
+        outTension: horizontalInnerTension;
     }
 }

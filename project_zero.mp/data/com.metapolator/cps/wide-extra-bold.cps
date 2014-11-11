@@ -18,6 +18,19 @@
         }
     }
 }
+
+@namespace("
+  glyph#a penstroke#stem point:i(-1)
+, glyph#a penstroke#stem point:i(-2)
+, point.drop
+") {
+    @dictionary {
+        * {
+            uniformScale: 1.15;
+        }
+    }
+}
+
 @namespace("
   glyph#dvA penstroke#lowerBow point:i(0)
 , glyph#dvA penstroke#lowerBow point:i(1)
@@ -28,19 +41,31 @@
         }
     }
 }
+
 @namespace("
-  glyph#a penstroke#stem point:i(-1)
-, glyph#a penstroke#stem point:i(-2)
+  glyph#i penstroke#dot point
 ") {
     @dictionary {
         * {
-            uniformScale: 1.15;
+            uniformScale: 1.5;
+        }
+    }
+}
+
+@namespace("
+    glyph#s point.drop
+") {
+    @dictionary {
+        * {
+            uniformScale: 1;
         }
     }
 }
 @namespace("
   glyph#d
 , glyph#h
+, glyph#n
+, glyph#i
 ") {
     @dictionary {
         point > * {
@@ -218,7 +243,7 @@
     }
 }
 
-@namespace(glyph#h) {
+@namespace(glyph#h, glyph#n) {
     @namespace("penstroke#arch") {
         @dictionary {
             /* move all points, we want to make it wider here*/
@@ -234,6 +259,68 @@
         }
         point:i(-2) > right, point:i(-2) > left {
             outTension: 1;
+        }
+    }
+}
+
+@namespace(glyph#s) {
+    @dictionary {
+        point > * {
+            xTranslate: extraX;
+            extraX: 50;
+        }
+    }
+    @namespace(penstroke#sShape) {
+        @dictionary {
+            point.horizontal.top > center {
+                xTranslate: 15 + extraX;
+            }
+            point.drop.top > center {
+                xTranslate: 33 + extraX;
+                yTranslate: 3;
+            }
+            point.horizontal.bottom > center {
+                xTranslate: -7.5 + extraX;
+            }
+            point.drop.bottom > center {
+                xTranslate: -15 + extraX;
+                yTranslate: -8;
+            }
+        
+        }
+        point.drop.bottom.fixation > left {
+            outTension: 4;
+        }
+        
+        point.vertical.bottom > right {
+            outTension: 1;
+        }
+        point.vertical.bottom > left {
+            outTension: 2.3;
+            inTension: 2.3;
+        }
+        
+        point.vertical.top > right {
+            inTension: 2.3;
+            outTension: 2.3;
+        }
+        
+        point.drop.top.fixation > right{
+            inTension: 3.5;
+        }
+        
+        point.vertical.top > left {
+            inTension: 1
+        }
+    }
+}
+
+@namespace(glyph#i) {
+    @namespace("penstroke#dot") {
+        @dictionary{
+            point > center {
+                dotFixation: penstroke:children[-1]:skeleton:on;
+            }
         }
     }
 }

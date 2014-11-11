@@ -23,6 +23,7 @@
 @namespace("
   glyph#a penstroke#stem point:i(-1)
 , glyph#a penstroke#stem point:i(-2)
+, point.drop
 ") {
     @dictionary {
         * {
@@ -30,10 +31,22 @@
         }
     }
 }
+@namespace("
+    glyph#s point.drop
+  , glyph#i penstroke#dot point
+") {
+    @dictionary {
+        * {
+            uniformScale: .45;
+        }
+    }
+}
 
 @namespace("
   glyph#d
 , glyph#h
+, glyph#n
+, glyph#i
 ") {
     @dictionary {
         point > * {
@@ -337,7 +350,7 @@
         inTension: 1.5;
     }
 }
-@namespace(glyph#h) {
+@namespace(glyph#h, glyph#n) {
     @namespace("penstroke#arch") {
         point:i(-1) > right,  point:i(-1) > left {
             inTension: 1.6;
@@ -356,6 +369,35 @@
         }
         point:i(2) > left {
             inTension: 1
+        }
+    }
+}
+@namespace(glyph#s) {
+    @namespace(penstroke#sShape) {
+        @dictionary {
+            point.drop.bottom > center {
+                xTranslate: 10;
+                yTranslate: 0;
+            }
+            
+            point.drop.top > center {
+                yTranslate: -15;
+            }
+        }
+        point.drop.bottom.fixation > right{
+            outTension: 2;
+        }
+        point.horixontal.bottom > right{
+            inTension: 1;
+        }
+        point.vertical.bottom > right{
+            outTension: 1;
+        }
+        point.vertical.top > right{
+            inTension: 1;
+        }
+        point.drop.top.fixation > left{
+            inTension: 1.3;
         }
     }
 }

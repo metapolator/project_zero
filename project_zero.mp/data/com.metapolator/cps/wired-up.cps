@@ -54,9 +54,12 @@
   , point.serif > center
   , point.no-serif > center
   , glyph#h penstroke#arch point > center
+  , glyph#n penstroke#arch point > center
   , glyph#e penstroke#bar point > center
   , glyph#e penstroke#stroke point:i(-1) > center
   , glyph#e penstroke#stroke point:i(-2) > center
+  , point.drop > center
+  , glyph#i penstroke#dot point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -92,9 +95,12 @@
 , point.serif > center
 , point.no-serif > center
 , glyph#h penstroke#arch point > center
+, glyph#n penstroke#arch point > center
 , glyph#e penstroke#bar point > center
 , glyph#e penstroke#stroke point:i(-1) > center
 , glyph#e penstroke#stroke point:i(-2) > center
+, point.drop > center
+, glyph#i penstroke#dot point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -181,6 +187,8 @@
 @namespace("
 , glyph#a penstroke#stem point:i(-1)
 , glyph#a penstroke#stem point:i(-2)
+, point.drop
+, glyph#i penstroke#dot point
 ") {
     @dictionary {
         * {
@@ -528,12 +536,14 @@
     }
     @namespace("penstroke#stem") {
         @dictionary {
+            /* fix the custom scaled bowl to the stem*/
             point:i(-2) > center,
             point:i(-1) > center {
                 /* this is where the point is without the here calculated movement
                  * and without the xTranslate and yTranslate variables
                  */
-                origin: scale * stem:children[-2]:skeleton:on;
+                fixture: stem:children[-2]:skeleton:on;
+                origin: scale * fixture;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
                  * 
@@ -541,7 +551,7 @@
                  * use it in following rules, without having this rule
                  * compensating.
                  */
-                target: _scale * stem:children[-2]:skeleton:on;
+                target: _scale * fixture;
                 pinTo: target-origin;
             }
         }
@@ -606,7 +616,7 @@
     }
 }
 
-@namespace(glyph#h) {
+@namespace("glyph#h, glyph#n") {
     @dictionary {
         point > * {
             arch: glyph[S"#arch"];
@@ -669,6 +679,81 @@
             }
             point:i(-2) > center {
                 pinTo: Vector (penstroke:children[-1]:center:pinTo:x/2) 0;
+            }
+        }
+    }
+}
+
+@namespace(glyph#s) {
+    @dictionary {
+        point > * {
+            sShape: glyph[S"#sShape"];
+        }
+    }
+    @namespace("penstroke#sShape") {
+        @dictionary {
+            /* fix the custom scaled bowl to the sShape*/
+            
+            point.drop.top > center {
+                dropFixation: sShape[S"point.drop.top.fixation"]:skeleton:on
+            }
+            point.drop.bottom > center {
+                dropFixation: sShape[S"point.drop.bottom.fixation"]:skeleton:on
+            }
+            
+            point.drop > center {
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dropFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dropFixation;
+                pinTo: target-origin;
+            }
+        }
+    }
+}
+
+@namespace(glyph#i) {
+    @dictionary {
+        point > * {
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            bottomSerif: glyph[S"#bottomSerif"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+            serifLength: stemWidth;
+        }
+    }
+    @namespace("penstroke#dot") {
+        @dictionary{
+            point > center {
+                dotFixation: penstroke:children[1]:skeleton:on;
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dotFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dotFixation;
+                pinTo: target-origin;
+            }
+        }
+    }
+    @namespace("penstroke#topSerif, penstroke#bottomSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
             }
         }
     }

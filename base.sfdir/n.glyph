@@ -8,37 +8,64 @@ LayerCount: 2
 Back
 Fore
 SplineSet
-240 460 m 257
+240 460 m 261
+NamedP: "top right no-serif"
  40 460 l 257
+NamedP: "top left serif"
  40 440 l 257
+NamedP: "top left serif"
  240 440 l 257
- 240 460 l 257
-565 14 m 257
+NamedP: "top right no-serif"
+ 240 460 l 261
+NamedP: "top right no-serif"
+  Named: "topSerif"
+565 10 m 257
+NamedP: "bottom"
  565 278 l 258
  565 405 504 471 387 471 c 259
  308 471 241 428 230 387 c 257
  230 351 l 257
  252 404 290 431 331 431 c 259
  385 431 415 398 415 300 c 258
- 415 14 l 257
- 565 14 l 257
+ 415 10 l 257
+NamedP: "bottom"
+ 565 10 l 257
+NamedP: "bottom"
+  Named: "arch"
 615 20 m 257
+NamedP: "bottom right serif"
  365 20 l 257
+NamedP: "bottom left serif"
  365 0 l 257
+NamedP: "bottom left serif"
  615 0 l 257
+NamedP: "bottom right serif"
  615 20 l 257
+NamedP: "bottom right serif"
+  Named: "bottomRightSerif"
 290 20 m 257
+NamedP: "bottom right serif"
  40 20 l 257
+NamedP: "bottom left serif"
  40 0 l 257
+NamedP: "bottom left serif"
  290 0 l 257
+NamedP: "bottom right serif"
  290 20 l 257
-240 1 m 257
- 240 451 l 257
- 90 451 l 257
- 90 1 l 257
- 240 1 l 257
+NamedP: "bottom right serif"
+  Named: "bottomLeftSerif"
+240 10 m 257
+NamedP: "bottom"
+ 240 450 l 257
+NamedP: "top"
+ 90 450 l 257
+NamedP: "top"
+ 90 10 l 257
+NamedP: "bottom"
+ 240 10 l 257
+NamedP: "bottom"
+  Named: "stem"
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2
