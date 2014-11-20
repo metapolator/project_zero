@@ -1,3 +1,10 @@
+@import 'lib/centreline-skeleton-to-symmetric-outline.cps';
+@import 'lib/point-child-base.cps';
+@import 'lib/single-inheritance.cps';
+@import 'lib/weight.cps';
+@import 'lib/scale.cps';
+@import 'wired-up.cps';
+
 /* set up this masters parameters */
 @dictionary {
     point > center {

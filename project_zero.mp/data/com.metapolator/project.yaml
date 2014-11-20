@@ -1,8 +1,6 @@
 masters:
   base:
-    cpsChain:
-      - lib/centreline-skeleton-to-symmetric-outline.cps
-      - base.cps
+    cpsFile: base.cps
     skeleton: skeleton.base
 # this is just an enhancement of base
 #  enhanced:
@@ -39,45 +37,17 @@ masters:
 #    skeleton: skeleton.base
 # condensed light
   cl:
-    cpsChain:
-      - lib/centreline-skeleton-to-symmetric-outline.cps
-      - lib/point-child-base.cps
-      - lib/single-inheritance.cps
-      - lib/weight.cps
-      - lib/scale.cps
-      - wired-up.cps
-      - condensed-light.cps
+    cpsFile: condensed-light.cps
     skeleton: skeleton.base
 # wide light
   wl:
-    cpsChain:
-      - lib/centreline-skeleton-to-symmetric-outline.cps
-      - lib/point-child-base.cps
-      - lib/single-inheritance.cps
-      - lib/weight.cps
-      - lib/scale.cps
-      - wired-up.cps
-      - wide-light.cps
+    cpsFile: wide-light.cps
     skeleton: skeleton.base
 # condensed extra bold
   ceb:
-    cpsChain:
-      - lib/centreline-skeleton-to-symmetric-outline.cps
-      - lib/point-child-base.cps
-      - lib/single-inheritance.cps
-      - lib/weight.cps
-      - lib/scale.cps
-      - wired-up.cps
-      - condensed-extra-bold.cps
+    cpsFile: condensed-extra-bold.cps
     skeleton: skeleton.base
 # wide extra bold
   web:
-    cpsChain:
-      - lib/centreline-skeleton-to-symmetric-outline.cps
-      - lib/point-child-base.cps
-      - lib/single-inheritance.cps
-      - lib/weight.cps
-      - lib/scale.cps
-      - wired-up.cps
-      - wide-extra-bold.cps
+    cpsFile: wide-extra-bold.cps
     skeleton: skeleton.base

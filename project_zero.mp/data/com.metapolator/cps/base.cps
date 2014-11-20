@@ -1,3 +1,5 @@
+@import 'lib/centreline-skeleton-to-symmetric-outline.cps';
+
 @namespace(glyph#dvA) {
 @namespace(penstroke:i(0)) {
 point:i(0) > left {
