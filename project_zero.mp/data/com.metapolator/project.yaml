@@ -51,3 +51,9 @@ masters:
   web:
     cpsFile: wide-extra-bold.cps
     skeleton: skeleton.base
+  metapolated:
+    cpsFile: metapolated.cps
+    skeleton: skeleton.base
+  interolated:
+    cpsFile: interpolated.cps
+    skeleton: skeleton.base

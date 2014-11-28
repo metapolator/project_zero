@@ -1,4 +1,5 @@
 @import 'lib/centreline-skeleton-to-symmetric-outline.cps';
+@import 'global.cps';
 
 @namespace(glyph#dvA) {
 @namespace(penstroke:i(0)) {
