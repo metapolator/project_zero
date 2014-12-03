@@ -1,0 +1,3 @@
+[submodule "rozhaone"]
+	path = rozhaone
+	url = git@github.com:itfoundry/rozhaone.git
