@@ -34,9 +34,19 @@
         }
     }
 }
+
 @namespace("
     glyph#s point.drop
-  , glyph#i penstroke#dot point
+") {
+    @dictionary {
+        * {
+            uniformScale: .6;
+        }
+    }
+}
+
+@namespace("
+    glyph#i penstroke#dot point
 ") {
     @dictionary {
         * {
@@ -380,15 +390,15 @@
         @dictionary {
             point.drop.bottom > center {
                 xTranslate: 10;
-                yTranslate: 0;
+                yTranslate: -8;
             }
             
             point.drop.top > center {
-                yTranslate: -15;
+                yTranslate: -5;
             }
         }
         point.drop.bottom.fixation > right{
-            outTension: 2;
+            outTension: 1.6;
         }
         point.horixontal.bottom > right{
             inTension: 1;
@@ -400,7 +410,7 @@
             inTension: 1;
         }
         point.drop.top.fixation > left{
-            inTension: 1.3;
+            inTension: 1.6;
         }
     }
 }

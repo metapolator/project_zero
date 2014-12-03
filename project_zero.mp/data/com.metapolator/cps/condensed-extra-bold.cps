@@ -56,7 +56,7 @@
 ") {
     @dictionary {
         * {
-            uniformScale: 1;
+            uniformScale: 1.25;
         }
     }
 }
@@ -677,50 +677,15 @@
             }
             point.drop.top > center {
                 xTranslate: 25 + extraX;
-                yTranslate: 20;
+                yTranslate: 5;
             }
             point.horizontal.bottom > center {
                 xTranslate: -15 + extraX;
             }
             point.drop.bottom > center {
                 xTranslate: -22 + extraX;
-                yTranslate: -23;
+                yTranslate: -10;
             }
-        }
-
-        point.drop.bottom.fixation > left {
-            inTension: 1.5;
-            outTension: 2.5;
-        }
-        
-        point.horizontal.bottom > left {
-            outTension: 1;
-        }
-        
-        point.vertical.bottom > left {
-            inTension: 1;
-        }
-        
-        point.vertical.bottom > right {
-            outTension: 1.1;
-        }
-        
-        point.vertical.top > left {
-            inTension: 1.1;
-        }
-        
-        point.vertical.top > right {
-            outTension: 1.5;
-        }
-        
-        point.horizontal.top > right {
-            outTension: 1.5;
-            sinTension: 1.5;
-        }
-        
-        point.drop.top.fixation > right {
-            inTension: 3.5;
-            outTension: 1.5;
         }
     }
 }

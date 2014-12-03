@@ -60,7 +60,7 @@
 ") {
     @dictionary {
         * {
-            uniformScale: 1;
+            uniformScale: 1.25;
         }
     }
 }
@@ -274,13 +274,13 @@
         }
     }
     @namespace(penstroke#sShape) {
+    
         @dictionary {
             point.horizontal.top > center {
                 xTranslate: 15 + extraX;
             }
             point.drop.top > center {
                 xTranslate: 33 + extraX;
-                yTranslate: 3;
             }
             point.horizontal.bottom > center {
                 xTranslate: -7.5 + extraX;
@@ -289,31 +289,20 @@
                 xTranslate: -15 + extraX;
                 yTranslate: -8;
             }
-        
         }
         point.drop.bottom.fixation > left {
             outTension: 4;
-        }
-        
-        point.vertical.bottom > right {
-            outTension: 1;
         }
         point.vertical.bottom > left {
             outTension: 2.3;
             inTension: 2.3;
         }
-        
         point.vertical.top > right {
             inTension: 2.3;
             outTension: 2.3;
         }
-        
         point.drop.top.fixation > right{
             inTension: 3.5;
-        }
-        
-        point.vertical.top > left {
-            inTension: 1
         }
     }
 }
