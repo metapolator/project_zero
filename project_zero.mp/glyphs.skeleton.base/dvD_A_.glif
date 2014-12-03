@@ -2,8 +2,10 @@
 <glyph name="dvDA" format="2">
   <advance width="489"/>
   <unicode hex="0926"/>
-  <anchor x="383" y="-87" name="blwm_Ukaar"/>
-  <anchor x="375" y="-8" name="blwm_Virama"/>
+  <anchor x="383" y="-87" name="blwm.u"/>
+  <anchor x="375" y="-8" name="blwm.virama"/>
+  <anchor x="389" y="560" name="abvm.e"/>
+  <anchor x="389" y="560" name="abvm.bindu"/>
   <outline>
     <contour identifier="bow">
       <point x="389" y="408.5" type="move"/>
