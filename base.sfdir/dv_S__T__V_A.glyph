@@ -1,5 +1,5 @@
 StartChar: dvS_T_VA
-Encoding: 780 -1 780
+Encoding: 676 -1 676
 GlifName: dvS__T__V_A_
 Width: 1194
 VWidth: 0
@@ -7,8 +7,7 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 717 -1 N 1 0 0 1 0 0 2
-Refer: 786 -1 N 1 0 0 1 347 0 2
-Refer: 850 2357 N 1 0 0 1 630 0 2
-Validated: 5
+Refer: 612 -1 N 1 0 0 1 0 0 2
+Refer: 682 -1 N 1 0 0 1 347 0 2
+Refer: 740 2357 N 1 0 0 1 630 0 2
 EndChar

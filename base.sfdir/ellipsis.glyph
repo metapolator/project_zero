@@ -1,5 +1,5 @@
 StartChar: ellipsis
-Encoding: 885 8230 885
+Encoding: 837 8230 837
 GlifName: ellipsis
 Width: 818
 VWidth: 0
@@ -24,7 +24,6 @@ SplineSet
  599 189 553 144 553 89 c 256
  553 36 599 -10 652 -10 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

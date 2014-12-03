@@ -1,14 +1,14 @@
 StartChar: sacute
-Encoding: 1021 347 1021
+Encoding: 973 347 973
 GlifName: sacute
 Width: 476
 VWidth: 0
-Flags: HW
+Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 1020 115 N 1 0 0 1 0 0 2
-Refer: 127 180 N 1 0 0 1 10 0 2
+Refer: 972 115 N 1 0 0 1 0 0 2
+Refer: 111 180 N 1 0 0 1 10 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

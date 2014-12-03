@@ -1,9 +1,9 @@
 StartChar: dvS_KHA
-Encoding: 761 -1 761
+Encoding: 658 -1 658
 GlifName: dvS__K_H_A_
 Width: 1103
 VWidth: 0
-Flags: HW
+Flags: W
 LayerCount: 2
 Back
 Fore
@@ -34,5 +34,5 @@ SplineSet
  76 270 l 257
  96 290 l 257
 EndSplineSet
-Refer: 394 2326 N 1 0 0 1 332 0 2
+Refer: 368 2326 N 1 0 0 1 332 0 2
 EndChar

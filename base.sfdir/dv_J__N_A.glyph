@@ -1,5 +1,5 @@
 StartChar: dvJ_NA
-Encoding: 375 -1 375
+Encoding: 349 -1 349
 GlifName: dvJ__N_A_
 Width: 695
 VWidth: 0
@@ -18,6 +18,5 @@ SplineSet
  413 -195 383 -227 336 -227 c 256
  282 -227 252 -190 252 -135 c 256
 EndSplineSet
-Refer: 356 2332 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 331 2332 N 1 0 0 1 0 0 2
 EndChar

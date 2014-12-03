@@ -1,5 +1,5 @@
 StartChar: circumflex
-Encoding: 164 710 164
+Encoding: 148 710 148
 GlifName: circumflex
 Width: 594
 VWidth: 0
@@ -17,7 +17,6 @@ SplineSet
  200 523 l 257
  209 514 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

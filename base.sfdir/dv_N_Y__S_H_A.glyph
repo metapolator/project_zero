@@ -1,5 +1,5 @@
 StartChar: dvNY_SHA
-Encoding: 616 -1 616
+Encoding: 518 -1 518
 GlifName: dvN_Y__S_H_A_
 Width: 1085
 VWidth: 0
@@ -30,6 +30,5 @@ SplineSet
  -18 540 l 257
  -18 560 l 257
 EndSplineSet
-Refer: 720 2358 N 1 0 0 1 377 0 2
-Validated: 5
+Refer: 615 2358 N 1 0 0 1 377 0 2
 EndChar

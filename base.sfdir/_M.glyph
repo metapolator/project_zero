@@ -1,5 +1,5 @@
 StartChar: M
-Encoding: 62 77 62
+Encoding: 54 77 54
 GlifName: M_
 Width: 784
 VWidth: 0
@@ -9,7 +9,7 @@ Back
 Fore
 SplineSet
 754 20 m 257
- 504 20 l 256
+ 504 20 l 257
  504 0 l 257
  754 0 l 257
  754 20 l 257
@@ -34,7 +34,7 @@ SplineSet
  91 12 l 257
  111 12 l 257
 191 20 m 257
- 31 20 l 256
+ 31 20 l 257
  31 0 l 257
  191 0 l 257
  191 20 l 257
@@ -54,7 +54,6 @@ SplineSet
  224 540 l 257
  224 560 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

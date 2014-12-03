@@ -1,14 +1,13 @@
 StartChar: dvAcandra
-Encoding: 190 -1 190
+Encoding: 177 -1 177
 GlifName: dvA_candra
 Width: 709
 VWidth: 0
 Flags: W
-AnchorPoint: "abvm_Anusvara" 629 721 basechar 0
+AnchorPoint: "abvm.bindu" 629 721 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 185 2309 N 1 0 0 1 0 0 2
-Refer: 534 2373 N 1 0 0 1 716 0 2
-Validated: 5
+Refer: 172 2309 N 1 0 0 1 0 0 2
+Refer: 770 2373 N 1 0 0 1 716 0 2
 EndChar

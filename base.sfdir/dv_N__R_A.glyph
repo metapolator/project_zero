@@ -1,5 +1,5 @@
 StartChar: dvN_RA
-Encoding: 646 -1 646
+Encoding: 544 -1 544
 GlifName: dvN__R_A_
 Width: 533
 VWidth: 0
@@ -33,5 +33,4 @@ SplineSet
  64 16 l 257
  77 0 l 257
 EndSplineSet
-Validated: 5
 EndChar

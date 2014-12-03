@@ -1,5 +1,5 @@
 StartChar: dvT_RA
-Encoding: 830 -1 830
+Encoding: 723 -1 723
 GlifName: dvT__R_A_
 Width: 579
 VWidth: 0
@@ -31,5 +31,4 @@ SplineSet
  359 560 l 257
  359 0 l 257
 EndSplineSet
-Validated: 5
 EndChar

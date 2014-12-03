@@ -1,5 +1,5 @@
 StartChar: guillemotright
-Encoding: 923 187 923
+Encoding: 873 187 873
 GlifName: guillemotright
 Width: 423
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 925 8250 N 1 0 0 1 160 0 2
-Refer: 925 8250 N 1 0 0 1 0 0 2
-Validated: 9
+Refer: 875 8250 N 1 0 0 1 160 0 2
+Refer: 875 8250 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,5 +1,5 @@
 StartChar: nacute
-Encoding: 966 324 966
+Encoding: 912 324 912
 GlifName: nacute
 Width: 645
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 965 110 N 1 0 0 1 0 0 2
-Refer: 127 180 N 1 0 0 1 60 0 2
-Validated: 5
+Refer: 911 110 N 1 0 0 1 0 0 2
+Refer: 111 180 N 1 0 0 1 60 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

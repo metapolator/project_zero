@@ -1,5 +1,5 @@
 StartChar: dvJHA
-Encoding: 359 2333 359
+Encoding: 333 2333 333
 GlifName: dvJ_H_A_
 Width: 735
 VWidth: 0
@@ -46,5 +46,4 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

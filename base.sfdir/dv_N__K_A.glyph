@@ -1,13 +1,13 @@
 StartChar: dvN_KA
-Encoding: 632 -1 632
+Encoding: 533 -1 533
 GlifName: dvN__K_A_
 Width: 1099
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 763 0 basechar 0
-AnchorPoint: "blwm_Virama" 763 0 basechar 0
-AnchorPoint: "abvm_Ekaar" 763 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 763 560 basechar 0
+AnchorPoint: "blwm.u" 763 0 basechar 0
+AnchorPoint: "blwm.virama" 763 0 basechar 0
+AnchorPoint: "abvm.e" 763 560 basechar 0
+AnchorPoint: "abvm.bindu" 763 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -27,6 +27,5 @@ SplineSet
  220 172 183 141 135 141 c 256
  77 141 35 181 35 248 c 256
 EndSplineSet
-Refer: 391 2325 N 1 0 0 1 286 0 2
-Validated: 5
+Refer: 366 2325 N 1 0 0 1 286 0 2
 EndChar

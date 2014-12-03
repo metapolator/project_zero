@@ -1,5 +1,5 @@
 StartChar: asciicircum
-Encoding: 138 94 138
+Encoding: 122 94 122
 GlifName: asciicircum
 Width: 342
 VWidth: 0
@@ -17,7 +17,6 @@ SplineSet
  47 198 l 257
  171 455 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

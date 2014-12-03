@@ -1,5 +1,5 @@
 StartChar: florin
-Encoding: 910 402 910
+Encoding: 861 402 861
 GlifName: florin
 Width: 580
 VWidth: 0
@@ -29,7 +29,6 @@ SplineSet
  -78 -179 -22 -220 63 -220 c 256
  202 -220 285 -142 310 0 c 258
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

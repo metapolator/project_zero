@@ -1,5 +1,5 @@
 StartChar: OE
-Encoding: 69 338 69
+Encoding: 62 338 62
 GlifName: O_E_
 Width: 820
 VWidth: 0
@@ -8,12 +8,12 @@ LayerCount: 2
 Back
 Fore
 SplineSet
-321.006 20 m 257
- 238.006 20 191.006 105 191.006 271 c 257
- 190.006 449 241.006 540 321.006 540 c 257
+321 20 m 257
+ 238 20 191 105 191 271 c 257
+ 190 449 241 540 321 540 c 257
  370 540 l 257
  370 20 l 257
- 321.006 20 l 257
+ 321 20 l 257
 750 190 m 257
  750 54 677 20 600 20 c 257
  770 20 l 257
@@ -37,10 +37,9 @@ SplineSet
  760 390 l 257
  760 560 l 257
  321 560 l 257
- 147 560 29.006 454 30.006 271 c 257
- 30.006 82 154 0 321 0 c 258
+ 147 560 29 454 30 271 c 257
+ 30 82 154 0 321 0 c 258
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

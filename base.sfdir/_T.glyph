@@ -1,5 +1,5 @@
 StartChar: T
-Encoding: 89 84 89
+Encoding: 83 84 83
 GlifName: T_
 Width: 569
 VWidth: 0
@@ -17,7 +17,7 @@ SplineSet
  40 510 74 540 179 540 c 257
  209 540 l 257
  209 20 l 257
- 139 20 l 256
+ 139 20 l 257
  139 0 l 257
  429 0 l 257
  429 20 l 257
@@ -26,7 +26,6 @@ SplineSet
  389 540 l 258
  495 540 529 510 529 390 c 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

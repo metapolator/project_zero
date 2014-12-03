@@ -1,5 +1,5 @@
 StartChar: logicalnot
-Encoding: 957 172 957
+Encoding: 901 172 901
 GlifName: logicalnot
 Width: 505
 VWidth: 0
@@ -19,7 +19,6 @@ SplineSet
  465 245 l 257
  445 245 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

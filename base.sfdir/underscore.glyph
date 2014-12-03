@@ -1,5 +1,5 @@
 StartChar: underscore
-Encoding: 1052 95 1052
+Encoding: 1007 95 1007
 GlifName: underscore
 Width: 522
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  30 -44 l 257
  30 -64 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,5 +1,5 @@
 StartChar: multiply
-Encoding: 964 215 964
+Encoding: 910 215 910
 GlifName: multiply
 Width: 395
 VWidth: 0
@@ -22,7 +22,6 @@ SplineSet
  355 87 l 257
  212 230 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

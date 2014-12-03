@@ -1,17 +1,16 @@
 StartChar: dvS_KA
-Encoding: 760 -1 760
+Encoding: 657 -1 657
 GlifName: dvS__K_A_
 Width: 1176
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 840 0 basechar 0
-AnchorPoint: "blwm_Virama" 840 0 basechar 0
-AnchorPoint: "abvm_Ekaar" 840 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 840 560 basechar 0
+AnchorPoint: "blwm.u" 840 0 basechar 0
+AnchorPoint: "blwm.virama" 840 0 basechar 0
+AnchorPoint: "abvm.e" 840 560 basechar 0
+AnchorPoint: "abvm.bindu" 840 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 717 -1 N 1 0 0 1 0 0 2
-Refer: 391 2325 N 1 0 0 1 363 0 2
-Validated: 5
+Refer: 612 -1 N 1 0 0 1 0 0 2
+Refer: 366 2325 N 1 0 0 1 363 0 2
 EndChar

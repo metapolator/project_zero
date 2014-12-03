@@ -1,5 +1,5 @@
 StartChar: dvT_KHA
-Encoding: 813 -1 813
+Encoding: 707 -1 707
 GlifName: dvT__K_H_A_
 Width: 1108
 VWidth: 0
@@ -60,5 +60,4 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

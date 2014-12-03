@@ -1,0 +1,16 @@
+StartChar: dvDDxA
+Encoding: 248 2396 248
+GlifName: dvD_D_xA_
+Width: 457
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm.u" 314 -235 basechar 0
+AnchorPoint: "blwm.virama" 316 -191 basechar 0
+AnchorPoint: "abvm.e" 368 560 basechar 0
+AnchorPoint: "abvm.bindu" 368 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 233 2337 N 1 0 0 1 0 0 2
+Refer: 560 2364 N 1 0 0 1 480 -20 2
+EndChar

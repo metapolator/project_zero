@@ -1,5 +1,5 @@
 StartChar: Aogonek
-Encoding: 10 260 10
+Encoding: 9 260 9
 GlifName: A_ogonek
 Width: 643
 VWidth: 0
@@ -8,8 +8,7 @@ LayerCount: 2
 Back
 Fore
 Refer: 1 65 N 1 0 0 1 0 0 2
-Refer: 979 -1 N 1 0 0 1 250 0 2
-Validated: 5
+Refer: 926 -1 N 1 0 0 1 250 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

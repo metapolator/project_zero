@@ -1,5 +1,5 @@
 StartChar: notequal
-Encoding: 969 8800 969
+Encoding: 917 8800 917
 GlifName: notequal
 Width: 505
 VWidth: 0
@@ -24,7 +24,6 @@ SplineSet
  392 375 l 257
  377 389 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

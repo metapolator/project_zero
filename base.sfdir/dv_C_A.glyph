@@ -1,5 +1,5 @@
 StartChar: dvCA
-Encoding: 228 2330 228
+Encoding: 213 2330 213
 GlifName: dvC_A_
 Width: 588
 VWidth: 0
@@ -35,5 +35,4 @@ SplineSet
  190 177 226 122 286 122 c 256
  336 122 362 163 368 203 c 257
 EndSplineSet
-Validated: 5
 EndChar

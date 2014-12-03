@@ -1,5 +1,5 @@
 StartChar: dvOm
-Encoding: 666 2384 666
+Encoding: 563 2384 563
 GlifName: dvO_m
 Width: 960
 VWidth: 0
@@ -44,6 +44,5 @@ SplineSet
  379 374 318 341 237 329 c 257
  237 325 l 257
 EndSplineSet
-Refer: 244 2305 N 1 0 0 1 708 -130 2
-Validated: 5
+Refer: 228 2305 N 1 0 0 1 708 -130 2
 EndChar

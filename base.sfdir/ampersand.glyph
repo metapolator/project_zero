@@ -1,5 +1,5 @@
 StartChar: ampersand
-Encoding: 134 38 134
+Encoding: 117 38 117
 GlifName: ampersand
 Width: 856
 VWidth: 0
@@ -39,7 +39,6 @@ SplineSet
  599 105 530 169 462 246 c 256
  391 326 357 436 357 486 c 256
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

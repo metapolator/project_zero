@@ -1,5 +1,5 @@
 StartChar: numbersign
-Encoding: 971 35 971
+Encoding: 919 35 919
 GlifName: numbersign
 Width: 501
 VWidth: 0
@@ -29,7 +29,6 @@ SplineSet
  494 373 l 257
  494 393 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

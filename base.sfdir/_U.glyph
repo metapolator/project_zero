@@ -1,5 +1,5 @@
 StartChar: U
-Encoding: 93 85 93
+Encoding: 88 85 88
 GlifName: U_
 Width: 605
 VWidth: 0
@@ -28,7 +28,6 @@ SplineSet
  70 63 171 -15 327 -15 c 256
  471 -15 545 71 545 244 c 258
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

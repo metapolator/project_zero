@@ -1,5 +1,5 @@
 StartChar: Omacron
-Encoding: 76 332 76
+Encoding: 68 332 68
 GlifName: O_macron
 Width: 622
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 68 79 N 1 0 0 1 0 0 2
-Refer: 962 -1 N 1 0 0 1 10 0 2
-Validated: 9
+Refer: 61 79 N 1 0 0 1 0 0 2
+Refer: 906 -1 N 1 0 0 1 10 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

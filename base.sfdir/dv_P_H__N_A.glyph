@@ -1,13 +1,13 @@
 StartChar: dvPH_NA
-Encoding: 676 -1 676
+Encoding: 571 -1 571
 GlifName: dvP_H__N_A_
 Width: 817
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 482 -122 basechar 0
-AnchorPoint: "blwm_Virama" 482 0 basechar 0
-AnchorPoint: "abvm_Ekaar" 482 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 482 560 basechar 0
+AnchorPoint: "blwm.u" 482 -122 basechar 0
+AnchorPoint: "blwm.virama" 482 0 basechar 0
+AnchorPoint: "abvm.e" 482 560 basechar 0
+AnchorPoint: "abvm.bindu" 482 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -21,6 +21,5 @@ SplineSet
  143 87 223 124 275 146 c 257
  280 169 l 257
 EndSplineSet
-Refer: 672 2347 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 568 2347 N 1 0 0 1 0 0 2
 EndChar

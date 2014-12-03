@@ -1,5 +1,5 @@
 StartChar: dvK_V_YA
-Encoding: 459 -1 459
+Encoding: 422 -1 422
 GlifName: dvK__V__Y_A_
 Width: 1526
 VWidth: 0
@@ -7,8 +7,7 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 390 -1 N 1 0 0 1 0 0 2
-Refer: 849 -1 N 1 0 0 1 588 0 2
-Refer: 865 2351 N 1 0 0 1 886 0 2
-Validated: 5
+Refer: 365 -1 N 1 0 0 1 0 0 2
+Refer: 739 -1 N 1 0 0 1 588 0 2
+Refer: 751 2351 N 1 0 0 1 886 0 2
 EndChar

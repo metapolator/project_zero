@@ -1,5 +1,5 @@
 StartChar: dvC
-Encoding: 227 -1 227
+Encoding: 212 -1 212
 GlifName: dvC_
 Width: 324
 VWidth: 0
@@ -30,5 +30,4 @@ SplineSet
  342 122 378 158 406 194 c 257
  421 183 l 257
 EndSplineSet
-Validated: 5
 EndChar

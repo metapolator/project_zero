@@ -1,0 +1,15 @@
+StartChar: dvRxA
+Encoding: 611 2353 611
+GlifName: dvR_xA_
+Width: 373
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm.virama" 276 -3 basechar 0
+AnchorPoint: "abvm.e" 211 560 basechar 0
+AnchorPoint: "abvm.bindu" 211 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 560 2364 N 1 0 0 1 343 8 2
+Refer: 603 2352 N 1 0 0 1 0 0 2
+EndChar

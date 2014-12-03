@@ -1,5 +1,5 @@
 StartChar: bar
-Encoding: 145 124 145
+Encoding: 129 124 129
 GlifName: bar
 Width: 140
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  60 585 l 257
  60 -99 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

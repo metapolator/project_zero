@@ -1,5 +1,5 @@
 StartChar: dollar
-Encoding: 180 36 180
+Encoding: 166 36 166
 GlifName: dollar
 Width: 548
 VWidth: 0
@@ -35,7 +35,6 @@ SplineSet
  274 633 l 257
  274 -51 l 257
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

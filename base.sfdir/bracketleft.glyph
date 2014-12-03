@@ -1,5 +1,5 @@
 StartChar: bracketleft
-Encoding: 148 91 148
+Encoding: 132 91 132
 GlifName: bracketleft
 Width: 270
 VWidth: 0
@@ -18,7 +18,6 @@ SplineSet
  50 617 l 257
  50 -57 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

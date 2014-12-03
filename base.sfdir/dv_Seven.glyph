@@ -1,5 +1,5 @@
 StartChar: dvSeven
-Encoding: 784 -1 784
+Encoding: 680 -1 680
 GlifName: dvS_even
 Width: 453
 VWidth: 0
@@ -25,5 +25,4 @@ SplineSet
  322 414 358 441 386 468 c 257
  389 465 l 257
 EndSplineSet
-Validated: 9
 EndChar

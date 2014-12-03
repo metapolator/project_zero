@@ -1,5 +1,5 @@
 StartChar: G
-Encoding: 37 71 37
+Encoding: 34 71 34
 GlifName: G_
 Width: 608
 VWidth: 0
@@ -14,7 +14,7 @@ SplineSet
  541 250 l 257
  588 250 l 257
  588 270 l 257
- 348 270 l 256
+ 348 270 l 257
  348 250 l 257
  411 250 l 257
  411 176 l 257
@@ -31,7 +31,6 @@ SplineSet
  30 72 139 -15 315 -15 c 257
  409 -15 421 54 477 54 c 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

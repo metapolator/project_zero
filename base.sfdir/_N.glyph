@@ -1,5 +1,5 @@
 StartChar: N
-Encoding: 63 78 63
+Encoding: 55 78 55
 GlifName: N_
 Width: 598
 VWidth: 0
@@ -22,7 +22,7 @@ SplineSet
  20 540 l 257
  36 540 57 528 80 496 c 257
  80 20 l 257
- 20 20 l 256
+ 20 20 l 257
  20 0 l 257
  180 0 l 257
  180 20 l 257
@@ -30,7 +30,6 @@ SplineSet
  100 471 l 257
  488 -10 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

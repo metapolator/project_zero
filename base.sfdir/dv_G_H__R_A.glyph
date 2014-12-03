@@ -1,5 +1,5 @@
 StartChar: dvGH_RA
-Encoding: 312 -1 312
+Encoding: 287 -1 287
 GlifName: dvG_H__R_A_
 Width: 623
 VWidth: 0
@@ -42,5 +42,4 @@ SplineSet
  134 -57 l 257
  123 -39 l 257
 EndSplineSet
-Validated: 5
 EndChar

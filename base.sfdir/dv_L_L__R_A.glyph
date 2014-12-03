@@ -1,0 +1,23 @@
+StartChar: dvLL_RA
+Encoding: 439 -1 439
+GlifName: dvL_L__R_A_
+Width: 756
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+568 35 m 257
+ 568 31 l 257
+ 733 -84 l 257
+ 721 -102 l 257
+ 553 14 l 257
+ 392 -98 l 257
+ 380 -80 l 257
+ 537 31 l 257
+ 537 35 l 257
+ 568 35 l 257
+EndSplineSet
+Refer: 437 2355 N 1 0 0 1 0 0 2
+EndChar

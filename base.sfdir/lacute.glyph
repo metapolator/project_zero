@@ -1,5 +1,5 @@
 StartChar: lacute
-Encoding: 952 314 952
+Encoding: 895 314 895
 GlifName: lacute
 Width: 320
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 951 108 N 1 0 0 1 0 0 2
-Refer: 127 180 N 1 0 0 1 -88 214 2
-Validated: 5
+Refer: 894 108 N 1 0 0 1 0 0 2
+Refer: 111 180 N 1 0 0 1 -88 214 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,17 +1,16 @@
 StartChar: dvV_LA
-Encoding: 852 -1 852
+Encoding: 742 -1 742
 GlifName: dvV__L_A_
 Width: 1026
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 853 -37 basechar 0
-AnchorPoint: "blwm_Virama" 863 14 basechar 0
-AnchorPoint: "abvm_Ekaar" 861 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 861 560 basechar 0
+AnchorPoint: "blwm.u" 853 -37 basechar 0
+AnchorPoint: "blwm.virama" 863 14 basechar 0
+AnchorPoint: "abvm.e" 861 560 basechar 0
+AnchorPoint: "abvm.bindu" 861 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 849 -1 N 1 0 0 1 0 0 2
-Refer: 462 2354 N 1 0 0 1 298 0 2
-Validated: 5
+Refer: 739 -1 N 1 0 0 1 0 0 2
+Refer: 435 2354 N 1 0 0 1 298 0 2
 EndChar

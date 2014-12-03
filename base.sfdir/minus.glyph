@@ -1,5 +1,5 @@
 StartChar: minus
-Encoding: 963 8722 963
+Encoding: 908 8722 908
 GlifName: minus
 Width: 505
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  465 225 l 257
  465 245 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

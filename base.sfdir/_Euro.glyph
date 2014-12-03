@@ -1,5 +1,5 @@
 StartChar: Euro
-Encoding: 35 8364 35
+Encoding: 32 8364 32
 GlifName: E_uro
 Width: 597
 VWidth: 0
@@ -23,18 +23,17 @@ SplineSet
  434 72 477 73 477 48 c 256
  477 22 448 7 407 7 c 256
  305 7 251 109 251 274 c 256
-407 219 m 257
- 20 219 l 257
- 20 199 l 257
- 407 199 l 257
- 407 219 l 257
-407 368 m 257
- 20 368 l 257
- 20 348 l 257
- 407 348 l 257
- 407 368 l 257
+407 229 m 257
+ 20 229 l 257
+ 20 209 l 257
+ 407 209 l 257
+ 407 229 l 257
+407 358 m 257
+ 20 358 l 257
+ 20 338 l 257
+ 407 338 l 257
+ 407 358 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

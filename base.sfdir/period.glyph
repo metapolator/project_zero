@@ -1,5 +1,5 @@
 StartChar: period
-Encoding: 996 46 996
+Encoding: 944 46 944
 GlifName: period
 Width: 255
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  221 123 180 164 128 164 c 256
  78 164 36 123 36 71 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

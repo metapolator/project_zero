@@ -1,0 +1,65 @@
+StartChar: Omega.math
+Encoding: 69 8486 69
+GlifName: O_mega_math
+Width: 500
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+11 0 m 257
+ 281 0 l 257
+ 281 119 l 257
+ 217 137 193 200 193 347 c 257
+ 193 474 218 549 291 549 c 257
+ 364 549 391 474 391 347 c 257
+ 391 212 378 139 315 119 c 257
+ 315 0 l 257
+ 575 0 l 257
+ 575 159 l 257
+ 555 159 l 257
+ 555 99 l 257
+ 367 99 l 257
+ 367 99 367 103 367 103 c 256
+ 468 123 544 181 544 327 c 256
+ 544 507 406 569 291 569 c 257
+ 176 569 40 507 40 327 c 257
+ 40 192 119 123 217 103 c 257
+ 217 99 l 257
+ 31 99 l 257
+ 31 159 l 257
+ 11 159 l 257
+ 11 0 l 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+S'Back'
+p4
+(dp5
+S'name'
+p6
+S'uni2126'
+p7
+sS'lib'
+p8
+(dp9
+sS'unicodes'
+p10
+(lp11
+sS'width'
+p12
+I500
+sS'contours'
+p13
+(lp14
+sS'components'
+p15
+(lp16
+sS'anchors'
+p17
+(lp18
+sss."
+EndChar

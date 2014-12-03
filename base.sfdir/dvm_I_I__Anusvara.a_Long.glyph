@@ -1,0 +1,12 @@
+StartChar: dvmII_Anusvara.aLong
+Encoding: 808 -1 808
+GlifName: dvmI_I__A_nusvara_aL_ong
+Width: 300
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 806 -1 N 1 0 0 1 0 0 2
+Refer: 178 2306 N 1 0 0 1 448 0 2
+EndChar

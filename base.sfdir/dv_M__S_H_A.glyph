@@ -1,5 +1,5 @@
 StartChar: dvM_SHA
-Encoding: 515 -1 515
+Encoding: 489 -1 489
 GlifName: dvM__S_H_A_
 Width: 1063
 VWidth: 0
@@ -63,5 +63,4 @@ SplineSet
  335 540 l 257
  335 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

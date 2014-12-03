@@ -1,5 +1,5 @@
 StartChar: iogonek
-Encoding: 943 303 943
+Encoding: 889 303 889
 GlifName: iogonek
 Width: 320
 VWidth: 0
@@ -29,8 +29,7 @@ SplineSet
  230 440 l 257
  230 460 l 257
 EndSplineSet
-Refer: 978 731 N 1 0 0 1 -110 0 2
-Validated: 5
+Refer: 925 731 N 1 0 0 1 -110 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

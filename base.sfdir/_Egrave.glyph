@@ -1,5 +1,5 @@
 StartChar: Egrave
-Encoding: 30 200 30
+Encoding: 28 200 28
 GlifName: E_grave
 Width: 545
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 23 69 N 1 0 0 1 0 0 2
-Refer: 919 -1 N 1 0 0 1 -10 0 2
-Validated: 9
+Refer: 22 69 N 1 0 0 1 0 0 2
+Refer: 869 -1 N 1 0 0 1 -10 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

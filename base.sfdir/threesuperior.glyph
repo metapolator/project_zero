@@ -1,5 +1,5 @@
 StartChar: threesuperior
-Encoding: 1038 -1 1038
+Encoding: 993 179 993
 GlifName: threesuperior
 Width: 258
 VWidth: 0
@@ -31,7 +31,6 @@ SplineSet
  182 460 204 484 204 512 c 256
  204 548 176 567 113 567 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

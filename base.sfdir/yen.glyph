@@ -1,5 +1,5 @@
 StartChar: yen
-Encoding: 1087 165 1087
+Encoding: 1016 165 1016
 GlifName: yen
 Width: 616
 VWidth: 0
@@ -11,10 +11,10 @@ SplineSet
 456 0 m 257
  456 20 l 257
  391 20 l 257
- 391 185 l 257
- 546 185 l 257
- 546 205 l 257
- 391 205 l 257
+ 391 171 l 257
+ 546 171 l 257
+ 546 191 l 257
+ 391 191 l 257
  391 258 l 257
  412 300 l 257
  546 300 l 257
@@ -38,16 +38,15 @@ SplineSet
  91 300 l 257
  201 300 l 257
  241 231 l 257
- 241 205 l 257
- 91 205 l 257
- 91 185 l 257
- 241 185 l 257
+ 241 191 l 257
+ 91 191 l 257
+ 91 171 l 257
+ 241 171 l 257
  241 20 l 257
  175 20 l 257
  175 0 l 257
  456 0 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

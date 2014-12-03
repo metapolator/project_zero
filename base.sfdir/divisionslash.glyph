@@ -1,0 +1,17 @@
+StartChar: divisionslash
+Encoding: 165 8725 165
+GlifName: divisionslash
+Width: 277
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+40 1 m 257
+ 59 -5 l 257
+ 224 559 l 257
+ 206 564 l 257
+ 40 1 l 257
+EndSplineSet
+EndChar

@@ -1,16 +1,16 @@
 StartChar: dvG_DA
-Encoding: 317 -1 317
+Encoding: 292 -1 292
 GlifName: dvG__D_A_
 Width: 884
 VWidth: 0
-Flags: HW
-AnchorPoint: "blwm_Ukaar" 778 -87 basechar 0
-AnchorPoint: "blwm_Virama" 770 -8 basechar 0
-AnchorPoint: "abvm_Ekaar" 784 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 784 560 basechar 0
+Flags: W
+AnchorPoint: "blwm.u" 778 -87 basechar 0
+AnchorPoint: "blwm.virama" 770 -8 basechar 0
+AnchorPoint: "abvm.e" 784 560 basechar 0
+AnchorPoint: "abvm.bindu" 784 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 304 -1 N 1 0 0 1 1 0 2
-Refer: 246 2342 N 1 0 0 1 395 0 2
+Refer: 280 -1 N 1 0 0 1 1 0 2
+Refer: 230 2342 N 1 0 0 1 395 0 2
 EndChar

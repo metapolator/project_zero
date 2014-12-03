@@ -1,0 +1,11 @@
+StartChar: macronmod
+Encoding: 907 -1 907
+GlifName: macronmod
+Width: 600
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 905 175 N 1 0 0 1 0 0 2
+EndChar

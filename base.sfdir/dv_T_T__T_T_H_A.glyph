@@ -1,13 +1,13 @@
 StartChar: dvTT_TTHA
-Encoding: 809 -1 809
+Encoding: 703 -1 703
 GlifName: dvT_T__T_T_H_A_
 Width: 530
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 333 -228 basechar 0
-AnchorPoint: "blwm_Virama" 343 -154 basechar 0
-AnchorPoint: "abvm_Ekaar" 402 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 402 560 basechar 0
+AnchorPoint: "blwm.u" 333 -228 basechar 0
+AnchorPoint: "blwm.virama" 343 -154 basechar 0
+AnchorPoint: "abvm.e" 402 560 basechar 0
+AnchorPoint: "abvm.bindu" 402 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -45,5 +45,4 @@ SplineSet
  157 153 43 106 43 1 c 256
  43 -101 157 -150 262 -150 c 257
 EndSplineSet
-Validated: 5
 EndChar

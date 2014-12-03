@@ -1,5 +1,5 @@
 StartChar: lessequal
-Encoding: 956 8804 956
+Encoding: 899 8804 899
 GlifName: lessequal
 Width: 483
 VWidth: 0
@@ -22,7 +22,6 @@ SplineSet
  454 159 l 257
  67 296 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

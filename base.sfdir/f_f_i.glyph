@@ -1,5 +1,5 @@
 StartChar: f_f_i
-Encoding: 901 -1 901
+Encoding: 852 -1 852
 GlifName: f_f_i
 Width: 947
 VWidth: 0
@@ -56,7 +56,6 @@ SplineSet
  40 0 l 257
  290 0 l 257
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

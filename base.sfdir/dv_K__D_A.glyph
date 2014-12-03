@@ -1,11 +1,11 @@
 StartChar: dvK_DA
-Encoding: 415 -1 415
+Encoding: 389 -1 389
 GlifName: dvK__D_A_
 Width: 1078
 VWidth: 0
 Flags: W
-AnchorPoint: "abvm_Ekaar" 978 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 978 560 basechar 0
+AnchorPoint: "abvm.e" 978 560 basechar 0
+AnchorPoint: "abvm.bindu" 978 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -36,6 +36,5 @@ SplineSet
  885 186 913 220 963 220 c 256
  1005 220 1035 188 1035 145 c 256
 EndSplineSet
-Refer: 390 -1 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 365 -1 N 1 0 0 1 0 0 2
 EndChar

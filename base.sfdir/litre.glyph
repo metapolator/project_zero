@@ -1,0 +1,32 @@
+StartChar: litre
+Encoding: 900 8467 900
+GlifName: litre
+Width: 460
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+426 412 m 257
+ 426 522 354 563 279 563 c 257
+ 167 563 87 488 87 342 c 258
+ 87 342 87 173 87 173 c 257
+ 87 27 149 -10 251 -10 c 256
+ 298 -10 339 5 366 24 c 257
+ 366 44 l 257
+ 354 36 324 34 303 34 c 256
+ 229 34 229 118 229 196 c 257
+ 229 196 229 363 229 363 c 257
+ 229 482 235 543 278 543 c 257
+ 301 543 317 523 317 446 c 257
+ 316 230 223 133 30 133 c 256
+ 30 133 30 113 30 113 c 257
+ 219 113 426 229 426 412 c 257
+EndSplineSet
+PickledDataWithLists: "(dp1
+S'com.typemytype.robofont.layerData'
+p2
+(dp3
+s."
+EndChar

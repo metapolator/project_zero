@@ -1,5 +1,5 @@
 StartChar: dvK_MA
-Encoding: 420 -1 420
+Encoding: 394 -1 394
 GlifName: dvK__M_A_
 Width: 1293
 VWidth: 0
@@ -64,5 +64,4 @@ SplineSet
  944 548 l 257
  944 318 l 257
 EndSplineSet
-Validated: 5
 EndChar

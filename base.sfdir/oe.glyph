@@ -1,5 +1,5 @@
 StartChar: oe
-Encoding: 977 339 977
+Encoding: 924 339 924
 GlifName: oe
 Width: 874
 VWidth: 0
@@ -32,7 +32,6 @@ SplineSet
  354 450 381 385 381 228 c 257
  381 75 354 10 281 10 c 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

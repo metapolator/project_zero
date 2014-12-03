@@ -1,5 +1,5 @@
 StartChar: asciitilde
-Encoding: 139 126 139
+Encoding: 123 126 123
 GlifName: asciitilde
 Width: 484
 VWidth: 0
@@ -22,7 +22,6 @@ SplineSet
  91 315 30 262 30 193 c 256
  30 178 32 164 37 148 c 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

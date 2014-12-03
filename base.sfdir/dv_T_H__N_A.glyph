@@ -1,5 +1,5 @@
 StartChar: dvTH_NA
-Encoding: 790 -1 790
+Encoding: 686 -1 686
 GlifName: dvT_H__N_A_
 Width: 652
 VWidth: 0
@@ -18,6 +18,5 @@ SplineSet
  341 -145 311 -177 264 -177 c 256
  210 -177 180 -140 180 -85 c 256
 EndSplineSet
-Refer: 789 2341 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 685 2341 N 1 0 0 1 0 0 2
 EndChar

@@ -1,17 +1,16 @@
 StartChar: dvPH_TTA
-Encoding: 690 -1 690
+Encoding: 578 -1 578
 GlifName: dvP_H__T_T_A_
 Width: 1046
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 917 -41 basechar 0
-AnchorPoint: "blwm_Virama" 945 20 basechar 0
-AnchorPoint: "abvm_Ekaar" 966 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 966 560 basechar 0
+AnchorPoint: "blwm.u" 917 -41 basechar 0
+AnchorPoint: "blwm.virama" 945 20 basechar 0
+AnchorPoint: "abvm.e" 966 560 basechar 0
+AnchorPoint: "abvm.bindu" 966 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 671 -1 N 1 0 0 1 0 0 2
-Refer: 796 2335 N 1 0 0 1 577 0 2
-Validated: 5
+Refer: 567 -1 N 1 0 0 1 0 0 2
+Refer: 692 2335 N 1 0 0 1 577 0 2
 EndChar

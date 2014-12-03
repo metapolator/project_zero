@@ -1,5 +1,5 @@
 StartChar: dvB_VA
-Encoding: 225 -1 225
+Encoding: 210 -1 210
 GlifName: dvB__V_A_
 Width: 882
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 196 -1 N 1 0 0 1 0 0 2
-Refer: 850 2357 N 1 0 0 1 318 0 2
-Validated: 5
+Refer: 181 -1 N 1 0 0 1 0 0 2
+Refer: 740 2357 N 1 0 0 1 318 0 2
 EndChar

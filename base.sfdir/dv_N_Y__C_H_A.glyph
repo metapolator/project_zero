@@ -1,13 +1,13 @@
 StartChar: dvNY_CHA
-Encoding: 612 -1 612
+Encoding: 514 -1 514
 GlifName: dvN_Y__C_H_A_
 Width: 1050
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 789 -24 basechar 0
-AnchorPoint: "blwm_Virama" 816 33 basechar 0
-AnchorPoint: "abvm_Ekaar" 906 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 906 560 basechar 0
+AnchorPoint: "blwm.u" 789 -24 basechar 0
+AnchorPoint: "blwm.virama" 816 33 basechar 0
+AnchorPoint: "abvm.e" 906 560 basechar 0
+AnchorPoint: "abvm.bindu" 906 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -34,6 +34,5 @@ SplineSet
  -18 540 l 257
  -18 560 l 257
 EndSplineSet
-Refer: 230 2331 N 1 0 0 1 380 0 2
-Validated: 5
+Refer: 215 2331 N 1 0 0 1 380 0 2
 EndChar

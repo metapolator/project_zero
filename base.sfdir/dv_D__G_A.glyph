@@ -1,13 +1,13 @@
 StartChar: dvD_GA
-Encoding: 282 -1 282
+Encoding: 263 -1 263
 GlifName: dvD__G_A_
 Width: 505
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 410 -172 basechar 0
-AnchorPoint: "blwm_Virama" 409 -124 basechar 0
-AnchorPoint: "abvm_Ekaar" 404 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 404 560 basechar 0
+AnchorPoint: "blwm.u" 410 -172 basechar 0
+AnchorPoint: "blwm.virama" 409 -124 basechar 0
+AnchorPoint: "abvm.e" 404 560 basechar 0
+AnchorPoint: "abvm.bindu" 404 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -49,5 +49,4 @@ SplineSet
  323 72 l 257
  188 116 l 257
 EndSplineSet
-Validated: 5
 EndChar

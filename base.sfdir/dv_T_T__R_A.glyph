@@ -1,13 +1,13 @@
 StartChar: dvTT_RA
-Encoding: 807 -1 807
+Encoding: 701 -1 701
 GlifName: dvT_T__R_A_
 Width: 469
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 340 -118 basechar 0
-AnchorPoint: "blwm_Virama" 376 -67 basechar 0
-AnchorPoint: "abvm_Ekaar" 389 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 389 560 basechar 0
+AnchorPoint: "blwm.u" 340 -118 basechar 0
+AnchorPoint: "blwm.virama" 376 -67 basechar 0
+AnchorPoint: "abvm.e" 389 560 basechar 0
+AnchorPoint: "abvm.bindu" 389 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -23,6 +23,5 @@ SplineSet
  287 32 l 257
  256 32 l 257
 EndSplineSet
-Refer: 796 2335 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 692 2335 N 1 0 0 1 0 0 2
 EndChar

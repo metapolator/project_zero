@@ -1,5 +1,5 @@
 StartChar: dvN_T_SA
-Encoding: 658 -1 658
+Encoding: 555 -1 555
 GlifName: dvN__T__S_A_
 Width: 1260
 VWidth: 0
@@ -39,6 +39,5 @@ SplineSet
  262 540 l 257
  262 560 l 257
 EndSplineSet
-Refer: 718 2360 N 1 0 0 1 583 0 2
-Validated: 5
+Refer: 613 2360 N 1 0 0 1 583 0 2
 EndChar

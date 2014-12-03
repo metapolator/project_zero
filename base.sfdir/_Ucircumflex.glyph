@@ -1,5 +1,5 @@
 StartChar: Ucircumflex
-Encoding: 96 219 96
+Encoding: 90 219 90
 GlifName: U_circumflex
 Width: 605
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 93 85 N 1 0 0 1 0 0 2
-Refer: 165 -1 N 1 0 0 1 60 0 2
-Validated: 9
+Refer: 88 85 N 1 0 0 1 0 0 2
+Refer: 149 -1 N 1 0 0 1 60 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

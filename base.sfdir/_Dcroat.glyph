@@ -1,5 +1,5 @@
 StartChar: Dcroat
-Encoding: 22 272 22
+Encoding: 20 272 20
 GlifName: D_croat
 Width: 625
 VWidth: 0
@@ -28,7 +28,6 @@ SplineSet
  40 0 l 257
  290 0 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

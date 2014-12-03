@@ -1,5 +1,5 @@
 StartChar: onehalf
-Encoding: 984 189 984
+Encoding: 931 189 931
 GlifName: onehalf
 Width: 559
 VWidth: 0
@@ -47,7 +47,6 @@ SplineSet
  400 561 l 257
  100 0 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

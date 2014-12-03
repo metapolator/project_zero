@@ -1,5 +1,5 @@
 StartChar: dvM_PA
-Encoding: 510 -1 510
+Encoding: 484 -1 484
 GlifName: dvM__P_A_
 Width: 924
 VWidth: 0
@@ -30,6 +30,5 @@ SplineSet
  241 105 295 161 295 318 c 257
  295 548 l 257
 EndSplineSet
-Refer: 670 2346 N 1 0 0 1 362 0 2
-Validated: 5
+Refer: 566 2346 N 1 0 0 1 362 0 2
 EndChar

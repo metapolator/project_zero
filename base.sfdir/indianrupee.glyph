@@ -1,5 +1,5 @@
 StartChar: indianrupee
-Encoding: 941 8377 941
+Encoding: 886 8377 886
 GlifName: indianrupee
 Width: 443
 VWidth: 0
@@ -34,5 +34,4 @@ SplineSet
  346 314 258 269 140 262 c 257
  140 258 l 257
 EndSplineSet
-Validated: 5
 EndChar

@@ -1,5 +1,5 @@
 StartChar: caron
-Encoding: 156 711 156
+Encoding: 141 711 141
 GlifName: caron
 Width: 594
 VWidth: 0
@@ -17,7 +17,6 @@ SplineSet
  297 611 l 257
  209 651 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,5 +1,5 @@
 StartChar: endash
-Encoding: 888 8211 888
+Encoding: 840 8211 840
 GlifName: endash
 Width: 522
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  30 226 l 257
  30 206 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

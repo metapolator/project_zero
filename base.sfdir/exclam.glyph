@@ -1,5 +1,5 @@
 StartChar: exclam
-Encoding: 894 33 894
+Encoding: 845 33 845
 GlifName: exclam
 Width: 312
 VWidth: 0
@@ -20,7 +20,6 @@ SplineSet
  45 379 130 336 148 207 c 257
  164 207 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

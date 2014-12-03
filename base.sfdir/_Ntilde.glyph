@@ -1,5 +1,5 @@
 StartChar: Ntilde
-Encoding: 67 209 67
+Encoding: 60 209 60
 GlifName: N_tilde
 Width: 598
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 1040 -1 N 1 0 0 1 17 0 2
-Refer: 63 78 N 1 0 0 1 0 0 2
-Validated: 9
+Refer: 995 -1 N 1 0 0 1 17 0 2
+Refer: 55 78 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,5 +1,5 @@
 StartChar: imacron
-Encoding: 940 299 940
+Encoding: 885 299 885
 GlifName: imacron
 Width: 320
 VWidth: 0
@@ -24,8 +24,7 @@ SplineSet
  240 1 l 257
  240 460 l 257
 EndSplineSet
-Refer: 961 175 N 1 0 0 1 -136 0 2
-Validated: 5
+Refer: 905 175 N 1 0 0 1 -136 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

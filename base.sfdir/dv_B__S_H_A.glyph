@@ -1,5 +1,5 @@
 StartChar: dvB_SHA
-Encoding: 223 -1 223
+Encoding: 208 -1 208
 GlifName: dvB__S_H_A_
 Width: 1037
 VWidth: 0
@@ -63,5 +63,4 @@ SplineSet
  217 420 185 366 185 273 c 256
  185 181 213 124 268 124 c 257
 EndSplineSet
-Validated: 5
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dvBH_R_YA
-Encoding: 204 -1 204
+Encoding: 189 -1 189
 GlifName: dvB_H__R__Y_A_
 Width: 1000
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 202 -1 N 1 0 0 1 0 0 2
-Refer: 865 2351 N 1 0 0 1 360 0 2
-Validated: 5
+Refer: 187 -1 N 1 0 0 1 0 0 2
+Refer: 751 2351 N 1 0 0 1 360 0 2
 EndChar

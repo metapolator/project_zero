@@ -1,5 +1,5 @@
 StartChar: divide
-Encoding: 179 247 179
+Encoding: 164 247 164
 GlifName: divide
 Width: 485
 VWidth: 0
@@ -24,7 +24,6 @@ SplineSet
  445 242 l 257
  445 222 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

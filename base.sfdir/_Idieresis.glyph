@@ -1,5 +1,5 @@
 StartChar: Idieresis
-Encoding: 48 207 48
+Encoding: 41 207 41
 GlifName: I_dieresis
 Width: 310
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 43 73 N 1 0 0 1 0 0 2
-Refer: 178 -1 N 1 0 0 1 -193 -1 2
-Validated: 9
+Refer: 38 73 N 1 0 0 1 0 0 2
+Refer: 163 -1 N 1 0 0 1 -193 -1 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

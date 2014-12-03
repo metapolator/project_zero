@@ -1,5 +1,5 @@
 StartChar: partialdiff
-Encoding: 994 8706 994
+Encoding: 942 8706 942
 GlifName: partialdiff
 Width: 600
 VWidth: 0
@@ -20,7 +20,6 @@ SplineSet
  129 682 l 257
  280 682 398 530 398 278 c 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

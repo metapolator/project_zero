@@ -1,5 +1,5 @@
 StartChar: fl
-Encoding: 909 64258 909
+Encoding: 860 64258 860
 GlifName: fl
 Width: 637
 VWidth: 0
@@ -38,7 +38,6 @@ SplineSet
  557 670 l 257
  557 670 407 670 407 670 c 257
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.schriftgestaltung.Glyphs.ColorIndex'
 p2

@@ -1,9 +1,9 @@
 StartChar: dvKH_NA
-Encoding: 398 -1 398
+Encoding: 371 -1 371
 GlifName: dvK_H__N_A_
 Width: 771
 VWidth: 0
-Flags: HW
+Flags: W
 LayerCount: 2
 Back
 Fore
@@ -18,5 +18,5 @@ SplineSet
  373 -191 343 -223 296 -223 c 256
  242 -223 212 -188 212 -133 c 256
 EndSplineSet
-Refer: 394 2326 N 1 0 0 1 0 0 2
+Refer: 368 2326 N 1 0 0 1 0 0 2
 EndChar

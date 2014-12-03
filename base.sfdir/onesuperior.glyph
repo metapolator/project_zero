@@ -1,5 +1,5 @@
 StartChar: onesuperior
-Encoding: 986 -1 986
+Encoding: 933 185 933
 GlifName: onesuperior
 Width: 213
 VWidth: 0
@@ -22,7 +22,6 @@ SplineSet
  75 327 l 257
  145 327 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

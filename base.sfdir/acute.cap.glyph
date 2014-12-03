@@ -1,6 +1,6 @@
 StartChar: acute.cap
-Encoding: 128 -1 128
-GlifName: acute.cap
+Encoding: 112 -1 112
+GlifName: acute_cap
 Width: 536
 VWidth: 0
 Flags: W
@@ -15,7 +15,6 @@ SplineSet
  289 763 256 754 240 732 c 256
  207 687 232 660 198 611 c 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

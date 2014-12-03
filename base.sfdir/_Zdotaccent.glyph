@@ -1,5 +1,5 @@
 StartChar: Zdotaccent
-Encoding: 122 379 122
+Encoding: 106 379 106
 GlifName: Z_dotaccent
 Width: 529
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 116 90 N 1 0 0 1 0 0 2
-Refer: 182 -1 N 1 0 0 1 8 0 2
-Validated: 5
+Refer: 103 90 N 1 0 0 1 0 0 2
+Refer: 168 -1 N 1 0 0 1 8 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

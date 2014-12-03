@@ -1,5 +1,5 @@
 StartChar: dvTwo
-Encoding: 845 -1 845
+Encoding: 736 -1 736
 GlifName: dvT_wo
 Width: 500
 VWidth: 0
@@ -29,5 +29,4 @@ SplineSet
  472 164 469 185 464 205 c 257
  454 205 l 257
 EndSplineSet
-Validated: 9
 EndChar

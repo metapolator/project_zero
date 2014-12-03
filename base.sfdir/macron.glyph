@@ -1,5 +1,5 @@
 StartChar: macron
-Encoding: 961 175 961
+Encoding: 905 175 905
 GlifName: macron
 Width: 600
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  400 557 l 257
  400 607 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

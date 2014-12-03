@@ -1,5 +1,5 @@
 StartChar: dvFive
-Encoding: 302 -1 302
+Encoding: 278 -1 278
 GlifName: dvF_ive
 Width: 467
 VWidth: 0
@@ -30,5 +30,4 @@ SplineSet
  193 544 132 562 95 577 c 257
  61 272 l 257
 EndSplineSet
-Validated: 9
 EndChar

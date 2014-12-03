@@ -1,5 +1,5 @@
 StartChar: Ohungarumlaut
-Encoding: 75 336 75
+Encoding: 67 336 67
 GlifName: O_hungarumlaut
 Width: 622
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 68 79 N 1 0 0 1 0 0 2
-Refer: 930 -1 N 1 0 0 1 30 10 2
-Validated: 9
+Refer: 61 79 N 1 0 0 1 0 0 2
+Refer: 878 -1 N 1 0 0 1 30 10 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

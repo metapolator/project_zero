@@ -1,5 +1,5 @@
 StartChar: dvH_NNA
-Encoding: 348 -1 348
+Encoding: 322 -1 322
 GlifName: dvH__N_N_A_
 Width: 1310
 VWidth: 0
@@ -30,7 +30,6 @@ SplineSet
  467 540 l 257
  467 560 l 257
 EndSplineSet
-Refer: 341 2361 N 1 0 0 1 0 0 2
-Refer: 858 2381 N 1 0 0 1 399 -14 2
-Validated: 5
+Refer: 315 2361 N 1 0 0 1 0 0 2
+Refer: 748 2381 N 1 0 0 1 399 -14 2
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dvSix
-Encoding: 785 -1 785
+Encoding: 681 -1 681
 GlifName: dvS_ix
 Width: 523
 VWidth: 0
@@ -26,5 +26,4 @@ SplineSet
  234 333 180 301 149 265 c 257
  148 237 l 257
 EndSplineSet
-Validated: 5
 EndChar

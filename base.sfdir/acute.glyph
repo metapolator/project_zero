@@ -1,5 +1,5 @@
 StartChar: acute
-Encoding: 127 180 127
+Encoding: 111 180 111
 GlifName: acute
 Width: 538
 VWidth: 0
@@ -15,7 +15,6 @@ SplineSet
  291 663 258 654 242 632 c 256
  209 587 234 560 200 511 c 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

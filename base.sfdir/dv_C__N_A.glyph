@@ -1,5 +1,5 @@
 StartChar: dvC_NA
-Encoding: 240 -1 240
+Encoding: 224 -1 224
 GlifName: dvC__N_A_
 Width: 588
 VWidth: 0
@@ -18,6 +18,5 @@ SplineSet
  294 -161 264 -193 217 -193 c 256
  163 -193 133 -156 133 -101 c 256
 EndSplineSet
-Refer: 228 2330 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 213 2330 N 1 0 0 1 0 0 2
 EndChar

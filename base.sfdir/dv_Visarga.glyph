@@ -1,5 +1,5 @@
 StartChar: dvVisarga
-Encoding: 859 2307 859
+Encoding: 749 2307 749
 GlifName: dvV_isarga
 Width: 217
 VWidth: 0
@@ -19,5 +19,4 @@ SplineSet
  40 184 70 215 108 215 c 256
  146 215 177 184 177 146 c 256
 EndSplineSet
-Validated: 1
 EndChar

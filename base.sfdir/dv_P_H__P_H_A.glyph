@@ -1,17 +1,16 @@
 StartChar: dvPH_PHA
-Encoding: 685 -1 685
+Encoding: 573 -1 573
 GlifName: dvP_H__P_H_A_
 Width: 1419
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 1083 0 basechar 0
-AnchorPoint: "blwm_Virama" 1083 0 basechar 0
-AnchorPoint: "abvm_Ekaar" 1083 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 1083 560 basechar 0
+AnchorPoint: "blwm.u" 1083 0 basechar 0
+AnchorPoint: "blwm.virama" 1083 0 basechar 0
+AnchorPoint: "abvm.e" 1083 560 basechar 0
+AnchorPoint: "abvm.bindu" 1083 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 671 -1 N 1 0 0 1 0 0 2
-Refer: 672 2347 N 1 0 0 1 602 0 2
-Validated: 5
+Refer: 567 -1 N 1 0 0 1 0 0 2
+Refer: 568 2347 N 1 0 0 1 602 0 2
 EndChar

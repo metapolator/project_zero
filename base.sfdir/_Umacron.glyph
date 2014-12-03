@@ -1,5 +1,5 @@
 StartChar: Umacron
-Encoding: 100 362 100
+Encoding: 94 362 94
 GlifName: U_macron
 Width: 605
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 93 85 N 1 0 0 1 0 0 2
-Refer: 962 -1 N 1 0 0 1 59 0 2
-Validated: 9
+Refer: 88 85 N 1 0 0 1 0 0 2
+Refer: 906 -1 N 1 0 0 1 59 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

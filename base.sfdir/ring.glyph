@@ -1,5 +1,5 @@
 StartChar: ring
-Encoding: 1018 730 1018
+Encoding: 968 730 968
 GlifName: ring
 Width: 568
 VWidth: 0
@@ -19,7 +19,6 @@ SplineSet
  237 667 200 628 200 582 c 257
  200 536 237 498 283 498 c 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

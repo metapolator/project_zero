@@ -1,5 +1,5 @@
 StartChar: Edieresis
-Encoding: 28 203 28
+Encoding: 26 203 26
 GlifName: E_dieresis
 Width: 545
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 23 69 N 1 0 0 1 0 0 2
-Refer: 178 -1 N 1 0 0 1 -60 0 2
-Validated: 9
+Refer: 22 69 N 1 0 0 1 0 0 2
+Refer: 163 -1 N 1 0 0 1 -60 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

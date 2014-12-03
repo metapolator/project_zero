@@ -1,5 +1,5 @@
 StartChar: gbreve
-Encoding: 914 287 914
+Encoding: 865 287 865
 GlifName: gbreve
 Width: 538
 VWidth: 0
@@ -34,8 +34,7 @@ SplineSet
  30 187 133 130 256 130 c 256
  374 130 495 184 495 297 c 256
 EndSplineSet
-Refer: 150 728 N 1 0 0 1 -25 -1 2
-Validated: 37
+Refer: 134 728 N 1 0 0 1 -25 -1 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

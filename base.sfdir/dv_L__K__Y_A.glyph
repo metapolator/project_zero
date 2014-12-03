@@ -1,5 +1,5 @@
 StartChar: dvL_K_YA
-Encoding: 480 -1 480
+Encoding: 453 -1 453
 GlifName: dvL__K__Y_A_
 Width: 1804
 VWidth: 0
@@ -85,5 +85,4 @@ SplineSet
  1425 546 1483 495 1483 419 c 256
  1483 345 1408 304 1317 295 c 257
 EndSplineSet
-Validated: 5
 EndChar

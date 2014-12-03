@@ -1,5 +1,5 @@
 StartChar: racute
-Encoding: 1014 341 1014
+Encoding: 963 341 963
 GlifName: racute
 Width: 483
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 1013 114 N 1 0 0 1 0 0 2
-Refer: 127 180 N 1 0 0 1 10 0 2
-Validated: 9
+Refer: 962 114 N 1 0 0 1 0 0 2
+Refer: 111 180 N 1 0 0 1 10 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

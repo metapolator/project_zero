@@ -1,5 +1,5 @@
 StartChar: dvL_JA
-Encoding: 476 -1 476
+Encoding: 449 -1 449
 GlifName: dvL__J_A_
 Width: 1223
 VWidth: 0
@@ -57,5 +57,4 @@ SplineSet
  1003 0 l 257
  1003 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

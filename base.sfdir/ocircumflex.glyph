@@ -1,5 +1,5 @@
 StartChar: ocircumflex
-Encoding: 975 244 975
+Encoding: 922 244 922
 GlifName: ocircumflex
 Width: 564
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 972 111 N 1 0 0 1 0 0 2
-Refer: 164 710 N 1 0 0 1 -17 0 2
-Validated: 5
+Refer: 920 111 N 1 0 0 1 0 0 2
+Refer: 148 710 N 1 0 0 1 -17 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

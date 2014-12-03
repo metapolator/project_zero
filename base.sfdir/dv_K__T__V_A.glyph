@@ -1,5 +1,5 @@
 StartChar: dvK_T_VA
-Encoding: 456 -1 456
+Encoding: 419 -1 419
 GlifName: dvK__T__V_A_
 Width: 1424
 VWidth: 0
@@ -48,6 +48,5 @@ SplineSet
  1041 415 l 257
  1041 396 l 257
 EndSplineSet
-Refer: 850 2357 N 1 0 0 1 860 0 2
-Validated: 5
+Refer: 740 2357 N 1 0 0 1 860 0 2
 EndChar

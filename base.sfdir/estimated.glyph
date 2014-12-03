@@ -1,16 +1,29 @@
 StartChar: estimated
-Encoding: 892 8494 892
+Encoding: 843 8494 843
 GlifName: estimated
-Width: 500
+Width: 689
 VWidth: 0
 Flags: W
 LayerCount: 2
 Back
 Fore
-Validated: 1
-PickledDataWithLists: "(dp1
-S'com.typemytype.robofont.layerData'
-p2
-(dp3
-s."
+SplineSet
+587 143 m 257
+ 543 68 473 20 355 20 c 256
+ 299 20 249 33 212 55 c 257
+ 212 269 l 257
+ 619 269 l 257
+ 620 281 620 293 620 299 c 256
+ 620 463 517 571 351 571 c 256
+ 175 571 62 448 62 285 c 256
+ 62 118 176 0 354 0 c 256
+ 467 0 555 46 605 132 c 257
+ 587 143 l 257
+481 289 m 257
+ 212 289 l 257
+ 212 519 l 257
+ 247 539 298 552 352 552 c 256
+ 406 552 449 540 480 523 c 257
+ 481 289 l 257
+EndSplineSet
 EndChar

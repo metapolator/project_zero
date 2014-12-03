@@ -1,5 +1,5 @@
 StartChar: grave
-Encoding: 918 96 918
+Encoding: 868 96 868
 GlifName: grave
 Width: 539
 VWidth: 0
@@ -15,7 +15,6 @@ SplineSet
  241 529 290 552 325 501 c 257
  339 511 l 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

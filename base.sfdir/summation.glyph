@@ -1,5 +1,5 @@
 StartChar: summation
-Encoding: 1031 8721 1031
+Encoding: 985 8721 985
 GlifName: summation
 Width: 500
 VWidth: 0
@@ -8,25 +8,24 @@ LayerCount: 2
 Back
 Fore
 SplineSet
-453 0 m 257
- 453 230 l 257
- 433 230 l 257
- 433 134 410 120 283 120 c 257
- 130 120 l 257
- 338 338 l 257
- 174 540 l 257
+453 -118 m 257
+ 453 112 l 257
+ 433 112 l 257
+ 433 16 410 2 283 2 c 257
+ 125 2 l 257
+ 338 273 l 257
+ 165 540 l 257
  280 540 l 257
  377 540 430 516 430 390 c 257
  450 390 l 257
  450 560 l 257
  0 560 l 257
  0 540 l 257
- 227 258 l 257
- 4 22 l 257
- 4 0 l 257
- 453 0 l 257
+ 232 192 l 257
+ 4 -96 l 257
+ 4 -118 l 257
+ 453 -118 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

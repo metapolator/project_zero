@@ -1,5 +1,5 @@
 StartChar: dvNN_DDHA
-Encoding: 600 -1 600
+Encoding: 502 -1 502
 GlifName: dvN_N__D_D_H_A_
 Width: 1025
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 597 -1 N 1 0 0 1 0 0 2
-Refer: 252 2338 N 1 0 0 1 503 0 2
-Validated: 5
+Refer: 499 -1 N 1 0 0 1 0 0 2
+Refer: 235 2338 N 1 0 0 1 503 0 2
 EndChar

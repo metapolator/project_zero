@@ -1,5 +1,5 @@
 StartChar: Zcaron
-Encoding: 121 381 121
+Encoding: 105 381 105
 GlifName: Z_caron
 Width: 529
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 116 90 N 1 0 0 1 0 0 2
-Refer: 157 -1 N 1 0 0 1 -25 0 2
-Validated: 5
+Refer: 103 90 N 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 -25 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

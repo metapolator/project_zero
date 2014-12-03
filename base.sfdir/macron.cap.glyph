@@ -1,6 +1,6 @@
 StartChar: macron.cap
-Encoding: 962 -1 962
-GlifName: macron.cap
+Encoding: 906 -1 906
+GlifName: macron_cap
 Width: 600
 VWidth: 0
 Flags: W
@@ -14,7 +14,6 @@ SplineSet
  400 657 l 257
  400 707 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

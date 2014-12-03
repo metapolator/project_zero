@@ -1,5 +1,5 @@
 StartChar: dvS_JA
-Encoding: 759 -1 759
+Encoding: 656 -1 656
 GlifName: dvS__J_A_
 Width: 1048
 VWidth: 0
@@ -34,6 +34,5 @@ SplineSet
  828 0 l 257
  828 560 l 257
 EndSplineSet
-Refer: 717 -1 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 612 -1 N 1 0 0 1 0 0 2
 EndChar

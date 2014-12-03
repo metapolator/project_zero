@@ -1,0 +1,16 @@
+StartChar: dvKxA
+Encoding: 425 2392 425
+GlifName: dvK_xA_
+Width: 813
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm.u" 477 -125 basechar 0
+AnchorPoint: "blwm.virama" 477 0 basechar 0
+AnchorPoint: "abvm.e" 477 560 basechar 0
+AnchorPoint: "abvm.bindu" 477 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 366 2325 N 1 0 0 1 0 0 2
+Refer: 560 2364 N 1 0 0 1 418 22 2
+EndChar

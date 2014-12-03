@@ -1,5 +1,5 @@
 StartChar: onequarter
-Encoding: 985 188 985
+Encoding: 932 188 932
 GlifName: onequarter
 Width: 539
 VWidth: 0
@@ -50,7 +50,6 @@ SplineSet
  400 561 l 257
  100 0 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

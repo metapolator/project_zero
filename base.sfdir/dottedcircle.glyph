@@ -1,5 +1,5 @@
 StartChar: dottedcircle
-Encoding: 184 9676 184
+Encoding: 170 9676 170
 GlifName: dottedcircle
 Width: 660
 VWidth: 0
@@ -69,5 +69,4 @@ SplineSet
  345 586 327 604 301 604 c 256
  275 604 257 586 257 560 c 256
 EndSplineSet
-Validated: 9
 EndChar

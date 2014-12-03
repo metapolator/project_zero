@@ -1,5 +1,5 @@
 StartChar: eth
-Encoding: 893 240 893
+Encoding: 844 240 844
 GlifName: eth
 Width: 572
 VWidth: 0
@@ -11,7 +11,7 @@ SplineSet
 519 670 m 257
  125 526 l 257
  134 506 l 257
- 527 651 l 256
+ 527 651 l 257
  519 670 l 257
 389 278 m 257
  389 84 349 10 280 10 c 257
@@ -25,7 +25,6 @@ SplineSet
  120 652 l 257
  271 652 389 520 389 278 c 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

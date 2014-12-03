@@ -1,5 +1,5 @@
 StartChar: Aacute
-Encoding: 4 193 4
+Encoding: 3 193 3
 GlifName: A_acute
 Width: 643
 VWidth: 0
@@ -8,8 +8,7 @@ LayerCount: 2
 Back
 Fore
 Refer: 1 65 N 1 0 0 1 0 0 2
-Refer: 128 -1 N 1 0 0 1 109 0 2
-Validated: 5
+Refer: 112 -1 N 1 0 0 1 109 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

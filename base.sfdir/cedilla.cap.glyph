@@ -1,6 +1,6 @@
 StartChar: cedilla.cap
-Encoding: 162 -1 162
-GlifName: cedilla.cap
+Encoding: 146 -1 146
+GlifName: cedilla_cap
 Width: 588
 VWidth: 0
 Flags: W
@@ -22,7 +22,6 @@ SplineSet
  393 -108 339 -77 274 -77 c 256
  274 -77 242 -92 242 -92 c 257
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,11 +1,13 @@
 StartChar: dvDA
-Encoding: 246 2342 246
+Encoding: 230 2342 230
 GlifName: dvD_A_
 Width: 489
 VWidth: 0
 Flags: HW
-AnchorPoint: "blwm_Ukaar" 383 -87 basechar 0
-AnchorPoint: "blwm_Virama" 375 -8 basechar 0
+AnchorPoint: "blwm.u" 383 -87 basechar 0
+AnchorPoint: "blwm.virama" 375 -8 basechar 0
+AnchorPoint: "abvm.e" 389 560 basechar 0
+AnchorPoint: "abvm.bindu" 389 560 basechar 0
 LayerCount: 2
 Back
 Fore

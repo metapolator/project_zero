@@ -1,5 +1,5 @@
 StartChar: Uhungarumlaut
-Encoding: 99 368 99
+Encoding: 93 368 93
 GlifName: U_hungarumlaut
 Width: 605
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 93 85 N 1 0 0 1 0 0 2
-Refer: 930 -1 N 1 0 0 1 70 0 2
-Validated: 9
+Refer: 88 85 N 1 0 0 1 0 0 2
+Refer: 878 -1 N 1 0 0 1 70 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

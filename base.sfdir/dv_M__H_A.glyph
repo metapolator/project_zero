@@ -1,17 +1,16 @@
 StartChar: dvM_HA
-Encoding: 506 -1 506
+Encoding: 480 -1 480
 GlifName: dvM__H_A_
 Width: 856
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 699 -77 basechar 0
-AnchorPoint: "blwm_Virama" 728 -9 basechar 0
-AnchorPoint: "abvm_Ekaar" 769 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 769 560 basechar 0
+AnchorPoint: "blwm.u" 699 -77 basechar 0
+AnchorPoint: "blwm.virama" 728 -9 basechar 0
+AnchorPoint: "abvm.e" 769 560 basechar 0
+AnchorPoint: "abvm.bindu" 769 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 495 -1 N 1 0 0 1 -2 0 2
-Refer: 341 2361 N 1 0 0 1 350 0 2
-Validated: 5
+Refer: 470 -1 N 1 0 0 1 -2 0 2
+Refer: 315 2361 N 1 0 0 1 350 0 2
 EndChar

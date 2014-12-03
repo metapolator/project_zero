@@ -1,0 +1,32 @@
+StartChar: pi
+Encoding: 947 960 947
+GlifName: pi
+Width: 646
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+556 460 m 257
+ 406 460 l 257
+ 406 1 l 257
+ 556 1 l 257
+ 556 460 l 257
+626 460 m 257
+ 226 460 l 257
+ 226 440 l 257
+ 626 440 l 257
+ 626 460 l 257
+290 460 m 257
+ 20 460 l 257
+ 20 440 l 257
+ 290 440 l 257
+ 290 460 l 257
+240 460 m 257
+ 90 460 l 257
+ 90 1 l 257
+ 240 1 l 257
+ 240 460 l 257
+EndSplineSet
+EndChar

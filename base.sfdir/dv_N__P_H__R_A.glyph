@@ -1,17 +1,16 @@
 StartChar: dvN_PH_RA
-Encoding: 643 -1 643
+Encoding: 541 -1 541
 GlifName: dvN__P_H__R_A_
 Width: 1102
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 766 0 basechar 0
-AnchorPoint: "blwm_Virama" 766 0 basechar 0
-AnchorPoint: "abvm_Ekaar" 766 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 766 560 basechar 0
+AnchorPoint: "blwm.u" 766 0 basechar 0
+AnchorPoint: "blwm.virama" 766 0 basechar 0
+AnchorPoint: "abvm.e" 766 560 basechar 0
+AnchorPoint: "abvm.bindu" 766 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 588 -1 N 1 0 0 1 0 0 2
-Refer: 687 -1 N 1 0 0 1 284 0 2
-Validated: 5
+Refer: 493 -1 N 1 0 0 1 0 0 2
+Refer: 575 -1 N 1 0 0 1 284 0 2
 EndChar

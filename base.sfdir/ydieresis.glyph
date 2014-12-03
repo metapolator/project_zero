@@ -1,5 +1,5 @@
 StartChar: ydieresis
-Encoding: 1086 255 1086
+Encoding: 1015 255 1015
 GlifName: ydieresis
 Width: 542
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 1083 121 N 1 0 0 1 0 0 2
-Refer: 177 168 N 1 0 0 1 -60 0 2
-Validated: 9
+Refer: 1013 121 N 1 0 0 1 0 0 2
+Refer: 162 168 N 1 0 0 1 -60 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

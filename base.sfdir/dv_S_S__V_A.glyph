@@ -1,5 +1,5 @@
 StartChar: dvSS_VA
-Encoding: 755 -1 755
+Encoding: 652 -1 652
 GlifName: dvS_S__V_A_
 Width: 879
 VWidth: 0
@@ -28,6 +28,5 @@ SplineSet
  371 256 l 257
  357 201 300 133 211 132 c 257
 EndSplineSet
-Refer: 850 2357 N 1 0 0 1 315 0 2
-Validated: 5
+Refer: 740 2357 N 1 0 0 1 315 0 2
 EndChar

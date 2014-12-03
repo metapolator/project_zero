@@ -1,5 +1,5 @@
 StartChar: dvV_NA
-Encoding: 853 -1 853
+Encoding: 743 -1 743
 GlifName: dvV__N_A_
 Width: 564
 VWidth: 0
@@ -17,6 +17,5 @@ SplineSet
  285 109 l 257
  280 86 l 257
 EndSplineSet
-Refer: 850 2357 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 740 2357 N 1 0 0 1 0 0 2
 EndChar

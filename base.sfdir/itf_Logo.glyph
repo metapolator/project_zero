@@ -1,5 +1,5 @@
 StartChar: itfLogo
-Encoding: 944 -1 944
+Encoding: 890 -1 890
 GlifName: itfL_ogo
 Width: 1648
 VWidth: 0
@@ -44,5 +44,4 @@ SplineSet
  1327 409 l 257
  1327 224 l 257
 EndSplineSet
-Validated: 9
 EndChar

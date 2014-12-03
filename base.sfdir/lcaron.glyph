@@ -1,5 +1,5 @@
 StartChar: lcaron
-Encoding: 953 318 953
+Encoding: 896 318 896
 GlifName: lcaron
 Width: 408
 VWidth: 0
@@ -24,8 +24,7 @@ SplineSet
  230 650 l 257
  230 670 l 257
 EndSplineSet
-Refer: 1010 8217 N 0.74 0 0 0.74 273 173 2
-Validated: 5
+Refer: 959 8217 N 0.74 0 0 0.74 273 173 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

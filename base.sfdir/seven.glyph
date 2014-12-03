@@ -1,5 +1,5 @@
 StartChar: seven
-Encoding: 1026 55 1026
+Encoding: 979 55 979
 GlifName: seven
 Width: 472
 VWidth: 0
@@ -25,7 +25,6 @@ SplineSet
  336 424 378 441 406 488 c 257
  409 485 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

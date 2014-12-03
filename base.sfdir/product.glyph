@@ -1,7 +1,7 @@
 StartChar: product
-Encoding: 1001 8719 1001
+Encoding: 950 8719 950
 GlifName: product
-Width: 500
+Width: 646
 VWidth: 0
 Flags: W
 LayerCount: 2
@@ -10,24 +10,24 @@ Fore
 SplineSet
 556 560 m 257
  406 560 l 257
- 406 1 l 257
- 556 1 l 257
+ 406 -117 l 257
+ 556 -117 l 257
  556 560 l 257
-606 20 m 257
- 356 20 l 256
- 356 0 l 257
- 606 0 l 257
- 606 20 l 257
+606 -98 m 257
+ 356 -98 l 257
+ 356 -118 l 257
+ 606 -118 l 257
+ 606 -98 l 257
 606 560 m 257
  226 560 l 257
  226 540 l 257
  606 540 l 257
  606 560 l 257
-290 20 m 257
- 40 20 l 256
- 40 0 l 257
- 290 0 l 257
- 290 20 l 257
+290 -98 m 257
+ 40 -98 l 257
+ 40 -118 l 257
+ 290 -118 l 257
+ 290 -98 l 257
 290 560 m 257
  40 560 l 257
  40 540 l 257
@@ -35,11 +35,10 @@ SplineSet
  290 560 l 257
 240 560 m 257
  90 560 l 257
- 90 1 l 257
- 240 1 l 257
+ 90 -117 l 257
+ 240 -117 l 257
  240 560 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

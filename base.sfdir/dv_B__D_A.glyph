@@ -1,13 +1,13 @@
 StartChar: dvB_DA
-Encoding: 210 -1 210
+Encoding: 195 -1 195
 GlifName: dvB__D_A_
 Width: 791
 VWidth: 0
-Flags: HW
-AnchorPoint: "blwm_Ukaar" 685 -87 basechar 0
-AnchorPoint: "blwm_Virama" 677 -8 basechar 0
-AnchorPoint: "abvm_Ekaar" 691 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 691 560 basechar 0
+Flags: W
+AnchorPoint: "blwm.u" 685 -87 basechar 0
+AnchorPoint: "blwm.virama" 677 -8 basechar 0
+AnchorPoint: "abvm.e" 691 560 basechar 0
+AnchorPoint: "abvm.bindu" 691 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -34,5 +34,5 @@ SplineSet
  347 212 l 257
  342 171 324 126 273 124 c 257
 EndSplineSet
-Refer: 246 2342 N 1 0 0 1 302 0 2
+Refer: 230 2342 N 1 0 0 1 302 0 2
 EndChar

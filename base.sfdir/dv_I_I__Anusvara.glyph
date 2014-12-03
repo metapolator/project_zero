@@ -1,5 +1,5 @@
 StartChar: dvII_Anusvara
-Encoding: 354 -1 354
+Encoding: 329 -1 329
 GlifName: dvI_I__A_nusvara
 Width: 551
 VWidth: 0
@@ -50,5 +50,4 @@ SplineSet
  286 693 310 716 340 716 c 256
  370 716 393 693 393 663 c 256
 EndSplineSet
-Validated: 5
 EndChar

@@ -1,5 +1,5 @@
 StartChar: Gbreve
-Encoding: 38 286 38
+Encoding: 35 286 35
 GlifName: G_breve
 Width: 608
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 37 71 N 1 0 0 1 0 0 2
-Refer: 151 -1 N 1 0 0 1 17 0 2
-Validated: 9
+Refer: 34 71 N 1 0 0 1 0 0 2
+Refer: 135 -1 N 1 0 0 1 17 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

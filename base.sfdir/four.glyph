@@ -1,5 +1,5 @@
 StartChar: four
-Encoding: 911 52 911
+Encoding: 862 52 862
 GlifName: four
 Width: 531
 VWidth: 0
@@ -32,7 +32,6 @@ SplineSet
  491 229 l 257
  468 229 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

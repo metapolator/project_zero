@@ -1,5 +1,5 @@
 StartChar: Rcaron
-Encoding: 84 344 84
+Encoding: 76 344 76
 GlifName: R_caron
 Width: 633
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 82 82 N 1 0 0 1 0 0 2
-Refer: 157 -1 N 1 0 0 1 -10 0 2
-Validated: 9
+Refer: 74 82 N 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 -10 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

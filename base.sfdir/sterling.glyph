@@ -1,5 +1,5 @@
 StartChar: sterling
-Encoding: 1030 163 1030
+Encoding: 984 163 984
 GlifName: sterling
 Width: 503
 VWidth: 0
@@ -36,7 +36,6 @@ SplineSet
  46 292 l 257
  46 272 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

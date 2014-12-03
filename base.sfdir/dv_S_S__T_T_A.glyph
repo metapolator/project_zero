@@ -1,13 +1,13 @@
 StartChar: dvSS_TTA
-Encoding: 748 -1 748
+Encoding: 645 -1 645
 GlifName: dvS_S__T_T_A_
 Width: 549
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 399 -65 basechar 0
-AnchorPoint: "blwm_Virama" 407 -25 basechar 0
-AnchorPoint: "abvm_Ekaar" 493 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 493 560 basechar 0
+AnchorPoint: "blwm.u" 399 -65 basechar 0
+AnchorPoint: "blwm.virama" 407 -25 basechar 0
+AnchorPoint: "abvm.e" 493 560 basechar 0
+AnchorPoint: "abvm.bindu" 493 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -46,5 +46,4 @@ SplineSet
  393 0 470 24 516 80 c 257
  504 90 l 257
 EndSplineSet
-Validated: 5
 EndChar

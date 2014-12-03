@@ -1,5 +1,5 @@
 StartChar: dvDD_R
-Encoding: 264 -1 264
+Encoding: 244 -1 244
 GlifName: dvD_D__R_
 Width: 457
 VWidth: 0
@@ -39,6 +39,5 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Refer: 858 2381 N 1 0 0 1 386 -78 2
-Validated: 5
+Refer: 748 2381 N 1 0 0 1 386 -78 2
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dvNA
-Encoding: 589 2344 589
+Encoding: 494 2344 494
 GlifName: dvN_A_
 Width: 559
 VWidth: 0
@@ -28,5 +28,4 @@ SplineSet
  339 560 l 257
  339 0 l 257
 EndSplineSet
-Validated: 5
 EndChar

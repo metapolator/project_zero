@@ -1,5 +1,5 @@
 StartChar: cedilla
-Encoding: 161 184 161
+Encoding: 145 184 145
 GlifName: cedilla
 Width: 588
 VWidth: 0
@@ -22,7 +22,6 @@ SplineSet
  322 4 l 257
  294 4 l 257
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

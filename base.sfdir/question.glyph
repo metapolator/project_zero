@@ -1,5 +1,5 @@
 StartChar: question
-Encoding: 1003 63 1003
+Encoding: 952 63 952
 GlifName: question
 Width: 451
 VWidth: 0
@@ -26,7 +26,6 @@ SplineSet
  177 321 408 267 421 425 c 256
  430 532 310 570 203 570 c 256
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

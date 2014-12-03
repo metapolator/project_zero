@@ -1,5 +1,5 @@
 StartChar: trademark
-Encoding: 1041 8482 1041
+Encoding: 996 8482 996
 GlifName: trademark
 Width: 760
 VWidth: 0
@@ -52,7 +52,6 @@ SplineSet
  368 659 l 257
  368 396 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

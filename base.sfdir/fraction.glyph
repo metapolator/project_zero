@@ -1,5 +1,5 @@
 StartChar: fraction
-Encoding: 912 8260 912
+Encoding: 863 8260 863
 GlifName: fraction
 Width: 61
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  170 561 l 257
  -130 0 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

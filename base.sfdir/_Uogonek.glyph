@@ -1,5 +1,5 @@
 StartChar: Uogonek
-Encoding: 101 370 101
+Encoding: 95 370 95
 GlifName: U_ogonek
 Width: 605
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 93 85 N 1 0 0 1 0 0 2
-Refer: 979 -1 N 1 0 0 1 70 0 2
-Validated: 5
+Refer: 88 85 N 1 0 0 1 0 0 2
+Refer: 926 -1 N 1 0 0 1 70 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

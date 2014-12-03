@@ -1,10 +1,10 @@
 StartChar: dvU
-Encoding: 846 2313 846
+Encoding: 737 2313 737
 GlifName: dvU_
 Width: 466
 VWidth: 0
 Flags: W
-AnchorPoint: "abvm_Anusvara" 322 560 basechar 0
+AnchorPoint: "abvm.bindu" 322 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -35,5 +35,4 @@ SplineSet
  396 371 332 343 269 334 c 257
  269 330 l 257
 EndSplineSet
-Validated: 5
 EndChar

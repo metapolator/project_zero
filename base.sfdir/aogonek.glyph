@@ -1,5 +1,5 @@
 StartChar: aogonek
-Encoding: 135 261 135
+Encoding: 118 261 118
 GlifName: aogonek
 Width: 525
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 123 97 N 1 0 0 1 0 0 2
-Refer: 978 731 N 1 0 0 1 90 0 2
-Validated: 5
+Refer: 107 97 N 1 0 0 1 0 0 2
+Refer: 925 731 N 1 0 0 1 90 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

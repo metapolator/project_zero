@@ -1,5 +1,5 @@
 StartChar: V
-Encoding: 104 86 104
+Encoding: 97 86 97
 GlifName: V_
 Width: 626
 VWidth: 0
@@ -29,7 +29,6 @@ SplineSet
  309 0 l 257
  335 0 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

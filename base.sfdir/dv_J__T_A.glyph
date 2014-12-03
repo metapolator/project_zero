@@ -1,5 +1,5 @@
 StartChar: dvJ_TA
-Encoding: 386 -1 386
+Encoding: 355 -1 355
 GlifName: dvJ__T_A_
 Width: 1007
 VWidth: 0
@@ -51,5 +51,4 @@ SplineSet
  414 540 l 257
  414 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

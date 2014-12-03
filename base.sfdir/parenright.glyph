@@ -1,5 +1,5 @@
 StartChar: parenright
-Encoding: 993 41 993
+Encoding: 941 41 941
 GlifName: parenright
 Width: 319
 VWidth: 0
@@ -16,7 +16,6 @@ SplineSet
  10 -82 l 257
  133 -65 279 73 279 285 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

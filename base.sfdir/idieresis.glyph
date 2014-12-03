@@ -1,5 +1,5 @@
 StartChar: idieresis
-Encoding: 937 239 937
+Encoding: 883 239 883
 GlifName: idieresis
 Width: 320
 VWidth: 0
@@ -24,8 +24,7 @@ SplineSet
  240 1 l 257
  240 460 l 257
 EndSplineSet
-Refer: 177 168 N 1 0 0 1 -193 0 2
-Validated: 5
+Refer: 162 168 N 1 0 0 1 -193 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

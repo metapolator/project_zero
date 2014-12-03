@@ -1,5 +1,5 @@
 StartChar: dvM_NA
-Encoding: 509 -1 509
+Encoding: 483 -1 483
 GlifName: dvM__N_A_
 Width: 644
 VWidth: 0
@@ -44,5 +44,4 @@ SplineSet
  295 548 l 257
  295 318 l 257
 EndSplineSet
-Validated: 5
 EndChar

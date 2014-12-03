@@ -1,5 +1,5 @@
 StartChar: thorn
-Encoding: 1035 254 1035
+Encoding: 990 254 990
 GlifName: thorn
 Width: 598
 VWidth: 0
@@ -35,7 +35,6 @@ SplineSet
  230 650 l 257
  230 670 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

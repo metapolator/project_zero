@@ -1,5 +1,5 @@
 StartChar: adieresis
-Encoding: 129 228 129
+Encoding: 113 228 113
 GlifName: adieresis
 Width: 525
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 123 97 N 1 0 0 1 0 0 2
-Refer: 177 168 N 1 0 0 1 -88 0 2
-Validated: 5
+Refer: 107 97 N 1 0 0 1 0 0 2
+Refer: 162 168 N 1 0 0 1 -88 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

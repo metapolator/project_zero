@@ -1,5 +1,5 @@
 StartChar: dvEight
-Encoding: 297 -1 297
+Encoding: 274 -1 274
 GlifName: dvE_ight
 Width: 521
 VWidth: 0
@@ -26,5 +26,4 @@ SplineSet
  163 380 484 314 484 153 c 256
  484 52 382 -12 272 -12 c 256
 EndSplineSet
-Validated: 5
 EndChar

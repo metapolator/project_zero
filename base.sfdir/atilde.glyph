@@ -1,5 +1,5 @@
 StartChar: atilde
-Encoding: 142 227 142
+Encoding: 126 227 126
 GlifName: atilde
 Width: 525
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 123 97 N 1 0 0 1 0 0 2
-Refer: 1039 732 N 1 0 0 1 -37 0 2
-Validated: 5
+Refer: 107 97 N 1 0 0 1 0 0 2
+Refer: 994 732 N 1 0 0 1 -37 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

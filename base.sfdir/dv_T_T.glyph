@@ -1,5 +1,5 @@
 StartChar: dvTT
-Encoding: 795 -1 795
+Encoding: 691 -1 691
 GlifName: dvT_T_
 Width: 441
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 796 2335 N 1 0 0 1 -3 0 2
-Refer: 858 2381 N 1 0 0 1 421 0 2
-Validated: 5
+Refer: 692 2335 N 1 0 0 1 -3 0 2
+Refer: 748 2381 N 1 0 0 1 421 0 2
 EndChar

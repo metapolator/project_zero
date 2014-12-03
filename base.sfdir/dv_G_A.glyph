@@ -1,5 +1,5 @@
 StartChar: dvGA
-Encoding: 305 2327 305
+Encoding: 281 2327 281
 GlifName: dvG_A_
 Width: 664
 VWidth: 0
@@ -31,5 +31,4 @@ SplineSet
  444 550 l 257
  444 0 l 257
 EndSplineSet
-Validated: 5
 EndChar

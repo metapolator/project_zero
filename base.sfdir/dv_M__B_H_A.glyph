@@ -1,5 +1,5 @@
 StartChar: dvM_BHA
-Encoding: 499 -1 499
+Encoding: 473 -1 473
 GlifName: dvM__B_H_A_
 Width: 985
 VWidth: 0
@@ -30,6 +30,5 @@ SplineSet
  295 548 l 257
  295 318 l 257
 EndSplineSet
-Refer: 199 2349 N 1 0 0 1 362 0 2
-Validated: 5
+Refer: 184 2349 N 1 0 0 1 362 0 2
 EndChar

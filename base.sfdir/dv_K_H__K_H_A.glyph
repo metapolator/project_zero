@@ -1,5 +1,5 @@
 StartChar: dvKH_KHA
-Encoding: 396 -1 396
+Encoding: 369 -1 369
 GlifName: dvK_H__K_H_A_
 Width: 1333
 VWidth: 0
@@ -44,6 +44,5 @@ SplineSet
  537 540 l 257
  537 560 l 257
 EndSplineSet
-Refer: 393 -1 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 367 -1 N 1 0 0 1 0 0 2
 EndChar

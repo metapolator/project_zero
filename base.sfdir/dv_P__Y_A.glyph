@@ -1,5 +1,5 @@
 StartChar: dvP_YA
-Encoding: 705 -1 705
+Encoding: 601 -1 601
 GlifName: dvP__Y_A_
 Width: 943
 VWidth: 0
@@ -23,6 +23,5 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Refer: 865 2351 N 1 0 0 1 303 0 2
-Validated: 5
+Refer: 751 2351 N 1 0 0 1 303 0 2
 EndChar

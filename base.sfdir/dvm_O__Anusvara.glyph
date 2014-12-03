@@ -1,0 +1,21 @@
+StartChar: dvmO_Anusvara
+Encoding: 814 -1 814
+GlifName: dvmO__A_nusvara
+Width: 291
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+157 589 m 257
+ 38 645 -27 662 -69 691 c 256
+ -88 704 -98 723 -98 741 c 256
+ -98 769 -75 790 -47 790 c 256
+ -35 790 -22 786 -11 778 c 256
+ 33 749 71 695 166 603 c 257
+ 157 589 l 257
+EndSplineSet
+Refer: 757 2366 N 1 0 0 1 0 0 2
+Refer: 178 2306 N 1 0 0 1 371 12 2
+EndChar

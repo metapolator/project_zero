@@ -1,5 +1,5 @@
 StartChar: dvDD_YA
-Encoding: 267 -1 267
+Encoding: 247 -1 247
 GlifName: dvD_D__Y_A_
 Width: 1100
 VWidth: 0
@@ -55,5 +55,4 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

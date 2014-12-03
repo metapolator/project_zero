@@ -1,14 +1,14 @@
 StartChar: scaron
-Encoding: 1022 353 1022
+Encoding: 974 353 974
 GlifName: scaron
 Width: 476
 VWidth: 0
-Flags: HW
+Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 1020 115 N 1 0 0 1 0 0 2
-Refer: 156 711 N 1 0 0 1 -60 0 2
+Refer: 972 115 N 1 0 0 1 0 0 2
+Refer: 141 711 N 1 0 0 1 -60 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

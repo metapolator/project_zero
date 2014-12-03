@@ -1,5 +1,5 @@
 StartChar: Lcaron
-Encoding: 59 317 59
+Encoding: 51 317 51
 GlifName: L_caron
 Width: 521
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 57 76 N 1 0 0 1 0 0 2
-Refer: 168 -1 N 1 0 0 1 159 619 2
-Validated: 5
+Refer: 49 76 N 1 0 0 1 0 0 2
+Refer: 152 -1 N 1 0 0 1 159 619 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

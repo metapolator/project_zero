@@ -1,5 +1,5 @@
 StartChar: quotedbl
-Encoding: 1005 34 1005
+Encoding: 954 34 954
 GlifName: quotedbl
 Width: 262
 VWidth: 0
@@ -21,7 +21,6 @@ SplineSet
  149 612 178 531 195 451 c 257
  205 451 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

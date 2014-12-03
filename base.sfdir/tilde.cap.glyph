@@ -1,6 +1,6 @@
 StartChar: tilde.cap
-Encoding: 1040 -1 1040
-GlifName: tilde.cap
+Encoding: 995 -1 995
+GlifName: tilde_cap
 Width: 598
 VWidth: 0
 Flags: W
@@ -18,7 +18,6 @@ SplineSet
  230 726 200 704 200 630 c 257
  220 630 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,13 +1,13 @@
 StartChar: dvK_S_P_LA
-Encoding: 448 -1 448
+Encoding: 411 -1 411
 GlifName: dvK__S__P__L_A_
 Width: 2092
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 1919 -37 basechar 0
-AnchorPoint: "blwm_Virama" 1929 14 basechar 0
-AnchorPoint: "abvm_Ekaar" 1927 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 1927 560 basechar 0
+AnchorPoint: "blwm.u" 1919 -37 basechar 0
+AnchorPoint: "blwm.virama" 1929 14 basechar 0
+AnchorPoint: "abvm.e" 1927 560 basechar 0
+AnchorPoint: "abvm.bindu" 1927 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -114,5 +114,4 @@ SplineSet
  1398 368 1480 446 1592 446 c 256
  1663 446 1704 418 1728 378 c 257
 EndSplineSet
-Validated: 5
 EndChar

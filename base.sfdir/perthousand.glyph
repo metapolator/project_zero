@@ -1,5 +1,5 @@
 StartChar: perthousand
-Encoding: 998 8240 998
+Encoding: 946 8240 946
 GlifName: perthousand
 Width: 926
 VWidth: 0
@@ -44,7 +44,6 @@ SplineSet
  40 365 81 310 177 310 c 256
  275 310 319 369 319 445 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

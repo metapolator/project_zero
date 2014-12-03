@@ -1,5 +1,5 @@
 StartChar: dvKH_SHA
-Encoding: 410 -1 410
+Encoding: 374 -1 374
 GlifName: dvK_H__S_H_A_
 Width: 1280
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 393 -1 N 1 0 0 1 0 0 2
-Refer: 720 2358 N 1 0 0 1 572 0 2
-Validated: 5
+Refer: 367 -1 N 1 0 0 1 0 0 2
+Refer: 615 2358 N 1 0 0 1 572 0 2
 EndChar

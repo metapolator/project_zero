@@ -1,5 +1,5 @@
 StartChar: paragraph
-Encoding: 991 182 991
+Encoding: 939 182 939
 GlifName: paragraph
 Width: 467
 VWidth: 0
@@ -13,7 +13,7 @@ SplineSet
  20 290 80 234 192 234 c 257
  192 560 l 257
 447 560 m 257
- 197 560 l 256
+ 197 560 l 257
  197 540 l 257
  447 540 l 257
  447 560 l 257
@@ -23,12 +23,12 @@ SplineSet
  367 12 l 257
  387 12 l 257
 447 20 m 257
- 367 20 l 256
+ 367 20 l 257
  367 0 l 257
  447 0 l 257
  447 20 l 257
 207 20 m 257
- 127 20 l 256
+ 127 20 l 257
  127 0 l 257
  207 0 l 257
  207 20 l 257
@@ -38,7 +38,6 @@ SplineSet
  187 12 l 257
  207 12 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

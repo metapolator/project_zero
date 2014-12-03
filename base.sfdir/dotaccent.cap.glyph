@@ -1,6 +1,6 @@
 StartChar: dotaccent.cap
-Encoding: 182 -1 182
-GlifName: dotaccent.cap
+Encoding: 168 -1 168
+GlifName: dotaccent_cap
 Width: 525
 VWidth: 0
 Flags: W
@@ -14,7 +14,6 @@ SplineSet
  200 648 229 621 264 621 c 256
  297 621 325 648 325 682 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

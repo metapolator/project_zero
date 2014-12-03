@@ -1,6 +1,6 @@
 StartChar: ring.cap
-Encoding: 1019 -1 1019
-GlifName: ring.cap
+Encoding: 969 -1 969
+GlifName: ring_cap
 Width: 568
 VWidth: 0
 Flags: W
@@ -19,7 +19,6 @@ SplineSet
  237 767 200 728 200 682 c 257
  200 636 237 598 283 598 c 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

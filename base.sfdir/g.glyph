@@ -1,5 +1,5 @@
 StartChar: g
-Encoding: 913 103 913
+Encoding: 864 103 864
 GlifName: g
 Width: 553
 VWidth: 0
@@ -46,7 +46,6 @@ SplineSet
  440 -221 506 -129 516 -75 c 256
  530 -1 493 61 368 61 c 257
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

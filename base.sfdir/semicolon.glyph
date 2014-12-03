@@ -1,5 +1,5 @@
 StartChar: semicolon
-Encoding: 1025 59 1025
+Encoding: 978 59 978
 GlifName: semicolon
 Width: 264
 VWidth: 0
@@ -23,7 +23,6 @@ SplineSet
  221 426 180 467 128 467 c 256
  78 467 36 426 36 374 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,5 +1,5 @@
 StartChar: dvSS_TTH_YA
-Encoding: 751 -1 751
+Encoding: 648 -1 648
 GlifName: dvS_S__T_T_H__Y_A_
 Width: 1200
 VWidth: 0
@@ -75,5 +75,4 @@ SplineSet
  434 433 l 257
  599 433 l 257
 EndSplineSet
-Validated: 5
 EndChar

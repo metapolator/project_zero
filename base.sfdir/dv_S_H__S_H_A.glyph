@@ -1,5 +1,5 @@
 StartChar: dvSH_SHA
-Encoding: 730 -1 730
+Encoding: 626 -1 626
 GlifName: dvS_H__S_H_A_
 Width: 1132
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 719 -1 N 1 0 0 1 0 0 2
-Refer: 720 2358 N 1 0 0 1 424 0 2
-Validated: 5
+Refer: 614 -1 N 1 0 0 1 0 0 2
+Refer: 615 2358 N 1 0 0 1 424 0 2
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dotlessi
-Encoding: 183 305 183
+Encoding: 169 305 169
 GlifName: dotlessi
 Width: 330
 VWidth: 0
@@ -24,7 +24,6 @@ SplineSet
  290 0 l 257
  290 20 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

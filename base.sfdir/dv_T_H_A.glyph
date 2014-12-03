@@ -1,5 +1,5 @@
 StartChar: dvTHA
-Encoding: 789 2341 789
+Encoding: 685 2341 685
 GlifName: dvT_H_A_
 Width: 652
 VWidth: 0
@@ -37,5 +37,4 @@ SplineSet
  432 0 l 257
  432 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

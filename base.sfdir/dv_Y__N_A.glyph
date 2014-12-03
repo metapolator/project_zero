@@ -1,5 +1,5 @@
 StartChar: dvY_NA
-Encoding: 868 -1 868
+Encoding: 752 -1 752
 GlifName: dvY__N_A_
 Width: 640
 VWidth: 0
@@ -18,6 +18,5 @@ SplineSet
  294 -165 264 -197 217 -197 c 256
  163 -197 133 -160 133 -105 c 256
 EndSplineSet
-Refer: 865 2351 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 751 2351 N 1 0 0 1 0 0 2
 EndChar

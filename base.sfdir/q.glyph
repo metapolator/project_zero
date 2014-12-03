@@ -1,5 +1,5 @@
 StartChar: q
-Encoding: 1002 113 1002
+Encoding: 951 113 951
 GlifName: q
 Width: 578
 VWidth: 0
@@ -31,7 +31,6 @@ SplineSet
  358 460 l 257
  358 414 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

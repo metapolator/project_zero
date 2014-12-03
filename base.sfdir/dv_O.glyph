@@ -1,15 +1,14 @@
 StartChar: dvO
-Encoding: 664 2323 664
+Encoding: 561 2323 561
 GlifName: dvO_
 Width: 1013
 VWidth: 0
 Flags: W
-AnchorPoint: "abvm_Anusvara" 1049 560 basechar 0
+AnchorPoint: "abvm.bindu" 1049 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 529 2375 N 1 0 0 1 996 0 2
-Refer: 185 2309 N 1 0 0 1 0 0 2
-Refer: 519 2366 N 1 0 0 1 709 0 2
-Validated: 5
+Refer: 766 2375 N 1 0 0 1 996 0 2
+Refer: 172 2309 N 1 0 0 1 0 0 2
+Refer: 757 2366 N 1 0 0 1 709 0 2
 EndChar

@@ -1,5 +1,5 @@
 StartChar: threequarters
-Encoding: 1037 190 1037
+Encoding: 992 190 992
 GlifName: threequarters
 Width: 599
 VWidth: 0
@@ -59,7 +59,6 @@ SplineSet
  450 561 l 257
  150 0 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

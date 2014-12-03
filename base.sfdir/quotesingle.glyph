@@ -1,5 +1,5 @@
 StartChar: quotesingle
-Encoding: 1012 39 1012
+Encoding: 961 39 961
 GlifName: quotesingle
 Width: 181
 VWidth: 0
@@ -15,7 +15,6 @@ SplineSet
  44 612 73 531 90 451 c 257
  100 451 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

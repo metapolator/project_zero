@@ -1,5 +1,5 @@
 StartChar: dvK_NNA
-Encoding: 422 -1 422
+Encoding: 396 -1 396
 GlifName: dvK__N_N_A_
 Width: 1417
 VWidth: 0
@@ -37,6 +37,5 @@ SplineSet
  609 405 641 353 650 292 c 257
  761 389 l 257
 EndSplineSet
-Refer: 598 2339 N 1 0 0 1 594 0 2
-Validated: 5
+Refer: 500 2339 N 1 0 0 1 594 0 2
 EndChar

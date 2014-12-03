@@ -1,5 +1,5 @@
 StartChar: dvTTH_R
-Encoding: 800 -1 800
+Encoding: 695 -1 695
 GlifName: dvT_T_H__R_
 Width: 532
 VWidth: 0
@@ -40,6 +40,5 @@ SplineSet
  370 442 488 375 488 240 c 256
  488 108 370 39 265 39 c 256
 EndSplineSet
-Refer: 858 2381 N 1 0 0 1 419 -48 2
-Validated: 5
+Refer: 748 2381 N 1 0 0 1 419 -48 2
 EndChar

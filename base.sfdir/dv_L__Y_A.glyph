@@ -1,5 +1,5 @@
 StartChar: dvL_YA
-Encoding: 494 -1 494
+Encoding: 469 -1 469
 GlifName: dvL__Y_A_
 Width: 1151
 VWidth: 0
@@ -32,6 +32,5 @@ SplineSet
  581 436 641 393 669 324 c 257
  563 267 l 257
 EndSplineSet
-Refer: 865 2351 N 1 0 0 1 521 0 2
-Validated: 5
+Refer: 751 2351 N 1 0 0 1 521 0 2
 EndChar

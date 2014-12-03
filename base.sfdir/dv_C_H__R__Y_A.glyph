@@ -1,5 +1,5 @@
 StartChar: dvCH_R_YA
-Encoding: 233 -1 233
+Encoding: 218 -1 218
 GlifName: dvC_H__R__Y_A_
 Width: 1259
 VWidth: 0
@@ -45,6 +45,5 @@ SplineSet
  305 57 l 257
  336 57 l 257
 EndSplineSet
-Refer: 229 -1 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 214 -1 N 1 0 0 1 0 0 2
 EndChar

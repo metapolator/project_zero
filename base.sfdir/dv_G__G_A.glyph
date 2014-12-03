@@ -1,5 +1,5 @@
 StartChar: dvG_GA
-Encoding: 321 -1 321
+Encoding: 296 -1 296
 GlifName: dvG__G_A_
 Width: 1048
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 304 -1 N 1 0 0 1 0 0 2
-Refer: 305 2327 N 1 0 0 1 384 0 2
-Validated: 5
+Refer: 280 -1 N 1 0 0 1 0 0 2
+Refer: 281 2327 N 1 0 0 1 384 0 2
 EndChar

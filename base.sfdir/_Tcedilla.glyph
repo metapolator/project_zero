@@ -1,0 +1,12 @@
+StartChar: Tcedilla
+Encoding: 85 -1 85
+GlifName: T_cedilla
+Width: 569
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 83 84 N 1 0 0 1 0 0 2
+Refer: 145 184 N 1 0 0 1 0 0 2
+EndChar

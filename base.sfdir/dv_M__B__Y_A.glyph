@@ -1,5 +1,5 @@
 StartChar: dvM_B_YA
-Encoding: 504 -1 504
+Encoding: 478 -1 478
 GlifName: dvM__B__Y_A_
 Width: 1320
 VWidth: 0
@@ -7,8 +7,7 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 196 -1 N 1 0 0 1 366 0 2
-Refer: 495 -1 N 1 0 0 1 -2 0 2
-Refer: 865 2351 N 1 0 0 1 680 0 2
-Validated: 5
+Refer: 181 -1 N 1 0 0 1 366 0 2
+Refer: 470 -1 N 1 0 0 1 -2 0 2
+Refer: 751 2351 N 1 0 0 1 680 0 2
 EndChar

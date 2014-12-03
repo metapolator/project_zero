@@ -1,5 +1,5 @@
 StartChar: dvEyelash
-Encoding: 299 -1 299
+Encoding: 275 -1 275
 GlifName: dvE_yelash
 Width: 168
 VWidth: 0
@@ -21,5 +21,4 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Validated: 1
 EndChar

@@ -1,0 +1,23 @@
+StartChar: dvmII_Reph
+Encoding: 809 -1 809
+GlifName: dvmI_I__R_eph
+Width: 300
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+203 655 m 257
+ 180 666 155 704 155 740 c 256
+ 155 790 191 835 248 835 c 256
+ 318 835 345 782 345 724 c 256
+ 345 712 343 699 340 686 c 257
+ 322 688 l 257
+ 323 693 323 699 323 704 c 256
+ 323 739 302 765 263 765 c 256
+ 221 765 196 734 196 693 c 256
+ 196 677 199 665 203 655 c 257
+EndSplineSet
+Refer: 805 2368 N 1 0 0 1 0 0 2
+EndChar

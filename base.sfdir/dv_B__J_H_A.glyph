@@ -1,5 +1,5 @@
 StartChar: dvB_JHA
-Encoding: 215 -1 215
+Encoding: 199 -1 199
 GlifName: dvB__J_H_A_
 Width: 1086
 VWidth: 0
@@ -30,6 +30,5 @@ SplineSet
  217 420 185 366 185 273 c 256
  185 183 209 124 273 124 c 256
 EndSplineSet
-Refer: 359 2333 N 1 0 0 1 351 0 2
-Validated: 5
+Refer: 333 2333 N 1 0 0 1 351 0 2
 EndChar

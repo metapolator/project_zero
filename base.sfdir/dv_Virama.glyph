@@ -1,10 +1,10 @@
 StartChar: dvVirama
-Encoding: 858 2381 858
+Encoding: 748 2381 748
 GlifName: dvV_irama
 Width: 0
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Virama" -80 0 mark 0
+AnchorPoint: "blwm.virama" -80 0 mark 0
 LayerCount: 2
 Back
 Fore
@@ -16,5 +16,4 @@ SplineSet
  -118 -229 -131 -100 -157 -41 c 257
  -147 -32 l 257
 EndSplineSet
-Validated: 1
 EndChar

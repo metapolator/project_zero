@@ -1,5 +1,5 @@
 StartChar: dvSS_P_RA
-Encoding: 746 -1 746
+Encoding: 641 -1 641
 GlifName: dvS_S__P__R_A_
 Width: 858
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 736 -1 N 1 0 0 1 0 0 2
-Refer: 698 -1 N 1 0 0 1 296 0 2
-Validated: 5
+Refer: 631 -1 N 1 0 0 1 0 0 2
+Refer: 594 -1 N 1 0 0 1 296 0 2
 EndChar

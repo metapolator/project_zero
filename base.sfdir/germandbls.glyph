@@ -1,5 +1,5 @@
 StartChar: germandbls
-Encoding: 917 223 917
+Encoding: 867 223 867
 GlifName: germandbls
 Width: 694
 VWidth: 0
@@ -37,7 +37,6 @@ SplineSet
  240 460 l 257
  240 595 282 659 359 659 c 256
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

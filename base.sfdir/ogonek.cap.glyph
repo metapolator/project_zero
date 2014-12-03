@@ -1,6 +1,6 @@
 StartChar: ogonek.cap
-Encoding: 979 -1 979
-GlifName: ogonek.cap
+Encoding: 926 -1 926
+GlifName: ogonek_cap
 Width: 547
 VWidth: 0
 Flags: W
@@ -16,7 +16,6 @@ SplineSet
  259 -104 252 -69 303 1 c 256
  303 1 288 11 288 11 c 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

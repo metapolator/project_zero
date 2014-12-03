@@ -1,5 +1,5 @@
 StartChar: dvN_P_RA
-Encoding: 644 -1 644
+Encoding: 542 -1 542
 GlifName: dvN__P__R_A_
 Width: 846
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 588 -1 N 1 0 0 1 0 0 2
-Refer: 698 -1 N 1 0 0 1 284 0 2
-Validated: 5
+Refer: 493 -1 N 1 0 0 1 0 0 2
+Refer: 594 -1 N 1 0 0 1 284 0 2
 EndChar

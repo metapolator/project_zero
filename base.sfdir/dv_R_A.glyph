@@ -1,12 +1,12 @@
 StartChar: dvRA
-Encoding: 707 2352 707
+Encoding: 603 2352 603
 GlifName: dvR_A_
 Width: 373
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Virama" 276 -3 basechar 0
-AnchorPoint: "abvm_Ekaar" 211 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 211 560 basechar 0
+AnchorPoint: "blwm.virama" 276 -3 basechar 0
+AnchorPoint: "abvm.e" 211 560 basechar 0
+AnchorPoint: "abvm.bindu" 211 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -32,5 +32,4 @@ SplineSet
  318 314 230 269 112 262 c 257
  112 258 l 257
 EndSplineSet
-Validated: 5
 EndChar

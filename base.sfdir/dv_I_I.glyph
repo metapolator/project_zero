@@ -1,9 +1,9 @@
 StartChar: dvII
-Encoding: 353 2312 353
+Encoding: 328 2312 328
 GlifName: dvI_I_
 Width: 467
 VWidth: 0
-Flags: HW
+Flags: W
 LayerCount: 2
 Back
 Fore
@@ -21,5 +21,5 @@ SplineSet
  256 606 310 560 395 560 c 257
  259 560 l 257
 EndSplineSet
-Refer: 352 2311 N 1 0 0 1 0 0 2
+Refer: 327 2311 N 1 0 0 1 0 0 2
 EndChar

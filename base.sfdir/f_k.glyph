@@ -1,5 +1,5 @@
 StartChar: f_k
-Encoding: 906 -1 906
+Encoding: 857 -1 857
 GlifName: f_k
 Width: 935
 VWidth: 0
@@ -57,7 +57,6 @@ SplineSet
  557 1 l 257
  557 670 l 257
 EndSplineSet
-Validated: 37
 PickledDataWithLists: "(dp1
 S'com.schriftgestaltung.Glyphs.ColorIndex'
 p2

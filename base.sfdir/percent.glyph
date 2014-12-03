@@ -1,5 +1,5 @@
 StartChar: percent
-Encoding: 995 37 995
+Encoding: 943 37 943
 GlifName: percent
 Width: 630
 VWidth: 0
@@ -34,7 +34,6 @@ SplineSet
  414 12 402 56 402 129 c 256
  402 202 419 233 451 233 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

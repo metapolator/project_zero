@@ -1,5 +1,5 @@
 StartChar: dvS_T_YA
-Encoding: 781 -1 781
+Encoding: 677 -1 677
 GlifName: dvS__T__Y_A_
 Width: 1277
 VWidth: 0
@@ -25,7 +25,6 @@ SplineSet
  329 540 l 257
  329 560 l 257
 EndSplineSet
-Refer: 717 -1 N 1 0 0 1 0 0 2
-Refer: 865 2351 N 1 0 0 1 637 0 2
-Validated: 5
+Refer: 612 -1 N 1 0 0 1 0 0 2
+Refer: 751 2351 N 1 0 0 1 637 0 2
 EndChar

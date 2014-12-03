@@ -1,0 +1,11 @@
+StartChar: softhyphen
+Encoding: 982 173 982
+GlifName: softhyphen
+Width: 251
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 879 45 N 1 0 0 1 0 0 2
+EndChar

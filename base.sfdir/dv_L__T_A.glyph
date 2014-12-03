@@ -1,5 +1,5 @@
 StartChar: dvL_TA
-Encoding: 487 -1 487
+Encoding: 462 -1 462
 GlifName: dvL__T_A_
 Width: 1039
 VWidth: 0
@@ -32,6 +32,5 @@ SplineSet
  570 446 625 416 656 361 c 257
  548 277 l 257
 EndSplineSet
-Refer: 787 2340 N 1 0 0 1 476 0 2
-Validated: 5
+Refer: 683 2340 N 1 0 0 1 476 0 2
 EndChar

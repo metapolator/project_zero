@@ -1,5 +1,5 @@
 StartChar: tilde
-Encoding: 1039 732 1039
+Encoding: 994 732 994
 GlifName: tilde
 Width: 598
 VWidth: 0
@@ -18,7 +18,6 @@ SplineSet
  230 633 200 611 200 537 c 257
  220 537 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

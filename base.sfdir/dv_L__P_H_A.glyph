@@ -1,13 +1,13 @@
 StartChar: dvL_PHA
-Encoding: 485 -1 485
+Encoding: 458 -1 458
 GlifName: dvL__P_H_A_
 Width: 1318
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 975 0 basechar 0
-AnchorPoint: "blwm_Virama" 975 0 basechar 0
-AnchorPoint: "abvm_Ekaar" 975 559 basechar 0
-AnchorPoint: "abvm_Anusvara" 975 560 basechar 0
+AnchorPoint: "blwm.u" 975 0 basechar 0
+AnchorPoint: "blwm.virama" 975 0 basechar 0
+AnchorPoint: "abvm.e" 975 559 basechar 0
+AnchorPoint: "abvm.bindu" 975 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -36,6 +36,5 @@ SplineSet
  523 426 540 374 546 305 c 257
  669 331 l 257
 EndSplineSet
-Refer: 672 2347 N 1 0 0 1 493 0 2
-Validated: 5
+Refer: 568 2347 N 1 0 0 1 493 0 2
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dvK_SS_VA
-Encoding: 445 -1 445
+Encoding: 408 -1 408
 GlifName: dvK__S_S__V_A_
 Width: 990
 VWidth: 0
@@ -55,5 +55,4 @@ SplineSet
  274 171 302 205 352 205 c 256
  394 205 424 173 424 130 c 256
 EndSplineSet
-Validated: 5
 EndChar

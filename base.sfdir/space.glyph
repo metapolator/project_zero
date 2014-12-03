@@ -1,5 +1,5 @@
 StartChar: space
-Encoding: 1029 32 1029
+Encoding: 983 32 983
 GlifName: space
 Width: 215
 VWidth: 0
@@ -7,5 +7,4 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Validated: 1
 EndChar

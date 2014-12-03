@@ -1,5 +1,5 @@
 StartChar: dagger
-Encoding: 172 8224 172
+Encoding: 156 8224 156
 GlifName: dagger
 Width: 442
 VWidth: 0
@@ -34,7 +34,6 @@ SplineSet
  311 496 275 454 221 449 c 257
  221 430 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

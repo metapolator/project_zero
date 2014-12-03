@@ -1,5 +1,5 @@
 StartChar: dvC_YA
-Encoding: 243 -1 243
+Encoding: 227 -1 227
 GlifName: dvC__Y_A_
 Width: 971
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 227 -1 N 1 0 0 1 0 0 2
-Refer: 865 2351 N 1 0 0 1 331 0 2
-Validated: 5
+Refer: 212 -1 N 1 0 0 1 0 0 2
+Refer: 751 2351 N 1 0 0 1 331 0 2
 EndChar

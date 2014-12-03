@@ -1,5 +1,5 @@
 StartChar: dvS_T_RA
-Encoding: 779 -1 779
+Encoding: 675 -1 675
 GlifName: dvS__T__R_A_
 Width: 940
 VWidth: 0
@@ -51,5 +51,4 @@ SplineSet
  720 0 l 257
  720 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

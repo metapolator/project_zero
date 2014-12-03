@@ -1,5 +1,5 @@
 StartChar: omacron
-Encoding: 982 333 982
+Encoding: 929 333 929
 GlifName: omacron
 Width: 564
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 972 111 N 1 0 0 1 0 0 2
-Refer: 961 175 N 1 0 0 1 -19 0 2
-Validated: 5
+Refer: 920 111 N 1 0 0 1 0 0 2
+Refer: 905 175 N 1 0 0 1 -19 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

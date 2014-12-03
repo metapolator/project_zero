@@ -1,5 +1,5 @@
 StartChar: Ncaron
-Encoding: 66 327 66
+Encoding: 58 327 58
 GlifName: N_caron
 Width: 598
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 63 78 N 1 0 0 1 0 0 2
-Refer: 157 -1 N 1 0 0 1 20 0 2
-Validated: 9
+Refer: 55 78 N 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 20 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

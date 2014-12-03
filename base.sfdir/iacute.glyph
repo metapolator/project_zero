@@ -1,5 +1,5 @@
 StartChar: iacute
-Encoding: 934 237 934
+Encoding: 881 237 881
 GlifName: iacute
 Width: 320
 VWidth: 0
@@ -24,8 +24,7 @@ SplineSet
  240 1 l 257
  240 460 l 257
 EndSplineSet
-Refer: 127 180 N 1 0 0 1 -90 0 2
-Validated: 5
+Refer: 111 180 N 1 0 0 1 -90 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

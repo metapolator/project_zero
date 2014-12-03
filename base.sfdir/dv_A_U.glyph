@@ -1,15 +1,14 @@
 StartChar: dvAU
-Encoding: 188 2324 188
+Encoding: 175 2324 175
 GlifName: dvA_U_
 Width: 1013
 VWidth: 0
 Flags: W
-AnchorPoint: "abvm_Anusvara" 1100 560 basechar 0
+AnchorPoint: "abvm.bindu" 1100 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 520 2376 N 1 0 0 1 1028 0 2
-Refer: 185 2309 N 1 0 0 1 0 0 2
-Refer: 519 2366 N 1 0 0 1 709 0 2
-Validated: 5
+Refer: 758 2376 N 1 0 0 1 1028 0 2
+Refer: 172 2309 N 1 0 0 1 0 0 2
+Refer: 757 2366 N 1 0 0 1 709 0 2
 EndChar

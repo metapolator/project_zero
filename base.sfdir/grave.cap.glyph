@@ -1,6 +1,6 @@
 StartChar: grave.cap
-Encoding: 919 -1 919
-GlifName: grave.cap
+Encoding: 869 -1 869
+GlifName: grave_cap
 Width: 539
 VWidth: 0
 Flags: W
@@ -15,7 +15,6 @@ SplineSet
  241 629 290 652 325 601 c 257
  339 611 l 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

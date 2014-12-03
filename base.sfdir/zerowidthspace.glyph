@@ -1,0 +1,10 @@
+StartChar: zerowidthspace
+Encoding: 1024 8203 1024
+GlifName: zerowidthspace
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+EndChar

@@ -1,5 +1,5 @@
 StartChar: bullet
-Encoding: 153 8226 153
+Encoding: 137 8226 137
 GlifName: bullet
 Width: 319
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  290 401 232 459 160 459 c 256
  87 459 29 401 29 329 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

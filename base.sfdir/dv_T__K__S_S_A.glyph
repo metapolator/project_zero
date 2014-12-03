@@ -1,5 +1,5 @@
 StartChar: dvT_K_SSA
-Encoding: 817 -1 817
+Encoding: 710 -1 710
 GlifName: dvT__K__S_S_A_
 Width: 1054
 VWidth: 0
@@ -25,6 +25,5 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Refer: 441 -1 N 1 0 0 1 330 0 2
-Validated: 5
+Refer: 405 -1 N 1 0 0 1 330 0 2
 EndChar

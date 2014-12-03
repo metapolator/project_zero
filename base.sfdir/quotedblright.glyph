@@ -1,5 +1,5 @@
 StartChar: quotedblright
-Encoding: 1008 8221 1008
+Encoding: 957 8221 957
 GlifName: quotedblright
 Width: 433
 VWidth: 0
@@ -27,7 +27,6 @@ SplineSet
  360 511 320 475 266 445 c 257
  273 428 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

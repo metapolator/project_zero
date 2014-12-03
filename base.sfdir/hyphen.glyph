@@ -1,5 +1,5 @@
 StartChar: hyphen
-Encoding: 931 45 931
+Encoding: 879 45 879
 GlifName: hyphen
 Width: 251
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  40 274 l 257
  40 198 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

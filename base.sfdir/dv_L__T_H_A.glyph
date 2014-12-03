@@ -1,5 +1,5 @@
 StartChar: dvL_THA
-Encoding: 488 -1 488
+Encoding: 463 -1 463
 GlifName: dvL__T_H_A_
 Width: 1200
 VWidth: 0
@@ -58,5 +58,4 @@ SplineSet
  980 0 l 257
  980 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

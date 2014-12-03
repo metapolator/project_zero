@@ -1,0 +1,23 @@
+StartChar: dvmOcandra_Anusvara
+Encoding: 818 -1 818
+GlifName: dvmO_candra_A_nusvara
+Width: 300
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+80 560 m 257
+ 220 560 l 257
+ 220 0 l 257
+ 80 0 l 257
+ 80 560 l 257
+-20 560 m 257
+ 320 560 l 257
+ 320 540 l 257
+ -20 540 l 257
+ -20 560 l 257
+EndSplineSet
+Refer: 228 2305 N 1 0 0 1 301 0 2
+EndChar

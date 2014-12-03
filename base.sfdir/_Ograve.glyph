@@ -1,5 +1,5 @@
 StartChar: Ograve
-Encoding: 74 210 74
+Encoding: 66 210 66
 GlifName: O_grave
 Width: 622
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 68 79 N 1 0 0 1 0 0 2
-Refer: 919 -1 N 1 0 0 1 -13 0 2
-Validated: 9
+Refer: 61 79 N 1 0 0 1 0 0 2
+Refer: 869 -1 N 1 0 0 1 -13 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

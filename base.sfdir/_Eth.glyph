@@ -1,5 +1,5 @@
 StartChar: Eth
-Encoding: 34 208 34
+Encoding: 31 208 31
 GlifName: E_th
 Width: 625
 VWidth: 0
@@ -28,7 +28,6 @@ SplineSet
  377 540 444 439 444 281 c 256
  444 85 381 20 240 20 c 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

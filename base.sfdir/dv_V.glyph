@@ -1,5 +1,5 @@
 StartChar: dvV
-Encoding: 849 -1 849
+Encoding: 739 -1 739
 GlifName: dvV_
 Width: 282
 VWidth: 0
@@ -25,5 +25,4 @@ SplineSet
  217 420 185 366 185 273 c 256
  185 183 211 124 273 124 c 256
 EndSplineSet
-Validated: 1
 EndChar

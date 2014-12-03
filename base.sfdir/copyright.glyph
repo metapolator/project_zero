@@ -1,5 +1,5 @@
 StartChar: copyright
-Encoding: 169 169 169
+Encoding: 153 169 153
 GlifName: copyright
 Width: 602
 VWidth: 0
@@ -32,7 +32,6 @@ SplineSet
  398 119 449 171 449 240 c 257
  438 240 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

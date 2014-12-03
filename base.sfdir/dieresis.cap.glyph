@@ -1,6 +1,6 @@
 StartChar: dieresis.cap
-Encoding: 178 -1 178
-GlifName: dieresis.cap
+Encoding: 163 -1 163
+GlifName: dieresis_cap
 Width: 696
 VWidth: 0
 Flags: W
@@ -19,7 +19,6 @@ SplineSet
  200 648 229 621 264 621 c 256
  297 621 325 648 325 682 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

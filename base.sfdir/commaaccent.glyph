@@ -1,5 +1,5 @@
 StartChar: commaaccent
-Encoding: 168 -1 168
+Encoding: 152 -1 152
 GlifName: commaaccent
 Width: 552
 VWidth: 0
@@ -18,7 +18,6 @@ SplineSet
  299 -180 273 -204 237 -224 c 257
  245 -240 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

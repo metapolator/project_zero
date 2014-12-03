@@ -1,5 +1,5 @@
 StartChar: approxequal
-Encoding: 136 8776 136
+Encoding: 120 8776 120
 GlifName: approxequal
 Width: 465
 VWidth: 0
@@ -19,7 +19,6 @@ SplineSet
  169 416 294 215 435 315 c 257
  435 341 l 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

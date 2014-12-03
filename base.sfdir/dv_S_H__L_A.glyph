@@ -1,17 +1,16 @@
 StartChar: dvSH_LA
-Encoding: 726 -1 726
+Encoding: 621 -1 621
 GlifName: dvS_H__L_A_
 Width: 1148
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 975 -37 basechar 0
-AnchorPoint: "blwm_Virama" 985 14 basechar 0
-AnchorPoint: "abvm_Ekaar" 983 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 983 560 basechar 0
+AnchorPoint: "blwm.u" 975 -37 basechar 0
+AnchorPoint: "blwm.virama" 985 14 basechar 0
+AnchorPoint: "abvm.e" 983 560 basechar 0
+AnchorPoint: "abvm.bindu" 983 560 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 719 -1 N 1 0 0 1 0 0 2
-Refer: 462 2354 N 1 0 0 1 420 0 2
-Validated: 5
+Refer: 614 -1 N 1 0 0 1 0 0 2
+Refer: 435 2354 N 1 0 0 1 420 0 2
 EndChar

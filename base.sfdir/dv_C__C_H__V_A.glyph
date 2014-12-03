@@ -1,13 +1,13 @@
 StartChar: dvC_CH_VA
-Encoding: 238 -1 238
+Encoding: 222 -1 222
 GlifName: dvC__C_H__V_A_
 Width: 1023
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 868 -231 basechar 0
-AnchorPoint: "blwm_Virama" 868 -171 basechar 0
-AnchorPoint: "abvm_Ekaar" 868 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 868 560 basechar 0
+AnchorPoint: "blwm.u" 868 -231 basechar 0
+AnchorPoint: "blwm.virama" 868 -171 basechar 0
+AnchorPoint: "abvm.e" 868 560 basechar 0
+AnchorPoint: "abvm.bindu" 868 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -81,5 +81,4 @@ SplineSet
  728 -171 l 257
  728 87 l 257
 EndSplineSet
-Validated: 5
 EndChar

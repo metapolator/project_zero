@@ -1,5 +1,5 @@
 StartChar: dvL_KHA
-Encoding: 479 -1 479
+Encoding: 452 -1 452
 GlifName: dvL__K_H_A_
 Width: 1332
 VWidth: 0
@@ -62,5 +62,4 @@ SplineSet
  34 368 116 446 228 446 c 256
  299 446 340 418 364 378 c 257
 EndSplineSet
-Validated: 5
 EndChar

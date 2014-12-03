@@ -1,5 +1,5 @@
 StartChar: amacron
-Encoding: 133 257 133
+Encoding: 116 257 116
 GlifName: amacron
 Width: 525
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 123 97 N 1 0 0 1 0 0 2
-Refer: 961 175 N 1 0 0 1 -36 0 2
-Validated: 5
+Refer: 107 97 N 1 0 0 1 0 0 2
+Refer: 905 175 N 1 0 0 1 -36 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

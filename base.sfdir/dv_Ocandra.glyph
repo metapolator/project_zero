@@ -1,15 +1,14 @@
 StartChar: dvOcandra
-Encoding: 665 2321 665
+Encoding: 562 2321 562
 GlifName: dvO_candra
 Width: 1013
 VWidth: 0
 Flags: W
-AnchorPoint: "abvm_Anusvara" 789 721 basechar 0
+AnchorPoint: "abvm.bindu" 789 721 basechar 0
 LayerCount: 2
 Back
 Fore
-Refer: 534 2373 N 1 0 0 1 868 0 2
-Refer: 185 2309 N 1 0 0 1 0 0 2
-Refer: 519 2366 N 1 0 0 1 709 0 2
-Validated: 5
+Refer: 770 2373 N 1 0 0 1 868 0 2
+Refer: 172 2309 N 1 0 0 1 0 0 2
+Refer: 757 2366 N 1 0 0 1 709 0 2
 EndChar

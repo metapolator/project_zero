@@ -1,5 +1,5 @@
 StartChar: tcaron
-Encoding: 1034 357 1034
+Encoding: 987 357 987
 GlifName: tcaron
 Width: 388
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 1010 8217 N 0.74 0 0 0.74 243 173 2
-Refer: 1032 116 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 959 8217 N 0.74 0 0 0.74 243 173 2
+Refer: 986 116 N 1 0 0 1 0 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

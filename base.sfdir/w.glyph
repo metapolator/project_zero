@@ -1,5 +1,5 @@
 StartChar: w
-Encoding: 1077 119 1077
+Encoding: 1011 119 1011
 GlifName: w
 Width: 830
 VWidth: 0
@@ -36,7 +36,6 @@ SplineSet
  412 331 l 257
  570 0 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

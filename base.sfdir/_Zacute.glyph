@@ -1,5 +1,5 @@
 StartChar: Zacute
-Encoding: 120 377 120
+Encoding: 104 377 104
 GlifName: Z_acute
 Width: 529
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 116 90 N 1 0 0 1 0 0 2
-Refer: 128 -1 N 1 0 0 1 50 0 2
-Validated: 5
+Refer: 103 90 N 1 0 0 1 0 0 2
+Refer: 112 -1 N 1 0 0 1 50 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

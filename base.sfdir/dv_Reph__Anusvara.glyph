@@ -1,10 +1,10 @@
 StartChar: dvReph_Anusvara
-Encoding: 715 -1 715
+Encoding: 609 -1 609
 GlifName: dvR_eph_A_nusvara
 Width: 0
 VWidth: 0
 Flags: W
-AnchorPoint: "abvm_Ekaar" -80 560 mark 0
+AnchorPoint: "abvm.e" -80 560 mark 0
 LayerCount: 2
 Back
 Fore
@@ -25,5 +25,4 @@ SplineSet
  -72 812 -20 758 -18 687 c 257
  -40 687 l 257
 EndSplineSet
-Validated: 1
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dvNY_R
-Encoding: 614 -1 614
+Encoding: 516 -1 516
 GlifName: dvN_Y__R_
 Width: 386
 VWidth: 0
@@ -14,6 +14,5 @@ SplineSet
  233 -43 l 257
  249 -56 l 257
 EndSplineSet
-Refer: 609 -1 N 1 0 0 1 -2 0 2
-Validated: 5
+Refer: 511 -1 N 1 0 0 1 -2 0 2
 EndChar

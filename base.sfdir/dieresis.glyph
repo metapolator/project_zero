@@ -1,5 +1,5 @@
 StartChar: dieresis
-Encoding: 177 168 177
+Encoding: 162 168 162
 GlifName: dieresis
 Width: 696
 VWidth: 0
@@ -19,7 +19,6 @@ SplineSet
  373 548 401 521 434 521 c 256
  470 521 496 548 496 582 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

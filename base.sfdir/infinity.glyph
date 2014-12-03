@@ -1,5 +1,5 @@
 StartChar: infinity
-Encoding: 942 8734 942
+Encoding: 887 8734 887
 GlifName: infinity
 Width: 756
 VWidth: 0
@@ -28,7 +28,6 @@ SplineSet
  457 56 422 101 417 151 c 257
  417 151 400 131 400 131 c 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

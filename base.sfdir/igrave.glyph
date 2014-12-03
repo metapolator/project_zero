@@ -1,5 +1,5 @@
 StartChar: igrave
-Encoding: 938 236 938
+Encoding: 884 236 884
 GlifName: igrave
 Width: 320
 VWidth: 0
@@ -24,8 +24,7 @@ SplineSet
  230 440 l 257
  230 460 l 257
 EndSplineSet
-Refer: 918 96 N 1 0 0 1 -139 0 2
-Validated: 5
+Refer: 868 96 N 1 0 0 1 -139 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

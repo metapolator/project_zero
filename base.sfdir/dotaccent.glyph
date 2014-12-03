@@ -1,5 +1,5 @@
 StartChar: dotaccent
-Encoding: 181 729 181
+Encoding: 167 729 167
 GlifName: dotaccent
 Width: 525
 VWidth: 0
@@ -14,7 +14,6 @@ SplineSet
  200 548 229 521 264 521 c 256
  297 521 325 548 325 582 c 256
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

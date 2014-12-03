@@ -1,5 +1,5 @@
 StartChar: dvDH_NA
-Encoding: 271 -1 271
+Encoding: 252 -1 252
 GlifName: dvD_H__N_A_
 Width: 624
 VWidth: 0
@@ -18,6 +18,5 @@ SplineSet
  328 -171 298 -203 251 -203 c 256
  197 -203 167 -166 167 -111 c 256
 EndSplineSet
-Refer: 269 2343 N 1 0 0 1 0 0 2
-Validated: 5
+Refer: 250 2343 N 1 0 0 1 0 0 2
 EndChar

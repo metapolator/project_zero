@@ -1,5 +1,5 @@
 StartChar: H
-Encoding: 41 72 41
+Encoding: 37 72 37
 GlifName: H_
 Width: 657
 VWidth: 0
@@ -14,7 +14,7 @@ SplineSet
  464 288 l 257
  464 308 l 257
 627 20 m 257
- 377 20 l 256
+ 377 20 l 257
  377 0 l 257
  627 0 l 257
  627 20 l 257
@@ -29,7 +29,7 @@ SplineSet
  627 540 l 257
  627 560 l 257
 280 20 m 257
- 30 20 l 256
+ 30 20 l 257
  30 0 l 257
  280 0 l 257
  280 20 l 257
@@ -44,7 +44,6 @@ SplineSet
  230 1 l 257
  230 560 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

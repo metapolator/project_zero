@@ -1,0 +1,22 @@
+StartChar: ordmasculine
+Encoding: 935 186 935
+GlifName: ordmasculine
+Width: 287
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+145 325 m 257
+ 202 325 270 362 270 442 c 256
+ 270 526 202 562 145 562 c 257
+ 88 562 21 526 21 442 c 256
+ 21 362 88 325 145 325 c 257
+145 339 m 257
+ 109 339 97 367 97 442 c 256
+ 97 520 109 548 145 548 c 257
+ 181 548 195 520 195 442 c 257
+ 195 367 181 339 145 339 c 257
+EndSplineSet
+EndChar

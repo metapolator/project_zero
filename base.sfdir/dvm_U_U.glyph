@@ -1,0 +1,24 @@
+StartChar: dvmUU
+Encoding: 820 2370 820
+GlifName: dvmU_U_
+Width: 0
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm.u" -83 0 mark 0
+LayerCount: 2
+Back
+Fore
+SplineSet
+53 -225 m 257
+ 52 -150 2 -32 -100 -32 c 256
+ -149 -32 -188 -64 -188 -117 c 256
+ -188 -168 -157 -194 -122 -194 c 256
+ -95 -194 -69 -180 -66 -147 c 257
+ -46 -152 l 257
+ -52 -198 -88 -231 -165 -231 c 256
+ -242 -231 -307 -189 -307 -116 c 256
+ -307 -44 -252 13 -150 13 c 256
+ 2 13 71 -112 73 -225 c 257
+ 53 -225 l 257
+EndSplineSet
+EndChar

@@ -1,5 +1,5 @@
 StartChar: abreve
-Encoding: 125 259 125
+Encoding: 109 259 109
 GlifName: abreve
 Width: 525
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 123 97 N 1 0 0 1 0 0 2
-Refer: 150 728 N 1 0 0 1 -30 0 2
-Validated: 5
+Refer: 107 97 N 1 0 0 1 0 0 2
+Refer: 134 728 N 1 0 0 1 -30 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

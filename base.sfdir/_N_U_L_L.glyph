@@ -1,5 +1,5 @@
 StartChar: NULL
-Encoding: 64 0 64
+Encoding: 56 0 56
 GlifName: N_U_L_L_
 Width: 0
 VWidth: 0
@@ -7,5 +7,4 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Validated: 1
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dvOne
-Encoding: 667 -1 667
+Encoding: 564 -1 564
 GlifName: dvO_ne
 Width: 312
 VWidth: 0
@@ -23,5 +23,4 @@ SplineSet
  302 0 l 257
  302 20 l 257
 EndSplineSet
-Validated: 5
 EndChar

@@ -1,5 +1,5 @@
 StartChar: dvTH_YA
-Encoding: 794 -1 794
+Encoding: 690 -1 690
 GlifName: dvT_H__Y_A_
 Width: 1013
 VWidth: 0
@@ -52,5 +52,4 @@ SplineSet
  639 546 697 495 697 419 c 256
  697 345 642 304 551 295 c 257
 EndSplineSet
-Validated: 5
 EndChar

@@ -1,5 +1,5 @@
 StartChar: aacute
-Encoding: 124 225 124
+Encoding: 108 225 108
 GlifName: aacute
 Width: 525
 VWidth: 0
@@ -7,9 +7,8 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 123 97 N 1 0 0 1 0 0 2
-Refer: 127 180 N 1 0 0 1 20 0 2
-Validated: 5
+Refer: 107 97 N 1 0 0 1 0 0 2
+Refer: 111 180 N 1 0 0 1 20 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

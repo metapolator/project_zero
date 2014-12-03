@@ -1,5 +1,5 @@
 StartChar: dvAA
-Encoding: 186 2310 186
+Encoding: 173 2310 173
 GlifName: dvA_A_
 Width: 1009
 VWidth: 0
@@ -7,7 +7,6 @@ Flags: W
 LayerCount: 2
 Back
 Fore
-Refer: 185 2309 N 1 0 0 1 0 0 2
-Refer: 519 2366 N 1 0 0 1 709 0 2
-Validated: 5
+Refer: 172 2309 N 1 0 0 1 0 0 2
+Refer: 757 2366 N 1 0 0 1 709 0 2
 EndChar

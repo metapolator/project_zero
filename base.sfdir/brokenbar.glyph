@@ -1,5 +1,5 @@
 StartChar: brokenbar
-Encoding: 152 166 152
+Encoding: 136 166 136
 GlifName: brokenbar
 Width: 140
 VWidth: 0
@@ -19,7 +19,6 @@ SplineSet
  60 560 l 257
  60 333 l 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

@@ -1,0 +1,11 @@
+StartChar: apostrophemod
+Encoding: 119 700 119
+GlifName: apostrophemod
+Width: 198
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+Refer: 959 8217 N 1 0 0 1 0 0 2
+EndChar

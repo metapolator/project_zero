@@ -1,5 +1,5 @@
 StartChar: dvP_TA
-Encoding: 700 -1 700
+Encoding: 596 -1 596
 GlifName: dvP__T_A_
 Width: 584
 VWidth: 0
@@ -42,5 +42,4 @@ SplineSet
  205 545 l 257
  51 545 l 257
 EndSplineSet
-Validated: 5
 EndChar

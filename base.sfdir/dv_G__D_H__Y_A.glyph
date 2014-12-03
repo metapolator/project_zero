@@ -1,5 +1,5 @@
 StartChar: dvG_DH_YA
-Encoding: 320 -1 320
+Encoding: 295 -1 295
 GlifName: dvG__D_H__Y_A_
 Width: 1430
 VWidth: 0
@@ -74,5 +74,4 @@ SplineSet
  994 132 962 209 962 277 c 256
  962 285 963 294 963 295 c 257
 EndSplineSet
-Validated: 5
 EndChar

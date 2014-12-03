@@ -1,5 +1,5 @@
 StartChar: ogonek
-Encoding: 978 731 978
+Encoding: 925 731 925
 GlifName: ogonek
 Width: 548
 VWidth: 0
@@ -16,7 +16,6 @@ SplineSet
  259 -104 252 -69 303 1 c 256
  303 1 288 11 288 11 c 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

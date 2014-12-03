@@ -1,5 +1,5 @@
 StartChar: dvP_R
-Encoding: 697 -1 697
+Encoding: 593 -1 593
 GlifName: dvP__R_
 Width: 291
 VWidth: 0
@@ -28,5 +28,4 @@ SplineSet
  56 22 l 257
  67 4 l 257
 EndSplineSet
-Validated: 5
 EndChar

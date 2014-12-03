@@ -1,5 +1,5 @@
 StartChar: dvB
-Encoding: 196 -1 196
+Encoding: 181 -1 181
 GlifName: dvB_
 Width: 324
 VWidth: 0
@@ -30,5 +30,4 @@ SplineSet
  217 420 185 366 185 273 c 256
  185 183 211 124 273 124 c 257
 EndSplineSet
-Validated: 5
 EndChar

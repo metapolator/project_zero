@@ -1,5 +1,5 @@
 StartChar: Thorn
-Encoding: 92 222 92
+Encoding: 87 222 87
 GlifName: T_horn
 Width: 543
 VWidth: 0
@@ -8,7 +8,7 @@ LayerCount: 2
 Back
 Fore
 SplineSet
-240 463.047 m 257
+240 463 m 257
  240 540 l 257
  290 540 l 257
  290 560 l 257
@@ -17,19 +17,18 @@ SplineSet
  90 540 l 257
  90 20 l 257
  40 20 l 257
- 40 4.28925e-06 l 257
- 290 4.28925e-06 l 257
+ 40 0 l 257
+ 290 0 l 257
  290 20 l 257
  240 20 l 257
  240 97 l 257
  438 87 533 157 533 274 c 256
- 533 401.795 447.275 472.772 240 463.047 c 257
+ 533 402 447 473 240 463 c 257
 240 117 m 257
  240 443 l 257
  352 443 382 393 382 275 c 256
  382 163 352 117 240 117 c 257
 EndSplineSet
-Validated: 41
 PickledDataWithLists: "(dp1
 S'com.schriftgestaltung.Glyphs.ColorIndex'
 p2

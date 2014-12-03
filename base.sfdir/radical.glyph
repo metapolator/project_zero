@@ -1,5 +1,5 @@
 StartChar: radical
-Encoding: 1015 8730 1015
+Encoding: 964 8730 964
 GlifName: radical
 Width: 570
 VWidth: 0
@@ -24,7 +24,6 @@ SplineSet
  318 560 l 257
  318 540 l 257
 EndSplineSet
-Validated: 5
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
 p2

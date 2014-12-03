@@ -1,5 +1,5 @@
 StartChar: icircumflex
-Encoding: 936 238 936
+Encoding: 882 238 882
 GlifName: icircumflex
 Width: 320
 VWidth: 0
@@ -24,8 +24,7 @@ SplineSet
  240 1 l 257
  240 460 l 257
 EndSplineSet
-Refer: 164 710 N 1 0 0 1 -132 0 2
-Validated: 5
+Refer: 148 710 N 1 0 0 1 -132 0 2
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

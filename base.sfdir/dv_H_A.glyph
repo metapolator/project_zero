@@ -1,13 +1,13 @@
 StartChar: dvHA
-Encoding: 341 2361 341
+Encoding: 315 2361 315
 GlifName: dvH_A_
 Width: 506
 VWidth: 0
 Flags: W
-AnchorPoint: "blwm_Ukaar" 349 -77 basechar 0
-AnchorPoint: "blwm_Virama" 378 -9 basechar 0
-AnchorPoint: "abvm_Ekaar" 419 560 basechar 0
-AnchorPoint: "abvm_Anusvara" 419 560 basechar 0
+AnchorPoint: "blwm.u" 349 -77 basechar 0
+AnchorPoint: "blwm.virama" 378 -9 basechar 0
+AnchorPoint: "abvm.e" 419 560 basechar 0
+AnchorPoint: "abvm.bindu" 419 560 basechar 0
 LayerCount: 2
 Back
 Fore
@@ -44,5 +44,4 @@ SplineSet
  -20 540 l 257
  -20 560 l 257
 EndSplineSet
-Validated: 5
 EndChar

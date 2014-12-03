@@ -1,0 +1,16 @@
+StartChar: dvPHxA
+Encoding: 581 2398 581
+GlifName: dvP_H_xA_
+Width: 823
+VWidth: 0
+Flags: W
+AnchorPoint: "blwm.u" 487 -106 basechar 0
+AnchorPoint: "blwm.virama" 487 0 basechar 0
+AnchorPoint: "abvm.e" 482 560 basechar 0
+AnchorPoint: "abvm.bindu" 482 560 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 568 2347 N 1 0 0 1 5 0 2
+Refer: 560 2364 N 1 0 0 1 457 64 2
+EndChar

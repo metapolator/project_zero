@@ -1,5 +1,5 @@
 StartChar: breve
-Encoding: 150 728 150
+Encoding: 134 728 134
 GlifName: breve
 Width: 584
 VWidth: 0
@@ -16,7 +16,6 @@ SplineSet
  364 645 l 257
  364 618 350 596 293 596 c 257
 EndSplineSet
-Validated: 9
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
 p2

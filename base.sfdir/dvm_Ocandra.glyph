@@ -1,0 +1,13 @@
+StartChar: dvmOcandra
+Encoding: 817 2377 817
+GlifName: dvmO_candra
+Width: 300
+VWidth: 0
+Flags: W
+AnchorPoint: "abvm.bindu" 220 721 basechar 0
+LayerCount: 2
+Back
+Fore
+Refer: 770 2373 N 1 0 0 1 300 0 2
+Refer: 757 2366 N 1 0 0 1 0 0 2
+EndChar

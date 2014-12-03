@@ -1,5 +1,5 @@
 StartChar: dvPH_JA
-Encoding: 674 -1 674
+Encoding: 569 -1 569
 GlifName: dvP_H__J_A_
 Width: 1341
 VWidth: 0
@@ -60,5 +60,4 @@ SplineSet
  1125 450 l 257
  1125 430 l 257
 EndSplineSet
-Validated: 5
 EndChar

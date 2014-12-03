@@ -1,5 +1,5 @@
 StartChar: dvY_R
-Encoding: 872 -1 872
+Encoding: 753 -1 753
 GlifName: dvY__R_
 Width: 346
 VWidth: 0
@@ -34,5 +34,4 @@ SplineSet
  118 -48 l 257
  107 -30 l 257
 EndSplineSet
-Validated: 5
 EndChar

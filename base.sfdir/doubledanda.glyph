@@ -1,0 +1,22 @@
+StartChar: doubledanda
+Encoding: 171 2405 171
+GlifName: doubledanda
+Width: 599
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+Fore
+SplineSet
+130 0 m 257
+ 130 560 l 257
+ 270 560 l 257
+ 270 0 l 257
+ 130 0 l 257
+379 0 m 257
+ 379 560 l 257
+ 519 560 l 257
+ 519 0 l 257
+ 379 0 l 257
+EndSplineSet
+EndChar
