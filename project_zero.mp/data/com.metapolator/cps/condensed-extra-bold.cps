@@ -218,7 +218,7 @@
             }
         }
         point:i(0) left {
-            in: on + Polar 100 deg 20;
+            inDir: deg 200;
         }
     }
 }
@@ -244,7 +244,7 @@
         }
     }
     @namespace("penstroke#spiralBow") {
-        @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*";*/ {
+        @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*"*/ {
             @dictionary {
                 center {
                     spiralOffset: 119;
@@ -404,7 +404,7 @@
             }
         }
         point:i(0) left {
-            in: on + Polar 100 deg 20;
+            inDir: deg 200;
         }
     }
 }

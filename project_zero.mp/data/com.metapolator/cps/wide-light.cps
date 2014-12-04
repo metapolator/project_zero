@@ -147,6 +147,10 @@
                 offset: Vector 0 3;
             }
         }
+        
+        point:i(0) left {
+            inDir: deg 190;
+        }
     }
 }
 
@@ -211,7 +215,7 @@
             outDirIntrinsic: 0;
             outDir: 0;
         }
-        point:i(-2) > center{
+        point:i(-2) > center {
             out: on + Polar 30 deg 0;
         }
         point:i(-1) > center {
@@ -225,7 +229,7 @@
             }
         }
         point:i(0) left {
-            in: on + Polar 25 deg -10;
+            inDir: deg 190;
         }
     }
 }

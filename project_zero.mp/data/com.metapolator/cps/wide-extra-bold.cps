@@ -154,8 +154,8 @@
                 offset: Vector 0 -10;
             }
         }
-        point:i(0) left {
-            in: on + Polar 100 deg 0;
+        point:i(0) > left {
+            inDir: deg 160;
         }
     }
 }
@@ -194,12 +194,12 @@
 @namespace("glyph#dvDA") {
     @namespace(penstroke#verticalConnection) {
         @dictionary {
-            point:i(0) left {
+            point:i(0) > left {
                 offset: Vector 0 -10;
             }
         }
-        point:i(0) left {
-            in: on + Polar 100 deg 30;
+        point:i(0) > left {
+            inDir: deg 200;
         }
     }
 }

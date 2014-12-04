@@ -218,7 +218,7 @@
             }
         }
         point:i(0) left {
-            in: on + Polar 25 deg -10;
+            inDir: deg 180;
         }
     }
 }

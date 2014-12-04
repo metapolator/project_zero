@@ -137,6 +137,7 @@
 
         point:i(0) left {
             offset: Vector 0 0;
+            _on: (Polar length base:onDir) + offset;
         }
     }
     point:i(1) > center {
@@ -155,11 +156,11 @@
      * these values will probably need change in the masters
      */
     point:i(0) > left {
-        on: Polar onLength onDir + parent:center:on + offset;
-        inDir: deg 160;
+        onDir: _on:angle;
+        onLength: _on:length;
     }
     point:i(0) > right {
-        in: on;
+        inTension: Infinity;
     }
 }
 
@@ -346,8 +347,8 @@
     @namespace("penstroke#stem") {
         @namespace("point:i(1), point:i(2)") /*";*/ {
             right {
-                in: on;
-                out: on;
+                inTension: Infinity;
+                outTension: Infinity;
             }
         }
         @dictionary {
