@@ -1,0 +1,15 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from __future__ import print_function
+import sys
+import defcon
+
+class Data(object):
+    pass
+
+if __name__ == '__main__':
+    sourceUFOPath = sys.argv[1]
+    targetUFOPath = sys.argv[2]
+    font = defcon.Font(sourceUFOPath)
+    font.save(targetUFOPath, 3)
