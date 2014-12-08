@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dvA" format="2">
   <advance width="709"/>
   <unicode hex="0905"/>
@@ -9,7 +9,7 @@
       <point x="37" y="197.5"/>
       <point x="37" y="152.5" type="curve"/>
       <point x="37" y="80.8211"/>
-      <point x="103.92905" y="59"/>
+      <point x="103.92904999999999" y="59"/>
       <point x="166.5" y="59" type="curve"/>
       <point x="276.002" y="59"/>
       <point x="342.5" y="114"/>

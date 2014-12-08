@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dvI" format="2">
   <advance width="462"/>
   <unicode hex="0907"/>
@@ -16,7 +16,7 @@
       <point x="117" y="154.5"/>
       <point x="117" y="107" type="curve"/>
       <point x="117" y="60.80175"/>
-      <point x="143.919" y="29.6377"/>
+      <point x="143.91899999999998" y="29.6377"/>
       <point x="166.514" y="11.7803" type="curve"/>
     </contour>
     <contour identifier="sShape">
@@ -27,7 +27,7 @@
       <point x="140.5" y="443"/>
       <point x="90.5" y="408.5"/>
       <point x="90.5" y="361.5" type="curve"/>
-      <point x="90.5" y="306.0175"/>
+      <point x="90.5" y="306.01750000000004"/>
       <point x="152.6975" y="285.051"/>
       <point x="217" y="263.9665" type="curve"/>
       <point x="290.1645" y="240.169"/>
@@ -42,8 +42,8 @@
     </contour>
     <contour identifier="verticalConnection">
       <point x="292" y="429" type="move"/>
-      <point x="292" y="467.99961"/>
-      <point x="292" y="507.00039"/>
+      <point x="292" y="467.99960999999996"/>
+      <point x="292" y="507.00039000000004"/>
       <point x="292" y="546" type="curve"/>
     </contour>
     <contour identifier="bar">

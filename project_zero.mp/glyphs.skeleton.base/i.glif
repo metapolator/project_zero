@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="i" format="2">
   <advance width="320"/>
   <unicode hex="0069"/>
@@ -27,36 +27,30 @@
     <contour identifier="bottomSerif">
       <point x="290" y="10" type="move" name="bottom right serif"/>
       <point x="206.6675" y="10"/>
-      <point x="123.3325" y="10"/>
+      <point x="123.33250000000001" y="10"/>
       <point x="40" y="10" type="curve" name="bottom left serif"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.typemytype.robofont.guides</key>
-      <array>
-      </array>
+      <array/>
       <key>com.typemytype.robofont.layerData</key>
       <dict>
         <key>Back</key>
         <dict>
           <key>anchors</key>
-          <array>
-          </array>
+          <array/>
           <key>components</key>
-          <array>
-          </array>
+          <array/>
           <key>contours</key>
-          <array>
-          </array>
+          <array/>
           <key>lib</key>
-          <dict>
-          </dict>
+          <dict/>
           <key>name</key>
           <string>i</string>
           <key>unicodes</key>
-          <array>
-          </array>
+          <array/>
           <key>width</key>
           <integer>320</integer>
         </dict>

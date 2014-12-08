@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dvKHA" format="2">
   <advance width="771"/>
   <unicode hex="0916"/>
@@ -9,7 +9,7 @@
       <point x="136.7959" y="231.788"/>
       <point x="162.5" y="182.421" type="curve"/>
       <point x="195.262" y="119.4325"/>
-      <point x="246.9535" y="47.5"/>
+      <point x="246.95350000000002" y="47.5"/>
       <point x="362" y="47.5" type="curve"/>
       <point x="503" y="47.5"/>
       <point x="597.5" y="138"/>
@@ -45,19 +45,19 @@
     <contour identifier="stem">
       <point x="623" y="0" type="move"/>
       <point x="623" y="43.3329"/>
-      <point x="623" y="86.6671"/>
+      <point x="623" y="86.66709999999999"/>
       <point x="623" y="130" type="curve"/>
       <point x="650.5" y="218.6662"/>
       <point x="652" y="335.8338"/>
       <point x="623" y="407" type="curve"/>
-      <point x="623" y="454.66619"/>
-      <point x="623" y="502.33381"/>
+      <point x="623" y="454.66619000000003"/>
+      <point x="623" y="502.33380999999997"/>
       <point x="623" y="550" type="curve"/>
     </contour>
     <contour identifier="bar">
       <point x="791" y="550" type="move"/>
-      <point x="520.66937" y="550"/>
-      <point x="250.33063" y="550"/>
+      <point x="520.6693700000001" y="550"/>
+      <point x="250.33062999999999" y="550"/>
       <point x="-20" y="550" type="curve"/>
     </contour>
   </outline>

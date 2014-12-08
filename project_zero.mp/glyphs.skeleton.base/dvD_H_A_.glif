@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dvDHA" format="2">
   <advance width="624"/>
   <unicode hex="0927"/>
@@ -32,14 +32,14 @@
     </contour>
     <contour identifier="rightBar">
       <point x="644" y="550" type="move"/>
-      <point x="548.66762" y="550"/>
+      <point x="548.6676199999999" y="550"/>
       <point x="453.33238" y="550"/>
       <point x="358" y="550" type="curve"/>
     </contour>
     <contour identifier="leftBar">
       <point x="295" y="550" type="move"/>
       <point x="190.00105" y="550"/>
-      <point x="84.99895" y="550"/>
+      <point x="84.99895000000001" y="550"/>
       <point x="-20" y="550" type="curve"/>
     </contour>
     <contour identifier="stem">

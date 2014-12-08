@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dvDA" format="2">
   <advance width="489"/>
   <unicode hex="0926"/>
@@ -40,7 +40,7 @@
       <point x="373.024" y="186.342"/>
       <point x="373.024" y="140.342" type="curve"/>
       <point x="373.024" y="89.3877"/>
-      <point x="354.2005" y="50.75"/>
+      <point x="354.20050000000003" y="50.75"/>
       <point x="340" y="31" type="curve"/>
     </contour>
     <contour identifier="bar">

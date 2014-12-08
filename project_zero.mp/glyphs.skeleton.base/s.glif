@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="s" format="2">
   <advance width="475"/>
   <unicode hex="0073"/>
@@ -16,8 +16,8 @@
       <point x="410" y="105" type="curve" name="vertical bottom"/>
       <point x="410" y="181.167"/>
       <point x="327.1545" y="204.71"/>
-      <point x="246.5" y="227.009" type="curve" name="spine"/>
-      <point x="165.195" y="249.3375"/>
+      <point x="246.5" y="227.00900000000001" type="curve" name="spine"/>
+      <point x="165.195" y="249.33749999999998"/>
       <point x="81" y="272.8515"/>
       <point x="81" y="349.5" type="curve" name="vertical top"/>
       <point x="81" y="414"/>
@@ -38,22 +38,17 @@
         <key>Back</key>
         <dict>
           <key>anchors</key>
-          <array>
-          </array>
+          <array/>
           <key>components</key>
-          <array>
-          </array>
+          <array/>
           <key>contours</key>
-          <array>
-          </array>
+          <array/>
           <key>lib</key>
-          <dict>
-          </dict>
+          <dict/>
           <key>name</key>
           <string>s</string>
           <key>unicodes</key>
-          <array>
-          </array>
+          <array/>
           <key>width</key>
           <integer>475</integer>
         </dict>

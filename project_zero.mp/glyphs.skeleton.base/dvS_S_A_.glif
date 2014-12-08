@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dvSSA" format="2">
   <advance width="562"/>
   <unicode hex="0937"/>
@@ -23,14 +23,14 @@
     </contour>
     <contour identifier="bar">
       <point x="580" y="550" type="move"/>
-      <point x="380.002" y="550"/>
-      <point x="179.998" y="550"/>
+      <point x="380.00199999999995" y="550"/>
+      <point x="179.99800000000002" y="550"/>
       <point x="-20" y="550" type="curve"/>
     </contour>
     <contour identifier="crossBar">
       <point x="405.5" y="257.5" type="move"/>
-      <point x="313.000925" y="344.332465"/>
-      <point x="220.499075" y="431.167535"/>
+      <point x="313.000925" y="344.33246499999996"/>
+      <point x="220.499075" y="431.16753500000004"/>
       <point x="128" y="518" type="curve"/>
     </contour>
   </outline>
