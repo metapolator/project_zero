@@ -3,15 +3,14 @@ Encoding: 127 98 127
 GlifName: b
 Width: 558
 VWidth: 0
-Flags: W
+Flags: HWO
 LayerCount: 2
 Back
-Fore
 SplineSet
 303 -9 m 257
  384 -9 528 32 528 230 c 256
- 528 398 432 482 339 482 c 256
- 289 482 232 462 210 424 c 257
+ 528 398 432 482 339 482 c 260
+ 289 482 232 462 210 424 c 261
  210 670 l 257
  10 670 l 257
  10 650 l 257
@@ -20,12 +19,73 @@ SplineSet
  79 0 l 257
  79 41 100 70 124 70 c 256
  178 70 209 -9 303 -9 c 257
-210 394 m 257
- 227 428 251 441 277 441 c 256
+210 394 m 261
+ 227 428 251 441 277 441 c 260
  324 441 377 374 377 231 c 256
  377 81 327 13 280 13 c 256
  233 13 210 52 210 156 c 257
+ 210 394 l 261
+EndSplineSet
+Fore
+SplineSet
+303 -9 m 0
+NamedP: "connection"
+ 384 -9 528 32 528 230 c 260
+NamedP: "vertical right"
+ 528 398 432 482 339 482 c 256
+NamedP: "horizontal top"
+ 289 482 232 462 210 424 c 257
+NamedP: "to-stem"
  210 394 l 257
+NamedP: "to-stem"
+ 227 428 251 441 277 441 c 256
+NamedP: "horizontal top"
+ 324 441 377 374 377 231 c 256
+NamedP: "vertical right"
+ 377 81 327 13 280 13 c 256
+NamedP: "connection"
+ 303 -9 l 0
+NamedP: "connection"
+  Named: "bowl"
+79 0 m 257
+NamedP: "bottom inner"
+ 79 41 100 70 124 70 c 259
+NamedP: "bridge"
+ 178 70 209 -9 303 -9 c 257
+NamedP: "connection lower"
+ 280 13 l 256
+NamedP: "connection upper"
+ 233 13 210 52 210 156 c 257
+NamedP: "top right"
+ 60 156 l 257
+NamedP: "top left"
+ 60 0 l 257
+NamedP: "bottom outer"
+ 79 0 l 257
+NamedP: "bottom inner"
+  Named: "O:terminal"
+210 670 m 257
+NamedP: "right top no-serif"
+ 10 670 l 257
+NamedP: "left top serif"
+ 10 650 l 257
+NamedP: "left top serif"
+ 210 650 l 1
+NamedP: "right top no-serif"
+ 210 670 l 257
+NamedP: "right top no-serif"
+  Named: "topSerif"
+210 156 m 257
+NamedP: "bottom"
+ 210 660 l 257
+NamedP: "top right"
+ 60 660 l 257
+NamedP: "top left"
+ 60 156 l 0
+NamedP: "bottom"
+ 210 156 l 257
+NamedP: "bottom"
+  Named: "stem"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'
