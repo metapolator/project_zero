@@ -1,37 +1,51 @@
 * {
 }
 
-/* This rule will have to be overidden by inheriting masters */
+component {
+    transformation: originalTransformation;
+}
+
+outline > spot {
+    on: skeleton:on;
+    in: tension2controlIn pointBefore:on pointBefore:outDir inTension inDir on;
+    out: tension2controlOut on outDir outTension pointAfter:inDir pointAfter:on;
+    
+    inDir: (on - skeleton:in):angle;
+    outDir: (skeleton:out - on):angle;
+    
+    inLength: (on - skeleton:in):length;
+    outLength: (skeleton:out - on):length;
+    
+    inTension: magnitude2tensionIn pointBefore:on pointBefore:outDir inLength inDir on ;
+    outTension: magnitude2tensionOut on outDir outLength pointAfter:inDir pointAfter:on;
+}
+
 point > center {
     on: parent:skeleton:on;
     in: parent:skeleton:in;
     out: parent:skeleton:out;
-}
-
-/* This rule, is very specificly needed for imported data
- * and it must be overidded with at least point>left, point>* is not
- * strong enough.
- */
-point > left {
-    onDir: deg 180 + parent:right:onDir;
-    onLength: parent:right:onLength;
+    inDir: (on - in):angle;
+    outDir: (out - on):angle;
 }
 
 @dictionary {
+
+outline > spot {
+    pointBefore: parent:children[index - 1];
+    pointAfter: parent:children[index+1];
+}
+outline > spot:i(0) {
+    pointBefore: parent:children[parent:children:length - 1];
+}
+outline > spot:i(-1) {
+    pointAfter: parent:children[0];
+}
+
+
 point > * {
     pointBefore: parent:parent:children[parent:index - 1][this:type];
     pointAfter: parent:parent:children[parent:index+1][this:type];
 }
-}
-
-/* may not work in all cases! FIXME: see if there are specific overrides
- * for these angles. Hint: there are! So how to solve this problem in
- * inheritance. (not solving it may be ok! because these angles do not
- * mean much???) TODO: explain the problem, explain the solution.
- */
-point > center{
-    inDir: (on - in):angle;
-    outDir: (out - on):angle;
 }
 
 point > left,
@@ -43,8 +57,13 @@ point > right {
     outDir: outDirIntrinsic + parent:center:outDir;
 }
 
+point > left {
+    onDir: deg 180 + parent:right:onDir;
+    onLength: parent:right:onLength;
+}
 
 /*opening terminal*/
+
 point:i(0) > left {
     in: tension2controlOut on (inDir + deg 180) inTension parent:right:inDir parent:right:on;
 }
@@ -52,6 +71,7 @@ point:i(0) > left {
 point:i(0) > right {
     in: tension2controlIn parent:left:on (parent:left:inDir  + deg 180) inTension inDir on;
 }
+
 /*closing terminal*/
 
 point:i(-1) > right {
