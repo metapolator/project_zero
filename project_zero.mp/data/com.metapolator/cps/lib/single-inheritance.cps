@@ -19,6 +19,16 @@ point > center {
     out: base:out;
 }
 
+outline > spot {
+    on: base:on;
+    
+    inDir: base:inDir;
+    outDir: base:outDir;
+    
+    inTension: base:inTension;
+    outTension: base:outTension;
+}
+
 point > left, point > right {
     onDir: base:onDir;
     onLength: base:onLength;

@@ -1,6 +1,6 @@
 /* scale the skeleton */
 @dictionary {
-    point>center {
+    point>center, outline > spot{
         /* this way we can override scale and still have access to it's 
          * original value
          */
@@ -17,11 +17,17 @@ point > center {
     in: transform * skeleton:in;
     out: transform * skeleton:out;
 }
+/*
+ * scaling outlines may yield in suboptimal results!
+ */
+outline > spot {
+    on: transform * skeleton:on;
+}
 
 
 /* define higher level parameters */
 @dictionary {
-    point > center {
+    point > center, outline > spot {
         widthFactor: 1;
         xTranslate: 0;
         yTranslate: 0;

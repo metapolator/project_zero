@@ -11,6 +11,16 @@
                     :children[index]
                     ;
     }
+    
+    outline > spot {
+        indexGlyph: parent:parent:index;
+        indexOutline: parent:index;
+        base: baseMaster
+                    :children[indexGlyph]
+                    :children[indexOutline]
+                    :children[index]
+                    ;
+    }
 }
 
 /* set up this masters super master */
