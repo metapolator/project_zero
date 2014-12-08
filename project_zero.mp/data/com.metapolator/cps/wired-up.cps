@@ -1,4 +1,4 @@
-@import 'lib/centreline-skeleton-to-symmetric-outline.cps';
+@import 'centreline-skeleton-to-symmetric-outline.cps';
 @import 'lib/point-child-base.cps';
 @import 'lib/single-inheritance.cps';
 @import 'lib/weight.cps';
@@ -6,10 +6,10 @@
 
 /* set up this masters parameters */
 @dictionary {
-    point > * {
+    * {
         baseMaster: S"master#base";
     }
-    point > center {
+    point > center, outline > spot {
         skeleton: base;
     }
 }
@@ -20,6 +20,11 @@
         master: parent:parent:parent:parent;
         glyph: parent:parent:parent;
         penstroke: parent:parent;
+    }
+    spot {
+        master: parent:parent:parent;
+        glyph: parent:parent;
+        outline: parent;
     }
 }
 
@@ -66,6 +71,10 @@
   , glyph#e penstroke#stroke point:i(-2) > center
   , point.drop > center
   , glyph#i penstroke#dot point > center
+  , glyph#b penstroke#bowl point.to-stem > center
+  , glyph#b penstroke#bowl point.top.horizontal > center
+  , glyph#b penstroke#bowl point.connection>center
+  , glyph#b penstroke#stem point.bottom>center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -107,6 +116,10 @@
 , glyph#e penstroke#stroke point:i(-2) > center
 , point.drop > center
 , glyph#i penstroke#dot point > center
+, glyph#b penstroke#bowl point.to-stem > center
+, glyph#b penstroke#bowl point.top.horizontal > center
+, glyph#b penstroke#bowl point.connection>center
+, glyph#b penstroke#stem point.bottom>center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -761,6 +774,82 @@
         @dictionary {
             point > center {
                 referenceStroke: stem;
+            }
+        }
+    }
+}
+@namespace(glyph#b) {
+    @dictionary {
+        point > *,
+        spot {
+            stem: glyph[S"#stem"];
+            bowl: glyph[S"#bowl"];
+            topSerif: glyph[S"#topSerif"];
+            stemWidth: 2 * stem[S".top"]:right:onLength;
+            serifLength: stemWidth;
+        }
+    }
+    @namespace("penstroke#topSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+    @namespace("outline#terminal") {
+        @dictionary {
+            spot.top.left {
+                target: stem[S".bottom"]:left:on
+            }
+            spot.top.right {
+                target: stem[S".bottom"]:right:on
+            }
+            spot.upper.connection {
+                target: bowl[S".connection"]:left:on
+            }
+            spot.lower.connection {
+                target: bowl[S".connection"]:right:on
+            }
+            
+            spot.bottom, spot.bridge {
+                _on: skeleton:on;
+            }
+            spot.bottom.inner {
+                _xRef: parent[S".bottom.outer"];
+                _x: (_on:x - _xRef:_on:x) * weightFactor + _xRef:on:x;
+            }
+            spot.bridge {
+                _xRef: stem[S".bottom"]:center:on;
+                _yRef: _xRef;
+            }
+            
+            
+        }
+        spot.top, spot.connection {
+            on: target;
+        }
+        spot.bottom.outer {
+            on: Vector parent[S".top.left"]:on:x _on:y;
+        }
+        spot.bottom.inner {
+            on: Vector _x _on:y;
+        }
+        spot.bridge {
+            on: Vector _x _y;
+        }
+    }
+    @namespace(penstroke#bowl) {
+        /* fix the bowl .to-stem to the stem, where .to-stem center touches it */
+        @dictionary {
+            point.to-stem > center {
+                target: stem[S"point.top"]:right:on:x;
+                origin: this;
+                rightOffset: (Polar origin:parent:right:onLength origin:parent:right:onDir):x;
+                pinX: target - origin:_on:x - rightOffset;
+                pinTo: Vector pinX 0;
+            }
+            point.top.horizontal>center {
+                pinTo: Vector (penstroke[S"point.to-stem"]:center:pinX / 2) 0;
             }
         }
     }

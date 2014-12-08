@@ -3,10 +3,10 @@
 
 /* set up this masters parameters */
 @dictionary {
-    point > center {
+    point > center, outline > spot  {
         widthFactor: 1.3;
     }
-    point > left, point > right {
+    point > left, point > right, outline > spot {
         weightFactor: 1.5;
     }
 }
@@ -69,6 +69,7 @@
 , glyph#h
 , glyph#n
 , glyph#i
+, glyph#b
 ") {
     @dictionary {
         point > * {
@@ -312,6 +313,17 @@
         @dictionary{
             point > center {
                 dotFixation: penstroke:children[-1]:skeleton:on;
+            }
+        }
+    }
+}
+
+@namespace(glyph#b) {
+    @namespace(outline#terminal) {
+        @dictionary {
+            spot.bridge {
+                _y: base:on:y;
+                _x: -30 + _xRef:x;
             }
         }
     }

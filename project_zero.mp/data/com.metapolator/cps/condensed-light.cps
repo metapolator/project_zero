@@ -3,10 +3,10 @@
 
 /* set up this masters parameters */
 @dictionary {
-    point > center {
+    point > center, outline > spot  {
         widthFactor: 0.5;
     }
-    point > left, point > right {
+    point > left, point > right, outline > spot {
         weightFactor:  .2;
     }
 }
@@ -61,6 +61,7 @@
 , glyph#h
 , glyph#n
 , glyph#i
+, glyph#b
 ") {
     @dictionary {
         point > * {
@@ -391,5 +392,44 @@
             inTension: .75;
         }
     /**/
+    }
+}
+@namespace(glyph#b) {
+    @namespace(penstroke#bowl) {
+        point.horizontal.top > left {
+            outTension: 1.7;
+        }
+        @dictionary{
+            point.to-stem > *{
+                weightSummand: 3;
+            }
+        }
+    }
+    @namespace(penstroke#stem) {
+        @dictionary {
+            point.bottom>center {
+                pinTo: Vector 0 -85;
+            }
+        }
+    }
+    @namespace(outline#terminal) {
+        spot.top.right {
+            inTension: .6;
+        }
+        spot.connection.upper{
+            outTension: 2;
+        }
+        spot.connection.lower {
+            inTension: .6;
+        }
+        spot.bridge {
+            outTension: 2;
+        }
+        @dictionary {
+            spot.bridge {
+                _y: -35 + _yRef:y;
+                _x: 3 + _xRef:x;
+            }
+        }
     }
 }
