@@ -5,15 +5,21 @@ cp project_zero.mp/data/com.metapolator/project.yaml project_zero.mp/data/com.me
 mp delete project_zero.mp/base;
 
 
-BASEUFO=".base_import.ufo";
-rm -rf $BASEUFO;
-fontforge -c "fontforge.open('base.sfdir').generate('$BASEUFO')";
+BASEUFOV2=".base_import.v2.ufo";
+BASEUFOV3=".base_import.v3.ufo";
+rm -rf $BASEUFOV2;
+fontforge -c "fontforge.open('base.sfdir').generate('$BASEUFOV2')";
+
+rm -rf $BASEUFOV3;
+./bin/upgrade_to_ufo_v3 $BASEUFOV2 $BASEUFOV3
+
 
 SUBSET="$(cat ./current_subset.txt)"
-
+./bin/setIdentifiers base.sfdir $BASEUFOV3 public.default "$SUBSET";
 cd project_zero.mp;
-mp import -g "$SUBSET" ../$BASEUFO base;
+mp import -g "$SUBSET" ../$BASEUFOV3 base;
 cd ..;
 mv project_zero.mp/data/com.metapolator/.project.yaml project_zero.mp/data/com.metapolator/project.yaml;
 
-./bin/setIdentifiers base.sfdir project_zero.mp skeleton.base "$SUBSET";
+# pretty print
+find ./project_zero.mp \( -name "*.glif" -o -name "*.plist" \) -exec sh -c "cat {} | xmllint --format - > {}~; mv {}~ {}" \;
