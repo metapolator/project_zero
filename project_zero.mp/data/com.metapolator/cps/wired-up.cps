@@ -77,6 +77,7 @@
   , glyph#b penstroke#stem point.bottom>center
   , glyph#c penstroke#cShape point.outstroke > center
   , glyph#c penstroke#cShape point.horizontal.bottom > center
+  , glyph#f penstroke#horizontalStroke point.left > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -124,6 +125,7 @@
 , glyph#b penstroke#stem point.bottom>center
 , glyph#c penstroke#cShape point.outstroke > center
 , glyph#c penstroke#cShape point.horizontal.bottom > center
+, glyph#f penstroke#horizontalStroke point.left > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -238,7 +240,10 @@
         moveX: 0;
         pinTo: Vector moveX 0;
     }
-    
+    point > * {
+    /* should be defined within the masters*/
+        serifLength: 0;
+    }
     point.serif > center {
         _serifLength: serifLength;
     }
@@ -589,7 +594,6 @@
             topSerif: glyph[S"#topSerif"];
             bottomSerif: glyph[S"#bottomSerif"];
             stemWidth: 2 * stem:children[0]:right:onLength;
-            serifLength: stemWidth;
         }
     }
     @namespace(penstroke#bowl) {
@@ -649,7 +653,6 @@
             bottomLeftSerif: glyph[S"#bottomLeftSerif"];
             bottomRightSerif: glyph[S"#bottomRightSerif"];
             stemWidth: 2 * stem:children[0]:right:onLength;
-            serifLength: stemWidth;
         }
     }
     @namespace("penstroke#topSerif, penstroke#bottomLeftSerif") {
@@ -751,7 +754,6 @@
             topSerif: glyph[S"#topSerif"];
             bottomSerif: glyph[S"#bottomSerif"];
             stemWidth: 2 * stem:children[0]:right:onLength;
-            serifLength: stemWidth;
         }
     }
     @namespace("penstroke#dot") {
@@ -790,7 +792,6 @@
             bowl: glyph[S"#bowl"];
             topSerif: glyph[S"#topSerif"];
             stemWidth: 2 * stem[S".top"]:right:onLength;
-            serifLength: stemWidth;
         }
     }
     @namespace("penstroke#topSerif") {
@@ -897,5 +898,52 @@
         }
     }
 }
-
+@namespace(glyph#f) {
+    @dictionary {
+        point > * {
+            stem: glyph[S"#stem"];
+            bottomSerif: glyph[S"#bottomSerif"];
+            stemWidth: 2 * stem[S".bottom"]:right:onLength;
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            /* fix the drop to the stem*/
+            point > center {
+                drop: penstroke[S"point.drop.top.fixation"];
+                dropFixation: drop:skeleton:on;
+            }
+            point.drop > center {
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dropFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dropFixation;
+                pinTo: target-origin;
+            }
+        }
+    }
+    @namespace("penstroke#horizontalStroke") {
+        @dictionary {
+            point.left > center{
+                target: bottomSerif[S"point.left > center"]:on;
+                pinTo: Vector (target:x - _on:x) 0;
+            }
+        }
+    }
+    @namespace("penstroke#bottomSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+}
 

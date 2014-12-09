@@ -3,31 +3,56 @@ Encoding: 847 102 847
 GlifName: f
 Width: 432
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
 Fore
 SplineSet
-290 0 m 257
- 290 20 l 257
- 240 20 l 257
- 240 440 l 257
- 370 440 l 257
- 370 460 l 257
- 240 460 l 257
- 240 588 249 660 288 660 c 257
- 315 660 326 636 326 591 c 257
- 326 548 349 531 380 531 c 256
- 407 531 432 549 432 582 c 256
- 432 629 388 680 288 680 c 256
- 149 680 90 602 90 460 c 257
- 30 460 l 257
- 30 440 l 257
- 90 440 l 257
- 90 20 l 257
- 40 20 l 257
+290 20 m 1
+NamedP: "bottom right serif"
+ 40 20 l 17
+NamedP: "bottom left serif"
  40 0 l 257
+NamedP: "bottom left serif"
  290 0 l 257
+NamedP: "bottom right serif"
+ 290 20 l 1
+NamedP: "bottom right serif"
+  Named: "bottomSerif"
+240 10 m 1
+NamedP: "bottom right"
+ 240 460 l 3
+NamedP: "vertical left"
+ 240 588 249 660 288 660 c 259
+NamedP: "horizontal top"
+ 315 660 326 636 326 591 c 259
+NamedP: "drop top fixation"
+ 326 548 349 531 380 531 c 5
+NamedP: "drop top"
+ 380 531 l 257
+NamedP: "drop top"
+ 407 531 432 549 432 582 c 259
+NamedP: "drop top fixation"
+ 432 629 388 680 288 680 c 259
+NamedP: "horizontal top"
+ 149 680 90 602 90 460 c 3
+NamedP: "vertical left"
+ 90 284 90 10 90 10 c 1
+NamedP: "bottom left"
+ 240 10 l 1
+NamedP: "bottom right"
+  Named: "stem"
+370 460 m 1
+NamedP: "right"
+ 30 460 l 1
+NamedP: "left"
+ 30 440 l 257
+NamedP: "left"
+ 370 440 l 257
+NamedP: "right"
+ 370 460 l 1
+NamedP: "right"
+  Named: "horizontalStroke"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'

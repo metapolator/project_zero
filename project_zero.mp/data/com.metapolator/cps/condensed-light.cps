@@ -56,17 +56,9 @@
     }
 }
 
-@namespace("
-  glyph#d
-, glyph#h
-, glyph#n
-, glyph#i
-, glyph#b
-") {
-    @dictionary {
-        point > * {
-            serifLength: stemWidth * 1.4;
-        }
+@dictionary {
+    point > * {
+        serifLength: stemWidth * 1.4;
     }
 }
 
@@ -436,10 +428,7 @@
 @namespace(glyph#c){
     @namespace("penstroke#cShape") {
         @dictionary {
-            point.drop:i(-1) > center{
-                _xTranslate: -5;
-            }
-            point.drop > center{
+            point.drop > center {
                 yTranslate: 10;
             }
         }
@@ -452,9 +441,21 @@
         point.vertical.left > left {
             outTension: 1.2;
         }
-        point.horizontal.top > left {
-            _inTension: 5.5;
+    }
+}
+
+@namespace(glyph#f){
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point.top.drop > center{
+                yTranslate: 10;
+            }
         }
-        
+        point.vertical.left > left {
+            outTension: .7;
+        }
+        point.horizontal.top > left {
+            inTension: 1.2;
+        }
     }
 }

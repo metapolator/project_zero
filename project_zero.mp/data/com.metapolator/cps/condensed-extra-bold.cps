@@ -60,17 +60,9 @@
         }
     }
 }
-@namespace("
-  glyph#d
-, glyph#h
-, glyph#n
-, glyph#i
-, glyph#b
-") {
-    @dictionary {
-        point > * {
-            serifLength: stemWidth / 6;
-        }
+@dictionary {
+    point > * {
+        serifLength: stemWidth / 6;
     }
 }
 /********************
@@ -808,6 +800,28 @@
             }
             point.vertical.left >center {
                 xTranslate: -40 + extraX;
+            }
+        }
+    }
+}
+@namespace(glyph#f) {
+    @dictionary {
+        point > * {
+            extraX: 55;
+            xTranslate: extraX;
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point.drop >center {
+                xTranslate: 25 + extraX;
+            }
+        }
+    }
+    @namespace("penstroke#horizontalStroke") {
+        @dictionary {
+            point.right > center {
+                xTranslate: 35 + extraX;
             }
         }
     }

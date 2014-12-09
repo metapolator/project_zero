@@ -64,17 +64,10 @@
         }
     }
 }
-@namespace("
-  glyph#d
-, glyph#h
-, glyph#n
-, glyph#i
-, glyph#b
-") {
-    @dictionary {
-        point > * {
-            serifLength: stemWidth / 4;
-        }
+
+@dictionary {
+    point > * {
+        serifLength: stemWidth / 4;
     }
 }
 /********************

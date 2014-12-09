@@ -55,19 +55,12 @@
     }
 }
 
-@namespace("
-  glyph#d
-, glyph#h
-, glyph#n
-, glyph#i
-, glyph#b
-") {
-    @dictionary {
-        point > * {
-            serifLength: stemWidth * 3;
-        }
+@dictionary {
+    point > * {
+        serifLength: stemWidth * 3;
     }
 }
+
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
@@ -473,6 +466,23 @@
         point.horizontal.top > right {
             outTension: 1.1;
             inTension: 1.9;
+        }
+    }
+}
+
+@namespace(glyph#f){
+    @namespace("penstroke#stem") {
+        point.vertical.left > right {
+            outTension: .55;
+        }
+        point.vertical.left > left {
+            outTension: .6;
+        }
+        point.horizontal.top > right {
+            inTension: 1.2;
+        }
+        point.horizontal.top > left {
+            inTension: .9;
         }
     }
 }
