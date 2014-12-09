@@ -433,3 +433,28 @@
         }
     }
 }
+@namespace(glyph#c){
+    @namespace("penstroke#cShape") {
+        @dictionary {
+            point.drop:i(-1) > center{
+                _xTranslate: -5;
+            }
+            point.drop > center{
+                yTranslate: 10;
+            }
+        }
+        point.horizontal.top > right {
+            outTension: 1.3;
+        }
+        point.drop.fixation > right {
+            inTension: .75;
+        }
+        point.vertical.left > left {
+            outTension: 1.2;
+        }
+        point.horizontal.top > left {
+            _inTension: 5.5;
+        }
+        
+    }
+}

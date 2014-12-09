@@ -328,3 +328,10 @@
         }
     }
 }
+@namespace(glyph#c) {
+    @namespace("penstroke#cShape") {
+        point.drop.fixation > right {
+            inTension: 1.3;
+        }
+    }
+}

@@ -3,23 +3,38 @@ Encoding: 139 99 139
 GlifName: c
 Width: 503
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
 Fore
 SplineSet
-30 230 m 257
- 30 68 121 -9 291 -9 c 256
+449 85 m 261
+NamedP: "outstroke"
+ 427 52 374 24 328 24 c 259
+NamedP: "horizontal bottom"
+ 229 24 181 98 181 230 c 259
+NamedP: "vertical left"
+ 181 394 228.548828125 452 278 452 c 259
+NamedP: "horizontal top"
+ 319.31585652 452 324.41015625 434 324.41015625 409 c 3
+NamedP: "drop top fixation"
+ 324.41015625 386.00390625 318 356.11643901 318 326 c 3
+NamedP: "drop top"
+ 318 282 352 250.87890625 399 250.87890625 c 3
+NamedP: "drop top"
+ 455 250.87890625 473 300 473 328 c 3
+NamedP: "drop top fixation"
+ 473 402 396 470 284 470 c 257
+NamedP: "horizontal top"
+ 127 470 30 385 30 230 c 259
+NamedP: "vertical left"
+ 30 68 121 -9 291 -9 c 259
+NamedP: "horizontal bottom"
  369 -9 433 25 463 75 c 257
- 449 85 l 257
- 427 52 374 24 328 24 c 256
- 229 24 181 98 181 230 c 256
- 181 352 206 441 271 451 c 257
- 350 461 318 389 318 326 c 257
- 318 287 339 263 381 253 c 256
- 420 244 459 264 470 306 c 256
- 487 371 430 470 274 470 c 257
- 141 470 30 395 30 230 c 257
+NamedP: "outstroke"
+ 449 85 l 261
+NamedP: "outstroke"
+  Named: "cShape"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'

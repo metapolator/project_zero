@@ -75,6 +75,8 @@
   , glyph#b penstroke#bowl point.top.horizontal > center
   , glyph#b penstroke#bowl point.connection>center
   , glyph#b penstroke#stem point.bottom>center
+  , glyph#c penstroke#cShape point.outstroke > center
+  , glyph#c penstroke#cShape point.horizontal.bottom > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -120,6 +122,8 @@
 , glyph#b penstroke#bowl point.top.horizontal > center
 , glyph#b penstroke#bowl point.connection>center
 , glyph#b penstroke#stem point.bottom>center
+, glyph#c penstroke#cShape point.outstroke > center
+, glyph#c penstroke#cShape point.horizontal.bottom > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -854,3 +858,44 @@
         }
     }
 }
+@namespace(glyph#c){
+    @namespace("penstroke#cShape") {
+        @dictionary {
+            /* fix the drop to the cShape*/
+            point > center {
+                drop: penstroke[S"point.drop.top.fixation"];
+                dropFixation: drop:skeleton:on;
+                outstroke: penstroke[S"point.outstroke"];
+            }
+            point.drop > center {
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dropFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dropFixation;
+                pinTo: target-origin;
+            }
+            /**
+             * this is almost copy pasted from the setup of glyph#e
+             */
+            point.outstroke > center {
+                origin: this:_on:x
+                    + (Polar parent:left:onLength parent:left:onDir):x;
+                target: drop:left:on:x;
+                pinTo: Vector (target - origin) 0;
+            }
+            point.horizontal.bottom > center {
+                pinTo: Vector (outstroke:center:pinTo:x/2) 0;
+            }
+        }
+    }
+}
+
+

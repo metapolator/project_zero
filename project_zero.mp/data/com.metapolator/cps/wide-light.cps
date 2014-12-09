@@ -467,3 +467,12 @@
         }
     }
 }
+
+@namespace(glyph#c) {
+    @namespace("penstroke#cShape") {
+        point.horizontal.top > right {
+            outTension: 1.1;
+            inTension: 1.9;
+        }
+    }
+}

@@ -793,3 +793,22 @@
     }
     
 }
+
+@namespace(glyph#c) {
+    @dictionary {
+        point > * {
+            extraX: 85;
+            xTranslate: extraX;
+        }
+    }
+    @namespace("penstroke#cShape") {
+        @dictionary {
+            point.drop >center {
+                xTranslate: 15 + extraX;
+            }
+            point.vertical.left >center {
+                xTranslate: -40 + extraX;
+            }
+        }
+    }
+}
