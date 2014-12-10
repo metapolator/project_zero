@@ -47,6 +47,7 @@
 
 @namespace("
   glyph#i penstroke#dot point
+, glyph#j penstroke#dot point
 ") {
     @dictionary {
         * {
@@ -301,12 +302,20 @@
     }
 }
 
-@namespace(glyph#i) {
+@namespace("glyph#i,glyph#j") {
     @namespace("penstroke#dot") {
         @dictionary{
             point > center {
                 dotFixation: penstroke:children[-1]:skeleton:on;
             }
+        }
+    }
+}
+@namespace("glyph#j") {
+    @dictionary{
+        point>center{
+            extraX: 120;
+            xTranslate: extraX;
         }
     }
 }

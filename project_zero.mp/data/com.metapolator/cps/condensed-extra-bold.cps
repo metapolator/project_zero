@@ -44,6 +44,7 @@
 }
 @namespace("
   glyph#i penstroke#dot point
+, glyph#j penstroke#dot point
 ") {
     @dictionary {
         * {
@@ -682,7 +683,7 @@
         }
     }
 }
-@namespace(glyph#i) {
+@namespace("glyph#i, glyph#j") {
     @dictionary {
         point > * {
             xTranslate: extraX;
@@ -697,6 +698,21 @@
         }
     }
 }
+@namespace("glyph#j") {
+    @dictionary {
+        point > * {
+            extraX: 120;
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            point.drop >center {
+                xTranslate: -25 + extraX;
+            }
+        }
+    }
+}
+
 
 @namespace(glyph#o) {
     @dictionary {

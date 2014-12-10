@@ -71,6 +71,7 @@
   , glyph#e penstroke#stroke point:i(-2) > center
   , point.drop > center
   , glyph#i penstroke#dot point > center
+  , glyph#j penstroke#dot point > center
   , glyph#b penstroke#bowl point.to-stem > center
   , glyph#b penstroke#bowl point.top.horizontal > center
   , glyph#b penstroke#bowl point.connection>center
@@ -120,6 +121,7 @@
 , glyph#e penstroke#stroke point:i(-2) > center
 , point.drop > center
 , glyph#i penstroke#dot point > center
+, glyph#j penstroke#dot point > center
 , glyph#b penstroke#bowl point.to-stem > center
 , glyph#b penstroke#bowl point.top.horizontal > center
 , glyph#b penstroke#bowl point.connection>center
@@ -217,6 +219,7 @@
 , glyph#a penstroke#stem point:i(-2)
 , point.drop
 , glyph#i penstroke#dot point
+, glyph#j penstroke#dot point
 ") {
     @dictionary {
         * {
@@ -786,6 +789,69 @@
         }
     }
 }
+
+@namespace(glyph#j) {
+    @dictionary {
+        point > * {
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            stemWidth: 2 * stem[S"point.top"]:right:onLength;
+        }
+    }
+    @namespace("penstroke#dot") {
+        @dictionary{
+            point > center {
+                dotFixation: penstroke:children[1]:skeleton:on;
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dotFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dotFixation;
+                pinTo: target-origin;
+            }
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            /* fix the drop to the stem*/
+            point > center {
+                drop: penstroke[S"point.drop.fixation"];
+                dropFixation: drop:skeleton:on;
+            }
+            point.drop > center {
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dropFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dropFixation;
+                pinTo: target-origin;
+            }
+        }
+    }
+    @namespace("penstroke#topSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+}
+
+
 @namespace(glyph#b) {
     @dictionary {
         point > *,

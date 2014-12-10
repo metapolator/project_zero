@@ -47,6 +47,7 @@
 
 @namespace("
     glyph#i penstroke#dot point
+,   glyph#j penstroke#dot point
 ") {
     @dictionary {
         * {
@@ -409,6 +410,20 @@
         }
         point.drop.top.fixation > left{
             inTension: 1.6;
+        }
+    }
+}
+
+@namespace("glyph#j") {
+    @dictionary{
+        point>center{
+            extraX: 120;
+            xTranslate: extraX;
+        }
+    }
+    @namespace("penstroke#stem") {
+        point.horizontal > left {
+            outTension: .9;
         }
     }
 }
