@@ -78,6 +78,7 @@
   , glyph#c penstroke#cShape point.outstroke > center
   , glyph#c penstroke#cShape point.horizontal.bottom > center
   , glyph#f penstroke#horizontalStroke point.left > center
+  , glyph#g penstroke#ear point.to-base > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -126,6 +127,7 @@
 , glyph#c penstroke#cShape point.outstroke > center
 , glyph#c penstroke#cShape point.horizontal.bottom > center
 , glyph#f penstroke#horizontalStroke point.left > center
+, glyph#g penstroke#ear point.to-base > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -947,3 +949,37 @@
     }
 }
 
+@namespace(glyph#g) {
+    @dictionary {
+        point > * {
+            leftBowl: glyph[S"#leftBowl"];
+            rightBowl: glyph[S"#rightBowl"];
+            ear: glyph[S"#ear"];
+            loop: glyph[S"loop"];
+        }
+    }
+    @namespace("penstroke#ear") {
+        @dictionary {
+            /* fix the drop to the stem*/
+            point > center {
+                drop: penstroke[S"point.drop.top.fixation"];
+                dropFixation: drop:skeleton:on;
+            }
+            point.drop > center {
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dropFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dropFixation;
+                pinTo: target-origin;
+            }
+        }
+    }
+}

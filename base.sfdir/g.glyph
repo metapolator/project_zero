@@ -3,48 +3,133 @@ Encoding: 864 103 864
 GlifName: g
 Width: 553
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
 Fore
 SplineSet
-416 431 m 257
- 378 452 360 491 360 523 c 256
- 360 565 384 594 397 599 c 256
- 412 605 420 601 422 592 c 256
- 423 586 418 581 415 575 c 256
- 411 568 407 558 407 548 c 256
- 407 515 430 484 470 484 c 256
- 509 484 533 516 533 551 c 257
- 533 590 504 629 449 629 c 256
- 382 629 340 589 340 522 c 256
- 340 482 363 440 411 418 c 257
- 416 431 l 257
-261 449 m 256
- 315 449 345 423 345 298 c 256
- 345 184 315 150 264 150 c 256
- 219 150 190 185 190 299 c 256
- 190 424 220 449 261 449 c 256
-495 297 m 256
+256 130 m 256
+NamedP: "horizontal bottom"
+ 374 130 495 184 495 297 c 259
+NamedP: "vertical right"
  495 414 376 469 273 469 c 256
- 162 469 30 416 30 299 c 256
- 30 187 133 130 256 130 c 256
- 374 130 495 184 495 297 c 256
-368 61 m 257
- 196 61 l 257
- 196 61 160 61 160 93 c 256
- 160 134 187 159 187 159 c 257
- 187 159 179 162 172 160 c 256
- 141 152 64 98 64 30 c 256
- 64 -42 127 -69 194 -69 c 257
- 362 -69 l 258
- 473 -69 487 -117 434 -157 c 256
- 405 -179 360 -201 288 -201 c 256
- 172 -201 86 -147 116 -38 c 257
- 85 -39 36 -61 31 -115 c 256
- 23 -197 157 -221 288 -221 c 257
- 440 -221 506 -129 516 -75 c 256
- 530 -1 493 61 368 61 c 257
+NamedP: "horizontal top"
+ 261 449 l 256
+NamedP: "horizontal top"
+ 315 449 345 423 345 298 c 259
+NamedP: "vertical right"
+ 345 184 315 150 264 150 c 256
+NamedP: "horizontal bottom"
+ 256 130 l 256
+NamedP: "horizontal bottom"
+  Spiro
+    256 130 o
+    370.301 148.149 o
+    459.326 203.556 o
+    495 297 o
+    460.398 393.516 o
+    376.235 450.445 o
+    273 469 o
+    261 449 o
+    306.74 437.655 o
+    335.242 392.637 o
+    345 298 o
+    335.352 209.029 o
+    307.631 163.009 o
+    264 150 o
+    0 0 z
+  EndSpiro
+  Named: "rightBowl"
+273 469 m 260
+NamedP: "horizontal top"
+ 162 469 30 416 30 299 c 263
+NamedP: "vertical left"
+ 30 187 133 130 256 130 c 260
+NamedP: "horizontal bottom"
+ 264 150 l 260
+NamedP: "horizontal bottom"
+ 219 150 190 185 190 299 c 263
+NamedP: "vertical left"
+ 190 424 220 449 261 449 c 260
+NamedP: "horizontal top"
+ 273 469 l 260
+NamedP: "horizontal top"
+  Spiro
+    273 469 o
+    160.775 450.962 o
+    68.2624 394.998 o
+    30 299 o
+    61.1998 205.483 o
+    142.841 148.888 o
+    256 130 o
+    264 150 o
+    224.848 163.268 o
+    199.167 209.77 o
+    190 299 o
+    199.278 393.378 o
+    224.402 437.914 o
+    261 449 o
+    0 0 z
+  EndSpiro
+  Named: "leftBowl"
+416 431 m 257
+NamedP: "to-base"
+ 378 452 360 490.952407917 360 523 c 259
+NamedP: "vertical"
+ 360 566 385 601.846919013 409.000000737 601.846919013 c 3
+NamedP: "horizontal"
+ 417.397981436 601.846919013 422 596.350585938 422 590 c 259
+NamedP: "drop top fixation"
+ 422 582.916992188 407 567.384776311 407 548 c 259
+NamedP: "drop top"
+ 407 515.071501607 430 484 470 484 c 259
+NamedP: "drop top"
+ 509 484 533 516 533 551 c 259
+NamedP: "drop top fixation"
+ 533 590 504 629 449 629 c 259
+NamedP: "horizontal"
+ 382 629 340 589 340 522 c 259
+NamedP: "vertical"
+ 340 482 363 440 411 418 c 257
+NamedP: "to-base"
+ 416 431 l 257
+NamedP: "to-base"
+  Named: "ear"
+172 160 m 256
+NamedP: "base"
+ 141.193540891 152.298385223 64 98 64 30 c 259
+NamedP: "vertical upper left"
+ 64 -42 127 -69 194 -69 c 259
+NamedP: "horizontal upper left"
+ 260 -69 362 -69 362 -69 c 259
+NamedP: "horizontal upper right"
+ 450.447724674 -69 464 -98 464 -113 c 259
+NamedP: "vertical right"
+ 464 -140 405 -201 288 -201 c 259
+NamedP: "horizontal bottom"
+ 186.719730276 -201 110.00000005 -158.444791495 110.00000005 -81.707450511 c 3
+NamedP: "vertical lower left"
+ 110.00000005 -68.9302241078 111 -56 116 -38 c 1
+NamedP: "end"
+ 116 -38 l 257
+NamedP: "end"
+ 82 -39 31 -65 31 -122 c 259
+NamedP: "vertical lower left"
+ 31 -197 157 -221 288 -221 c 259
+NamedP: "horizontal bottom"
+ 440 -221 519 -126.91796875 519 -47 c 259
+NamedP: "vertical right"
+ 519 26.3125 460 61 368 61 c 259
+NamedP: "horizontal upper right"
+ 301 61 263 61 196 61 c 259
+NamedP: "horizontal upper left"
+ 188 61 160 65 160 93 c 259
+NamedP: "vertical upper left"
+ 160 129 181 154 187 159 c 257
+NamedP: "base"
+ 183 161 180 162 172 160 c 256
+NamedP: "base"
+  Named: "loop"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'

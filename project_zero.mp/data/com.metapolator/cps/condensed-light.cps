@@ -459,3 +459,108 @@
         }
     }
 }
+@namespace(glyph#g) {
+    @namespace("penstroke#ear") {
+        @dictionary {
+            point.drop>center {
+                yTranslate: 5;
+            }
+            point.drop.fixation>center {
+                yTranslate: 15;
+            }
+            point.to-base>center {
+                yTranslate: -9;
+                xTranslate: -9;
+            }
+            point.vertical>center {
+                xTranslate: -20;
+            }
+        }
+        point.horizontal>left{
+            inTension: 1.1;
+        }
+        point.vertical>left{
+            outTension: 1;
+            inTension: 1;
+        }
+        point.vertical>right{
+            outTension: 1;
+            inTension: .9;
+        }
+        point.to-base>center {
+            out: _out + Vector 7 0;
+        }
+    }
+    @namespace("penstroke#leftBowl) {
+        point.horizontal.top > left {
+            outTension: 1.7;
+        }
+        point.horizontal.bottom > left {
+            inTension: 1.7;
+        }
+    }
+    @namespace("penstroke#rightBowl) {
+        point.horizontal.top > left {
+            inTension: 1.7;
+        }
+        point.horizontal.bottom > left {
+            outTension: 1.7;
+        }
+        
+    }
+    @namespace("penstroke#loop") {
+        @dictionary {
+            point.horizontal.upper.left > center {
+                xTranslate: 15;
+            }
+            point.end > center {
+                xTranslate: 20;
+                yTranslate: 50;
+            }
+            point.vertical.left.lower > right,
+            point.vertical.left.lower > left {
+                weightSummand: 3;
+            }
+            point.vertical.left.lower > center {
+                yTranslate: 10;
+            }
+        }
+        point.horizontal.upper.left > left,
+        point.horizontal.upper.left > right {
+            inTension: 1;
+        }
+        point.horizontal.bottom > left{
+            inTension: 1;
+            outTension: .55;
+        }
+        point.horizontal.bottom > right {
+            inTension: 1;
+            outTension: .65;
+        }
+        point.horizontal.upper.right > right {
+            outTension: .8;
+        }
+        point.horizontal.upper.right > left {
+            outTension: .8;
+        }
+        point.vertical.right > right {
+            outTension: 1.2;
+            inTension: 1;
+        }
+        point.vertical.right>left {
+            outTension: 1;
+        }
+        point.vertical.left.lower > right {
+            inTension: .8;
+        }
+        point.vertical.left.lower > left {
+            inTension: 1.8;
+        }
+        point.end > right {
+            inDir: deg 60;
+        }
+        point.end > left {
+            inTension: 1.5;
+        }
+    }
+}

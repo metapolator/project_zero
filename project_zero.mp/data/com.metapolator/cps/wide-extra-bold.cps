@@ -155,7 +155,7 @@
 }
 @namespace("glyph#dvKHA") {
     @namespace("penstroke#spiralBow") {
-        @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*";*/ {
+        @namespace("point:i(-1), point:i(-2), point:i(-3), point:i(-4), point:i(-5)") /*"*/ {
             @dictionary {
                 center {
                     spiralOffset: 26;
@@ -325,6 +325,31 @@
     @namespace("penstroke#cShape") {
         point.drop.fixation > right {
             inTension: 1.3;
+        }
+    }
+}
+
+@namespace(glyph#g) {
+    @namespace("penstroke#ear") {
+        @dictionary {
+            point.drop>center {
+                yTranslate: -10;
+            }
+            point.horizontal>center {
+                xTranslate: 5;
+            }
+            point.to-base>center {
+                yTranslate: 8;
+            }
+        }
+    }
+    @namespace("penstroke#loop") {
+        point.vertical.upper.left > left{
+            outTension: 1.1;
+        }
+        
+        point.vertical.lower.left > left{
+            inTension: 1.7;
         }
     }
 }

@@ -826,3 +826,99 @@
         }
     }
 }
+
+@namespace(glyph#g) {
+    @dictionary {
+        point > * {
+            extraX: 80;
+            xTranslate: 25 + extraX;
+        }
+    }
+    @namespace("penstroke#ear") {
+        @dictionary {
+            point > center {
+                earX: 30;
+            }
+            point.drop>center {
+                xTranslate: 30 + earX + extraX;
+                yTranslate: -10;
+            }
+            point.horizontal>center {
+                xTranslate: 10 + earX + extraX;
+            }
+            point.vertical>center {
+                xTranslate: -15 + earX + extraX;
+                yTranslate: 10;
+            }
+            
+            point.to-base>center {
+                yTranslate: 15;
+                xTranslate: 5 + earX + extraX;;
+            }
+        }
+        
+        point.horizontal>right{
+            inTension: 1.1;
+        }
+        
+        point.vertical>right{
+            outTension: 1.1;
+        }
+        point.to-base>center {
+            out: _out + Vector -15 0;
+        }
+        
+    }
+    
+    @namespace("penstroke#leftBowl, penstroke#rightBowl") {
+        @dictionary {
+            point.vertical.left > center {
+                xTranslate: -20 + extraX;
+            }
+            point.vertical.right > center {
+                xTranslate: 58 + extraX;
+            }
+        }
+    }
+    
+    @namespace("penstroke#leftBowl") {
+        point.horizontal.top > left {
+            outTension: 1.9;
+        }
+        point.vertical.left > left {
+            inTension: 1.7;
+            outTension: 1.7;
+        }
+        point.horizontal.bottom > left {
+            inTension: 1.5;
+        }
+    }
+    @namespace("penstroke#rightBowl") {
+        
+        point.horizontal.top > left {
+            inTension: 1.9;
+        }
+        point.vertical.right > left {
+            inTension: 1.7;
+            outTension: 1.4;
+        }
+        point.horizontal.bottom > left {
+            outTension: 1.8;
+        }
+    }
+    @namespace("penstroke#loop") {
+        @dictionary {
+            point.vertical.left.upper  > center,
+            point.vertical.left.lower  > center,
+            point.end > center {
+                xTranslate: -45 + extraX;
+            }
+            point.vertical.right  > center {
+                xTranslate: 75 + extraX;
+            }
+        }
+        point.vertical.upper.left > left{
+            outTension: 1.3;
+        }
+    }
+}
