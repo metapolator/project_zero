@@ -314,7 +314,7 @@
 @namespace("glyph#j") {
     @dictionary{
         point>center{
-            extraX: 120;
+            extraX: 110;
             xTranslate: extraX;
         }
     }

@@ -80,6 +80,7 @@
   , glyph#c penstroke#cShape point.horizontal.bottom > center
   , glyph#f penstroke#horizontalStroke point.left > center
   , glyph#g penstroke#ear point.to-base > center
+  , glyph#k penstroke#diagonal point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -130,6 +131,7 @@
 , glyph#c penstroke#cShape point.horizontal.bottom > center
 , glyph#f penstroke#horizontalStroke point.left > center
 , glyph#g penstroke#ear point.to-base > center
+, glyph#k penstroke#diagonal point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -684,6 +686,87 @@
         }
     }
 }
+
+@namespace("glyph#k") {
+    @dictionary {
+        point > * {
+            diagonal: glyph[S"#diagonal"];
+            stem: glyph[S"#stem"];
+            tail: glyph[S"#tail"];
+            topSerif: glyph[S"#topSerif"];
+            bottomSerif: glyph[S"#bottomSerif"];
+            topRightSerif: glyph[S"#topRightSerif"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+        }
+    }
+    @namespace("penstroke#topSerif, penstroke#bottomSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+    @namespace("penstroke#topRightSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: diagonal;
+            }
+        }
+    }
+    @namespace(penstroke#diagonal) {
+        /* fix diagonal .to-stem to the stem
+         * diagonal is a simple straight line, so we find the
+         * ratio between x and y and apply the change of x to that function
+         * to get the change of y
+         */
+        @dictionary {
+            point.to-base > center {
+                targetX: stem[S"point.top"]:center:on:x - _on:x;
+                _origin: penstroke[S"point.top"]:center:on;
+                _dir: _origin - _on;
+                slope: _dir:y/_dir:x;
+                yIntersept: slope * (0 - _origin:x) + _origin:y;
+                pinY: targetX * slope;
+                pinTo: Vector targetX pinY;
+            }
+
+        }
+    }
+    
+    @namespace(penstroke#tail) {
+        @namespace("point.to-diagonal") {
+            @import 'lib/linear-intersection.cps';
+            @dictionary {
+                left, right, center {
+                    _origin: penstroke[S"point.south-east"][this:type]:on;
+                    _other: diagonal[S"point.to-base > center"];
+                    __args: List _origin _on _other:_origin _other:on;
+                }
+                left, right {
+                    _on: (Polar length base:onDir ) + parent:center:on;
+                    _movement:   __intersection - parent:center:on;
+                }
+                center {
+                    _on: transform * skeleton:on;
+                }
+            }
+            left, right {
+                onDir: _movement:angle;
+                onLength: _movement:length;
+            }
+            right {
+                inDir: (on - parent:center:on):angle
+            }
+            left {
+                inDir: (parent:center:on - on):angle
+            }
+            center {
+                on: __intersection
+            }
+        }
+    }
+}
+
 @namespace(glyph#e) {
     @dictionary {
         point > * {

@@ -342,6 +342,14 @@
         }
     }
 }
+@namespace(glyph#k) {
+    @namespace(penstroke#tail) {
+        .terminal > left {
+            inTension: 1.15;
+        }
+    }
+}
+
 
 @namespace(glyph#s) {
     @namespace(penstroke#sShape) {

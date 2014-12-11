@@ -633,8 +633,32 @@
         }
     }
 }
-
-
+@namespace(glyph#k) {
+    @dictionary {
+        penstroke#bottomSerif point.right > center {
+            serifLength: 0;
+        }
+        point > center {
+            extraX: 77;
+            xTranslate: extraX;
+        }
+    }
+    @namespace(penstroke#tail) {
+        @dictionary {
+            center {
+                xTranslate: 50 + extraX;
+            }
+        }
+        .south-east > left {
+            onLength: 80;
+            inTension: Infinity;
+            outDir: (on - penstroke[S".to-diagonal left"]:on):angle;
+        }
+        .to-diagonal > left {
+            outTension: Infinity;
+        }
+    }
+}
 @namespace(glyph#e) {
     @dictionary {
         point > center {
@@ -930,7 +954,7 @@
                 xTranslate: -45 + extraX;
             }
             point.vertical.right  > center {
-                xTranslate: 75 + extraX;
+                xTranslate: 90 + extraX;
             }
         }
         point.vertical.upper.left > left{
