@@ -85,6 +85,7 @@
   , glyph#m penstroke#archRight point > center
   , glyph#p penstroke#bowl  point.connection > center
   , glyph#p penstroke#bowl  point.end > center
+  , glyph#r penstroke#drop point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -140,6 +141,7 @@
 , glyph#m penstroke#archRight point > center
 , glyph#p penstroke#bowl point.connection > center
 , glyph#p penstroke#bowl point.end > center
+, glyph#r penstroke#drop point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -1232,6 +1234,57 @@
         @dictionary {
             point > center {
                 referenceStroke: stem;
+            }
+        }
+    }
+}
+
+@namespace(glyph#r) {
+    @dictionary {
+        point > * {
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            bottomSerif: glyph[S"#bottomSerif"];
+            drop: glyph[S"#drop"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+        }
+    }
+    @namespace("penstroke#bottomSerif, penstroke#topSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+    @namespace("penstroke#drop") {
+        @dictionary {
+            point.connection > center {
+                target: stem[S".top right"]:on:x;
+                origin: penstroke[S".connection center"];
+                rightOffset: (Polar origin:parent:right:onLength origin:parent:right:onDir):x;
+                pinX: target - origin:_on:x - rightOffset;
+                pinTo: Vector pinX 0;
+            }
+        
+            /* fix the drop to the stroke*/
+            point > center {
+                drop: penstroke[S"point.drop.fixation"];
+                dropFixation: drop:skeleton:on;
+            }
+            point.drop > center {
+                /* this is where the point is without the here calculated movement
+                 * and without the xTranslate and yTranslate variables
+                 */
+                origin: scale * dropFixation;
+                /* target is where the point would be without uniformScaling,
+                 * using the standard scaling of the current setup
+                 * 
+                 * I don't use _translate here delibarately, so we can still
+                 * use it in following rules, without having this rule
+                 * compensating.
+                 */
+                target: _scale * dropFixation;
+                pinTo: target-origin;
             }
         }
     }

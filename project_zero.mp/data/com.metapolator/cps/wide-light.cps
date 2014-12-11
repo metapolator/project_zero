@@ -659,3 +659,25 @@
         outTension: .7;
     }
 }
+@namespace(glyph#r) {
+    @namespace(penstroke#drop) {
+        @dictionary{
+            point.connection > center {
+                yTranslate: -45;
+            }
+        }
+        point.connection > left{
+            outTension: .9;
+        }
+        point.connection > right{
+            outTension: 1.1;
+        }
+        point.drop.fixation > left {
+            inTension: 1.1;
+        }
+        point.drop.fixation > right {
+            inTension: 1.1;
+            outTension: .6;
+        }
+    }
+}

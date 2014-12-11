@@ -1039,3 +1039,25 @@
         }
     }
 }
+
+@namespace(glyph#r) {
+    @dictionary {
+        point > center {
+            extraX: 100;
+            xTranslate: extraX;
+        }
+    }
+    @namespace(penstroke#drop) {
+        @dictionary {
+            point.drop > center{
+                xTranslate: 75 + extraX;
+            }
+            point.connection > left{
+                weightSummand: 5;
+            }
+        }
+        point.connection > left{
+            outTension: .47;
+        }
+    }
+}

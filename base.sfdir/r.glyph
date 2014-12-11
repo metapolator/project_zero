@@ -3,28 +3,78 @@ Encoding: 962 114 962
 GlifName: r
 Width: 483
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
+SplineSet
+290 0 m 261
+ 290 20 l 261
+ 240 20 l 261
+ 240 211 l 261
+ 240 314 281 415 305 415 c 260
+ 334 415 325 346 372 327 c 260
+ 412 311 453 330 468 368 c 261
+ 483 405 465 449 427 464 c 261
+ 377 484 265 479 240 341 c 261
+ 240 460 l 261
+ 40 460 l 261
+ 40 440 l 261
+ 90 440 l 261
+ 90 20 l 261
+ 40 20 l 261
+ 40 0 l 261
+ 290 0 l 261
+EndSplineSet
 Fore
 SplineSet
-290 0 m 257
- 290 20 l 257
- 240 20 l 257
- 240 211 l 257
- 240 314 281 415 305 415 c 256
- 334 415 325 346 372 327 c 256
- 412 311 453 330 468 368 c 257
- 483 405 465 449 427 464 c 257
- 377 484 265 479 240 341 c 257
- 240 460 l 257
+240 211 m 1
+NamedP: "connection"
+ 240 314 281 415 305 415 c 259
+NamedP: "drop fixation"
+ 338 415 321 321 404 321 c 259
+NamedP: "drop terminal"
+ 439 321 473 353.887695312 473 396 c 259
+NamedP: "drop terminal"
+ 473 450 422.853515625 473 381 473 c 259
+NamedP: "drop fixation"
+ 338 473 225 465 225 211 c 1
+NamedP: "connection"
+ 240 211 l 1
+NamedP: "connection"
+  Named: "drop"
+240 10 m 1
+NamedP: "bottom"
+ 240 450 l 1
+NamedP: "top"
+ 90 450 l 1
+NamedP: "top"
+ 90 10 l 257
+NamedP: "bottom"
+ 240 10 l 1
+NamedP: "bottom"
+  Named: "stem"
+240 460 m 1
+NamedP: "top right no-serif"
  40 460 l 257
+NamedP: "top left serif"
  40 440 l 257
- 90 440 l 257
- 90 20 l 257
- 40 20 l 257
+NamedP: "top left serif"
+ 240 440 l 257
+NamedP: "top right no-serif"
+ 240 460 l 1
+NamedP: "top right no-serif"
+  Named: "topSerif"
+290 20 m 5
+NamedP: "bottom right serif"
+ 40 20 l 261
+NamedP: "bottom left serif"
  40 0 l 257
+NamedP: "bottom left serif"
  290 0 l 257
+NamedP: "bottom right serif"
+ 290 20 l 5
+NamedP: "bottom right serif"
+  Named: "bottomSerif"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
