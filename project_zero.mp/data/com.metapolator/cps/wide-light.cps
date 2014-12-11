@@ -643,3 +643,19 @@
         }
     }
 }
+
+@namespace(glyph#p) {
+    @namespace("penstroke#bowl") {
+        @dictionary{
+            point.connection > center {
+                yTranslate: -30;
+            }
+        }
+    }
+    point.connection > left {
+        outTension: .9;
+    }
+    point.connection > right {
+        outTension: .7;
+    }
+}

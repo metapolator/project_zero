@@ -3,31 +3,89 @@ Encoding: 938 112 938
 GlifName: p
 Width: 578
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
-Fore
 SplineSet
-220 414 m 257
- 220 460 l 257
- 20 460 l 257
- 20 440 l 257
- 70 440 l 257
- 70 -210 l 257
- 270 -210 l 257
- 270 -190 l 257
- 220 -190 l 257
- 220 46 l 257
- 243 -2 299 -22 349 -22 c 256
- 452 -22 548 62 548 230 c 257
- 548 390 450 472 349 472 c 256
- 299 472 249 464 220 414 c 257
+220 414 m 261
+ 220 460 l 261
+ 20 460 l 261
+ 20 440 l 261
+ 70 440 l 261
+ 70 -210 l 261
+ 270 -210 l 261
+ 270 -190 l 261
+ 220 -190 l 261
+ 220 46 l 261
+ 243 -2 299 -22 349 -22 c 260
+ 452 -22 548 62 548 230 c 261
+ 548 390 450 472 349 472 c 260
+ 299 472 249 464 220 414 c 261
 220 241 m 257
  220 385 233 432 297 432 c 257
  362 432 396 386 396 231 c 257
  396 76 344 22 287 22 c 256
  264 22 239 38 220 76 c 257
  220 241 l 257
+EndSplineSet
+Fore
+SplineSet
+220 460 m 257
+NamedP: "no-serif right top"
+ 20 460 l 257
+NamedP: "serif left top"
+ 20 440 l 257
+NamedP: "serif left top"
+ 220 440 l 257
+NamedP: "no-serif right top"
+ 220 460 l 257
+NamedP: "no-serif right top"
+  Named: "topSerif"
+270 -189 m 257
+NamedP: "serif right bottom"
+ 70 -189 l 257
+NamedP: "no-serif left bottom"
+ 70 -210 l 257
+NamedP: "no-serif left bottom"
+ 270 -210 l 257
+NamedP: "serif right bottom"
+ 270 -189 l 257
+NamedP: "serif right bottom"
+  Named: "bottomSerif"
+220 -199 m 257
+NamedP: "bottom"
+ 220 450 l 257
+NamedP: "top"
+ 70 450 l 257
+NamedP: "top"
+ 70 -199 l 257
+NamedP: "bottom"
+ 220 -199 l 257
+NamedP: "bottom"
+  Named: "stem"
+220 258 m 1
+NamedP: "connection"
+ 220 415 252.989257812 433 298 433 c 259
+NamedP: "horizontal top"
+ 364 433 396 377 396 231 c 259
+NamedP: "vertical"
+ 396 76 344 22 287 22 c 259
+NamedP: "horizontal bottom"
+ 242.98828125 22 215 71 200 137 c 9
+NamedP: "end"
+ 196 104 l 257
+NamedP: "end"
+ 217 22 265.994140625 -22 349 -22 c 259
+NamedP: "horizontal bottom"
+ 452 -22 548 62 548 230 c 259
+NamedP: "vertical"
+ 548 390 450 472 349 472 c 263
+NamedP: "horizontal top"
+ 237 472 196 433 196 258 c 257
+NamedP: "connection"
+ 220 258 l 1
+NamedP: "connection"
+  Named: "bowl"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'

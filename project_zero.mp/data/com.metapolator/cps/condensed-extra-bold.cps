@@ -1008,3 +1008,34 @@
         }
     }
 }
+
+@namespace(glyph#p) {
+    @dictionary {
+        point > center {
+            extraX: 100;
+            xTranslate: extraX;
+        }
+    }
+    @namespace(penstroke#bowl) {
+        @dictionary{
+            point.horizontal.top > center {
+                xTranslate: 45 + extraX;
+            }
+            point.vertical > center {
+                xTranslate: 48 + extraX;
+            }
+            point.horizontal.bottom > center{
+                xTranslate: 45 + extraX;
+            }
+            
+        }
+        point.horizontal.top > right {
+            inTension: 3;
+            outTension: 2.5;
+        }
+        point.horizontal.bottom > right {
+            outTension: 3;
+            inTension: 2.5;
+        }
+    }
+}
