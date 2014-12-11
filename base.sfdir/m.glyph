@@ -3,54 +3,199 @@ Encoding: 904 109 904
 GlifName: m
 Width: 960
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
+SplineSet
+880 10 m 261
+NamedP: "bottom"
+ 880 278 l 262
+NamedP: "vertical"
+ 880 405 819 471 702 471 c 263
+NamedP: "horizontal"
+ 623 471 543 433 521 365 c 261
+NamedP: "connection"
+ 535 341 l 261
+NamedP: "connection"
+ 554 400 605 431 646 431 c 263
+NamedP: "horizontal"
+ 700 431 730 398 730 300 c 262
+NamedP: "vertical"
+ 730 10 l 261
+NamedP: "bottom"
+ 880 10 l 261
+NamedP: "bottom"
+  Named: "archRight"
+930 20 m 257
+NamedP: "serif bottom right"
+ 680 20 l 257
+NamedP: "serif bottom left"
+ 680 0 l 257
+NamedP: "serif bottom left"
+ 930 0 l 257
+NamedP: "serif bottom right"
+ 930 20 l 257
+NamedP: "serif bottom right"
+  Named: "bottomRightSerif"
+290 20 m 257
+NamedP: "serif bottom right"
+ 40 20 l 257
+NamedP: "serif bottom left"
+ 40 0 l 257
+NamedP: "serif bottom left"
+ 290 0 l 257
+NamedP: "serif bottom right"
+ 290 20 l 257
+NamedP: "serif bottom right"
+  Named: "bottomLeftSerif"
+565 9 m 257
+NamedP: "bottom"
+ 565 278 l 258
+NamedP: "vertical"
+ 565 415 524 471 387 471 c 259
+NamedP: "horizontal"
+ 308 471 241 428 230 387 c 257
+NamedP: "connection"
+ 230 351 l 257
+NamedP: "connection"
+ 252 404 290 431 331 431 c 259
+NamedP: "horizopntal"
+ 385 431 415 398 415 300 c 258
+NamedP: "vertical"
+ 415 9 l 257
+NamedP: "bottom"
+ 565 9 l 257
+NamedP: "bottom"
+  Named: "archLeft"
+615 20 m 257
+NamedP: "serif bottom right"
+ 355 20 l 257
+NamedP: "serif bottom left"
+ 355 0 l 257
+NamedP: "serif bottom left"
+ 615 0 l 257
+NamedP: "serif bottom right"
+ 615 20 l 257
+NamedP: "serif bottom right"
+  Named: "bottomCenterSerif"
+240 10 m 257
+NamedP: "bottom"
+ 240 450 l 257
+NamedP: "top"
+ 90 450 l 257
+NamedP: "top"
+ 90 10 l 257
+NamedP: "bottom"
+ 240 10 l 257
+NamedP: "bottom"
+  Named: "stem"
+240 460 m 257
+NamedP: "no-serif top right"
+ 40 460 l 257
+NamedP: "serif top left"
+ 40 440 l 257
+NamedP: "serif top left"
+ 240 440 l 257
+NamedP: "no-serif top right"
+ 240 460 l 257
+NamedP: "no-serif top right"
+  Named: "topSerif"
+EndSplineSet
 Fore
 SplineSet
-535 341 m 257
- 554 400 605 431 646 431 c 256
- 700 431 730 398 730 300 c 258
- 730 14 l 257
- 880 14 l 257
- 880 278 l 258
- 880 405 819 471 702 471 c 256
- 623 471 543 433 521 365 c 257
- 535 341 l 257
-930 20 m 257
- 680 20 l 257
- 680 0 l 257
- 930 0 l 257
- 930 20 l 257
-290 20 m 257
- 40 20 l 257
- 40 0 l 257
- 290 0 l 257
- 290 20 l 257
-230 351 m 257
- 252 404 290 431 331 431 c 256
- 385 431 415 398 415 300 c 258
- 415 14 l 257
- 565 14 l 257
+880 10 m 261
+NamedP: "bottom"
+ 880 278 l 262
+NamedP: "vertical"
+ 880 405 819 471 702 471 c 263
+NamedP: "horizontal"
+ 623 471 543 433 521 365 c 261
+NamedP: "connection"
+ 535 341 l 261
+NamedP: "connection"
+ 554 400 605 431 646 431 c 263
+NamedP: "horizontal"
+ 700 431 730 398 730 300 c 262
+NamedP: "vertical"
+ 730 10 l 261
+NamedP: "bottom"
+ 880 10 l 261
+NamedP: "bottom"
+  Named: "archRight"
+565 9 m 257
+NamedP: "bottom"
  565 278 l 258
- 565 415 524 471 387 471 c 256
+NamedP: "vertical"
+ 565 415 524 471 387 471 c 259
+NamedP: "horizontal"
  308 471 241 428 230 387 c 257
+NamedP: "connection"
  230 351 l 257
+NamedP: "connection"
+ 252 404 290 431 331 431 c 259
+NamedP: "horizopntal"
+ 385 431 415 398 415 300 c 258
+NamedP: "vertical"
+ 415 9 l 257
+NamedP: "bottom"
+ 565 9 l 257
+NamedP: "bottom"
+  Named: "archLeft"
+930 20 m 257
+NamedP: "serif bottom right"
+ 680 20 l 257
+NamedP: "serif bottom left"
+ 680 0 l 257
+NamedP: "serif bottom left"
+ 930 0 l 257
+NamedP: "serif bottom right"
+ 930 20 l 257
+NamedP: "serif bottom right"
+  Named: "bottomRightSerif"
+290 20 m 257
+NamedP: "serif bottom right"
+ 40 20 l 257
+NamedP: "serif bottom left"
+ 40 0 l 257
+NamedP: "serif bottom left"
+ 290 0 l 257
+NamedP: "serif bottom right"
+ 290 20 l 257
+NamedP: "serif bottom right"
+  Named: "bottomLeftSerif"
 615 20 m 257
+NamedP: "serif bottom right"
  355 20 l 257
+NamedP: "serif bottom left"
  355 0 l 257
+NamedP: "serif bottom left"
  615 0 l 257
+NamedP: "serif bottom right"
  615 20 l 257
-240 451 m 257
- 90 451 l 257
- 90 1 l 257
- 240 1 l 257
- 240 451 l 257
+NamedP: "serif bottom right"
+  Named: "bottomCenterSerif"
+240 10 m 257
+NamedP: "bottom"
+ 240 450 l 257
+NamedP: "top"
+ 90 450 l 257
+NamedP: "top"
+ 90 10 l 257
+NamedP: "bottom"
+ 240 10 l 257
+NamedP: "bottom"
+  Named: "stem"
 240 460 m 257
+NamedP: "no-serif top right"
  40 460 l 257
+NamedP: "serif top left"
  40 440 l 257
+NamedP: "serif top left"
  240 440 l 257
+NamedP: "no-serif top right"
  240 460 l 257
+NamedP: "no-serif top right"
+  Named: "topSerif"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'

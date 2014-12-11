@@ -81,6 +81,8 @@
   , glyph#f penstroke#horizontalStroke point.left > center
   , glyph#g penstroke#ear point.to-base > center
   , glyph#k penstroke#diagonal point > center
+  , glyph#m penstroke#archLeft point > center
+  , glyph#m penstroke#archRight point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -132,6 +134,8 @@
 , glyph#f penstroke#horizontalStroke point.left > center
 , glyph#g penstroke#ear point.to-base > center
 , glyph#k penstroke#diagonal point > center
+, glyph#m penstroke#archLeft point > center
+, glyph#m penstroke#archRight point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -686,6 +690,47 @@
         }
     }
 }
+
+@namespace("glyph#m") {
+    @dictionary {
+        point > * {
+            archLeft: glyph[S"#archLeft"];
+            archRight: glyph[S"#archRight"];
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            bottomLeftSerif: glyph[S"#bottomLeftSerif"];
+            bottomCenterSerif: glyph[S"#bottomLeftSerif"];
+            bottomRightSerif: glyph[S"#bottomRightSerif"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+        }
+        
+        penstroke#topSerif point > center,
+        penstroke#bottomLeftSerif point > center {
+            referenceStroke: stem;
+        }
+        penstroke#bottomRightSerif point > center {
+            referenceStroke: archRight;
+        }
+        penstroke#bottomCenterSerif point > center {
+            referenceStroke: archLeft;
+        }
+        penstroke#archLeft point.connection > center,
+        penstroke#archRight point.connection > center {
+            origin: _on:x;
+            pinTo: Vector (target - origin) 0;
+        }
+        penstroke#archLeft point.connection > center {
+            target: stem[S".top right"]:on:x;
+        }
+        penstroke#archRight point.connection > center {
+            targetType: "right";
+            _target: archLeft[S".vertical"][targetType]:on:x - (Polar parent:left:onLength parent:left:onDir):x;
+            target: _target;
+        }
+    }
+}
+
+
 
 @namespace("glyph#k") {
     @dictionary {

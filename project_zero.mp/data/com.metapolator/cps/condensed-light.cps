@@ -342,6 +342,16 @@
         }
     }
 }
+
+
+@namespace(glyph#m) {
+    @namespace("penstroke#archLeft") {
+        point.vertical > right{
+            outTension: 1.3;
+        }
+    }
+}
+
 @namespace(glyph#k) {
     @namespace(penstroke#tail) {
         .terminal > left {

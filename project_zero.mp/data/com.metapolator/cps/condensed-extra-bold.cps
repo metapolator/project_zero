@@ -633,6 +633,44 @@
         }
     }
 }
+
+@namespace(glyph#m) {
+    @dictionary {
+        point > center {
+            extraX: 77;
+            xTranslate: extraX;
+        }
+        /* move all points, we need to make it wider here*/
+        penstroke#archLeft point > center,
+        penstroke#archRight point > center {
+            origin: penstroke[S".connection > center"]:_on:x;
+            pinTo: Vector (target - origin) 0;
+            target: penstroke[S".connection > center"]:target;
+        }
+        penstroke#archRight point > center {
+            target: penstroke[S".connection > center"]:target;
+        }
+        penstroke#archRight point.connection > center{
+            target: _target - 8;
+        }
+    }
+    penstroke#archLeft point:i(-2) > left {
+        inTension: 2.3;
+        outTension: 1;
+    }
+    penstroke#archRight point:i(-2) > left {
+        inTension: 2.3;
+        outTension: 1;
+    }
+    @dictionary{
+        penstroke#bottomLeftSerif point.serif.bottom.right > center,
+        penstroke#bottomRightSerif point.serif.bottom.left > center,
+        penstroke#bottomCenterSerif point.serif.bottom > center {
+            serifLength: 0;
+        }
+    }
+}
+
 @namespace(glyph#l) {
     @dictionary {
         point > center {

@@ -362,7 +362,7 @@
         inTension: 1.5;
     }
 }
-@namespace(glyph#h, glyph#n) {
+@namespace(glyph#h, glyph#n, glyph#m) {
     @namespace("penstroke#arch") {
         point:i(-1) > right,  point:i(-1) > left {
             inTension: 1.6;
@@ -373,6 +373,35 @@
         }
     }
 }
+@namespace(glyph#m) {
+    @namespace("penstroke#archLeft") {
+        point.connection > right,  point.connection > left {
+            inTension: 1.6;
+            inDirIntrinsic: deg -27;
+        }
+        point.vertical > right{
+            outTension: 1;
+        }
+    }
+   @namespace("penstroke#archRight") {
+        point.connection > right,  point.connection > left {
+            inTension: 1.2;
+        }
+        @dictionary{
+            point.connection > center {
+                targetType: "center";
+            }
+        }
+        point.connection > center {
+            in: _in + Vector 0 -5;
+        }
+        point.vertical > right {
+            outTension: .9;
+        }
+   }
+}
+
+
 @namespace(glyph#e) {
     @namespace("penstroke#stroke") {
         point:i(1) > left {

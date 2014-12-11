@@ -261,6 +261,15 @@
     }
 }
 
+@namespace(glyph#m) {
+    @dictionary {
+            /* move all points, we want to make it wider here*/
+        penstroke#archRight point.connection > center{
+            target: _target - 10;
+        }
+    }
+}
+
 @namespace(glyph#s) {
     @dictionary {
         point > * {
