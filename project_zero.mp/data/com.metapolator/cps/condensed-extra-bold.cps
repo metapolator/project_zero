@@ -633,6 +633,14 @@
         }
     }
 }
+@namespace(glyph#l) {
+    @dictionary {
+        point > center {
+            extraX: 77;
+            xTranslate: extraX;
+        }
+    }
+}
 @namespace(glyph#k) {
     @dictionary {
         penstroke#bottomSerif point.right > center {

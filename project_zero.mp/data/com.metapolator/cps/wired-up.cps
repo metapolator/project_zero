@@ -767,6 +767,24 @@
     }
 }
 
+@namespace("glyph#l") {
+    @dictionary {
+        point > * {
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            bottomSerif: glyph[S"#bottomSerif"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+        }
+    }
+    @namespace("penstroke#topSerif, penstroke#bottomSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+}
+
 @namespace(glyph#e) {
     @dictionary {
         point > * {

@@ -3,26 +3,44 @@ Encoding: 894 108 894
 GlifName: l
 Width: 320
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
 Fore
 SplineSet
-230 670 m 257
+240 670 m 261
+NamedP: "no-serif right top"
  40 670 l 257
+NamedP: "serif left top"
  40 650 l 257
- 230 650 l 257
- 230 670 l 257
-290 20 m 257
- 40 20 l 257
+NamedP: "serif left top"
+ 240 650 l 257
+NamedP: "no-serif right top"
+ 240 670 l 261
+NamedP: "no-serif right top"
+  Named: "topSerif"
+290 21 m 257
+NamedP: "serif right bottom"
+ 40 21 l 257
+NamedP: "serif left bottom"
  40 0 l 257
+NamedP: "serif left bottom"
  290 0 l 257
- 290 20 l 257
-240 670 m 257
- 90 670 l 257
- 90 1 l 257
- 240 1 l 257
- 240 670 l 257
+NamedP: "serif right bottom"
+ 290 21 l 257
+NamedP: "serif right bottom"
+  Named: "bottomSerif"
+240 11 m 257
+NamedP: "bottom"
+ 240 660 l 257
+NamedP: "top"
+ 90 660 l 257
+NamedP: "top"
+ 90 11 l 257
+NamedP: "bottom"
+ 240 11 l 257
+NamedP: "bottom"
+  Named: "stem"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'
