@@ -85,6 +85,8 @@
   , glyph#m penstroke#archRight point > center
   , glyph#p penstroke#bowl  point.connection > center
   , glyph#p penstroke#bowl  point.end > center
+  , glyph#q penstroke#bowl  point.connection > center
+  , glyph#q penstroke#bowl  point.end > center
   , glyph#r penstroke#drop point > center
     {
         pinTo: Vector 0 0;
@@ -141,6 +143,8 @@
 , glyph#m penstroke#archRight point > center
 , glyph#p penstroke#bowl point.connection > center
 , glyph#p penstroke#bowl point.end > center
+, glyph#q penstroke#bowl point.connection > center
+, glyph#q penstroke#bowl point.end > center
 , glyph#r penstroke#drop point > center
 {
     on: _on + pinTo;
@@ -1221,6 +1225,43 @@
                 origin: penstroke[S".connection center"];
                 rightOffset: (Polar origin:parent:right:onLength origin:parent:right:onDir):x;
                 pinX: target - origin:_on:x - rightOffset;
+                pinTo: Vector pinX 0;
+            }
+            point:i(1) > center,
+            point:i(-2)>center {
+                pinTo: Vector (penstroke:children[0]:center:pinX / 2) 0;
+            }
+        }
+    
+    }
+    @namespace("penstroke#bottomSerif, penstroke#topSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+}
+
+@namespace("glyph#q") {
+    @dictionary {
+        point > * {
+            stem: glyph[S"#stem"];
+            topSerif: glyph[S"#topSerif"];
+            bottomSerif: glyph[S"#bottomSerif"];
+            bowl: glyph[S"#bowl"];
+            stemWidth: 2 * stem:children[0]:right:onLength;
+        }
+    }
+    @namespace(penstroke#bowl) {
+        /* fix the bowl .connection and .end to the stem, where .connection right touches it */
+        @dictionary {
+            point.connection > center,
+            point.end > center {
+                target: stem[S".bottom left"]:on:x;
+                origin: penstroke[S".connection center"];
+                leftOffset: (Polar origin:parent:left:onLength origin:parent:left:onDir):x;
+                pinX: target - origin:_on:x - leftOffset;
                 pinTo: Vector pinX 0;
             }
             point:i(1) > center,

@@ -3,10 +3,9 @@ Encoding: 951 113 951
 GlifName: q
 Width: 578
 VWidth: 0
-Flags: W
+Flags: HWO
 LayerCount: 2
 Back
-Fore
 SplineSet
 358 241 m 257
  358 76 l 257
@@ -30,6 +29,65 @@ SplineSet
  558 460 l 257
  358 460 l 257
  358 414 l 257
+EndSplineSet
+Fore
+SplineSet
+558 460 m 257
+NamedP: "serif right top"
+ 358 460 l 257
+NamedP: "no-serif left top"
+ 358 440 l 257
+NamedP: "no-serif left top"
+ 558 440 l 257
+NamedP: "serif right top"
+ 558 460 l 257
+NamedP: "serif right top"
+  Named: "topSerif"
+558 -189 m 257
+NamedP: "serif right bottom"
+ 308 -189 l 257
+NamedP: "serif left bottom"
+ 308 -210 l 257
+NamedP: "serif left bottom"
+ 558 -210 l 257
+NamedP: "serif right bottom"
+ 558 -189 l 257
+NamedP: "serif right bottom"
+  Named: "bottomSerif"
+508 -199 m 257
+NamedP: "bottom"
+ 508 450 l 257
+NamedP: "top"
+ 358 450 l 257
+NamedP: "top"
+ 358 -199 l 257
+NamedP: "bottom"
+ 508 -199 l 257
+NamedP: "bottom"
+  Named: "stem"
+382 258 m 257
+NamedP: "connection"
+ 382 435 336 472 229 472 c 259
+NamedP: "horizontal top"
+ 128 472 30 390 30 230 c 259
+NamedP: "vertical"
+ 30 62 126 -22 229 -22 c 259
+NamedP: "horizontal bottom"
+ 312.005859375 -22 361 22 382 104 c 257
+NamedP: "end"
+ 378 137 l 17
+NamedP: "end"
+ 363 71 335.01171875 22 291 22 c 259
+NamedP: "horizontal bottom"
+ 234 22 182 76 182 231 c 259
+NamedP: "vertical"
+ 182 377 214 433 280 433 c 259
+NamedP: "horizontal top"
+ 327.010742188 433 358 415 358 258 c 1
+NamedP: "connection"
+ 382 258 l 257
+NamedP: "connection"
+  Named: "bowl"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'

@@ -1040,6 +1040,37 @@
     }
 }
 
+@namespace(glyph#q) {
+    @dictionary {
+        point > center {
+            extraX: 100;
+            xTranslate: extraX;
+        }
+    }
+    @namespace(penstroke#bowl) {
+        @dictionary{
+            point.horizontal.top > center {
+                xTranslate: -45 + extraX;
+            }
+            point.vertical > center {
+                xTranslate: -48 + extraX;
+            }
+            point.horizontal.bottom > center{
+                xTranslate: -45 + extraX;
+            }
+            
+        }
+        point.horizontal.top > left {
+            inTension: 3;
+            outTension: 2.5;
+        }
+        _point.horizontal.bottom > left {
+            outTension: 3;
+            inTension: 2.5;
+        }
+    }
+}
+
 @namespace(glyph#r) {
     @dictionary {
         point > center {
