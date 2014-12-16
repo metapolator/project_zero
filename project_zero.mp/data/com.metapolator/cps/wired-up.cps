@@ -88,6 +88,7 @@
   , glyph#q penstroke#bowl  point.connection > center
   , glyph#q penstroke#bowl  point.end > center
   , glyph#r penstroke#drop point > center
+  , glyph#t penstroke#horizontalStroke point.crossbar > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -146,6 +147,7 @@
 , glyph#q penstroke#bowl point.connection > center
 , glyph#q penstroke#bowl point.end > center
 , glyph#r penstroke#drop point > center
+, glyph#t penstroke#horizontalStroke point.crossbar > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -153,7 +155,7 @@
 }
 
 /** position the vertical connection as seen in dvI between bar and sShape
- * 
+ *
  * this requires:
  *    - the stroke to move must be named "verticalConnection"
  *    - verticalTargetStroke set to a penstroke element
@@ -190,7 +192,7 @@
         in: Vector (target:x - rightIntrinsic:x) _in:y;
         out: Vector (target:x - rightIntrinsic:x) _out:y;
     }
-    
+
     /* end inside of the verticalTargetStroke
      * these values will probably need change in the masters
      */
@@ -204,7 +206,7 @@
 }
 
 /** uniform scale **
- * this makes the penstroke independed from the rest of 
+ * this makes the penstroke independed from the rest of
  * the width/weigth setup by scaling it uniformly
  * use 1 for the original size
  */
@@ -274,16 +276,16 @@
 
     /* We'll need to set `referenceStroke` to the actual penstroke that
      * is the reference stroke of the serif.
-     * 
+     *
      */
     point.serif.top > center, point.no-serif.top > center {
         target: referenceStroke[S"point.top"];
     }
-    
+
     point.serif.bottom > center, point.no-serif.bottom > center {
         target: referenceStroke[S"point.bottom"];
     }
-    
+
     point.serif.left > center, point.no-serif.left > center {
         moveX: target:left:on:x - origin - _serifLength;
     }
@@ -344,7 +346,7 @@
                 pinTo: target - penstroke:children[-1]:center:_on;
             }
         }
-        
+
     }
     @namespace(penstroke#appendix) {
         @dictionary {
@@ -355,12 +357,12 @@
                 pinTo: target - reference:center:_on - rightIntrinsic;
             }
         }
-        
+
         point:i(1) > center {
             /* point:i(0) is positioned relative from here */
             in: on + Polar 25 deg 250;
         }
-        
+
         point:i(0)>center{
             on: penstroke:children[1]:center:on + Polar 128 deg 235;
             out: penstroke:children[1]:center:on + Polar 90 deg 242;
@@ -377,7 +379,7 @@
             bar: glyph[S"#bar"];
         }
     }
-    
+
     @namespace("penstroke#upperBow") {
         @dictionary{
             point:i(-1) center {
@@ -399,7 +401,7 @@
                 target: spiralBow:children[-5]:right:on:x;
                 reference: penstroke:children[0]:center:_on:x;
                 pinTo: Vector (target - reference + stemFitComepensation) 0;
-                /* There is no correct rule for this. I'm picking just 
+                /* There is no correct rule for this. I'm picking just
                  * something that is roughly right.
                  */
                 stemFitComepensation: parent:right:onLength/3
@@ -479,7 +481,7 @@
             /* point:i(1) is positioned relative from here */
             out: on + Polar 25 deg 300;
         }
-        
+
         point:i(1) > center{
             on: penstroke:children[0]:center:on + Polar 128 deg 325;
             in: penstroke:children[0]:center:on + Polar 90 deg 316;
@@ -596,7 +598,7 @@
                 origin: scale * fixture;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -633,7 +635,7 @@
                 pinTo: Vector (penstroke:children[0]:center:pinX / 2) 0;
             }
         }
-    
+
     }
     @namespace(penstroke#topSerif) {
         @dictionary {
@@ -713,7 +715,7 @@
             bottomRightSerif: glyph[S"#bottomRightSerif"];
             stemWidth: 2 * stem:children[0]:right:onLength;
         }
-        
+
         penstroke#topSerif point > center,
         penstroke#bottomLeftSerif point > center {
             referenceStroke: stem;
@@ -787,7 +789,7 @@
 
         }
     }
-    
+
     @namespace(penstroke#tail) {
         @namespace("point.to-diagonal") {
             @import 'lib/linear-intersection.cps';
@@ -881,14 +883,14 @@
     @namespace("penstroke#sShape") {
         @dictionary {
             /* fix the custom scaled bowl to the sShape*/
-            
+
             point.drop.top > center {
                 dropFixation: sShape[S"point.drop.top.fixation"]:skeleton:on
             }
             point.drop.bottom > center {
                 dropFixation: sShape[S"point.drop.bottom.fixation"]:skeleton:on
             }
-            
+
             point.drop > center {
                 /* this is where the point is without the here calculated movement
                  * and without the xTranslate and yTranslate variables
@@ -896,7 +898,7 @@
                 origin: scale * dropFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -927,7 +929,7 @@
                 origin: scale * dotFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -964,7 +966,7 @@
                 origin: scale * dotFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -988,7 +990,7 @@
                 origin: scale * dropFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -1039,7 +1041,7 @@
             spot.lower.connection {
                 target: bowl[S".connection"]:right:on
             }
-            
+
             spot.bottom, spot.bridge {
                 _on: skeleton:on;
             }
@@ -1051,8 +1053,8 @@
                 _xRef: stem[S".bottom"]:center:on;
                 _yRef: _xRef;
             }
-            
-            
+
+
         }
         spot.top, spot.connection {
             on: target;
@@ -1099,7 +1101,7 @@
                 origin: scale * dropFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -1144,7 +1146,7 @@
                 origin: scale * dropFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -1194,7 +1196,7 @@
                 origin: scale * dropFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -1232,7 +1234,7 @@
                 pinTo: Vector (penstroke:children[0]:center:pinX / 2) 0;
             }
         }
-    
+
     }
     @namespace("penstroke#bottomSerif, penstroke#topSerif") {
         @dictionary {
@@ -1269,7 +1271,7 @@
                 pinTo: Vector (penstroke:children[0]:center:pinX / 2) 0;
             }
         }
-    
+
     }
     @namespace("penstroke#bottomSerif, penstroke#topSerif") {
         @dictionary {
@@ -1306,7 +1308,7 @@
                 pinX: target - origin:_on:x - rightOffset;
                 pinTo: Vector pinX 0;
             }
-        
+
             /* fix the drop to the stroke*/
             point > center {
                 drop: penstroke[S"point.drop.fixation"];
@@ -1319,7 +1321,7 @@
                 origin: scale * dropFixation;
                 /* target is where the point would be without uniformScaling,
                  * using the standard scaling of the current setup
-                 * 
+                 *
                  * I don't use _translate here delibarately, so we can still
                  * use it in following rules, without having this rule
                  * compensating.
@@ -1327,6 +1329,49 @@
                 target: _scale * dropFixation;
                 pinTo: target-origin;
             }
+        }
+    }
+}
+
+@namespace(glyph#t) {
+    @dictionary {
+        point > * , spot{
+            stem: glyph[S"#stem"];
+            horizontalStroke: glyph[S"#horizontalStroke"];
+            inStroke: glyph[S"#inStroke"];
+            stemWidth: 2 * stem[S"point.top > right"]:onLength;
+        }
+    }
+    @namespace("penstroke#horizontalStroke") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+
+    @namespace("outline#inStroke") {
+        @dictionary {
+            spot {
+                _bottomXReference: stem[S"point.top"];
+                _bottomY: horizontalStroke[S"point.crossbar right"]:on:y;
+                _on:
+            }
+        }
+        spot {
+            on: skeleton:on;
+        }
+        spot.bottom.left {
+            on: Vector _bottomXReference:left:on:x _bottomY;
+        }
+        spot.bottom.right {
+            on: Vector _bottomXReference:right:on:x _bottomY;
+        }
+        spot.top.right {
+            on: Vector parent[S"spot.bottom.right"]:on:x skeleton:on:y;
+        }
+        spot.top.left {
+            on: ((skeleton:on - parent[S"spot.top.right"]:skeleton:on) * weightFactor) + parent[S"spot.top.right"]:on;
         }
     }
 }

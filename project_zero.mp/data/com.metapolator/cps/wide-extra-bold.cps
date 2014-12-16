@@ -74,7 +74,7 @@
 /********************
  * compensate for each skeleton/weight setup *
  *                           *****************/
- 
+
 @namespace("glyph#dvA") {
     @namespace(penstroke#lowerBow) {
         @namespace("point:i(0), point:i(1)") {/* " ;*/
@@ -105,27 +105,27 @@
                 xTranslate: 36;
                 yTranslate: 8.4;
             }
-        
+
             point:i(1) center {
                 xTranslate: 0;
                 yTranslate: 8.4;
             }
-            
+
             point:i(2) center {
                 xTranslate: 12;
                 yTranslate: 0;
             }
-            
+
             point:i(-3) center {
                 xTranslate: 18;
                 yTranslate: -6;
             }
-            
+
             point:i(-2) center {
                 xTranslate: 18;
                 yTranslate: 0;
             }
-            
+
             point:i(-1) center {
                 xTranslate: -36;
                 yTranslate: 18;
@@ -138,7 +138,7 @@
         point:i(-3) right {
             inTension: 1.7;
         }
-        
+
         point:i(-1) center {
             in: on + Polar 15 deg 342;
         }
@@ -208,7 +208,7 @@
     }
     @namespace(penstroke#leftBar) {
         @dictionary {
-            /* move this 0 center x to upperBow -1 right x */ 
+            /* move this 0 center x to upperBow -1 right x */
             point:i(0) > center {
                 targetPoint: upperBow:children[-1];
                 target: targetPoint:center:_on:x;
@@ -278,7 +278,7 @@
         }
     }
     @namespace(penstroke#sShape) {
-    
+
         @dictionary {
             point.horizontal.top > center {
                 xTranslate: 15 + extraX;
@@ -365,9 +365,17 @@
         point.vertical.upper.left > left{
             outTension: 1.1;
         }
-        
+
         point.vertical.lower.left > left{
             inTension: 1.7;
+        }
+    }
+}
+
+@namespace(glyph#t) {
+    @namespace(penstroke#stem) {
+        point.terminal > right {
+            outTension: 3;
         }
     }
 }

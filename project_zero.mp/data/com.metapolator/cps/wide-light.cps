@@ -72,7 +72,7 @@
             inTension: .9;
         }
     }
-    
+
     @namespace(penstroke#lowerBow) {
         /* the drop */
         @namespace("point:i(0), point:i(1)") {/* " ; */
@@ -118,12 +118,12 @@
                 xTranslate: 19.5;
                 yTranslate: 0;
             }
-            
+
             point:i(-2) center {
                 xTranslate: 44.2;
                 yTranslate: 0;
             }
-            
+
             point:i(-1) center {
                 xTranslate: -26;
                 yTranslate: 20;
@@ -142,7 +142,7 @@
                 offset: Vector 0 3;
             }
         }
-        
+
         point:i(0) left {
             inDir: deg 190;
         }
@@ -186,7 +186,7 @@
                 yTranslate: -45;
             }
         }
-        
+
         point:i(1) > left {
             outTension: 2;
             outDirIntrinsic: deg -5;
@@ -275,17 +275,17 @@
             point:i(1) > center{
                 xTranslate: -50;
             }
-            
+
             point:i(0) > left,
             point:i(0) > right{
                 weightSummand: 1;
             }
         }
-        
+
         point:i(0) > right{
             outDirIntrinsic: parent:left:outDirIntrinsic;
         }
-        
+
         point:i(0) > left{
             outDirIntrinsic: deg 15;
             outTension: .8;
@@ -296,7 +296,7 @@
         point:i(1) > right {
             inTension: 1;
         }
-    
+
         point:i(-4)>right {
             outTension: .70;
         }
@@ -317,7 +317,7 @@
             point:i(0) > center {
                 yTranslate: 30;
             }
-            
+
             point:i(0) > left,
             point:i(0) > right{
                 weightSummand: 1
@@ -335,7 +335,7 @@
         point:i(-1) > right {
             inTension: 1;
         }
-        
+
     }
 }
 @namespace(glyph#d) {
@@ -420,7 +420,7 @@
                 xTranslate: 10;
                 yTranslate: -8;
             }
-            
+
             point.drop.top > center {
                 yTranslate: -5;
             }
@@ -463,11 +463,11 @@
             outTension: 1.7;
             inTension: 1.5;
         }
-        
+
         point.connection > left {
             outTension: 1.5;
         }
-        
+
         @dictionary {
             point.to-stem > *{
                 yTranslate: -30;
@@ -695,6 +695,25 @@
         point.drop.fixation > right {
             inTension: 1.1;
             outTension: .6;
+        }
+    }
+}
+
+@namespace(glyph#t) {
+    @namespace("outline#inStroke") {
+        spot.bottom.left {
+            inDir: deg 230;
+        }
+        spot.top.left {
+            outDir: deg 268;
+        }
+    }
+    @namespace("penstroke#stem") {
+        point.horizontal > right {
+            outTension: .6;
+        }
+        point.horizontal > left {
+            outTension: .8;
         }
     }
 }
