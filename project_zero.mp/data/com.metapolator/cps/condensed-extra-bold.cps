@@ -1120,3 +1120,31 @@
         }
     }
 }
+
+@namespace(glyph#u) {
+    @dictionary {
+        point > center {
+            extraX: 77;
+            xTranslate: extraX;
+        }
+    }
+    @namespace("penstroke#stem") {
+        @dictionary {
+            /* move all points, we want to make it wider here*/
+            point > center {
+                xTranslate: 62 + extraX;
+            }
+        }
+    }
+    @namespace("penstroke#arch") {
+        point.horizontal > right {
+            inTension: 2.3;
+            outTension: 2.3;
+        }
+    }
+    @dictionary{
+        penstroke#topRightSerif point.serif.top.left > center {
+            serifLength: 0;
+        }
+    }
+}

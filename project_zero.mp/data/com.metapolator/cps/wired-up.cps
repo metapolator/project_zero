@@ -89,6 +89,8 @@
   , glyph#q penstroke#bowl  point.end > center
   , glyph#r penstroke#drop point > center
   , glyph#t penstroke#horizontalStroke point.crossbar > center
+  , glyph#u penstroke#arch point.to-stem > center
+  , glyph#u penstroke#arch point.horizontal > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -148,6 +150,8 @@
 , glyph#q penstroke#bowl point.end > center
 , glyph#r penstroke#drop point > center
 , glyph#t penstroke#horizontalStroke point.crossbar > center
+, glyph#u penstroke#arch point.to-stem > center
+, glyph#u penstroke#arch point.horizontal > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -1372,6 +1376,43 @@
         }
         spot.top.left {
             on: ((skeleton:on - parent[S"spot.top.right"]:skeleton:on) * weightFactor) + parent[S"spot.top.right"]:on;
+        }
+    }
+}
+
+@namespace(glyph#u) {
+    @dictionary {
+        point > * , spot{
+            stem: glyph[S"#stem"];
+            arch: glyph[S"#arch"];
+            stemWidth: 2 * stem[S"point.top > right"]:onLength;
+        }
+    }
+    @namespace("penstroke#topLeftSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: arch;
+            }
+        }
+    }
+    @namespace("penstroke#topRightSerif, penstroke#bottomSerif") {
+        @dictionary {
+            point > center {
+                referenceStroke: stem;
+            }
+        }
+    }
+    @namespace("penstroke#arch") {
+        @dictionary {
+            point.to-stem > center {
+                targetX: stem[S".bottom left"]:on:x;
+                originX: _on:x;
+                pinTo: Vector (targetX - originX) 0;
+                yTranslate: 15;
+            }
+            point.horizontal > center {
+                _pinTo: Vector (penstroke[S".to-stem center"]:pinTo:x / 2) 0
+            }
         }
     }
 }

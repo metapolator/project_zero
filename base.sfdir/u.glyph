@@ -3,30 +3,74 @@ Encoding: 1000 117 1000
 GlifName: u
 Width: 615
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
 Fore
 SplineSet
-385 0 m 257
- 585 0 l 257
- 585 20 l 257
- 535 20 l 257
- 535 460 l 257
- 335 460 l 257
- 335 440 l 257
- 385 440 l 257
- 385 89 l 257
- 362 49 329 29 294 29 c 256
- 240 29 210 62 210 160 c 258
- 210 460 l 257
+210 460 m 257
+NamedP: "top right no-serif"
  10 460 l 257
+NamedP: "top left serif"
  10 440 l 257
- 60 440 l 257
+NamedP: "top left serif"
+ 210 440 l 1
+NamedP: "top right no-serif"
+ 210 460 l 257
+NamedP: "top right no-serif"
+  Named: "topLeftSerif"
+385 89 m 261
+NamedP: "to-stem"
+ 362 49 329 29 294 29 c 259
+NamedP: "horizontal"
+ 240 29 210 62.0322265625 210 160 c 258
+NamedP: "vertical"
+ 210 450 l 1
+NamedP: "top"
+ 60 450 l 1
+NamedP: "top"
  60 182 l 258
- 60 55 121 -11 238 -11 c 256
+NamedP: "vertical"
+ 60 55.0947265625 121 -11 238 -11 c 259
+NamedP: "horizontal"
  304 -11 361 19 385 53 c 257
+NamedP: "to-stem"
+ 385 89 l 261
+NamedP: "to-stem"
+  Named: "arch"
+535 460 m 257
+NamedP: "top right no-serif"
+ 335 460 l 257
+NamedP: "top left serif"
+ 335 440 l 257
+NamedP: "top left serif"
+ 535 440 l 257
+NamedP: "top right no-serif"
+ 535 460 l 257
+NamedP: "top right no-serif"
+  Named: "topRightSerif"
+585 20 m 257
+NamedP: "bottom right serif"
+ 385 20 l 257
+NamedP: "bottom left no-serif"
  385 0 l 257
+NamedP: "bottom left no-serif"
+ 585 0 l 257
+NamedP: "bottom right serif"
+ 585 20 l 257
+NamedP: "bottom right serif"
+  Named: "bottomSerif"
+535 10 m 1
+NamedP: "bottom"
+ 535 450 l 1
+NamedP: "top"
+ 385 450 l 1
+NamedP: "top"
+ 385 10 l 1
+NamedP: "bottom"
+ 535 10 l 1
+NamedP: "bottom"
+  Named: "stem"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'

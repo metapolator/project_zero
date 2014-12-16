@@ -717,3 +717,15 @@
         }
     }
 }
+
+@namespace(glyph#u) {
+    @namespace("penstroke#arch") {
+        point.to-stem > right,  point.to-stem > left {
+            outTension: 1.6;
+            outDirIntrinsic: deg -20;
+        }
+        point.horizontal > right, point.horizontal > left {
+            inTension: .9;
+        }
+    }
+}

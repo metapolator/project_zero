@@ -625,3 +625,11 @@
         }
     }
 }
+
+@namespace(glyph#u) {
+    @namespace("penstroke#arch") {
+        point.to-stem > right{
+            outTension: 1.6;
+        }
+    }
+}
