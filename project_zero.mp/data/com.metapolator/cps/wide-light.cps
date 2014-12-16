@@ -58,7 +58,8 @@
 
 @dictionary {
     point > * {
-        serifLength: stemWidth * 3;
+        _serifOffset: 0;
+        serifLength: stemWidth * 3 + _serifOffset;
     }
 }
 
@@ -726,6 +727,23 @@
         }
         point.horizontal > right, point.horizontal > left {
             inTension: .9;
+        }
+    }
+}
+
+@namespace(glyph#v) {
+    @dictionary {
+        penstroke#topLeftSerif point.left > center {
+            _serifOffset: -15;
+        }
+        penstroke#topLeftSerif point.right > center {
+            _serifOffset: 15;
+        }
+        penstroke#topRightSerif point.left > center {
+            _serifOffset: 20;
+        }
+        penstroke#topRightSerif point.right > center {
+            _serifOffset: -20;
         }
     }
 }

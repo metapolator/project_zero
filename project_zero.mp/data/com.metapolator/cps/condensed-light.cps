@@ -59,7 +59,8 @@
 
 @dictionary {
     point > * {
-        serifLength: stemWidth * 1.4;
+        _serifOffset: 0;
+        serifLength: stemWidth * 1.4 + _serifOffset;
     }
 }
 
@@ -630,6 +631,23 @@
     @namespace("penstroke#arch") {
         point.to-stem > right{
             outTension: 1.6;
+        }
+    }
+}
+
+@namespace(glyph#v) {
+    @dictionary {
+        penstroke#topLeftSerif point.left > center {
+            _serifOffset: -5;
+        }
+        penstroke#topLeftSerif point.right > center {
+            _serifOffset: 5;
+        }
+        penstroke#topRightSerif point.left > center {
+            _serifOffset: 7;
+        }
+        penstroke#topRightSerif point.right > center {
+            _serifOffset: -7;
         }
     }
 }

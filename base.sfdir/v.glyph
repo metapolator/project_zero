@@ -3,32 +3,64 @@ Encoding: 1010 118 1010
 GlifName: v
 Width: 536
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
 Fore
 SplineSet
+272 0 m 1
+NamedP: "bottom left"
+ 290 0 l 1
+NamedP: "bottom right"
+ 282 39 l 1
+NamedP: "top"
+ 272 0 l 1
+NamedP: "bottom left"
+  Named: "O:fillVertex"
 526 460 m 257
+NamedP: "top right serif"
  376 460 l 257
+NamedP: "top left serif"
  376 440 l 257
+NamedP: "top left serif"
  526 440 l 257
+NamedP: "top right serif"
  526 460 l 257
+NamedP: "top right serif"
+  Named: "topRightSerif"
 270 460 m 257
+NamedP: "top right serif"
  10 460 l 257
+NamedP: "top left serif"
  10 440 l 257
+NamedP: "top left serif"
  270 440 l 257
+NamedP: "top right serif"
  270 460 l 257
+NamedP: "top right serif"
+  Named: "topLeftSerif"
 290 0 m 257
- 486 460 l 257
- 464 460 l 257
+NamedP: "bottom"
+ 482 450 l 257
+NamedP: "top"
+ 460 450 l 257
+NamedP: "top"
  275 19 l 257
- 272 0 l 257
+NamedP: "bottom"
  290 0 l 257
-44 452 m 257
+NamedP: "bottom"
+  Named: "upDiagonalOne"
+350 166 m 257
+NamedP: "bottom"
+ 215 450 l 257
+NamedP: "top"
+ 45 450 l 257
+NamedP: "top"
  272 0 l 257
- 349 169 l 257
- 214 452 l 257
- 44 452 l 257
+NamedP: "bottom"
+ 350 166 l 257
+NamedP: "bottom"
+  Named: "downDiagonalOne"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'

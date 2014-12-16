@@ -91,6 +91,8 @@
   , glyph#t penstroke#horizontalStroke point.crossbar > center
   , glyph#u penstroke#arch point.to-stem > center
   , glyph#u penstroke#arch point.horizontal > center
+  , glyph#v penstroke#downDiagonalOne point > center
+  , glyph#v penstroke#upDiagonalOne point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -152,6 +154,8 @@
 , glyph#t penstroke#horizontalStroke point.crossbar > center
 , glyph#u penstroke#arch point.to-stem > center
 , glyph#u penstroke#arch point.horizontal > center
+, glyph#v penstroke#downDiagonalOne point > center
+, glyph#v penstroke#upDiagonalOne point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -1413,6 +1417,109 @@
             point.horizontal > center {
                 _pinTo: Vector (penstroke[S".to-stem center"]:pinTo:x / 2) 0
             }
+        }
+    }
+}
+@namespace(glyph#v) {
+    @dictionary {
+        point > * , spot{
+            downDiagonalOne: glyph[S"#downDiagonalOne"];
+            upDiagonalOne: glyph[S"#upDiagonalOne"];
+            stemWidth: 1.3 * downDiagonalOne[S"point.bottom > right"]:onLength;
+        }
+        penstroke#topLeftSerif center {
+            referenceStroke: downDiagonalOne;
+        }
+        penstroke#topRightSerif center {
+            referenceStroke: upDiagonalOne;
+        }
+    }
+    @namespace(penstroke#downDiagonalOne) {
+        /* the length should be so that, by keeping the slope of the line
+         * .bottom left touches 0 (lets use a variable `_zeroY` for that;
+         * so we can change it to hit some overshoot if we want to)
+         */
+        @import 'lib/linear-intersection.cps';
+        @dictionary {
+            point > *, spot {
+                _zeroY: 0;
+            }
+            .bottom center {
+                _yTarget: -(Polar parent:left:onLength parent:left:onDir):y + _zeroY;
+                /* hit the horizontal line at _yTarget */
+                __args: List penstroke[S".top center"]:_on _on (Vector 0 _yTarget) (Vector 1 _yTarget);
+                pinTo: __intersection - _on;
+            }
+            left, right{
+                _on: (Polar length base:onDir ) + parent:center:_on;
+            }
+            .bottom left,  .bottom right {
+                _origin: penstroke[S".top"][this:type]:_on;
+                _slope: upDiagonalOne[S".bottom center"]:_slope;
+                __args: List
+                        _origin
+                        _on
+                        /* create a fictive line from the center with the exported _slope of upDiagonalOne */
+                        parent:center:_on
+                        Vector (parent:center:_on:x + 100) (parent:center:_on:y + 100 * _slope);
+                _movement:   __intersection - parent:center:_on;
+            }
+        }
+        right, left{
+            inTension: Infinity;
+            outTension: Infinity;
+        }
+
+        .bottom > left, .bottom > right {
+            onDir: _movement:angle;
+            onLength: _movement:length;
+            inDir: (on - parent:center:on):angle
+        }
+    }
+    @namespace(penstroke#upDiagonalOne) {
+        @import 'lib/linear-intersection.cps';
+        @dictionary{
+            point > *, spot {
+                _zeroY: 0;
+            }
+            .bottom center {
+                /* move this point so that the slope stays the same, but
+                 * the right bottom point hits _zeroY
+                 */
+                _yTarget: -(Polar parent:right:onLength parent:right:onDir):y + _zeroY;
+                /* hit the horizontal line at _yTarget */
+                _origin: penstroke[S".top center"]:_on;
+                __args: List _origin _on (Vector 0 _yTarget) (Vector 1 _yTarget);
+                /* export the slope of upDiagonalOne */
+                _slope: __slopeA;
+                pinTo: __intersection - _on + penstroke[S".top center"]:pinTo;
+            }
+            .top center {
+                /* move the distance from downDiagonalOne .bottom center y
+                 * to the intersection with this line. Thus downDiagonalOne
+                 * will end at the skeleton of this line
+                 * NOTE: the result is used in .bottom center as well
+                 */
+                _origin: penstroke[S".bottom center"]:_on;
+                _other: downDiagonalOne[S".bottom center"]:on;
+                __args: List _origin _on (Vector 0 _other:y) (Vector 1 _other:y);
+                pinTo: Vector (_other - __intersection):x 0;
+            }
+        }
+    }
+    @namespace(outline#fillVertex) {
+        spot {
+            inTension: Infinity;
+            outTension: Infinity;
+        }
+        spot.top {
+            on: upDiagonalOne[S".bottom center"]:on;
+        }
+        spot.bottom.left {
+            on: downDiagonalOne[S".bottom left"]:on;
+        }
+        spot.bottom.right {
+            on: upDiagonalOne[S".bottom right"]:on;
         }
     }
 }

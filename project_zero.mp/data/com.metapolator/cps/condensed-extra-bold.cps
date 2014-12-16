@@ -1148,3 +1148,15 @@
         }
     }
 }
+@namespace(glyph#v) {
+    @dictionary {
+        point > center {
+            extraX: 100;
+            xTranslate: extraX;
+        }
+        penstroke#topLeftSerif point.right > center,
+        penstroke#topRightSerif point.left > center {
+            serifLength: 0;
+        }
+    }
+}
