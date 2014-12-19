@@ -1148,15 +1148,34 @@
         }
     }
 }
-@namespace(glyph#v) {
+@namespace(glyph#v, glyph#w) {
     @dictionary {
         point > center {
             extraX: 100;
             xTranslate: extraX;
         }
         penstroke#topLeftSerif point.right > center,
+        penstroke#topCenterSerif point.right > center,
         penstroke#topRightSerif point.left > center {
             serifLength: 0;
+        }
+    }
+}
+@namespace(glyph#v) {
+    @dictionary {
+        penstroke#downDiagonalOne .bottom center{
+            _downDiagonalLengthFactor: -.5;
+        }
+    }
+}
+@namespace(glyph#w) {
+    @dictionary {
+        penstroke#upDiagonalOne .top center {
+            _centerConnectionLengthFactor: 1.1;
+        }
+        penstroke#downDiagonalOne .bottom center,
+        penstroke#downDiagonalTwo .bottom center {
+            _downDiagonalLengthFactor: -.35;
         }
     }
 }

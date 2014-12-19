@@ -3,10 +3,9 @@ Encoding: 1011 119 1011
 GlifName: w
 Width: 830
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
-Fore
 SplineSet
 570 0 m 257
  591 0 l 257
@@ -35,6 +34,108 @@ SplineSet
  281 0 l 257
  412 331 l 257
  570 0 l 257
+EndSplineSet
+Fore
+SplineSet
+588 0 m 1
+NamedP: "bottom right"
+ 645 196 l 1
+NamedP: "top right"
+ 506 132 l 1
+NamedP: "top left"
+ 567 0 l 1
+NamedP: "bottom left"
+ 588 0 l 1
+NamedP: "bottom right"
+  Named: "O:bottomFillTwo"
+281 0 m 1
+NamedP: "bottom right"
+ 338 196 l 1
+NamedP: "top right"
+ 199 132 l 1
+NamedP: "top left"
+ 260 0 l 1
+NamedP: "bottom left"
+ 281 0 l 1
+NamedP: "bottom right"
+  Named: "O:bottomFillOne"
+281 0 m 257
+NamedP: "bottom"
+ 421 354 l 257
+NamedP: "top"
+ 400 362 l 257
+NamedP: "top"
+ 260 8 l 257
+NamedP: "bottom"
+ 281 0 l 257
+NamedP: "bottom"
+  Named: "upDiagonalOne"
+338 196 m 257
+NamedP: "bottom"
+ 222 450 l 257
+NamedP: "top"
+ 82 386 l 257
+NamedP: "top"
+ 199 132 l 257
+NamedP: "bottom"
+ 338 196 l 257
+NamedP: "bottom"
+  Named: "downDiagonalOne"
+645 196 m 257
+NamedP: "bottom"
+ 529 450 l 257
+NamedP: "top"
+ 389 386 l 257
+NamedP: "top"
+ 506 132 l 257
+NamedP: "bottom"
+ 645 196 l 257
+NamedP: "bottom"
+  Named: "downDiagonalTwo"
+588 0 m 257
+NamedP: "bottom"
+ 763 442 l 257
+NamedP: "top"
+ 742 450 l 257
+NamedP: "top"
+ 567 8 l 257
+NamedP: "bottom"
+ 588 0 l 257
+NamedP: "bottom"
+  Named: "upDiagonalTwo"
+580 460 m 257
+NamedP: "top right serif"
+ 330 460 l 257
+NamedP: "top left serif"
+ 330 440 l 257
+NamedP: "top left serif"
+ 580 440 l 257
+NamedP: "top right serif"
+ 580 460 l 257
+NamedP: "top right serif"
+  Named: "topCenterSerif"
+820 460 m 257
+NamedP: "top right serif"
+ 657 460 l 257
+NamedP: "top left serif"
+ 657 440 l 257
+NamedP: "top left serif"
+ 820 440 l 257
+NamedP: "top right serif"
+ 820 460 l 257
+NamedP: "top right serif"
+  Named: "topRightSerif"
+280 460 m 257
+NamedP: "top right serif"
+ 10 460 l 257
+NamedP: "top left serif"
+ 10 440 l 257
+NamedP: "top left serif"
+ 280 440 l 257
+NamedP: "top right serif"
+ 280 460 l 257
+NamedP: "top right serif"
+  Named: "topLeftSerif"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.guides'

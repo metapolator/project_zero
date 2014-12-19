@@ -731,12 +731,18 @@
     }
 }
 
-@namespace(glyph#v) {
+@namespace(glyph#v, glyph#w) {
     @dictionary {
-        penstroke#topLeftSerif point.left > center {
+        point > center {
+            extraX: -100;
+            xTranslate: extraX;
+        }
+        penstroke#topLeftSerif point.left > center,
+        penstroke#topCenterSerif point.left > center {
             _serifOffset: -15;
         }
-        penstroke#topLeftSerif point.right > center {
+        penstroke#topLeftSerif point.right > center,
+        penstroke#topCenterSerif point.left > center {
             _serifOffset: 15;
         }
         penstroke#topRightSerif point.left > center {
@@ -747,3 +753,22 @@
         }
     }
 }
+@namespace(glyph#v) {
+    @dictionary {
+        penstroke#downDiagonalOne .bottom center{
+            _downDiagonalLengthFactor: .88;
+        }
+    }
+}
+@namespace(glyph#w) {
+    @dictionary {
+        penstroke#upDiagonalOne .top center {
+            _centerConnectionLengthFactor: .85;
+        }
+        penstroke#downDiagonalOne .bottom center,
+        penstroke#downDiagonalTwo .bottom center {
+            _downDiagonalLengthFactor: .88;
+        }
+    }
+}
+

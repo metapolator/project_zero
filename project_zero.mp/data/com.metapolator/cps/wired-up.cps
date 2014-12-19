@@ -21,6 +21,10 @@
         glyph: parent:parent:parent;
         penstroke: parent:parent;
     }
+    penstroke{
+        master: parent:parent;
+        glyph: parent;
+    }
     spot {
         master: parent:parent:parent;
         glyph: parent:parent;
@@ -93,6 +97,10 @@
   , glyph#u penstroke#arch point.horizontal > center
   , glyph#v penstroke#downDiagonalOne point > center
   , glyph#v penstroke#upDiagonalOne point > center
+  , glyph#w penstroke#downDiagonalOne point > center
+  , glyph#w penstroke#upDiagonalOne point > center
+  , glyph#w penstroke#downDiagonalTwo point > center
+  , glyph#w penstroke#upDiagonalTwo point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -156,6 +164,10 @@
 , glyph#u penstroke#arch point.horizontal > center
 , glyph#v penstroke#downDiagonalOne point > center
 , glyph#v penstroke#upDiagonalOne point > center
+, glyph#w penstroke#downDiagonalOne point > center
+, glyph#w penstroke#upDiagonalOne point > center
+, glyph#w penstroke#downDiagonalTwo point > center
+, glyph#w penstroke#upDiagonalTwo point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -1420,106 +1432,198 @@
         }
     }
 }
-@namespace(glyph#v) {
+
+
+/* shared between v and w*/
+@namespace(glyph#v, glyph#w) {
     @dictionary {
-        point > * , spot{
+        left, right {
+            _on: (Polar length base:onDir ) + parent:center:_on;
+        }
+        * {
+            _zeroY: 0;
+            _unitY:  glyph[S"penstroke#topLeftSerif center"]:_on:y;
+        }
+        penstroke, point > * , spot{
             downDiagonalOne: glyph[S"#downDiagonalOne"];
+            downDiagonalTwo: glyph[S"#downDiagonalTwo"];
             upDiagonalOne: glyph[S"#upDiagonalOne"];
+            upDiagonalTwo: glyph[S"#upDiagonalTwo"];
+            /* share this with glyph#v*/
             stemWidth: 1.3 * downDiagonalOne[S"point.bottom > right"]:onLength;
         }
         penstroke#topLeftSerif center {
             referenceStroke: downDiagonalOne;
         }
-        penstroke#topRightSerif center {
-            referenceStroke: upDiagonalOne;
+        penstroke#topCenterSerif center {
+            referenceStroke: downDiagonalTwo;
         }
     }
-    @namespace(penstroke#downDiagonalOne) {
-        /* the length should be so that, by keeping the slope of the line
-         * .bottom left touches 0 (lets use a variable `_zeroY` for that;
-         * so we can change it to hit some overshoot if we want to)
-         */
-        @import 'lib/linear-intersection.cps';
+    right, left, spot {
+        inTension: Infinity;
+        outTension: Infinity;
+    }
+    /* upDiagonalOne .left edge shall hit downDiagonalOne .bottom right:on */
+    /* downDiagonalTwo .left edge shall hit upDiagonalOne .top right:on */
+    /* upDiagonalTwo .left edge shall hit downDiagonalTwo .bottom right:on */
+    @import 'lib/linear-intersection.cps';
+    @dictionary {
+        penstroke {
+            _travelX: 0;
+        }
+        penstroke#upDiagonalOne {
+            _target: downDiagonalOne[S".bottom right"]:on;
+        }
+        penstroke#downDiagonalTwo {
+            _target: upDiagonalOne[S".top left"]:on;
+        }
+        penstroke#upDiagonalTwo {
+            _target: downDiagonalTwo[S".bottom right"]:on;
+        }
+        penstroke#upDiagonalOne, penstroke#downDiagonalTwo, penstroke#upDiagonalTwo {
+            _edge1: this[S".top left"]:_on;
+            _edge2: this[S".bottom left"]:_on;
+            __args: List _edge1 _edge2 (Vector 0 _target:y) (Vector 1 _target:y);
+            _travelX: (_target - __intersection):x;
+        }
+    }
+    @namespace("penstroke#upDiagonalOne
+              , penstroke#downDiagonalTwo
+              , penstroke#upDiagonalTwo") {
         @dictionary {
-            point > *, spot {
-                _zeroY: 0;
-            }
-            .bottom center {
-                _yTarget: -(Polar parent:left:onLength parent:left:onDir):y + _zeroY;
-                /* hit the horizontal line at _yTarget */
-                __args: List penstroke[S".top center"]:_on _on (Vector 0 _yTarget) (Vector 1 _yTarget);
-                pinTo: __intersection - _on;
-            }
-            left, right{
-                _on: (Polar length base:onDir ) + parent:center:_on;
-            }
-            .bottom left,  .bottom right {
-                _origin: penstroke[S".top"][this:type]:_on;
-                _slope: upDiagonalOne[S".bottom center"]:_slope;
-                __args: List
-                        _origin
-                        _on
-                        /* create a fictive line from the center with the exported _slope of upDiagonalOne */
-                        parent:center:_on
-                        Vector (parent:center:_on:x + 100) (parent:center:_on:y + 100 * _slope);
-                _movement:   __intersection - parent:center:_on;
+            .top center, .bottom center {
+                pinTo: Vector penstroke:_travelX 0;
             }
         }
-        right, left{
-            inTension: Infinity;
-            outTension: Infinity;
-        }
+    }
 
-        .bottom > left, .bottom > right {
+    /* the length of both downDiagonal* strokes is most defining for
+     * the final shape of the w. It would be nice to define it in a manner
+     * like "the length is so that .bottom left touches 0" However, that
+     * would not reflect the intend of the original design, which has a
+     * more spiky appearance.
+     * The next simplest thing is a custom length adding variable for each
+     * master (in units) which let's us control the spikyness very well.
+     * We could try to add min/max restrictions:
+     * max: left y bottom hits _zeroY
+     * min: where the intersection on the y axis between down .bottom
+     * left and up.bottom right is >= 0
+     */
+    @namespace("penstroke#downDiagonalOne
+              , penstroke#downDiagonalTwo") {
+        @dictionary {
+            .bottom center {
+                _edge1: penstroke[S".top left"]:_on;
+                _edge2: parent:left:_on;
+                __args: List _edge1 _edge2 (Vector 0 _zeroY) (Vector 1 _zeroY);
+                _downDiagonalLengthFactor: 1;
+                pinTo: ((__intersection - _edge2) * _downDiagonalLengthFactor) + Vector penstroke:_travelX 0;
+            }
+            /* this shall hit _unitY --the centerline of the serifs--
+             * with its right top edge point*/
+            .top center {
+                _edge1: penstroke[S".bottom right"]:_on;
+                _edge2: parent:right:_on;
+                __args: List _edge1 _edge2 (Vector 0 _unitY) (Vector 1 _unitY);
+                pinTo: (__intersection - _edge2) + Vector penstroke:_travelX 0;
+            }
+            /* close the gap to the serif by repositioning .top left */
+            .top left {
+                _edge1: penstroke[S".bottom left"]:on;
+                _edge2: (Polar length base:onDir ) + parent:center:on;
+                __args: List _edge1 _edge2 (Vector 0 _unitY) (Vector 1 _unitY);
+                _movement: __intersection - parent:center:on;
+            }
+        }
+        .top left {
             onDir: _movement:angle;
             onLength: _movement:length;
-            inDir: (on - parent:center:on):angle
         }
     }
-    @namespace(penstroke#upDiagonalOne) {
-        @import 'lib/linear-intersection.cps';
-        @dictionary{
-            point > *, spot {
-                _zeroY: 0;
-            }
+    @namespace("penstroke#upDiagonalOne, penstroke#upDiagonalTwo") {
+        @dictionary {
             .bottom center {
                 /* move this point so that the slope stays the same, but
                  * the right bottom point hits _zeroY
                  */
-                _yTarget: -(Polar parent:right:onLength parent:right:onDir):y + _zeroY;
-                /* hit the horizontal line at _yTarget */
-                _origin: penstroke[S".top center"]:_on;
-                __args: List _origin _on (Vector 0 _yTarget) (Vector 1 _yTarget);
-                /* export the slope of upDiagonalOne */
-                _slope: __slopeA;
-                pinTo: __intersection - _on + penstroke[S".top center"]:pinTo;
-            }
-            .top center {
-                /* move the distance from downDiagonalOne .bottom center y
-                 * to the intersection with this line. Thus downDiagonalOne
-                 * will end at the skeleton of this line
-                 * NOTE: the result is used in .bottom center as well
-                 */
-                _origin: penstroke[S".bottom center"]:_on;
-                _other: downDiagonalOne[S".bottom center"]:on;
-                __args: List _origin _on (Vector 0 _other:y) (Vector 1 _other:y);
-                pinTo: Vector (_other - __intersection):x 0;
+                _edge1: penstroke[S".top right"]:_on;
+                _edge2: parent:right:_on;
+                __args: List _edge1 _edge2 (Vector 0 _zeroY) (Vector 1 _zeroY);
+                pinTo: (__intersection - _edge2) + Vector penstroke:_travelX 0;
             }
         }
     }
-    @namespace(outline#fillVertex) {
-        spot {
-            inTension: Infinity;
-            outTension: Infinity;
+    @dictionary {
+        outline#bottomFillOne spot {
+            _down: downDiagonalOne;
+            _up: upDiagonalOne;
         }
-        spot.top {
-            on: upDiagonalOne[S".bottom center"]:on;
+        outline#bottomFillTwo spot {
+            _down: downDiagonalTwo;
+            _up: upDiagonalTwo;
         }
-        spot.bottom.left {
-            on: downDiagonalOne[S".bottom left"]:on;
+    }
+    @namespace("outline#bottomFillOne, outline#bottomFillTwo") {
+        spot.top.right {
+            on: _down[S".bottom right"]:on;
         }
         spot.bottom.right {
-            on: upDiagonalOne[S".bottom right"]:on;
+            on: _up[S".bottom right"]:on;
+        }
+        spot.top.left {
+            on: _down[S".bottom left"]:on;
+        }
+        /* the intersection of _zeroY and the left edge of _down */
+        @dictionary {
+            spot.bottom.left {
+                _edge1: _down[S".top left"]:on;
+                _edge2: _down[S".bottom left"]:on;
+                __args: List _edge1 _edge2 (Vector 0 _zeroY) (Vector 1 _zeroY);
+            }
+        }
+        spot.bottom.left {
+            on: __intersection;
+        }
+    }
+}
+@namespace("glyph#v penstroke#upDiagonalOne, glyph#w penstroke#upDiagonalTwo") {
+    @dictionary {
+        /* this shall hit _unitY --the centerline of the serifs--
+        * with its left top edge point
+        */
+        .top center {
+            _edge1: penstroke[S".bottom left"]:_on;
+            _edge2: parent:left:_on;
+            __args: List _edge1 _edge2 (Vector 0 _unitY) (Vector 1 _unitY);
+            pinTo: (__intersection - _edge2) + Vector penstroke:_travelX 0;
+        }
+    }
+}
+@namespace(glyph#v) {
+    @dictionary{
+        penstroke#topRightSerif center {
+            referenceStroke: upDiagonalOne;
+        }
+    }
+}
+@namespace(glyph#w) {
+    @dictionary{
+        penstroke#topRightSerif center {
+            referenceStroke: upDiagonalTwo;
+        }
+    }
+    /* Use this with the w not with the v.
+     * This is to have control over the length of the penstroke
+     * it affects the width of the glyph and the size of the triangle
+     * between the two v shapes.
+     */
+    @namespace(penstroke#upDiagonalOne) {
+        @dictionary {
+            .top center {
+                _centerConnectionLengthFactor: 1;
+                _shortening: (_on - penstroke[S".bottom center"]:_on) * -1 * (1 - _centerConnectionLengthFactor);
+                pinTo: _shortening + Vector penstroke:_travelX 0;
+            }
         }
     }
 }

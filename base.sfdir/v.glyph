@@ -8,15 +8,17 @@ LayerCount: 2
 Back
 Fore
 SplineSet
-272 0 m 1
+290 0 m 1
+NamedP: "bottom right"
+ 350 166 l 1
+NamedP: "top right"
+ 220 104 l 1
+NamedP: "top left"
+ 272 0 l 1
 NamedP: "bottom left"
  290 0 l 1
 NamedP: "bottom right"
- 282 39 l 1
-NamedP: "top"
- 272 0 l 1
-NamedP: "bottom left"
-  Named: "O:fillVertex"
+  Named: "O:bottomFillOne"
 526 460 m 257
 NamedP: "top right serif"
  376 460 l 257
@@ -41,11 +43,11 @@ NamedP: "top right serif"
   Named: "topLeftSerif"
 290 0 m 257
 NamedP: "bottom"
- 482 450 l 257
+ 478 440 l 257
 NamedP: "top"
- 460 450 l 257
+ 459 448 l 257
 NamedP: "top"
- 275 19 l 257
+ 270 9 l 257
 NamedP: "bottom"
  290 0 l 257
 NamedP: "bottom"
@@ -54,9 +56,9 @@ NamedP: "bottom"
 NamedP: "bottom"
  215 450 l 257
 NamedP: "top"
- 45 450 l 257
+ 78 385 l 257
 NamedP: "top"
- 272 0 l 257
+ 220 104 l 257
 NamedP: "bottom"
  350 166 l 257
 NamedP: "bottom"
