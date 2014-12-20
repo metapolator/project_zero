@@ -396,7 +396,7 @@
             _serifOffset: 20;
         }
         penstroke#topRightSerif point.right > center {
-            _serifOffset: -20;
+            _serifOffset: 0;
         }
     }
 }
@@ -436,6 +436,36 @@
             .drop.fixation left {
                weightSummand: -45;
             }
+        }
+    }
+}
+
+@namespace(glyph#x) {
+    @dictionary {
+/* outer serifs */
+        penstroke#topLeftSerif point.left > center,
+        penstroke#bottomRightSerif point.right > center {
+            _serifOffset: -20;
+        }
+        penstroke#topRightSerif point.right > center,
+        penstroke#bottomLeftSerif point.left > center {
+            _serifOffset: -10;
+        }
+        /* inner serifs */
+        penstroke#topLeftSerif point.right > center,
+        penstroke#bottomRightSerif point.left > center {
+            _serifOffset: -10;
+        }
+        penstroke#topRightSerif point.left > center,
+        penstroke#bottomLeftSerif point.right > center {
+            _serifOffset: 10;
+        }
+
+        penstroke#upStrokeLeft{
+            _xCorrection: -35;
+        }
+        penstroke#upStrokeRight {
+            _xCorrection: 35;
         }
     }
 }

@@ -3,10 +3,9 @@ Encoding: 1012 120 1012
 GlifName: x
 Width: 576
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
-Fore
 SplineSet
 182 0 m 257
  182 20 l 257
@@ -37,6 +36,86 @@ SplineSet
  13 20 l 257
  13 0 l 257
  182 0 l 257
+EndSplineSet
+Fore
+SplineSet
+338 269 m 1
+NamedP: "connection"
+ 485 450 l 257
+NamedP: "top"
+ 457 450 l 257
+NamedP: "top"
+ 312.696289062 269 l 1
+NamedP: "connection"
+ 338 269 l 1
+NamedP: "connection"
+  Named: "upStrokeRight"
+93 10 m 257
+NamedP: "bottom"
+ 243.217773438 208 l 1
+NamedP: "connection"
+ 215 208 l 1
+NamedP: "connection"
+ 65 10 l 257
+NamedP: "bottom"
+ 93 10 l 257
+NamedP: "bottom"
+  Named: "upStrokeLeft"
+566 20 m 1
+NamedP: "serif right bottom"
+ 304 20 l 257
+NamedP: "serif left bottom"
+ 304 0 l 257
+NamedP: "serif left bottom"
+ 566 0 l 1
+NamedP: "serif right bottom"
+ 566 20 l 1
+NamedP: "serif right bottom"
+  Named: "bottomRightSerif"
+537 460 m 1
+NamedP: "serif right top"
+ 369 460 l 257
+NamedP: "serif left top"
+ 369 440 l 257
+NamedP: "serif left top"
+ 537 440 l 1
+NamedP: "serif right top"
+ 537 460 l 1
+NamedP: "serif right top"
+  Named: "topRightSerif"
+182 20 m 1
+NamedP: "serif right bottom"
+ 13 20 l 257
+NamedP: "serif left bottom"
+ 13 0 l 257
+NamedP: "serif left bottom"
+ 182 0 l 1
+NamedP: "serif right bottom"
+ 182 20 l 1
+NamedP: "serif right bottom"
+  Named: "bottomLeftSerif"
+263 460 m 1
+NamedP: "serif right top"
+ 0 460 l 257
+NamedP: "serif left top"
+ 0 440 l 257
+NamedP: "serif left top"
+ 263 440 l 1
+NamedP: "serif right top"
+ 263 460 l 1
+NamedP: "serif right top"
+  Named: "topLeftSerif"
+533 10 m 261
+NamedP: "bottom"
+ 206 450 l 5
+NamedP: "top"
+ 33 450 l 261
+NamedP: "top"
+ 361 10 l 261
+NamedP: "bottom"
+ 533 10 l 261
+NamedP: "bottom"
+  Named: "downStroke"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'

@@ -103,6 +103,9 @@
   , glyph#w penstroke#upDiagonalTwo point > center
   , glyph#y penstroke#downDiagonalOne point > center
   , glyph#y penstroke#upDiagonalOne point > center
+  , glyph#x penstroke#upStrokeLeft point > center
+  , glyph#x penstroke#upStrokeRight point > center
+  , glyph#x penstroke#downStroke point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -172,6 +175,9 @@
 , glyph#w penstroke#upDiagonalTwo point > center
 , glyph#y penstroke#downDiagonalOne point > center
 , glyph#y penstroke#upDiagonalOne point > center
+, glyph#x penstroke#upStrokeLeft point > center
+, glyph#x penstroke#upStrokeRight point > center
+, glyph#x penstroke#downStroke point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -1711,5 +1717,62 @@
                 pinTo: _shortening + Vector penstroke:_travelX 0;
             }
         }
+    }
+}
+@namespace(glyph#x) {
+    @import 'lib/linear-intersection.cps';
+    @dictionary {
+        left, right {
+            _on: (Polar length base:onDir ) + parent:center:_on;
+        }
+        * {
+            downStroke: glyph[S"#downStroke"];
+            upStrokeLeft: glyph[S"#upStrokeLeft"];
+            upStrokeRight: glyph[S"#upStrokeRight"];
+            stemWidth: 2 * downStroke[S"point.top > right"]:onLength;
+        }
+        penstroke#topRightSerif center {
+            referenceStroke: upStrokeRight;
+        }
+        penstroke#topLeftSerif center {
+            referenceStroke: downStroke;
+        }
+        penstroke#bottomRightSerif center {
+            referenceStroke: downStroke;
+        }
+        penstroke#bottomLeftSerif center {
+            referenceStroke: upStrokeLeft;
+        }
+
+        penstroke#upStrokeLeft {
+            _edge1: this[S".bottom left"]:_on;
+            _edge2: this[S".connection left"]:_on;
+            _target1: downStroke[S".top left"]:_on;
+            _target2: downStroke[S".bottom left"]:_on;
+        }
+        penstroke#upStrokeRight {
+            _edge1: this[S".top right"]:_on;
+            _edge2: this[S".connection right"]:_on;
+            _target1: downStroke[S".top right"]:_on;
+            _target2: downStroke[S".bottom right"]:_on;
+        }
+
+        penstroke#upStrokeLeft, penstroke#upStrokeRight {
+            _xCorrection: 0;
+            _correction: Vector _xCorrection 0;
+            __args: List (_edge1 + _correction) (_edge2 + _correction) _target1 _target2;
+            _movement: __intersection - _edge2;
+        }
+        penstroke#upStrokeLeft .bottom center,
+        penstroke#upStrokeRight .top center {
+            pinTo: penstroke: _correction;
+        }
+        penstroke#upStrokeLeft .connection center,
+        penstroke#upStrokeRight .connection center {
+            pinTo: penstroke:_movement;
+        }
+
+
+
     }
 }

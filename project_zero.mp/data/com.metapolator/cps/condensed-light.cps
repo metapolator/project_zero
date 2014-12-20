@@ -706,3 +706,26 @@
         outTension: 1.25;
     }
 }
+
+@namespace(glyph#x) {
+    @dictionary {
+        /* outer serifs */
+        penstroke#topLeftSerif point.left > center,
+        penstroke#bottomRightSerif point.right > center {
+            _serifOffset: -10;
+        }
+        penstroke#topRightSerif point.right > center,
+        penstroke#bottomLeftSerif point.left > center {
+            _serifOffset: -15;
+        }
+        /* inner serifs */
+        penstroke#topLeftSerif point.right > center,
+        penstroke#bottomRightSerif point.left > center {
+            _serifOffset: -5;
+        }
+        penstroke#topRightSerif point.left > center,
+        penstroke#bottomLeftSerif point.right > center {
+            _serifOffset: 5;
+        }
+    }
+}
