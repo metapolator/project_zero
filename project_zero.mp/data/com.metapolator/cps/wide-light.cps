@@ -48,6 +48,7 @@
 @namespace("
     glyph#i penstroke#dot point
 ,   glyph#j penstroke#dot point
+,   glyph#y point.drop
 ") {
     @dictionary {
         * {
@@ -731,7 +732,7 @@
     }
 }
 
-@namespace(glyph#v, glyph#w) {
+@namespace(glyph#v, glyph#w, glyph#y) {
     @dictionary {
         point > center {
             extraX: -100;
@@ -772,3 +773,34 @@
     }
 }
 
+@namespace(glyph#y) {
+    @dictionary {
+        penstroke#downDiagonalOne .bottom center{
+            _downDiagonalLengthFactor: .89;
+        }
+    }
+    @namespace(penstroke#upDiagonalOne){
+        @dictionary {
+            .diagonal-connection center {
+                _baselineMovement: .5;
+            }
+            .drop center{
+                dropX: -105;
+                xTranslate: dropX;
+            }
+            .drop.fixation center {
+               xTranslate: 15 + dropX;
+            }
+            .drop.fixation left {
+               weightSummand: -45;
+            }
+        }
+    }
+    penstroke#upDiagonalOne .drop.terminal left {
+        outTension: .8;
+    }
+    penstroke#upDiagonalOne .drop.fixation left {
+        inTension: 1.3;
+        outTension: 1.1;
+    }
+}

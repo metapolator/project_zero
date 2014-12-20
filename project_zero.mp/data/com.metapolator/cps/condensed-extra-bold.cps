@@ -1148,7 +1148,7 @@
         }
     }
 }
-@namespace(glyph#v, glyph#w) {
+@namespace(glyph#v, glyph#w, glyph#y) {
     @dictionary {
         point > center {
             extraX: 100;
@@ -1176,6 +1176,23 @@
         penstroke#downDiagonalOne .bottom center,
         penstroke#downDiagonalTwo .bottom center {
             _downDiagonalLengthFactor: -.35;
+        }
+    }
+}
+@namespace(glyph#y) {
+    @dictionary {
+        penstroke#downDiagonalOne .bottom center{
+            _downDiagonalLengthFactor: -.6;
+        }
+    }
+    @namespace(penstroke#upDiagonalOne){
+        @dictionary {
+            .diagonal-connection center {
+                _baselineMovement: 0;
+            }
+            .drop.fixation left {
+               weightSummand: -45;
+            }
         }
     }
 }

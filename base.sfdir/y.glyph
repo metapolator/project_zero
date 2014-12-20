@@ -3,13 +3,12 @@ Encoding: 1013 121 1013
 GlifName: y
 Width: 562
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
 Back
-Fore
 SplineSet
-114 -220 m 257
- 184 -220 218 -185 252 -111 c 258
+114 -220 m 261
+ 184 -220 218 -185 252 -111 c 262
  252 -111 492 440 492 440 c 257
  552 440 l 257
  552 460 l 257
@@ -24,11 +23,77 @@ SplineSet
  0 440 l 257
  40 440 l 257
  274 -1 l 257
- 232 -100 l 258
- 222 -123 213 -134 199 -134 c 256
- 160 -134 162 -64 81 -64 c 256
- 41 -64 9 -94 9 -140 c 257
- 9 -189 48 -220 114 -220 c 257
+ 232 -100 l 262
+ 222 -123 213 -134 199 -134 c 260
+ 160 -134 162 -64 81 -64 c 260
+ 41 -64 9 -94 9 -140 c 261
+ 9 -189 48 -220 114 -220 c 261
+EndSplineSet
+Fore
+SplineSet
+9 -140 m 259
+NamedP: "drop terminal"
+ 9 -189 48 -220 114 -220 c 259
+NamedP: "drop fixation"
+ 184 -220 220 -184 253 -109 c 258
+NamedP: "diagonal-connection"
+ 492 440 l 257
+NamedP: "top"
+ 472 449 l 257
+NamedP: "top"
+ 232 -99 l 258
+NamedP: "diagonal-connection"
+ 222 -122 213 -134 199 -134 c 259
+NamedP: "drop fixation"
+ 160.672464207 -134 162 -64 81 -64 c 259
+NamedP: "drop terminal"
+ 41 -64 9 -94 9 -140 c 259
+NamedP: "drop terminal"
+  Named: "upDiagonalOne"
+300 0 m 1
+NamedP: "bottom right"
+ 358 167 l 1
+NamedP: "top right"
+ 221.026367188 99.009765625 l 1
+NamedP: "top left"
+ 274 0 l 1
+NamedP: "bottom left"
+ 300 0 l 1
+NamedP: "bottom right"
+  Named: "O:bottomFillOne"
+552 460 m 257
+NamedP: "top right serif"
+ 388 460 l 257
+NamedP: "top left serif"
+ 388 440 l 257
+NamedP: "top left serif"
+ 552 440 l 257
+NamedP: "top right serif"
+ 552 460 l 257
+NamedP: "top right serif"
+  Named: "topRightSerif"
+269 460 m 257
+NamedP: "top right serif"
+ 0 460 l 257
+NamedP: "top left serif"
+ 0 440 l 257
+NamedP: "top left serif"
+ 269 440 l 257
+NamedP: "top right serif"
+ 269 460 l 257
+NamedP: "top right serif"
+  Named: "topLeftSerif"
+358 167 m 257
+NamedP: "bottom"
+ 215.100585938 451.6796875 l 257
+NamedP: "top"
+ 71.1826171875 380.564453125 l 257
+NamedP: "top"
+ 221.026367188 99.009765625 l 257
+NamedP: "bottom"
+ 358 167 l 257
+NamedP: "bottom"
+  Named: "downDiagonalOne"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'

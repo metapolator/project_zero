@@ -382,7 +382,7 @@
 }
 
 
-@namespace(glyph#v, glyph#w) {
+@namespace(glyph#v, glyph#w, glyph#y) {
     @dictionary {
         penstroke#topLeftSerif point.left > center,
         penstroke#topCenterSerif point.left > center {
@@ -415,6 +415,27 @@
         penstroke#downDiagonalOne .bottom center,
         penstroke#downDiagonalTwo .bottom center {
             _downDiagonalLengthFactor: .3;
+        }
+    }
+}
+@namespace(glyph#y) {
+    @dictionary {
+        penstroke#downDiagonalOne .bottom center{
+            _downDiagonalLengthFactor: -.15;
+        }
+    }
+    @namespace(penstroke#upDiagonalOne){
+        @dictionary {
+            .diagonal-connection center {
+                _baselineMovement: 0;
+            }
+            .drop center{
+                dropX: 0;
+                _xTranslate: dropX + extraX;
+            }
+            .drop.fixation left {
+               weightSummand: -45;
+            }
         }
     }
 }

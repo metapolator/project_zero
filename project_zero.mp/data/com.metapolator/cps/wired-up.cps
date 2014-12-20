@@ -101,6 +101,8 @@
   , glyph#w penstroke#upDiagonalOne point > center
   , glyph#w penstroke#downDiagonalTwo point > center
   , glyph#w penstroke#upDiagonalTwo point > center
+  , glyph#y penstroke#downDiagonalOne point > center
+  , glyph#y penstroke#upDiagonalOne point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -168,6 +170,8 @@
 , glyph#w penstroke#upDiagonalOne point > center
 , glyph#w penstroke#downDiagonalTwo point > center
 , glyph#w penstroke#upDiagonalTwo point > center
+, glyph#y penstroke#downDiagonalOne point > center
+, glyph#y penstroke#upDiagonalOne point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -1432,10 +1436,8 @@
         }
     }
 }
-
-
-/* shared between v and w*/
-@namespace(glyph#v, glyph#w) {
+/* shared between v, w and y */
+@namespace(glyph#v, glyph#w, glyph#y) {
     @dictionary {
         left, right {
             _on: (Polar length base:onDir ) + parent:center:_on;
@@ -1459,10 +1461,7 @@
             referenceStroke: downDiagonalTwo;
         }
     }
-    right, left, spot {
-        inTension: Infinity;
-        outTension: Infinity;
-    }
+
     /* upDiagonalOne .left edge shall hit downDiagonalOne .bottom right:on */
     /* downDiagonalTwo .left edge shall hit upDiagonalOne .top right:on */
     /* upDiagonalTwo .left edge shall hit downDiagonalTwo .bottom right:on */
@@ -1491,7 +1490,7 @@
               , penstroke#downDiagonalTwo
               , penstroke#upDiagonalTwo") {
         @dictionary {
-            .top center, .bottom center {
+            .top center, .bottom center,  .diagonal-connection center{
                 pinTo: Vector penstroke:_travelX 0;
             }
         }
@@ -1563,15 +1562,21 @@
             _up: upDiagonalTwo;
         }
     }
+}
+@namespace("glyph#v, glyph#w") {
+    right, left, spot {
+        inTension: Infinity;
+        outTension: Infinity;
+    }
     @namespace("outline#bottomFillOne, outline#bottomFillTwo") {
         spot.top.right {
             on: _down[S".bottom right"]:on;
         }
-        spot.bottom.right {
-            on: _up[S".bottom right"]:on;
-        }
         spot.top.left {
             on: _down[S".bottom left"]:on;
+        }
+        spot.bottom.right {
+            on: _up[S".bottom right"]:on;
         }
         /* the intersection of _zeroY and the left edge of _down */
         @dictionary {
@@ -1586,6 +1591,87 @@
         }
     }
 }
+
+@namespace(glyph#y) {
+    penstroke#downDiagonalOne *, spot,
+    penstroke#upDiagonalOne .top *{
+        inTension: Infinity;
+        outTension: Infinity;
+    }
+    penstroke#upDiagonalOne .diagonal-connection *{
+        outTension: Infinity;
+    }
+    @dictionary{
+        /* move horizontally to hit the right bottom corner of the down stroke
+         * with this left edge
+         */
+        penstroke#upDiagonalOne {
+            _edge1: this[S".top left"]:_on;
+            _edge2: this[S".diagonal-connection left"]:_on;
+            __args: List _edge1 _edge2 (Vector 0 _target:y) (Vector 1 _target:y);
+            _travelX: (_target - __intersection):x;
+        }
+    }
+    @namespace("outline#bottomFillOne") {
+        @dictionary {
+            /* the intersection of _zeroY and the right edge of _up */
+            spot.bottom.right {
+                _edge1: _up[S".top right"]:on;
+                _edge2: _up[S".diagonal-connection right"]:on;
+            }
+            /* the intersection of _zeroY and the left edge of _down */
+            spot.bottom.left {
+                _edge1: _down[S".top left"]:on;
+                _edge2: _down[S".bottom left"]:on;
+            }
+            spot.bottom {
+                __args: List _edge1 _edge2 (Vector 0 _zeroY) (Vector 1 _zeroY);
+            }
+        }
+        spot.top.right {
+            on: _down[S".bottom right"]:on;
+        }
+        spot.top.left {
+            on: _down[S".bottom left"]:on;
+        }
+        spot.bottom {
+            on: __intersection;
+        }
+    }
+    @namespace("penstroke#upDiagonalOne") {
+        @dictionary {
+            /* this shall hit _unitY --the centerline of the serifs--
+             * with its left top edge point
+             */
+            .top center {
+                _edge1: penstroke[S".diagonal-connection left"]:_on;
+                _edge2: parent:left:_on;
+                __args: List _edge1 _edge2 (Vector 0 _unitY) (Vector 1 _unitY);
+                pinTo: (__intersection - _edge2) + Vector penstroke:_travelX 0;
+            }
+
+            /* need a way to adjust this nodes position along its slope direction */
+            .diagonal-connection center {
+                _edge1: penstroke[S".top center"]:_on;
+                _edge2: this:_on;
+                __args: List _edge1 _edge2 (Vector 0 _zeroY) (Vector 1 _zeroY);
+                /* 1 moves this (up) to the baseline, 0 is no movement */
+                _baselineMovement: 0;
+                _movement: (__intersection - _edge2) * _baselineMovement;
+                pinTo: _movement + Vector penstroke:_travelX 0;
+            }
+            point.drop > center {
+                dropFixation: penstroke[S".drop.fixation"]:skeleton:on
+            }
+            point.drop > center {
+                origin: scale * dropFixation;
+                target: _scale * dropFixation;
+                pinTo: target - origin;
+            }
+        }
+    }
+}
+
 @namespace("glyph#v penstroke#upDiagonalOne, glyph#w penstroke#upDiagonalTwo") {
     @dictionary {
         /* this shall hit _unitY --the centerline of the serifs--
@@ -1599,7 +1685,7 @@
         }
     }
 }
-@namespace(glyph#v) {
+@namespace(glyph#v, glyph#y) {
     @dictionary{
         penstroke#topRightSerif center {
             referenceStroke: upDiagonalOne;
