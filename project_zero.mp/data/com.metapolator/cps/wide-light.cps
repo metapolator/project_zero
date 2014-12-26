@@ -833,3 +833,12 @@
         }
     }
 }
+
+@namespace(glyph#z) {
+    @dictionary {
+        * {
+            _leftAdjust: 55;
+            _rightAdjust: -80;
+        }
+    }
+}

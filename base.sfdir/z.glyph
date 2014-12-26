@@ -3,10 +3,9 @@ Encoding: 1017 122 1017
 GlifName: z
 Width: 502
 VWidth: 0
-Flags: W
+Flags: HWO
 LayerCount: 2
 Back
-Fore
 SplineSet
 10 0 m 257
  456 0 l 257
@@ -23,6 +22,90 @@ SplineSet
  234 440 293 440 293 440 c 257
  293 440 10 15 10 15 c 257
  10 15 10 0 10 0 c 257
+EndSplineSet
+Fore
+SplineSet
+456 20 m 1
+NamedP: "end"
+ 140 20 l 1
+NamedP: "to-diagonal"
+ 140 0 l 1
+NamedP: "to-diagonal"
+ 245.333333333 -0 350.666666667 0 456 0 c 257
+NamedP: "end"
+ 456 20 l 1
+NamedP: "end"
+  Named: "armBottom"
+456 10 m 1
+NamedP: "to-arm"
+ 456 199 l 1
+NamedP: "end"
+ 442 199 l 1
+NamedP: "end"
+ 442 10 l 1
+NamedP: "to-arm"
+ 456 10 l 1
+NamedP: "to-arm"
+  Named: "terminalBottom"
+243 20 m 1
+NamedP: "arm"
+ 442 20 l 1
+NamedP: "corner"
+ 442 199 l 1
+NamedP: "end"
+ 442 42 373 20 243 20 c 1
+NamedP: "arm"
+  Named: "O:InterWebbingBottom"
+57 275 m 257
+NamedP: "end"
+ 57 402 132 440 234 440 c 257
+NamedP: "arm"
+ 57 440 l 25
+NamedP: "corner"
+ 57 275 l 257
+NamedP: "end"
+  Named: "O:interWebbingTop"
+57 275 m 1
+NamedP: "end"
+ 57 450 l 1
+NamedP: "to-arm"
+ 41 450 l 1
+NamedP: "to-arm"
+ 41 275 l 257
+NamedP: "end"
+ 57 275 l 1
+NamedP: "end"
+  Named: "terminalTop"
+357 460 m 1
+NamedP: "to-diagonal"
+ 41 460 l 1
+NamedP: "end"
+ 41 440 l 1
+NamedP: "end"
+ 146.333333333 440 251.666666667 440 357 440 c 257
+NamedP: "to-diagonal"
+ 357 460 l 1
+NamedP: "to-diagonal"
+  Named: "armTop"
+179 0 m 1
+NamedP: "bottom"
+ 179 15 l 257
+NamedP: "bottom-to-diagonal"
+ 462 448 l 257
+NamedP: "top-to-diagonal"
+ 462 460 l 261
+NamedP: "top"
+ 298 460 l 1
+NamedP: "top"
+ 298 448 l 1
+NamedP: "top-to-diagonal"
+ 10 15 l 257
+NamedP: "bottom-to-diagonal"
+ 10 0 l 257
+NamedP: "bottom"
+ 179 0 l 1
+NamedP: "bottom"
+  Named: "diagonal"
 EndSplineSet
 PickledDataWithLists: "(dp1
 S'com.typemytype.robofont.layerData'

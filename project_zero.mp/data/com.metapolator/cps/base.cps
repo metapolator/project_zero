@@ -7693,3 +7693,269 @@ point:i(1) > right {
 }
 }
 }
+
+@namespace(glyph#z) {
+@namespace(penstroke:i(0)) {
+point:i(0) > left {
+    inDir: -1.5707963267948966;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001000007;
+    inLength: 6.666600000000001;
+    outTension: 1.000003164566976;
+    outLength: 105.33300000000003;
+}
+
+point:i(0) > right {
+    onLength: 10;
+    onDir: 1.5707963267948966;
+    inDir: 1.5707963267948966;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001000007;
+    inLength: 6.666600000000001;
+    outTension: 1.0000100001000005;
+    outLength: 105.33228000000003;
+}
+
+point:i(1) > left {
+    inDirIntrinsic: 0;
+    outDir: 1.5707963267948966;
+    inTension: 1.0000031645669762;
+    inLength: 105.333;
+    outTension: 1.0000100001000007;
+    outLength: 6.666600000000001;
+}
+
+point:i(1) > right {
+    onLength: 10;
+    onDir: 1.5707963267948966;
+    inDirIntrinsic: 0;
+    outDir: -1.5707963267948966;
+    inTension: 1.0000100001000005;
+    inLength: 105.33228000000003;
+    outTension: 1.0000100001000007;
+    outLength: 6.666600000000001;
+}
+}
+
+@namespace(penstroke:i(1)) {
+point:i(0) > left {
+    inDir: 3.141592653589793;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001;
+    inLength: 4.666620000000023;
+    outTension: 1.000010000100001;
+    outLength: 62.99937;
+}
+
+point:i(0) > right {
+    onLength: 7;
+    onDir: 0;
+    inDir: 0;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001;
+    inLength: 4.666620000000023;
+    outTension: 1.000010000100001;
+    outLength: 62.99937;
+}
+
+point:i(1) > left {
+    inDirIntrinsic: 0;
+    outDir: 0;
+    inTension: 1.000010000100001;
+    inLength: 62.99937;
+    outTension: 1.0000100001;
+    outLength: 4.666620000000023;
+}
+
+point:i(1) > right {
+    onLength: 7;
+    onDir: 0;
+    inDirIntrinsic: 0;
+    outDir: 3.141592653589793;
+    inTension: 1.000010000100001;
+    inLength: 62.99937;
+    outTension: 1.0000100001;
+    outLength: 4.666620000000023;
+}
+}
+
+@namespace(outline:i(2)) {
+spot:i(0) {
+    inDir: 3.141592653589793;
+    in: on;
+}
+}
+
+@namespace(outline:i(3)) {
+spot:i(0) {
+    inDir: -1.5707963267948966;
+    in: on;
+}
+}
+
+@namespace(penstroke:i(4)) {
+point:i(0) > left {
+    inDir: 3.141592653589793;
+    outDirIntrinsic: 0;
+    inTension: 1.000010000100001;
+    inLength: 5.333280000000002;
+    outTension: 1.0000100001;
+    outLength: 58.33275000000003;
+}
+
+point:i(0) > right {
+    onLength: 8;
+    onDir: 0;
+    inDir: 0;
+    outDirIntrinsic: 0;
+    inTension: 1.000010000100001;
+    inLength: 5.333280000000002;
+    outTension: 1.0000100001;
+    outLength: 58.33275000000003;
+}
+
+point:i(1) > left {
+    inDirIntrinsic: 0;
+    outDir: 0;
+    inTension: 1.0000100001;
+    inLength: 58.33275000000003;
+    outTension: 1.000010000100001;
+    outLength: 5.333280000000002;
+}
+
+point:i(1) > right {
+    onLength: 8;
+    onDir: 0;
+    inDirIntrinsic: 0;
+    outDir: 3.141592653589793;
+    inTension: 1.0000100001;
+    inLength: 58.33275000000003;
+    outTension: 1.000010000100001;
+    outLength: 5.333280000000002;
+}
+}
+
+@namespace(penstroke:i(5)) {
+point:i(0) > left {
+    inDir: -1.5707963267948966;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001000014;
+    inLength: 6.666600000000017;
+    outTension: 1.0000031645669762;
+    outLength: 105.333;
+}
+
+point:i(0) > right {
+    onLength: 10;
+    onDir: 1.5707963267948966;
+    inDir: 1.5707963267948966;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001000014;
+    inLength: 6.666600000000017;
+    outTension: 1.0000100001000005;
+    outLength: 105.33228000000003;
+}
+
+point:i(1) > left {
+    inDirIntrinsic: 0;
+    outDir: 1.5707963267948966;
+    inTension: 1.0000031645669762;
+    inLength: 105.333;
+    outTension: 1.0000100001000014;
+    outLength: 6.666600000000017;
+}
+
+point:i(1) > right {
+    onLength: 10;
+    onDir: 1.5707963267948966;
+    inDirIntrinsic: 0;
+    outDir: -1.5707963267948966;
+    inTension: 1.0000100001000005;
+    inLength: 105.33228000000003;
+    outTension: 1.0000100001000014;
+    outLength: 6.666600000000017;
+}
+}
+
+@namespace(penstroke:i(6)) {
+point:i(0) > left {
+    inDir: 3.141592653589793;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001000007;
+    inLength: 56.33277000000001;
+    outTension: 1.000010000100001;
+    outLength: 4.99995;
+}
+
+point:i(0) > right {
+    onLength: 84.5;
+    onDir: 0;
+    inDir: 0;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001000007;
+    inLength: 56.33277000000001;
+    outTension: 1.000010000100001;
+    outLength: 4.99995;
+}
+
+point:i(1) > left {
+    inDirIntrinsic: 0;
+    outDirIntrinsic: -0.004013503937938645;
+    inTension: 1.000010000100001;
+    inLength: 4.99995;
+    outTension: 1.000010000100001;
+    outLength: 173.34217649462494;
+}
+
+point:i(1) > right {
+    onLength: 84.5;
+    onDir: 0;
+    inDirIntrinsic: 0;
+    outDirIntrinsic: 0.004034858855942347;
+    inTension: 1.000010000100001;
+    inLength: 4.99995;
+    outTension: 1.000010000100001;
+    outLength: 172.42474959843847;
+}
+
+point:i(2) > left {
+    inDirIntrinsic: -0.004013503937938645;
+    outDirIntrinsic: 0;
+    inTension: 1.000010000100001;
+    inLength: 173.34217649462497;
+    outTension: 1.000010000100004;
+    outLength: 3.9999599999999873;
+}
+
+point:i(2) > right {
+    onLength: 82;
+    onDir: 0;
+    inDirIntrinsic: 0.004034858855942347;
+    outDirIntrinsic: 0;
+    inTension: 1.0000100001000005;
+    inLength: 172.4247495984385;
+    outTension: 1.000010000100004;
+    outLength: 3.9999599999999873;
+}
+
+point:i(3) > left {
+    inDirIntrinsic: 0;
+    outDir: 0;
+    inTension: 1.000010000100004;
+    inLength: 3.9999599999999873;
+    outTension: 1.0000100001000019;
+    outLength: 54.66611999999998;
+}
+
+point:i(3) > right {
+    onLength: 82;
+    onDir: 0;
+    inDirIntrinsic: 0;
+    outDir: 3.141592653589793;
+    inTension: 1.000010000100004;
+    inLength: 3.9999599999999873;
+    outTension: 1.0000100001000019;
+    outLength: 54.66611999999998;
+}
+}
+}

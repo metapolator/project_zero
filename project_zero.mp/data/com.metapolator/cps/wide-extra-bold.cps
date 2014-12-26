@@ -469,3 +469,12 @@
         }
     }
 }
+@namespace(glyph#z) {
+    @dictionary {
+        * {
+            xTranslate: 15;
+            _leftAdjust: -25;
+            _rightAdjust: 15;
+        }
+    }
+}

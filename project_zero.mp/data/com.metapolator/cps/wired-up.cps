@@ -106,6 +106,7 @@
   , glyph#x penstroke#upStrokeLeft point > center
   , glyph#x penstroke#upStrokeRight point > center
   , glyph#x penstroke#downStroke point > center
+  , glyph#z penstroke point > center
     {
         pinTo: Vector 0 0;
         _on: transform * skeleton:on;
@@ -178,6 +179,7 @@
 , glyph#x penstroke#upStrokeLeft point > center
 , glyph#x penstroke#upStrokeRight point > center
 , glyph#x penstroke#downStroke point > center
+, glyph#z penstroke point > center
 {
     on: _on + pinTo;
     in: _in + pinTo;
@@ -1771,8 +1773,79 @@
         penstroke#upStrokeRight .connection center {
             pinTo: penstroke:_movement;
         }
+    }
+}
 
-
+@namespace(glyph#z) {
+    @dictionary {
+        left, right {
+            _on: (Polar length base:onDir ) + parent:center:_on;
+        }
+        * {
+            diagonal: glyph[S"#diagonal"];
+            armTop: glyph[S"#armTop"];
+            terminalTop: glyph[S"#terminalTop"];
+            armBottom: glyph[S"#armBottom"];
+            terminalBottom: glyph[S"#terminalBottom"];
+            _leftAdjust: 0;
+            _rightAdjust: 0;
+            _left: _leftAdjust + (min armTop[S".end center"]:_on:x terminalTop[S".to-arm left"]:_on:x);
+            _right: _rightAdjust + (max armBottom[S".end center"]:_on:x terminalBottom[S".to-arm right"]:_on:x);
+        }
+        penstroke#diagonal .top center {
+            pinTo: Vector 0 (armTop[S".to-diagonal right"]:_on:y - _on:y);
+        }
+        penstroke#diagonal .bottom center {
+            pinTo: Vector 0 (armBottom[S".to-diagonal left"]:_on:y - _on:y);
+        }
+        penstroke#armTop .to-diagonal center {
+            pinTo: Vector (diagonal[S".top center"]:on:x - _on:x) 0;
+        }
+        penstroke#armTop .end center {
+            pinTo: Vector (_left - _on:x) 0;
+        }
+        penstroke#terminalTop center {
+            pinTo: Vector (_left - parent:left:_on:x) 0;
+        }
+        penstroke#armBottom .to-diagonal center {
+            pinTo: Vector (diagonal[S".bottom center"]:on:x - _on:x) 0;
+        }
+        penstroke#armBottom .end center {
+            pinTo: Vector (_right - _on:x) 0;
+        }
+        penstroke#terminalBottom center {
+            pinTo: Vector (_right - parent:right:_on:x) 0;
+        }
 
     }
+    outline#InterWebbingBottom .end{
+        on: terminalBottom[S".end left"]:on;
+    }
+    outline#interWebbingTop .end{
+        on: terminalTop[S".end right"]:on;
+    }
+
+    outline#InterWebbingBottom .corner{
+        on: Vector terminalBottom[S".end left"]:on:x armBottom[S".end right"]:on:y;
+    }
+    outline#interWebbingTop .corner{
+        on: Vector terminalTop[S".end right"]:on:x armTop[S".end left"]:on:y;
+    }
+    outline#InterWebbingBottom .arm {
+        on: Vector
+            (max armBottom[S".to-diagonal center"]:on:x
+                 (transform * skeleton:on):x + _rightAdjust
+            )
+            armBottom[S".end right"]:on:y;
+    }
+
+    outline#interWebbingTop .arm {
+        on: Vector
+            (min armTop[S".to-diagonal center"]:on:x
+                 (transform * skeleton:on):x + _leftAdjust
+            )
+            armTop[S".end left"]:on:y;
+    }
+
+
 }

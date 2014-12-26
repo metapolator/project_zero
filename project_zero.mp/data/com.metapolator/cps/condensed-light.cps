@@ -729,3 +729,12 @@
         }
     }
 }
+
+@namespace(glyph#z) {
+    @dictionary {
+        * {
+            _leftAdjust: 15;
+            _rightAdjust: -25;
+        }
+    }
+}

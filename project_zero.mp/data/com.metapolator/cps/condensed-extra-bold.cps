@@ -1231,3 +1231,13 @@
         }
     }
 }
+
+@namespace(glyph#z) {
+    @dictionary {
+        * {
+            xTranslate: 75;
+            _leftAdjust: -45;
+            _rightAdjust: 55;
+        }
+    }
+}
