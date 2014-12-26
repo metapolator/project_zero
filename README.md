@@ -4,7 +4,7 @@ into a super family setup using [Metapolator](https://github.com/metapolator/met
 
 The project aims to collect first experiences with Metapolator and to create
 commonly useful CPS for different tasks as well as to explore the possibilities
-of Metapolator as a tool, like metapolation and interpolation.
+of Metapolator as a tool e.g. to do metapolation and/or interpolation.
 
 The project is under heavy development.
 
