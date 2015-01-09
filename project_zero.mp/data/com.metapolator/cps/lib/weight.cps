@@ -16,7 +16,7 @@ point > right {
 @dictionary {
     point > left,
     point > right,
-    spot {
+    p {
         weightFactor: 1;
         weightSummand: 0;
     }

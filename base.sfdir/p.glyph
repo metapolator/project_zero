@@ -30,37 +30,37 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-220 460 m 257
+220 460 m 261
 NamedP: "no-serif right top"
- 20 460 l 257
+ 20 460 l 261
 NamedP: "serif left top"
- 20 440 l 257
+ 20 440 l 261
 NamedP: "serif left top"
- 220 440 l 257
+ 220 440 l 261
 NamedP: "no-serif right top"
- 220 460 l 257
+ 220 460 l 261
 NamedP: "no-serif right top"
   Named: "topSerif"
-270 -189 m 257
+270 -189 m 261
 NamedP: "serif right bottom"
- 70 -189 l 257
+ 70 -189 l 261
 NamedP: "no-serif left bottom"
- 70 -210 l 257
+ 70 -210 l 261
 NamedP: "no-serif left bottom"
- 270 -210 l 257
+ 270 -210 l 261
 NamedP: "serif right bottom"
- 270 -189 l 257
+ 270 -189 l 261
 NamedP: "serif right bottom"
   Named: "bottomSerif"
-220 -199 m 257
+220 -199 m 261
 NamedP: "bottom"
- 220 450 l 257
+ 220 450 l 261
 NamedP: "top"
- 70 450 l 257
+ 70 450 l 261
 NamedP: "top"
- 70 -199 l 257
+ 70 -199 l 261
 NamedP: "bottom"
- 220 -199 l 257
+ 220 -199 l 261
 NamedP: "bottom"
   Named: "stem"
 220 258 m 1
@@ -79,7 +79,7 @@ NamedP: "end"
 NamedP: "horizontal bottom"
  452 -22 548 62 548 230 c 259
 NamedP: "vertical"
- 548 390 450 472 349 472 c 263
+ 548 390 450 472 349 472 c 259
 NamedP: "horizontal top"
  237 472 196 433 196 258 c 257
 NamedP: "connection"

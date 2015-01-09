@@ -15,7 +15,7 @@
       <point x="229.5" y="445"/>
       <point x="210" y="409" type="curve" name="to-stem"/>
     </contour>
-    <contour identifier="O:terminal">
+    <contour identifier="C:terminal">
       <point x="79" y="0"/>
       <point x="79" y="0" type="curve" name="bottom inner"/>
       <point x="79" y="41"/>

@@ -9,7 +9,7 @@
     * {
         baseMaster: S"master#base";
     }
-    point > center, outline > spot {
+    point > center, contour > p {
         skeleton: base;
     }
 }
@@ -25,10 +25,10 @@
         master: parent:parent;
         glyph: parent;
     }
-    spot {
+    p {
         master: parent:parent:parent;
         glyph: parent:parent;
-        outline: parent;
+        contour: parent;
     }
 }
 
@@ -1045,7 +1045,7 @@
 @namespace(glyph#b) {
     @dictionary {
         point > *,
-        spot {
+        p {
             stem: glyph[S"#stem"];
             bowl: glyph[S"#bowl"];
             topSerif: glyph[S"#topSerif"];
@@ -1059,45 +1059,45 @@
             }
         }
     }
-    @namespace("outline#terminal") {
+    @namespace("contour#terminal") {
         @dictionary {
-            spot.top.left {
+            p.top.left {
                 target: stem[S".bottom"]:left:on
             }
-            spot.top.right {
+            p.top.right {
                 target: stem[S".bottom"]:right:on
             }
-            spot.upper.connection {
+            p.upper.connection {
                 target: bowl[S".connection"]:left:on
             }
-            spot.lower.connection {
+            p.lower.connection {
                 target: bowl[S".connection"]:right:on
             }
 
-            spot.bottom, spot.bridge {
+            p.bottom, p.bridge {
                 _on: skeleton:on;
             }
-            spot.bottom.inner {
+            p.bottom.inner {
                 _xRef: parent[S".bottom.outer"];
                 _x: (_on:x - _xRef:_on:x) * weightFactor + _xRef:on:x;
             }
-            spot.bridge {
+            p.bridge {
                 _xRef: stem[S".bottom"]:center:on;
                 _yRef: _xRef;
             }
 
 
         }
-        spot.top, spot.connection {
+        p.top, p.connection {
             on: target;
         }
-        spot.bottom.outer {
+        p.bottom.outer {
             on: Vector parent[S".top.left"]:on:x _on:y;
         }
-        spot.bottom.inner {
+        p.bottom.inner {
             on: Vector _x _on:y;
         }
-        spot.bridge {
+        p.bridge {
             on: Vector _x _y;
         }
     }
@@ -1367,7 +1367,7 @@
 
 @namespace(glyph#t) {
     @dictionary {
-        point > * , spot{
+        point > * , p{
             stem: glyph[S"#stem"];
             horizontalStroke: glyph[S"#horizontalStroke"];
             inStroke: glyph[S"#inStroke"];
@@ -1382,35 +1382,35 @@
         }
     }
 
-    @namespace("outline#inStroke") {
+    @namespace("contour#inStroke") {
         @dictionary {
-            spot {
+            p {
                 _bottomXReference: stem[S"point.top"];
                 _bottomY: horizontalStroke[S"point.crossbar right"]:on:y;
                 _on:
             }
         }
-        spot {
+        p {
             on: skeleton:on;
         }
-        spot.bottom.left {
+        p.bottom.left {
             on: Vector _bottomXReference:left:on:x _bottomY;
         }
-        spot.bottom.right {
+        p.bottom.right {
             on: Vector _bottomXReference:right:on:x _bottomY;
         }
-        spot.top.right {
-            on: Vector parent[S"spot.bottom.right"]:on:x skeleton:on:y;
+        p.top.right {
+            on: Vector parent[S"p.bottom.right"]:on:x skeleton:on:y;
         }
-        spot.top.left {
-            on: ((skeleton:on - parent[S"spot.top.right"]:skeleton:on) * weightFactor) + parent[S"spot.top.right"]:on;
+        p.top.left {
+            on: ((skeleton:on - parent[S"p.top.right"]:skeleton:on) * weightFactor) + parent[S"p.top.right"]:on;
         }
     }
 }
 
 @namespace(glyph#u) {
     @dictionary {
-        point > * , spot{
+        point > * , p{
             stem: glyph[S"#stem"];
             arch: glyph[S"#arch"];
             stemWidth: 2 * stem[S"point.top > right"]:onLength;
@@ -1454,7 +1454,7 @@
             _zeroY: 0;
             _unitY:  glyph[S"penstroke#topLeftSerif center"]:_on:y;
         }
-        penstroke, point > * , spot{
+        penstroke, point > * , p{
             downDiagonalOne: glyph[S"#downDiagonalOne"];
             downDiagonalTwo: glyph[S"#downDiagonalTwo"];
             upDiagonalOne: glyph[S"#upDiagonalOne"];
@@ -1561,47 +1561,47 @@
         }
     }
     @dictionary {
-        outline#bottomFillOne spot {
+        contour#bottomFillOne p {
             _down: downDiagonalOne;
             _up: upDiagonalOne;
         }
-        outline#bottomFillTwo spot {
+        contour#bottomFillTwo p {
             _down: downDiagonalTwo;
             _up: upDiagonalTwo;
         }
     }
 }
 @namespace("glyph#v, glyph#w") {
-    right, left, spot {
+    right, left, p {
         inTension: Infinity;
         outTension: Infinity;
     }
-    @namespace("outline#bottomFillOne, outline#bottomFillTwo") {
-        spot.top.right {
+    @namespace("contour#bottomFillOne, contour#bottomFillTwo") {
+        p.top.right {
             on: _down[S".bottom right"]:on;
         }
-        spot.top.left {
+        p.top.left {
             on: _down[S".bottom left"]:on;
         }
-        spot.bottom.right {
+        p.bottom.right {
             on: _up[S".bottom right"]:on;
         }
         /* the intersection of _zeroY and the left edge of _down */
         @dictionary {
-            spot.bottom.left {
+            p.bottom.left {
                 _edge1: _down[S".top left"]:on;
                 _edge2: _down[S".bottom left"]:on;
                 __args: List _edge1 _edge2 (Vector 0 _zeroY) (Vector 1 _zeroY);
             }
         }
-        spot.bottom.left {
+        p.bottom.left {
             on: __intersection;
         }
     }
 }
 
 @namespace(glyph#y) {
-    penstroke#downDiagonalOne *, spot,
+    penstroke#downDiagonalOne *, p,
     penstroke#upDiagonalOne .top *{
         inTension: Infinity;
         outTension: Infinity;
@@ -1620,29 +1620,29 @@
             _travelX: (_target - __intersection):x;
         }
     }
-    @namespace("outline#bottomFillOne") {
+    @namespace("contour#bottomFillOne") {
         @dictionary {
             /* the intersection of _zeroY and the right edge of _up */
-            spot.bottom.right {
+            p.bottom.right {
                 _edge1: _up[S".top right"]:on;
                 _edge2: _up[S".diagonal-connection right"]:on;
             }
             /* the intersection of _zeroY and the left edge of _down */
-            spot.bottom.left {
+            p.bottom.left {
                 _edge1: _down[S".top left"]:on;
                 _edge2: _down[S".bottom left"]:on;
             }
-            spot.bottom {
+            p.bottom {
                 __args: List _edge1 _edge2 (Vector 0 _zeroY) (Vector 1 _zeroY);
             }
         }
-        spot.top.right {
+        p.top.right {
             on: _down[S".bottom right"]:on;
         }
-        spot.top.left {
+        p.top.left {
             on: _down[S".bottom left"]:on;
         }
-        spot.bottom {
+        p.bottom {
             on: __intersection;
         }
     }
@@ -1818,20 +1818,20 @@
         }
 
     }
-    outline#InterWebbingBottom .end{
+    contour#InterWebbingBottom .end{
         on: terminalBottom[S".end left"]:on;
     }
-    outline#interWebbingTop .end{
+    contour#interWebbingTop .end{
         on: terminalTop[S".end right"]:on;
     }
 
-    outline#InterWebbingBottom .corner{
+    contour#InterWebbingBottom .corner{
         on: Vector terminalBottom[S".end left"]:on:x armBottom[S".end right"]:on:y;
     }
-    outline#interWebbingTop .corner{
+    contour#interWebbingTop .corner{
         on: Vector terminalTop[S".end right"]:on:x armTop[S".end left"]:on:y;
     }
-    outline#InterWebbingBottom .arm {
+    contour#InterWebbingBottom .arm {
         on: Vector
             (max armBottom[S".to-diagonal center"]:on:x
                  (transform * skeleton:on):x + _rightAdjust
@@ -1839,7 +1839,7 @@
             armBottom[S".end right"]:on:y;
     }
 
-    outline#interWebbingTop .arm {
+    contour#interWebbingTop .arm {
         on: Vector
             (min armTop[S".to-diagonal center"]:on:x
                  (transform * skeleton:on):x + _leftAdjust

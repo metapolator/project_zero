@@ -15,7 +15,7 @@
       <point x="402.167465" y="261.668495"/>
       <point x="482" y="444.5" type="curve" name="top"/>
     </contour>
-    <contour identifier="O:bottomFillOne">
+    <contour identifier="C:bottomFillOne">
       <point x="300" y="0"/>
       <point x="300" y="0" type="curve" name="bottom right"/>
       <point x="319.33314" y="55.66611"/>

@@ -3,7 +3,7 @@ Encoding: 1017 122 1017
 GlifName: z
 Width: 502
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -55,16 +55,16 @@ NamedP: "corner"
 NamedP: "end"
  442 42 373 20 243 20 c 1
 NamedP: "arm"
-  Named: "O:InterWebbingBottom"
-57 275 m 257
+  Named: "C:InterWebbingBottom"
+57 275 m 261
 NamedP: "end"
- 57 402 132 440 234 440 c 257
+ 57 402 132 440 234 440 c 261
 NamedP: "arm"
  57 440 l 25
 NamedP: "corner"
- 57 275 l 257
+ 57 275 l 261
 NamedP: "end"
-  Named: "O:interWebbingTop"
+  Named: "C:interWebbingTop"
 57 275 m 1
 NamedP: "end"
  57 450 l 1
@@ -93,7 +93,7 @@ NamedP: "bottom"
 NamedP: "bottom-to-diagonal"
  462 448 l 257
 NamedP: "top-to-diagonal"
- 462 460 l 261
+ 462 460 l 257
 NamedP: "top"
  298 460 l 1
 NamedP: "top"

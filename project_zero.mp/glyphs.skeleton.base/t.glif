@@ -15,7 +15,7 @@
       <point x="149" y="361.50088500000004"/>
       <point x="149" y="450" type="curve" name="top"/>
     </contour>
-    <contour identifier="O:inStroke">
+    <contour identifier="C:inStroke">
       <point x="224" y="460"/>
       <point x="224" y="460" type="curve" name="bottom right"/>
       <point x="224" y="510.99949"/>

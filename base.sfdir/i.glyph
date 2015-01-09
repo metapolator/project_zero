@@ -27,15 +27,15 @@ NamedP: "bottom"
  240 10 l 257
 NamedP: "bottom"
   Named: "stem"
-240 460 m 257
+240 460 m 261
 NamedP: "top right no-serif"
- 50 460 l 257
+ 50 460 l 261
 NamedP: "top left serif"
- 50 440 l 257
+ 50 440 l 261
 NamedP: "top left serif"
- 240 440 l 257
+ 240 440 l 261
 NamedP: "top right no-serif"
- 240 460 l 257
+ 240 460 l 261
 NamedP: "top right no-serif"
   Named: "topSerif"
 290 20 m 257

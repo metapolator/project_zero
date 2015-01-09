@@ -5,7 +5,7 @@ component {
     transformation: originalTransformation;
 }
 
-outline > spot {
+contour > p {
     on: skeleton:on;
     in: tension2controlIn pointBefore:on pointBefore:outDir inTension inDir on;
     out: tension2controlOut on outDir outTension pointAfter:inDir pointAfter:on;
@@ -30,14 +30,14 @@ point > center {
 
 @dictionary {
 
-outline > spot {
+contour > p {
     pointBefore: parent:children[index - 1];
     pointAfter: parent:children[index+1];
 }
-outline > spot:i(0) {
+contour > p:i(0) {
     pointBefore: parent:children[parent:children:length - 1];
 }
-outline > spot:i(-1) {
+contour > p:i(-1) {
     pointAfter: parent:children[0];
 }
 

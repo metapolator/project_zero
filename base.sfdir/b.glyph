@@ -3,7 +3,7 @@ Encoding: 127 98 127
 GlifName: b
 Width: 558
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -30,7 +30,7 @@ Fore
 SplineSet
 303 -9 m 0
 NamedP: "connection"
- 384 -9 528 32 528 230 c 260
+ 384 -9 528 32 528 230 c 256
 NamedP: "vertical right"
  528 398 432 482 339 482 c 256
 NamedP: "horizontal top"
@@ -47,9 +47,9 @@ NamedP: "connection"
  303 -9 l 0
 NamedP: "connection"
   Named: "bowl"
-79 0 m 257
+79 0 m 261
 NamedP: "bottom inner"
- 79 41 100 70 124 70 c 259
+ 79 41 100 70 124 70 c 263
 NamedP: "bridge"
  178 70 209 -9 303 -9 c 257
 NamedP: "connection lower"
@@ -61,9 +61,9 @@ NamedP: "top right"
 NamedP: "top left"
  60 0 l 257
 NamedP: "bottom outer"
- 79 0 l 257
+ 79 0 l 261
 NamedP: "bottom inner"
-  Named: "O:terminal"
+  Named: "C:terminal"
 210 670 m 257
 NamedP: "right top no-serif"
  10 670 l 257

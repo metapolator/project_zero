@@ -8,7 +8,7 @@ LayerCount: 2
 Back
 Fore
 SplineSet
-240 460 m 261
+240 460 m 257
 NamedP: "top right no-serif"
  40 460 l 257
 NamedP: "top left serif"
@@ -16,7 +16,7 @@ NamedP: "top left serif"
 NamedP: "top left serif"
  240 440 l 257
 NamedP: "top right no-serif"
- 240 460 l 261
+ 240 460 l 257
 NamedP: "top right no-serif"
   Named: "topSerif"
 565 10 m 257
@@ -43,7 +43,7 @@ NamedP: "bottom right serif"
  615 20 l 257
 NamedP: "bottom right serif"
   Named: "bottomRightSerif"
-290 20 m 257
+290 20 m 261
 NamedP: "bottom right serif"
  40 20 l 257
 NamedP: "bottom left serif"
@@ -51,7 +51,7 @@ NamedP: "bottom left serif"
 NamedP: "bottom left serif"
  290 0 l 257
 NamedP: "bottom right serif"
- 290 20 l 257
+ 290 20 l 261
 NamedP: "bottom right serif"
   Named: "bottomLeftSerif"
 240 10 m 257

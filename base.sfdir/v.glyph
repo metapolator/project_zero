@@ -12,13 +12,13 @@ SplineSet
 NamedP: "bottom right"
  350 166 l 1
 NamedP: "top right"
- 220 104 l 1
+ 220 104 l 5
 NamedP: "top left"
- 272 0 l 1
+ 272 0 l 5
 NamedP: "bottom left"
  290 0 l 1
 NamedP: "bottom right"
-  Named: "O:bottomFillOne"
+  Named: "C:bottomFillOne"
 526 460 m 257
 NamedP: "top right serif"
  376 460 l 257

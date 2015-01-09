@@ -3,10 +3,10 @@
 
 /* set up this masters parameters */
 @dictionary {
-    point > center, outline > spot  {
+    point > center, contour > p  {
         widthFactor: 1.3;
     }
-    point > left, point > right, outline > spot {
+    point > left, point > right, contour > p {
         weightFactor: 1.5;
     }
 }
@@ -331,9 +331,9 @@
 }
 
 @namespace(glyph#b) {
-    @namespace(outline#terminal) {
+    @namespace(contour#terminal) {
         @dictionary {
-            spot.bridge {
+            p.bridge {
                 _y: base:on:y;
                 _x: -30 + _xRef:x;
             }

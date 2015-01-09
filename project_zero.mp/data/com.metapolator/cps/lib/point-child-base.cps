@@ -12,12 +12,12 @@
                     ;
     }
     
-    outline > spot {
+    contour > p {
         indexGlyph: parent:parent:index;
-        indexOutline: parent:index;
+        indexContour: parent:index;
         base: baseMaster
                     :children[indexGlyph]
-                    :children[indexOutline]
+                    :children[indexContour]
                     :children[index]
                     ;
     }

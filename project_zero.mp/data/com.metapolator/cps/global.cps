@@ -8,13 +8,17 @@
         _display: true;
     }
 }
-@dictionary{
+@dictionary {
+  /* 
     master#base > glyph
   , master#cl > glyph
+  , master#web > glyph
   , master#wl > glyph
   , master#ceb > glyph
-  , master#web > glyph
-  , master#metapolated > glyph {
+  */
+    master#metapolated > glyph
+  , master#interpolated > glyph
+  {
         _display: false;
-    }
+  }
 }

@@ -54,13 +54,13 @@ NamedP: "drop terminal"
 NamedP: "bottom right"
  358 167 l 1
 NamedP: "top right"
- 221.026367188 99.009765625 l 1
+ 221.026367188 99.009765625 l 5
 NamedP: "top left"
- 274 0 l 1
+ 274 0 l 5
 NamedP: "bottom left"
  300 0 l 1
 NamedP: "bottom right"
-  Named: "O:bottomFillOne"
+  Named: "C:bottomFillOne"
 552 460 m 257
 NamedP: "top right serif"
  388 460 l 257

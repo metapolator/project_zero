@@ -3,10 +3,10 @@
 
 /* set up this masters parameters */
 @dictionary {
-    point > center, outline > spot {
+    point > center, contour > p {
         widthFactor: 1.3;
     }
-    point > left, point > right, outline > spot {
+    point > left, point > right, contour > p {
         weightFactor: 0.2;
     }
 }
@@ -484,22 +484,22 @@
             }
         }
     }
-    @namespace(outline#terminal) {
-        spot.top.right {
+    @namespace(contour#terminal) {
+        p.top.right {
             inTension: .93;
         }
-        spot.connection.upper{
+        p.connection.upper{
             outTension: 1.4;
         }
-        spot.connection.lower {
+        p.connection.lower {
             inTension: .53;
         }
-        spot.bridge {
+        p.bridge {
             outTension: 3.4;
             inTension: 2.5;
         }
         @dictionary{
-            spot.bridge {
+            p.bridge {
                 _y: -45 + _yRef:y;
                 _x: 2 +_xRef:x;
             }
@@ -702,11 +702,11 @@
 }
 
 @namespace(glyph#t) {
-    @namespace("outline#inStroke") {
-        spot.bottom.left {
+    @namespace("contour#inStroke") {
+        p.bottom.left {
             inDir: deg 230;
         }
-        spot.top.left {
+        p.top.left {
             outDir: deg 268;
         }
     }

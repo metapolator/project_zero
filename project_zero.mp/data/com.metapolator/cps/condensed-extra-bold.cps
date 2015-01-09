@@ -3,10 +3,10 @@
 
 /* set up this masters parameters */
 @dictionary {
-    point > center, outline > spot  {
+    point > center, contour > p {
         widthFactor: 0.7;
     }
-    point > left, point > right, outline > spot {
+    point > left, point > right, contour > p {
         weightFactor: 1.5;
     }
 }
@@ -858,12 +858,12 @@
             outTension: 2.4;
         }
     }
-    @namespace(outline#terminal) {
-        spot.connection.upper {
+    @namespace(contour#terminal) {
+        p.connection.upper {
             outTension: 2.1;
         }
         @dictionary{
-            spot.bridge {
+            p.bridge {
                 _y: base:on:y;
                 _x: -30 + _xRef:x;
             }

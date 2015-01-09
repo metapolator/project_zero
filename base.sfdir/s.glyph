@@ -3,7 +3,7 @@ Encoding: 972 115 972
 GlifName: s
 Width: 475
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 Fore
@@ -18,7 +18,7 @@ NamedP: "horizontal bottom"
 NamedP: "vertical bottom"
  456 244.871970709 353.783970714 273.946824316 264.000002295 299.364666779 c 0
 NamedP: "spine"
- 193.687788855 319.27005519 131 337.932645245 131 387 c 256
+ 193.687788855 319.27005519 131 337.932645245 131 387 c 260
 NamedP: "vertical top"
  131 420 163 450 241 450 c 256
 NamedP: "horizontal top"

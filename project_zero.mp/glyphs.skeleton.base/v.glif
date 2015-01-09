@@ -3,7 +3,7 @@
   <advance width="536"/>
   <unicode hex="0076"/>
   <outline>
-    <contour identifier="O:bottomFillOne">
+    <contour identifier="C:bottomFillOne">
       <point x="290" y="0"/>
       <point x="290" y="0" type="curve" name="bottom right"/>
       <point x="309.9998" y="55.33278"/>

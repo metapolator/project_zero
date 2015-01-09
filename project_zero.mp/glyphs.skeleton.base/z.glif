@@ -15,7 +15,7 @@
       <point x="449" y="136.00063"/>
       <point x="449" y="199" type="curve" name="end"/>
     </contour>
-    <contour identifier="O:InterWebbingBottom">
+    <contour identifier="C:InterWebbingBottom">
       <point x="243" y="20"/>
       <point x="243" y="20" type="curve" name="arm"/>
       <point x="309.33267" y="20"/>
@@ -29,7 +29,7 @@
       <point x="243" y="20" type="curve" name="arm"/>
       <point x="243" y="20"/>
     </contour>
-    <contour identifier="O:interWebbingTop">
+    <contour identifier="C:interWebbingTop">
       <point x="57" y="275"/>
       <point x="57" y="275" type="curve" name="end"/>
       <point x="57" y="402"/>

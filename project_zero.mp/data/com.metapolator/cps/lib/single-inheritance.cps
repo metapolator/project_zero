@@ -19,7 +19,7 @@ point > center {
     out: base:out;
 }
 
-outline > spot {
+contour > p {
     on: base:on;
     
     inDir: base:inDir;

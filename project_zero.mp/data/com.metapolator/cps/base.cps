@@ -3866,8 +3866,8 @@ point:i(3) > right {
 }
 }
 
-@namespace(outline:i(1)) {
-spot:i(0) {
+@namespace(contour:i(1)) {
+p:i(0) {
     inDir: -1.5707963267948966;
     in: on;
 }
@@ -6392,8 +6392,8 @@ point:i(3) > right {
 }
 }
 
-@namespace(outline:i(1)) {
-spot:i(0) {
+@namespace(contour:i(1)) {
+p:i(0) {
     inDir: -1.5707963267948966;
     in: on;
 }
@@ -6695,8 +6695,8 @@ point:i(1) > right {
 }
 
 @namespace(glyph#v) {
-@namespace(outline:i(0)) {
-spot:i(0) {
+@namespace(contour:i(0)) {
+p:i(0) {
     inDir: -1.9176312243759042;
     in: on;
 }
@@ -6872,15 +6872,15 @@ point:i(1) > right {
 }
 
 @namespace(glyph#w) {
-@namespace(outline:i(0)) {
-spot:i(0) {
+@namespace(contour:i(0)) {
+p:i(0) {
     inDir: -1.8538065835280597;
     in: on;
 }
 }
 
-@namespace(outline:i(1)) {
-spot:i(0) {
+@namespace(contour:i(1)) {
+p:i(0) {
     inDir: -1.8538065835280597;
     in: on;
 }
@@ -7264,8 +7264,8 @@ point:i(3) > right {
 }
 }
 
-@namespace(outline:i(1)) {
-spot:i(0) {
+@namespace(contour:i(1)) {
+p:i(0) {
     inDir: -1.9050685880708027;
     in: on;
 }
@@ -7779,15 +7779,15 @@ point:i(1) > right {
 }
 }
 
-@namespace(outline:i(2)) {
-spot:i(0) {
+@namespace(contour:i(2)) {
+p:i(0) {
     inDir: 3.141592653589793;
     in: on;
 }
 }
 
-@namespace(outline:i(3)) {
-spot:i(0) {
+@namespace(contour:i(3)) {
+p:i(0) {
     inDir: -1.5707963267948966;
     in: on;
 }

@@ -3,7 +3,7 @@ Encoding: 986 116 986
 GlifName: t
 Width: 361
 VWidth: 0
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 Fore
@@ -31,14 +31,14 @@ NamedP: "terminal"
 NamedP: "bottom right"
  224 613 l 257
 NamedP: "top right"
- 210 613 l 257
+ 210 613 l 261
 NamedP: "top left"
- 190 518 134 470 74 460 c 1
+ 190 518 134 470 74 460 c 5
 NamedP: "bottom left"
  224 460 l 1
 NamedP: "bottom right"
-  Named: "O:inStroke"
-340 460 m 261
+  Named: "C:inStroke"
+340 460 m 257
 NamedP: "crossbar right top"
  0 460 l 257
 NamedP: "serif left top"
@@ -46,7 +46,7 @@ NamedP: "serif left top"
 NamedP: "serif left top"
  340 440 l 257
 NamedP: "crossbar right top"
- 340 460 l 261
+ 340 460 l 257
 NamedP: "crossbar right top"
   Named: "horizontalStroke"
 EndSplineSet
