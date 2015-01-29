@@ -1,5 +1,5 @@
 @import "lib/metapolate-4.cps";
-@import 'global.cps';
+@import "global.cps";
 
 @dictionary {
     * {

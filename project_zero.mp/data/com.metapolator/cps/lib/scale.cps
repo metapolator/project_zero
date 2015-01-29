@@ -1,7 +1,7 @@
 /* scale the skeleton */
 @dictionary {
     point>center, contour > p{
-        /* this way we can override scale and still have access to it's 
+        /* this way we can override scale and still have access to it's
          * original value
          */
         _scale: (Scaling widthFactor heightFactor);
@@ -10,6 +10,11 @@
         translate: _translate;
         transform:  translate * scale;
     }
+}
+
+glyph {
+    advanceWidth: base:advanceWidth * widthFactor;
+    advanceHeight: base:advanceHeight * heightFactor;
 }
 
 point > center {
@@ -27,7 +32,7 @@ contour > p {
 
 /* define higher level parameters */
 @dictionary {
-    point > center, contour > p {
+    glyph, point > center, contour > p {
         widthFactor: 1;
         xTranslate: 0;
         yTranslate: 0;

@@ -2,13 +2,18 @@
 
 /* needs "base" of point-child-base.cps */
 
+glyph {
+    advanceWidth: base:advanceWidth;
+    advanceHeight: base:advanceHeight;
+}
+
 point > * {
     inLength: base:inLength;
     outLength: base:outLength;
-    
+
     inTension: base:inTension;
     outTension: base:outTension;
-    
+
     inDirIntrinsic: base:inDirIntrinsic;
     outDirIntrinsic: base:outDirIntrinsic;
 }
@@ -21,10 +26,10 @@ point > center {
 
 contour > p {
     on: base:on;
-    
+
     inDir: base:inDir;
     outDir: base:outDir;
-    
+
     inTension: base:inTension;
     outTension: base:outTension;
 }

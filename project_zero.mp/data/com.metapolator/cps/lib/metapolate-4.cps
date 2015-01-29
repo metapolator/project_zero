@@ -1,10 +1,40 @@
-@import 'lib/centreline-skeleton-to-symmetric-outline.cps';
+@import 'centreline-skeleton-to-symmetric-outline.cps';
 
 /* Boilerplate of a two master metapolation
  * Before this you may want to read single-inheritance.cps
  * because it basically does the same, but less complex.
  */
 @dictionary {
+    glyph {
+        base1: baseMaster1:children[index];
+        base2: baseMaster2:children[index];
+        base3: baseMaster3:children[index];
+        base4: baseMaster4:children[index];
+    }
+    contour > p {
+        indexGlyph: parent:parent:index;
+        indexContour: parent:index;
+        base1: baseMaster1
+                    :children[indexGlyph]
+                    :children[indexContour]
+                    :children[index]
+                    ;
+        base2: baseMaster2
+                    :children[indexGlyph]
+                    :children[indexContour]
+                    :children[index]
+                    ;
+        base3: baseMaster3
+                    :children[indexGlyph]
+                    :children[indexContour]
+                    :children[index]
+                    ;
+        base4: baseMaster4
+                    :children[indexGlyph]
+                    :children[indexContour]
+                    :children[index]
+                    ;
+    }
     point > * {
         indexGlyph: parent:parent:parent:index;
         indexPenstroke: parent:parent:index;
@@ -33,9 +63,11 @@
                     :children[indexPoint]
                     :children[index]
                     ;
+    }
+    * {
         /* Ensure that the used proportions sum up to
          * 1; any other value produces usually unwanted effects.
-         * You don't want this? in your master redefine it as 
+         * You don't want this? in your master redefine it as
          * interpolationUnit: 1;
          */
         interpolationUnit: 1/(proportion1 + proportion2 + proportion3 + proportion4);
@@ -46,19 +78,24 @@
     }
 }
 
+glyph {
+    advanceWidth: base1:advanceWidth * _p1 + base2:advanceWidth * _p2 + base3:advanceWidth * _p3 +  base4:advanceWidth * _p4;
+    advanceHeight: base1:advanceHeight * _p1 + base2:advanceHeight * _p2 + base3:advanceHeight * _p3 +  base4:advanceHeight * _p4;
+}
+
 point > * {
     inLength: base1:inLength * _p1 + base2:inLength * _p2 + base3:inLength * _p3 + base4:inLength * _p4;
     outLength: base1:outLength * _p1 + base2:outLength * _p2 + base3:outLength * _p3 + base4:outLength * _p4;
-    
+
     /* This transforms tensions of Infinity to 10000. Then we can interpolate
      * without creating NaN values.
-     * 
+     *
      * NaN is produced when a tension is Infinity and a proportion is zero:
      * Infinity * 0 => NaN.
      * AFAIK this behavior is mathematically correct.
      * But in that case we clearly want a 0 as result, because a proportion
      * of 0 means we don't want to include the master into the Interpolation.
-     * 
+     *
      * 10000 will set the control point very very close to the on-curve
      * point.
      * FIXME: it would be better to keep the Infinity value when all
@@ -71,9 +108,9 @@ point > * {
      * we'd like also to introduce `not` `or` `isNaN`
      * But we are holding off conditional execution at the moment, because
      * we don't want to introduce to much power/complexity in CPS.
-     * 
+     *
      * (base1:inTension * _p1) elseif (isInfinity base1:inTension and _p1 equals 0) 0
-     * 
+     *
      * In another situation we may wan't to `grow` a control point in
      * an interpolation. For better control, the master `not` having that
      * control point can set the tension value to some big value itself.
@@ -87,12 +124,12 @@ point > * {
              + (min 10000 base2:inTension) * _p2
              + (min 10000 base3:inTension) * _p3
              + (min 10000 base4:inTension) * _p4;
-    
+
     outTension: (min 10000 base1:outTension) * _p1
               + (min 10000 base2:outTension) * _p2
               + (min 10000 base3:outTension) * _p3
               + (min 10000 base4:outTension) * _p4;
-    
+
     inDirIntrinsic: (normalizeAngle base1:inDirIntrinsic) * _p1
                   + (normalizeAngle base2:inDirIntrinsic) * _p2
                   + (normalizeAngle base3:inDirIntrinsic) * _p3
@@ -101,6 +138,29 @@ point > * {
                    + (normalizeAngle base2:outDirIntrinsic) * _p2
                    + (normalizeAngle base3:outDirIntrinsic) * _p3
                    + (normalizeAngle base4:outDirIntrinsic) * _p4;
+}
+
+contour > p {
+    on: base1:on * _p1 + base2:on * _p2 + base3:on * _p3 + base4:on * _p4;
+
+    inDir: (normalizeAngle base1:inDir) * _p1
+         + (normalizeAngle base2:inDir) * _p2
+         + (normalizeAngle base3:inDir) * _p3
+         + (normalizeAngle base4:inDir) * _p4;
+    outDir: (normalizeAngle base1:outDir) * _p1
+          + (normalizeAngle base2:outDir) * _p2
+          + (normalizeAngle base3:outDir) * _p3
+          + (normalizeAngle base4:outDir) * _p4;
+
+    inTension: (min 10000 base1:inTension) * _p1
+             + (min 10000 base2:inTension) * _p2
+             + (min 10000 base3:inTension) * _p3
+             + (min 10000 base4:inTension) * _p4;
+
+    outTension: (min 10000 base1:outTension) * _p1
+              + (min 10000 base2:outTension) * _p2
+              + (min 10000 base3:outTension) * _p3
+              + (min 10000 base4:outTension) * _p4;
 }
 
 point > left, point > right {

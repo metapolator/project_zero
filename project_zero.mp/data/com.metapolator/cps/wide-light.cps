@@ -3,7 +3,7 @@
 
 /* set up this masters parameters */
 @dictionary {
-    point > center, contour > p {
+    glyph, point > center, contour > p {
         widthFactor: 1.3;
     }
     point > left, point > right, contour > p {

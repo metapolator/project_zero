@@ -1,6 +1,9 @@
 * {
 }
-
+glyph {
+    advanceWidth: originalAdvanceWidth;
+    advanceHeight: originalAdvanceHeight;
+}
 component {
     transformation: originalTransformation;
 }
@@ -9,13 +12,13 @@ contour > p {
     on: skeleton:on;
     in: tension2controlIn pointBefore:on pointBefore:outDir inTension inDir on;
     out: tension2controlOut on outDir outTension pointAfter:inDir pointAfter:on;
-    
+
     inDir: (on - skeleton:in):angle;
     outDir: (skeleton:out - on):angle;
-    
+
     inLength: (on - skeleton:in):length;
     outLength: (skeleton:out - on):length;
-    
+
     inTension: magnitude2tensionIn pointBefore:on pointBefore:outDir inLength inDir on ;
     outTension: magnitude2tensionOut on outDir outLength pointAfter:inDir pointAfter:on;
 }
