@@ -6,7 +6,7 @@ The project aims to collect first experiences with Metapolator and to create
 commonly useful CPS for different tasks as well as to explore the possibilities
 of Metapolator as a tool e.g. to do metapolation and/or interpolation.
 
-The project is under heavy development.
+The project was under heavy development from October 2014 to March 2015
 
 ## Dependencies
 
