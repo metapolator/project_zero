@@ -2,6 +2,7 @@ masters:
   base:
     cpsFile: base.cps
     skeleton: skeleton.base
+    propertiesFile: elementPropertiesDB/base.cps
 # condensed light
   cl:
     cpsFile: condensed-light.cps
