@@ -1,0 +1,2 @@
+session:
+  masters: [base, cl, wl, ceb, web]
