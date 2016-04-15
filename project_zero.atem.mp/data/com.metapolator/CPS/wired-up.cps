@@ -47,8 +47,8 @@ p {
 , glyph#d penstroke#bottomSerif center:i(0)
 , glyph#d penstroke#bottomSerif center:i(-1)
 , glyph#d penstroke#bowl center
-, center.serif > center
-, center.no-serif > center
+, center.serif
+, center.no-serif
 , glyph#h penstroke#arch center
 , glyph#n penstroke#arch center
 , glyph#e penstroke#bar center
@@ -65,29 +65,29 @@ p {
 , glyph#c penstroke#cShape center.horizontal.bottom
 , glyph#f penstroke#horizontalStroke center.left
 , glyph#g penstroke#ear center.to-base
-, glyph#k penstroke#diagonal
-, glyph#m penstroke#archLeft
-, glyph#m penstroke#archRight
+, glyph#k penstroke#diagonal center
+, glyph#m penstroke#archLeft center
+, glyph#m penstroke#archRight center
 , glyph#p penstroke#bowl center.connection
 , glyph#p penstroke#bowl center.end
 , glyph#q penstroke#bowl center.connection
 , glyph#q penstroke#bowl center.end
-, glyph#r penstroke#drop
+, glyph#r penstroke#drop center
 , glyph#t penstroke#horizontalStroke center.crossbar
 , glyph#u penstroke#arch center.to-stem
 , glyph#u penstroke#arch center.horizontal
-, glyph#v penstroke#downDiagonalOne
-, glyph#v penstroke#upDiagonalOne
-, glyph#w penstroke#downDiagonalOne
-, glyph#w penstroke#upDiagonalOne
-, glyph#w penstroke#downDiagonalTwo
-, glyph#w penstroke#upDiagonalTwo
-, glyph#y penstroke#downDiagonalOne
-, glyph#y penstroke#upDiagonalOne
-, glyph#x penstroke#upStrokeLeft
-, glyph#x penstroke#upStrokeRight
-, glyph#x penstroke#downStroke
-, glyph#z penstroke
+, glyph#v penstroke#downDiagonalOne center
+, glyph#v penstroke#upDiagonalOne center
+, glyph#w penstroke#downDiagonalOne center
+, glyph#w penstroke#upDiagonalOne center
+, glyph#w penstroke#downDiagonalTwo center
+, glyph#w penstroke#upDiagonalTwo center
+, glyph#y penstroke#downDiagonalOne center
+, glyph#y penstroke#upDiagonalOne center
+, glyph#x penstroke#upStrokeLeft center
+, glyph#x penstroke#upStrokeRight center
+, glyph#x penstroke#downStroke center
+, glyph#z penstroke center
 {
     pinTo: Vector 0 0;
     _on: transform * baseNode:on;
@@ -183,15 +183,13 @@ p {
 ") {
     center {
         target: verticalTargetStroke:children[0]:on;
-        rightIntrinsic: Polar parent:right:onLength parent:right:onDir;
+        rightIntrinsic: Polar right:onLength right:onDir;
         top: bar:children[0]:on;
     }
-
     center:i(0) left {
         offset: Vector 0 0;
         _on: (Polar length baseNode:onDir) + offset;
     }
-
     center:i(1)  {
         on: Vector (target:x - rightIntrinsic:x)  top:y;
     }
@@ -310,11 +308,11 @@ center.no-serif {
     *
     */
 center.serif.top, center.no-serif.top {
-    target: referenceStroke[S"point.top"];
+    target: referenceStroke[S"center.top"];
 }
 
 center.serif.bottom, center.no-serif.bottom {
-    target: referenceStroke[S"point.bottom"];
+    target: referenceStroke[S"center.bottom"];
 }
 
 center.serif.left, center.no-serif.left {
@@ -669,7 +667,7 @@ center.serif.right, center.no-serif.right {
 }
 
 @namespace("glyph#m") {
-    point > * {
+    center, center > * {
         archLeft: glyph[S"#archLeft"];
         archRight: glyph[S"#archRight"];
         stem: glyph[S"#stem"];
@@ -747,12 +745,12 @@ center.serif.right, center.no-serif.right {
 
     @namespace(penstroke#tail) {
         @import 'local/linear-intersection.cps';
-        center.to-diagonal, center.to-diagonal > * {
+        * {
             southEast: penstroke[S"center.south-east"];
             toBase: diagonal[S"center.to-base"];
         }
         center.to-diagonal {
-            origin: southEast:on;
+            _origin: southEast:on;
             __args: List _origin _on toBase:_origin toBase:on;
             _on: transform * baseNode:on;
             on: __intersection
@@ -767,10 +765,10 @@ center.serif.right, center.no-serif.right {
                 onLength: _movement:length;
             }
             right {
-                inDir: (on - parent:on):angle
+                inDir: (on - parent:on):angle;
             }
             left {
-                inDir: (parent:on - on):angle
+                inDir: (on - parent:on):angle;
             }
         }
     }
@@ -824,10 +822,10 @@ center.serif.right, center.no-serif.right {
         /* fix the custom scaled bowl to the sShape*/
 
         center.drop.top {
-            dropFixation: sShape[S"center.drop.top.fixation"]:baseNode:on
+            dropFixation: sShape[S"center.drop.top.fixation"]:baseNode:on;
         }
         center.drop.bottom {
-            dropFixation: sShape[S"center.drop.bottom.fixation"]:baseNode:on
+            dropFixation: sShape[S"center.drop.bottom.fixation"]:baseNode:on;
         }
 
         center.drop {
@@ -947,7 +945,7 @@ center.serif.right, center.no-serif.right {
             referenceStroke: stem;
         }
     }
-    @namespace("contour#terminal") {
+    @namespace("contour#C\:terminal") {
         p.top.left {
             target: stem[S".bottom"]:left:on
         }
@@ -1218,7 +1216,7 @@ center.serif.right, center.no-serif.right {
     center, center > * , p{
         stem: glyph[S"#stem"];
         horizontalStroke: glyph[S"#horizontalStroke"];
-        inStroke: glyph[S"#inStroke"];
+        inStroke: glyph[S"#C\:inStroke"];
         stemWidth: 2 * stem[S"center.top > right"]:onLength;
     }
     @namespace("penstroke#horizontalStroke") {
@@ -1227,7 +1225,7 @@ center.serif.right, center.no-serif.right {
         }
     }
 
-    @namespace("contour#inStroke") {
+    @namespace("contour#C\:inStroke") {
         p {
             _bottomXReference: stem[S"center.top"];
             _bottomY: horizontalStroke[S"center.crossbar right"]:on:y;
@@ -1380,11 +1378,11 @@ center.serif.right, center.no-serif.right {
             pinTo: (__intersection - _edge2) + Vector penstroke:_travelX 0;
         }
     }
-    contour#bottomFillOne p {
+    contour#C\:bottomFillOne p {
         _down: downDiagonalOne;
         _up: upDiagonalOne;
     }
-    contour#bottomFillTwo p {
+    contour#C\:bottomFillTwo p {
         _down: downDiagonalTwo;
         _up: upDiagonalTwo;
     }
@@ -1394,7 +1392,7 @@ center.serif.right, center.no-serif.right {
         inTension: Infinity;
         outTension: Infinity;
     }
-    @namespace("contour#bottomFillOne, contour#bottomFillTwo") {
+    @namespace("contour#C\:bottomFillOne, contour#C\:bottomFillTwo") {
         p.top.right {
             on: _down[S".bottom right"]:on;
         }
@@ -1432,7 +1430,7 @@ center.serif.right, center.no-serif.right {
         __args: List _edge1 _edge2 (Vector 0 _target:y) (Vector 1 _target:y);
         _travelX: (_target - __intersection):x;
     }
-    @namespace("contour#bottomFillOne") {
+    @namespace("contour#C\:bottomFillOne") {
         /* the intersection of _zeroY and the right edge of _up */
         p.bottom.right {
             _edge1: _up[S".top right"]:on;
@@ -1613,19 +1611,19 @@ center.serif.right, center.no-serif.right {
     penstroke#terminalBottom center {
         pinTo: Vector (_right - right:_on:x) 0;
     }
-    contour#InterWebbingBottom .end {
+    contour#C\:InterWebbingBottom .end {
         on: terminalBottom[S".end left"]:on;
     }
-    contour#interWebbingTop .end{
+    contour#C\:interWebbingTop .end{
         on: terminalTop[S".end right"]:on;
     }
-    contour#InterWebbingBottom .corner{
+    contour#C\:InterWebbingBottom .corner{
         on: Vector terminalBottom[S".end left"]:on:x armBottom[S".end right"]:on:y;
     }
-    contour#interWebbingTop .corner{
+    contour#C\:interWebbingTop .corner{
         on: Vector terminalTop[S".end right"]:on:x armTop[S".end left"]:on:y;
     }
-    contour#InterWebbingBottom .arm {
+    contour#C\:InterWebbingBottom .arm {
         on: Vector
             (max armBottom[S"center.to-diagonal"]:on:x
                  (transform * baseNode:on):x + _rightAdjust
@@ -1633,7 +1631,7 @@ center.serif.right, center.no-serif.right {
             armBottom[S".end right"]:on:y;
     }
 
-    contour#interWebbingTop .arm {
+    contour#C\:interWebbingTop .arm {
         on: Vector
             (min armTop[S"center.to-diagonal"]:on:x
                  (transform * baseNode:on):x + _leftAdjust

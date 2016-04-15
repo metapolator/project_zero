@@ -32,6 +32,9 @@ contour > p {
 
     inTension: baseNode:inTension;
     outTension: baseNode:outTension;
+
+    inLength: baseNode:inLength;
+    outLength: baseNode:outLength;
 }
 
 center > left, center > right {

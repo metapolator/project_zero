@@ -412,7 +412,7 @@ center {
             pinTo: Vector 0 -35;
         }
     }
-    @namespace(contour#terminal) {
+    @namespace(contour#C\:terminal) {
         p.top.right {
             inTension: .93;
         }
@@ -619,7 +619,7 @@ center {
 }
 
 @namespace(glyph#t) {
-    @namespace("contour#inStroke") {
+    @namespace("contour#C\:inStroke") {
         p.bottom.left {
             inDir: deg 230;
         }

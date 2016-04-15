@@ -204,7 +204,7 @@ center {
 }
 
 @namespace(glyph#s) {
-    center > * {
+    center, center > * {
         xTranslate: extraX;
         extraX: 50;
     }
@@ -254,7 +254,7 @@ center {
 }
 
 @namespace(glyph#b) {
-    @namespace(contour#terminal) {
+    @namespace(contour#C\:terminal) {
         p.bridge {
             _y: baseNode:on:y;
             _x: -30 + _xRef:x;

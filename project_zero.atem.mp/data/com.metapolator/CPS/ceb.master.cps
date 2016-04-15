@@ -15,7 +15,7 @@ glyph, center > *, contour > p {
  */
 glyph {
     extraWidth: 180;
-    advanceWidth: base:advanceWidth * widthFactor + extraWidth;
+    width: baseNode:width * widthFactor + extraWidth;
 }
 
 
@@ -702,12 +702,12 @@ glyph#m {
             outTension: 2.4;
         }
     }
-    @namespace(contour#terminal) {
+    @namespace(contour#C\:terminal) {
         p.connection.upper {
             outTension: 2.1;
         }
         p.bridge {
-            _y: base:on:y;
+            _y: baseNode:on:y;
             _x: -30 + _xRef:x;
         }
     }
@@ -728,7 +728,7 @@ glyph#m {
     }
 }
 @namespace(glyph#f) {
-    center > * {
+    center {
         extraX: 55;
         xTranslate: extraX;
     }

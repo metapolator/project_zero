@@ -345,9 +345,6 @@ center {
         xTranslate: extraX;
     }
     @namespace("penstroke#stem") {
-        center {
-            yTranslate: -10;
-        }
         center.vertical > left {
             outTension: .7;
         }
@@ -374,7 +371,7 @@ center {
             pinTo: Vector 0 -85;
         }
     }
-    @namespace(contour#terminal) {
+    @namespace(contour#C\:terminal) {
         p.top.right {
             inTension: .6;
         }
@@ -523,7 +520,7 @@ center {
 }
 
 @namespace(glyph#t) {
-    @namespace("contour#inStroke") {
+    @namespace("contour#C\:inStroke") {
         p.bottom.left {
             inDir: deg 230;
         }
