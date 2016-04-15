@@ -5,3 +5,5 @@ session:
     - wl
     - ceb
     - web
+    - interpolated
+    - metapolated

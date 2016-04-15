@@ -108,6 +108,8 @@ glyph {
     height: base1:height * _p1 + base2:height * _p2 + base3:height * _p3 +  base4:height * _p4;
 }
 
+@namespace(glyph){
+
 center, center > * {
     inLength: base1:inLength * _p1 + base2:inLength * _p2 + base3:inLength * _p3 + base4:inLength * _p4;
     outLength: base1:outLength * _p1 + base2:outLength * _p2 + base3:outLength * _p3 + base4:outLength * _p4;
@@ -218,6 +220,8 @@ center:i(-1) > left {
           + (normalizeAngle base3:outDir) * _p3
           + (normalizeAngle base4:outDir) * _p4;
 }
+
+}
 /* end boilerplate two master metapolation */
 
 /* set up this masters super masters */
@@ -231,3 +235,4 @@ center:i(-1) > left {
     proportion3: .25;
     proportion4: .25;
 }
+

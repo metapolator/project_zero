@@ -37,8 +37,8 @@ contour > p {
 }
 
 center {
-    indexGlyph: parent:parent:parent:index;
-    indexPenstroke: parent:parent:index;
+    indexGlyph: parent:parent:index;
+    indexPenstroke: parent:index;
     base1: baseMaster1
                 :children[indexGlyph]
                 :children[indexPenstroke]
