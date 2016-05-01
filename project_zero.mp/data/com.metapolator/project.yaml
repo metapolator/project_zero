@@ -1,27 +1,9 @@
-masters:
-  base:
-    cpsFile: base.cps
-    skeleton: skeleton.base
-    propertiesFile: elementPropertiesDB/base.cps
-# condensed light
-  cl:
-    cpsFile: condensed-light.cps
-    skeleton: skeleton.base
-# wide light
-  wl:
-    cpsFile: wide-light.cps
-    skeleton: skeleton.base
-# condensed extra bold
-  ceb:
-    cpsFile: condensed-extra-bold.cps
-    skeleton: skeleton.base
-# wide extra bold
-  web:
-    cpsFile: wide-extra-bold.cps
-    skeleton: skeleton.base
-  metapolated:
-    cpsFile: metapolated.cps
-    skeleton: skeleton.base
-  interpolated:
-    cpsFile: interpolated.cps
-    skeleton: skeleton.base
+session:
+  masters:
+    - base
+    - cl
+    - wl
+    - ceb
+    - web
+    - interpolated
+    - metapolated
